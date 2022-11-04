@@ -1,12 +1,13 @@
 ; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
 
 ; Information {{{
-; Mandatory
 Full name:     quite
 Short name:    quite
 Author:        Jaehwang Jung <tomtomjhj@gmail.com>
 Description:   A variant of "quiet" by neutaaaaan
 Neovim:        yes
+
+Colortemplate Options: timestamp=0
 ; }}}
 
 

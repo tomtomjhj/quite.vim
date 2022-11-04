@@ -1,0 +1,26 @@
+From 17a0bc3d7e3e776e26782e529c6f1b6aa1d5e899 Mon Sep 17 00:00:00 2001
+From: Jaehwang Jung <tomtomjhj@gmail.com>
+Date: Tue, 1 Nov 2022 02:42:01 +0900
+Subject: [PATCH] exists('&t_Co') is 0 since nvim 0.8
+
+bug?
+---
+ autoload/colortemplate.vim | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/autoload/colortemplate.vim b/autoload/colortemplate.vim
+index 91c2897..d01ab87 100644
+--- a/autoload/colortemplate.vim
++++ b/autoload/colortemplate.vim
+@@ -2370,7 +2370,7 @@ fun! s:print_header(bufnr)
+   endif
+   call s:put(a:bufnr,   ''                                                                         )
+   if s:supports_neovim()
+-    call s:put(a:bufnr,   "let s:t_Co = exists('&t_Co') && !has('gui_running') ? +&t_Co : -1"      )
++    call s:put(a:bufnr,   "let s:t_Co = has('nvim') || (exists('&t_Co') && !has('gui_running')) ? +&t_Co : -1"      )
+   else
+     call s:put(a:bufnr,   "let s:t_Co = exists('&t_Co') && !has('gui_running') ? (&t_Co ?? 0) : -1")
+   endif
+-- 
+2.36.0
+
