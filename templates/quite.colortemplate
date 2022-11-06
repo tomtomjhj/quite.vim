@@ -109,8 +109,8 @@ Todo                 uiteal            bg0               reverse,bold
 CursorIM             bg0               uilime
 ; }}}
 
-Variant: 16 8
-Include: common-16-8
+Variant: 8
+Include: common-8
 ; }}}
 
 ; Background: light {{{
@@ -175,8 +175,8 @@ Todo                 uiteal            fg0               reverse,bold
 CursorIM             fg0               uilime
 ; }}}
 
-Variant: 16 8
-Include: common-16-8
+Variant: 8
+Include: common-8
 ; }}}
 
 ; Background: any {{{
