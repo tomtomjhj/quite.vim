@@ -11,11 +11,6 @@ let g:colors_name = 'quite'
 
 let s:t_Co = has('nvim') || (exists('&t_Co') && !has('gui_running')) ? +&t_Co : -1
 
-hi! link Terminal Normal
-hi! link StatusLineTerm StatusLine
-hi! link StatusLineTermNC StatusLineNC
-hi! link MessageWindow Pmenu
-hi! link PopupNotification Todo
 hi! link Boolean Constant
 hi! link Character Constant
 hi! link Conditional Statement
@@ -40,6 +35,11 @@ hi! link String Constant
 hi! link Structure Type
 hi! link Tag Special
 hi! link Typedef Type
+hi! link Terminal Normal
+hi! link StatusLineTerm StatusLine
+hi! link StatusLineTermNC StatusLineNC
+hi! link MessageWindow Pmenu
+hi! link PopupNotification Todo
 hi! link lCursor Cursor
 hi! link debugBreakpoint ModeMsg
 hi! link debugPC CursorLine
@@ -68,6 +68,15 @@ if &background ==# 'dark'
   endif
   hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
   hi NormalFloat guifg=NONE guibg=#1c1c1c gui=NONE cterm=NONE
+  hi Comment guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
+  hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Statement guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi ColorColumn guifg=NONE guibg=#1c1c1c gui=NONE cterm=NONE
   hi Conceal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -103,19 +112,12 @@ if &background ==# 'dark'
   hi VisualNOS guifg=NONE guibg=#303030 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
-  hi Comment guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
-  hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Statement guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi diffAdded guifg=#00af5f guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
+  hi Error guifg=#ff005f guibg=#080808 gui=bold,reverse cterm=bold,reverse
+  hi Todo guifg=#00ffaf guibg=#080808 gui=bold,reverse cterm=bold,reverse
   hi DiffAdd guifg=#00af00 guibg=#080808 gui=reverse cterm=reverse
   hi DiffChange guifg=#87afd7 guibg=#080808 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d75f5f guibg=#080808 gui=reverse cterm=reverse
@@ -126,8 +128,6 @@ if &background ==# 'dark'
   hi QuickFixLine guifg=#d787d7 guibg=#080808 gui=reverse cterm=reverse
   hi Search guifg=#00afff guibg=#080808 gui=reverse cterm=reverse
   hi Visual guifg=#ffaf00 guibg=#080808 gui=reverse cterm=reverse
-  hi Error guifg=#ff005f guibg=#080808 gui=bold,reverse cterm=bold,reverse
-  hi Todo guifg=#00ffaf guibg=#080808 gui=bold,reverse cterm=bold,reverse
   hi CursorIM guifg=#080808 guibg=#afff00 gui=NONE cterm=NONE
 else
   " Light background
@@ -154,6 +154,15 @@ else
   endif
   hi Normal guifg=#121212 guibg=#eeeeee gui=NONE cterm=NONE
   hi NormalFloat guifg=NONE guibg=#dadada gui=NONE cterm=NONE
+  hi Comment guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
+  hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Statement guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi ColorColumn guifg=NONE guibg=#dadada gui=NONE cterm=NONE
   hi Conceal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -189,19 +198,12 @@ else
   hi VisualNOS guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
-  hi Comment guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
-  hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Statement guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi diffAdded guifg=#005f00 guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#af0000 guibg=NONE gui=NONE cterm=NONE
+  hi Error guifg=#ff005f guibg=#121212 gui=bold,reverse cterm=bold,reverse
+  hi Todo guifg=#00ffaf guibg=#121212 gui=bold,reverse cterm=bold,reverse
   hi DiffAdd guifg=#87d787 guibg=#121212 gui=reverse cterm=reverse
   hi DiffChange guifg=#afafd7 guibg=#121212 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d78787 guibg=#121212 gui=reverse cterm=reverse
@@ -212,8 +214,6 @@ else
   hi QuickFixLine guifg=#d787d7 guibg=#121212 gui=reverse cterm=reverse
   hi Search guifg=#00afff guibg=#121212 gui=reverse cterm=reverse
   hi Visual guifg=#ffaf00 guibg=#121212 gui=reverse cterm=reverse
-  hi Error guifg=#ff005f guibg=#121212 gui=bold,reverse cterm=bold,reverse
-  hi Todo guifg=#00ffaf guibg=#121212 gui=bold,reverse cterm=bold,reverse
   hi CursorIM guifg=#121212 guibg=#afff00 gui=NONE cterm=NONE
 endif
 
@@ -221,6 +221,15 @@ if s:t_Co >= 256
   if &background ==# 'dark'
     hi Normal ctermfg=255 ctermbg=232 cterm=NONE
     hi NormalFloat ctermfg=NONE ctermbg=234 cterm=NONE
+    hi Comment ctermfg=248 ctermbg=NONE cterm=NONE
+    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi ColorColumn ctermfg=NONE ctermbg=234 cterm=NONE
     hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -256,19 +265,12 @@ if s:t_Co >= 256
     hi VisualNOS ctermfg=NONE ctermbg=236 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
-    hi Comment ctermfg=248 ctermbg=NONE cterm=NONE
-    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold
     hi diffAdded ctermfg=35 ctermbg=NONE cterm=NONE
     hi diffRemoved ctermfg=161 ctermbg=NONE cterm=NONE
+    hi Error ctermfg=197 ctermbg=232 cterm=bold,reverse
+    hi Todo ctermfg=49 ctermbg=232 cterm=bold,reverse
     hi DiffAdd ctermfg=34 ctermbg=232 cterm=reverse
     hi DiffChange ctermfg=110 ctermbg=232 cterm=reverse
     hi DiffDelete ctermfg=167 ctermbg=232 cterm=reverse
@@ -279,13 +281,20 @@ if s:t_Co >= 256
     hi QuickFixLine ctermfg=176 ctermbg=232 cterm=reverse
     hi Search ctermfg=39 ctermbg=232 cterm=reverse
     hi Visual ctermfg=214 ctermbg=232 cterm=reverse
-    hi Error ctermfg=197 ctermbg=232 cterm=bold,reverse
-    hi Todo ctermfg=49 ctermbg=232 cterm=bold,reverse
     hi CursorIM ctermfg=232 ctermbg=154 cterm=NONE
   else
     " Light background
     hi Normal ctermfg=233 ctermbg=255 cterm=NONE
     hi NormalFloat ctermfg=NONE ctermbg=253 cterm=NONE
+    hi Comment ctermfg=242 ctermbg=NONE cterm=NONE
+    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi ColorColumn ctermfg=NONE ctermbg=253 cterm=NONE
     hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -321,19 +330,12 @@ if s:t_Co >= 256
     hi VisualNOS ctermfg=NONE ctermbg=251 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
-    hi Comment ctermfg=242 ctermbg=NONE cterm=NONE
-    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold
     hi diffAdded ctermfg=22 ctermbg=NONE cterm=NONE
     hi diffRemoved ctermfg=124 ctermbg=NONE cterm=NONE
+    hi Error ctermfg=197 ctermbg=233 cterm=bold,reverse
+    hi Todo ctermfg=49 ctermbg=233 cterm=bold,reverse
     hi DiffAdd ctermfg=114 ctermbg=233 cterm=reverse
     hi DiffChange ctermfg=146 ctermbg=233 cterm=reverse
     hi DiffDelete ctermfg=174 ctermbg=233 cterm=reverse
@@ -344,8 +346,6 @@ if s:t_Co >= 256
     hi QuickFixLine ctermfg=176 ctermbg=233 cterm=reverse
     hi Search ctermfg=39 ctermbg=233 cterm=reverse
     hi Visual ctermfg=214 ctermbg=233 cterm=reverse
-    hi Error ctermfg=197 ctermbg=233 cterm=bold,reverse
-    hi Todo ctermfg=49 ctermbg=233 cterm=bold,reverse
     hi CursorIM ctermfg=233 ctermbg=154 cterm=NONE
   endif
   unlet s:t_Co
@@ -356,6 +356,17 @@ if s:t_Co >= 8
   if &background ==# 'dark'
     hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
+    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi ColorColumn ctermfg=NONE ctermbg=NONE cterm=reverse
     hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -401,17 +412,6 @@ if s:t_Co >= 8
     hi VisualNOS ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=standout
     hi WildMenu ctermfg=NONE ctermbg=NONE cterm=bold
-    hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
-    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -421,6 +421,17 @@ if s:t_Co >= 8
     " Light background
     hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
+    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi ColorColumn ctermfg=NONE ctermbg=NONE cterm=reverse
     hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -466,17 +477,6 @@ if s:t_Co >= 8
     hi VisualNOS ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=standout
     hi WildMenu ctermfg=NONE ctermbg=NONE cterm=bold
-    hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
-    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
