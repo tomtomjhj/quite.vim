@@ -5,7 +5,20 @@ Color: black         #080808           232               black
 Normal               none              none
 NormalFloat          none              none
 
-; Group              Foreground        Background        Attributes
+; :help group-name
+Comment              none              none              bold
+Constant             none              none
+Error                none              none              reverse,bold
+Identifier           none              none
+Ignore               none              none
+PreProc              none              none
+Special              none              none
+Statement            none              none
+Todo                 none              none              reverse,bold
+Type                 none              none
+Underlined           none              none              underline
+
+; :help highlight-groups
 ColorColumn          none              none              reverse
 Conceal              none              none
 Cursor               none              none              reverse
@@ -51,24 +64,12 @@ Visual               quite3            black             reverse
 VisualNOS            none              none
 WarningMsg           none              none              standout
 WildMenu             none              none              bold
-; Other conventional group names (see `:help group-name`)
-Comment              none              none              bold
-Constant             none              none
-Error                none              none              reverse,bold
-Identifier           none              none
-Ignore               none              none
-PreProc              none              none
-Special              none              none
-Statement            none              none
-Todo                 none              none              reverse,bold
-Type                 none              none
-Underlined           none              none              underline
-; See `:help CursorIM`
 CursorIM             none              none
-; See `:help window-toolbar`
+
+; :help window-toolbar
 ToolbarLine          none              none              reverse
 ToolbarButton        none              none              bold,reverse
 
-; plugin and filetypes
+; plugins and filetypes
 diffAdded            quite2            none
 diffRemoved          quite1            none

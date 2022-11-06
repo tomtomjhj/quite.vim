@@ -3,7 +3,18 @@
 Normal               fg0               bg0
 NormalFloat          none              bg1
 
-; Group              Foreground        Background        Attributes
+; :help group-name
+Comment              fg2               none
+Constant             none              none
+Identifier           none              none
+Ignore               none              none
+PreProc              none              none
+Special              none              none
+Statement            none              none
+Type                 none              none
+Underlined           none              none              underline
+
+; :help highlight-groups
 ColorColumn          none              bg1
 Conceal              none              none
 Cursor               none              none              reverse
@@ -39,20 +50,11 @@ VertSplit            bg3               none
 VisualNOS            none              bg2
 WarningMsg           none              none
 WildMenu             uiblue            none              bold
-; Other conventional group names (see `:help group-name`)
-Comment              fg2               none
-Constant             none              none
-Identifier           none              none
-Ignore               none              none
-PreProc              none              none
-Special              none              none
-Statement            none              none
-Type                 none              none
-Underlined           none              none              underline
-; See `:help window-toolbar`
+
+; :help window-toolbar
 ToolbarLine          none              none
 ToolbarButton        none              none              bold
 
-; plugin and filetypes
+; plugins and filetypes
 diffAdded            quite2            none
 diffRemoved          quite1            none

@@ -10,12 +10,8 @@ Neovim:        yes
 Colortemplate Options: timestamp=0
 ; }}}
 
-; Global definitions - put at the top of the colorscheme {{{
-Terminal             -> Normal
-StatusLineTerm       -> StatusLine
-StatusLineTermNC     -> StatusLineNC
-MessageWindow        -> Pmenu
-PopupNotification    -> Todo
+; Global definitions {{{
+; :help group-name
 Boolean              -> Constant
 Character            -> Constant
 Conditional          -> Statement
@@ -40,9 +36,18 @@ String               -> Constant
 Structure            -> Type
 Tag                  -> Special
 Typedef              -> Type
-; See `:help lCursor`
+
+; :help highlight-groups
+Terminal             -> Normal
+StatusLineTerm       -> StatusLine
+StatusLineTermNC     -> StatusLineNC
+MessageWindow        -> Pmenu
+PopupNotification    -> Todo
+
+; :help lCursor
 lCursor              -> Cursor
-; Custom
+
+; plugins and filetypes
 debugBreakpoint      -> ModeMsg
 debugPC              -> CursorLine
 ; }}}
@@ -94,6 +99,11 @@ Include: terminal
 Variant: gui 256
 Include: common-gui-256
 
+; :help group-name
+Error                errorred          bg0               reverse,bold
+Todo                 uiteal            bg0               reverse,bold
+
+; :help highlight-groups
 DiffAdd              diffgreen         bg0               reverse
 DiffChange           diffblue          bg0               reverse
 DiffDelete           diffred           bg0               reverse
@@ -104,8 +114,6 @@ PmenuSel             bg0               diffpink
 QuickFixLine         diffpink          bg0               reverse
 Search               uiblue            bg0               reverse
 Visual               uiamber           bg0               reverse
-Error                errorred          bg0               reverse,bold
-Todo                 uiteal            bg0               reverse,bold
 CursorIM             bg0               uilime
 ; }}}
 
@@ -160,6 +168,11 @@ Include: terminal
 Variant: gui 256
 Include: common-gui-256
 
+; :help group-name
+Error                errorred          fg0               reverse,bold
+Todo                 uiteal            fg0               reverse,bold
+
+; :help highlight-groups
 DiffAdd              diffgreen         fg0               reverse
 DiffChange           diffblue          fg0               reverse
 DiffDelete           diffred           fg0               reverse
@@ -170,8 +183,6 @@ PmenuSel             fg0               diffpink
 QuickFixLine         diffpink          fg0               reverse
 Search               uiblue            fg0               reverse
 Visual               uiamber           fg0               reverse
-Error                errorred          fg0               reverse,bold
-Todo                 uiteal            fg0               reverse,bold
 CursorIM             fg0               uilime
 ; }}}
 
