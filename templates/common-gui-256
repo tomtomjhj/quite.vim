@@ -1,0 +1,54 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
+
+Normal               fg0               bg0
+NormalFloat          fg0               bg1
+
+; Group              Foreground        Background        Attributes
+ColorColumn          none              bg1
+Conceal              none              none
+Cursor               none              none              reverse
+CursorColumn         none              bg2
+CursorLine           none              bg2
+CursorLineNr         fg0               bg2
+Directory            fg0               none
+EndOfBuffer          fg0               none
+ErrorMsg             fg0               bg0               reverse
+FoldColumn           bg3               none
+Folded               bg3               bg0
+LineNr               fg2               none
+MatchParen           uipink            none              bold
+ModeMsg              fg0               none              bold
+MoreMsg              fg0               none
+NonText              bg3               none
+PmenuSbar            fg0               bg3
+PmenuThumb           fg0               diffpink
+Question             fg0               none
+SignColumn           fg0               none
+SpecialKey           fg0               none
+SpellBad             quite1            none              t=underline g=undercurl s=quite1
+SpellCap             quite4            none              t=underline g=undercurl s=quite4
+SpellLocal           quite5            none              t=underline g=undercurl s=quite5
+SpellRare            quite6            none              t=underline g=undercurl s=quite6
+StatusLine           bg0               fg0               bold
+StatusLineNC         bg0               bg3
+TabLine              none              bg3
+TabLineFill          none              bg2
+TabLineSel           none              none              bold
+Title                none              none
+VertSplit            bg3               bg0
+VisualNOS            none              bg2
+WarningMsg           fg0               none
+WildMenu             uiblue            bg0               bold
+; Other conventional group names (see `:help group-name`)
+Comment              fg2               none
+Constant             fg0               none
+Identifier           fg0               none
+Ignore               fg0               none
+PreProc              fg0               none
+Special              fg0               none
+Statement            fg0               none
+Type                 fg0               none
+Underlined           fg0               none              underline
+; See `:help window-toolbar`
+ToolbarLine          none              bg0
+ToolbarButton        fg0               bg0               bold

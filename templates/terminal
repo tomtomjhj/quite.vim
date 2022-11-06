@@ -1,0 +1,8 @@
+; vim: ft=colortemplate
+
+Term colors: bg0
+Term colors: quite1 quite2 quite3 quite4 quite5 quite6
+Term colors: fg2
+Term colors: bg3
+Term colors: quite9 quite10 quite11 quite12 quite13 quite14
+Term colors: fg0

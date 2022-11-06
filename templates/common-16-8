@@ -1,0 +1,70 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
+
+Color: black         #080808           232               black
+
+Normal               none              none
+NormalFloat          none              none
+
+; Group              Foreground        Background        Attributes
+ColorColumn          none              none              reverse
+Conceal              none              none
+Cursor               none              none              reverse
+CursorColumn         none              none
+CursorLine           none              none
+CursorLineNr         none              none              bold
+DiffAdd              quite2            black             reverse
+DiffChange           quite4            black             reverse
+DiffDelete           quite1            black             reverse
+DiffText             quite5            black             reverse
+Directory            none              none
+EndOfBuffer          none              none
+ErrorMsg             none              none              reverse,bold
+FoldColumn           none              none
+Folded               none              none
+IncSearch            quite3            black             reverse,bold,underline
+LineNr               none              none
+MatchParen           none              none              bold,underline
+ModeMsg              none              none              bold
+MoreMsg              none              none
+NonText              none              none
+Pmenu                none              none              reverse
+PmenuSbar            none              none              reverse
+PmenuSel             none              none              bold
+PmenuThumb           none              none
+Question             none              none              standout
+QuickFixLine         quite5            black             reverse
+Search               quite6            black             reverse
+SignColumn           none              none              reverse
+SpecialKey           none              none              bold
+SpellBad             quite1            none              underline
+SpellCap             quite4            none              underline
+SpellLocal           quite5            none              underline
+SpellRare            quite6            none              underline
+StatusLine           none              none              bold,reverse
+StatusLineNC         none              none              bold,underline
+TabLine              none              none              bold,underline
+TabLineFill          none              none
+TabLineSel           none              none              reverse,bold
+Title                none              none
+VertSplit            none              none
+Visual               quite3            black             reverse
+VisualNOS            none              none
+WarningMsg           none              none              standout
+WildMenu             none              none              bold
+; Other conventional group names (see `:help group-name`)
+Comment              none              none              bold
+Constant             none              none
+Error                none              none              reverse,bold
+Identifier           none              none
+Ignore               none              none
+PreProc              none              none
+Special              none              none
+Statement            none              none
+Todo                 none              none              reverse,bold
+Type                 none              none
+Underlined           none              none              underline
+; See `:help CursorIM`
+CursorIM             none              none
+; See `:help window-toolbar`
+ToolbarLine          none              none              reverse
+ToolbarButton        none              none              bold,reverse
