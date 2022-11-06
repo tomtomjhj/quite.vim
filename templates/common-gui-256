@@ -52,3 +52,7 @@ Underlined           fg0               none              underline
 ; See `:help window-toolbar`
 ToolbarLine          none              bg0
 ToolbarButton        fg0               bg0               bold
+
+; plugin and filetypes
+diffAdded            quite2            none
+diffRemoved          quite1            none

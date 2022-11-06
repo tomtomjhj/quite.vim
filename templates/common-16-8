@@ -68,3 +68,7 @@ CursorIM             none              none
 ; See `:help window-toolbar`
 ToolbarLine          none              none              reverse
 ToolbarButton        none              none              bold,reverse
+
+; plugin and filetypes
+diffAdded            quite2            none
+diffRemoved          quite1            none
