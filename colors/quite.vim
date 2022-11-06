@@ -114,6 +114,8 @@ if &background ==# 'dark'
   hi Underlined guifg=#eeeeee guibg=NONE gui=underline cterm=underline
   hi ToolbarLine guifg=NONE guibg=#080808 gui=NONE cterm=NONE
   hi ToolbarButton guifg=#eeeeee guibg=#080808 gui=bold cterm=bold
+  hi diffAdded guifg=#00af5f guibg=NONE gui=NONE cterm=NONE
+  hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi DiffAdd guifg=#00af00 guibg=#080808 gui=reverse cterm=reverse
   hi DiffChange guifg=#87afd7 guibg=#080808 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d75f5f guibg=#080808 gui=reverse cterm=reverse
@@ -198,6 +200,8 @@ else
   hi Underlined guifg=#121212 guibg=NONE gui=underline cterm=underline
   hi ToolbarLine guifg=NONE guibg=#eeeeee gui=NONE cterm=NONE
   hi ToolbarButton guifg=#121212 guibg=#eeeeee gui=bold cterm=bold
+  hi diffAdded guifg=#005f00 guibg=NONE gui=NONE cterm=NONE
+  hi diffRemoved guifg=#af0000 guibg=NONE gui=NONE cterm=NONE
   hi DiffAdd guifg=#87d787 guibg=#121212 gui=reverse cterm=reverse
   hi DiffChange guifg=#afafd7 guibg=#121212 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d78787 guibg=#121212 gui=reverse cterm=reverse
@@ -263,6 +267,8 @@ if s:t_Co >= 256
     hi Underlined ctermfg=255 ctermbg=NONE cterm=underline
     hi ToolbarLine ctermfg=NONE ctermbg=232 cterm=NONE
     hi ToolbarButton ctermfg=255 ctermbg=232 cterm=bold
+    hi diffAdded ctermfg=35 ctermbg=NONE cterm=NONE
+    hi diffRemoved ctermfg=161 ctermbg=NONE cterm=NONE
     hi DiffAdd ctermfg=34 ctermbg=232 cterm=reverse
     hi DiffChange ctermfg=110 ctermbg=232 cterm=reverse
     hi DiffDelete ctermfg=167 ctermbg=232 cterm=reverse
@@ -326,6 +332,8 @@ if s:t_Co >= 256
     hi Underlined ctermfg=233 ctermbg=NONE cterm=underline
     hi ToolbarLine ctermfg=NONE ctermbg=255 cterm=NONE
     hi ToolbarButton ctermfg=233 ctermbg=255 cterm=bold
+    hi diffAdded ctermfg=22 ctermbg=NONE cterm=NONE
+    hi diffRemoved ctermfg=124 ctermbg=NONE cterm=NONE
     hi DiffAdd ctermfg=114 ctermbg=233 cterm=reverse
     hi DiffChange ctermfg=146 ctermbg=233 cterm=reverse
     hi DiffDelete ctermfg=174 ctermbg=233 cterm=reverse
@@ -407,6 +415,8 @@ if s:t_Co >= 16
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
+    hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
   else
     " Light background
     hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -470,6 +480,8 @@ if s:t_Co >= 16
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
+    hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
   endif
   unlet s:t_Co
   finish
@@ -538,6 +550,8 @@ if s:t_Co >= 8
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
+    hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
   else
     " Light background
     hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -601,6 +615,8 @@ if s:t_Co >= 8
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
+    hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
   endif
   unlet s:t_Co
   finish
