@@ -36,6 +36,11 @@ hi! link Structure Type
 hi! link Tag Special
 hi! link Typedef Type
 hi! link Terminal Normal
+if has('nvim')
+  hi! link SpecialKey Special
+else
+  hi! link SpecialKey NonText
+endif
 hi! link StatusLineTerm StatusLine
 hi! link StatusLineTermNC StatusLineNC
 hi! link MessageWindow Pmenu
@@ -97,7 +102,6 @@ if &background ==# 'dark'
   hi PmenuThumb guifg=NONE guibg=#d787d7 gui=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi SpecialKey guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi SpellBad guifg=#d7005f guibg=NONE guisp=#d7005f gui=undercurl cterm=underline
   hi SpellCap guifg=#0087d7 guibg=NONE guisp=#0087d7 gui=undercurl cterm=underline
   hi SpellLocal guifg=#d787d7 guibg=NONE guisp=#d787d7 gui=undercurl cterm=underline
@@ -183,7 +187,6 @@ else
   hi PmenuThumb guifg=NONE guibg=#d787d7 gui=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi SpecialKey guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi SpellBad guifg=#af0000 guibg=NONE guisp=#af0000 gui=undercurl cterm=underline
   hi SpellCap guifg=#005faf guibg=NONE guisp=#005faf gui=undercurl cterm=underline
   hi SpellLocal guifg=#870087 guibg=NONE guisp=#870087 gui=undercurl cterm=underline
@@ -250,7 +253,6 @@ if s:t_Co >= 256
     hi PmenuThumb ctermfg=NONE ctermbg=176 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi SpecialKey ctermfg=NONE ctermbg=NONE cterm=NONE
     hi SpellBad ctermfg=161 ctermbg=NONE cterm=underline
     hi SpellCap ctermfg=32 ctermbg=NONE cterm=underline
     hi SpellLocal ctermfg=176 ctermbg=NONE cterm=underline
@@ -315,7 +317,6 @@ if s:t_Co >= 256
     hi PmenuThumb ctermfg=NONE ctermbg=176 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi SpecialKey ctermfg=NONE ctermbg=NONE cterm=NONE
     hi SpellBad ctermfg=124 ctermbg=NONE cterm=underline
     hi SpellCap ctermfg=25 ctermbg=NONE cterm=underline
     hi SpellLocal ctermfg=90 ctermbg=NONE cterm=underline
@@ -396,7 +397,6 @@ if s:t_Co >= 8
     hi QuickFixLine ctermfg=darkmagenta ctermbg=black cterm=reverse
     hi Search ctermfg=darkcyan ctermbg=black cterm=reverse
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi SpecialKey ctermfg=NONE ctermbg=NONE cterm=bold
     hi SpellBad ctermfg=darkred ctermbg=NONE cterm=underline
     hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=underline
     hi SpellLocal ctermfg=darkmagenta ctermbg=NONE cterm=underline
@@ -461,7 +461,6 @@ if s:t_Co >= 8
     hi QuickFixLine ctermfg=darkmagenta ctermbg=black cterm=reverse
     hi Search ctermfg=darkcyan ctermbg=black cterm=reverse
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi SpecialKey ctermfg=NONE ctermbg=NONE cterm=bold
     hi SpellBad ctermfg=darkred ctermbg=NONE cterm=underline
     hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=underline
     hi SpellLocal ctermfg=darkmagenta ctermbg=NONE cterm=underline
@@ -517,7 +516,6 @@ if s:t_Co >= 0
   hi Question term=standout
   hi Search term=reverse
   hi SignColumn term=reverse
-  hi SpecialKey term=bold
   hi SpellBad term=underline
   hi SpellCap term=underline
   hi SpellLocal term=underline
