@@ -35,7 +35,6 @@ PmenuSbar            none              bg3
 PmenuThumb           none              diffpink
 Question             none              none
 SignColumn           none              none
-SpecialKey           none              none
 SpellBad             quite1            none              t=underline g=undercurl s=quite1
 SpellCap             quite4            none              t=underline g=undercurl s=quite4
 SpellLocal           quite5            none              t=underline g=undercurl s=quite5

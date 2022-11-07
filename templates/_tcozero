@@ -33,7 +33,6 @@ PmenuThumb     omit   omit
 Question       omit   omit    standout
 Search         omit   omit    reverse
 SignColumn     omit   omit    reverse
-SpecialKey     omit   omit    bold
 SpellBad       omit   omit    underline
 SpellCap       omit   omit    underline
 SpellLocal     omit   omit    underline

@@ -48,7 +48,6 @@ Question             none              none              standout
 QuickFixLine         quite5            black             reverse
 Search               quite6            black             reverse
 SignColumn           none              none              reverse
-SpecialKey           none              none              bold
 SpellBad             quite1            none              underline
 SpellCap             quite4            none              underline
 SpellLocal           quite5            none              underline

@@ -39,6 +39,12 @@ Typedef              -> Type
 
 ; :help highlight-groups
 Terminal             -> Normal
+; vim uses SpecialKey for listchar
+#if has('nvim')
+  SpecialKey         -> Special
+#else
+  SpecialKey         -> NonText
+#endif
 StatusLineTerm       -> StatusLine
 StatusLineTermNC     -> StatusLineNC
 MessageWindow        -> Pmenu
