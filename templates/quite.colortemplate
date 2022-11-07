@@ -39,6 +39,7 @@ Typedef              -> Type
 
 ; :help highlight-groups
 Terminal             -> Normal
+EndOfBuffer          -> NonText
 ; vim uses SpecialKey for listchar
 #if has('nvim')
   SpecialKey         -> Special

@@ -22,7 +22,6 @@ CursorColumn         none              bg2
 CursorLine           none              bg2
 CursorLineNr         none              bg2
 Directory            none              none
-EndOfBuffer          none              none
 ErrorMsg             none              none              reverse
 FoldColumn           bg3               none
 Folded               bg3               none

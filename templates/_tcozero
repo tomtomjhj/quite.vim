@@ -16,7 +16,6 @@ DiffChange     omit   omit
 DiffDelete     omit   omit    reverse
 DiffText       omit   omit    reverse
 Directory      omit   omit
-EndOfBuffer    omit   omit
 ErrorMsg       omit   omit    bold,reverse
 FoldColumn     omit   omit
 Folded         omit   omit

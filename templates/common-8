@@ -30,7 +30,6 @@ DiffChange           quite4            black             reverse
 DiffDelete           quite1            black             reverse
 DiffText             quite5            black             reverse
 Directory            none              none
-EndOfBuffer          none              none
 ErrorMsg             none              none              reverse,bold
 FoldColumn           none              none
 Folded               none              none
