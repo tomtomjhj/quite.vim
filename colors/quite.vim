@@ -36,6 +36,7 @@ hi! link Structure Type
 hi! link Tag Special
 hi! link Typedef Type
 hi! link Terminal Normal
+hi! link EndOfBuffer NonText
 if has('nvim')
   hi! link SpecialKey Special
 else
@@ -89,7 +90,6 @@ if &background ==# 'dark'
   hi CursorLine guifg=NONE guibg=#303030 gui=NONE cterm=NONE
   hi CursorLineNr guifg=NONE guibg=#303030 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi EndOfBuffer guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ErrorMsg guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#626262 guibg=NONE gui=NONE cterm=NONE
@@ -174,7 +174,6 @@ else
   hi CursorLine guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
   hi CursorLineNr guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi EndOfBuffer guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ErrorMsg guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi FoldColumn guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
@@ -240,7 +239,6 @@ if s:t_Co >= 256
     hi CursorLine ctermfg=NONE ctermbg=236 cterm=NONE
     hi CursorLineNr ctermfg=NONE ctermbg=236 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi EndOfBuffer ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
     hi FoldColumn ctermfg=241 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=241 ctermbg=NONE cterm=NONE
@@ -304,7 +302,6 @@ if s:t_Co >= 256
     hi CursorLine ctermfg=NONE ctermbg=251 cterm=NONE
     hi CursorLineNr ctermfg=NONE ctermbg=251 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi EndOfBuffer ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
     hi FoldColumn ctermfg=247 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=247 ctermbg=NONE cterm=NONE
@@ -379,7 +376,6 @@ if s:t_Co >= 8
     hi DiffDelete ctermfg=darkred ctermbg=black cterm=reverse
     hi DiffText ctermfg=darkmagenta ctermbg=black cterm=reverse
     hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi EndOfBuffer ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Folded ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -443,7 +439,6 @@ if s:t_Co >= 8
     hi DiffDelete ctermfg=darkred ctermbg=black cterm=reverse
     hi DiffText ctermfg=darkmagenta ctermbg=black cterm=reverse
     hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi EndOfBuffer ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Folded ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -499,7 +494,6 @@ if s:t_Co >= 0
   hi DiffDelete term=reverse
   hi DiffText term=reverse
   hi Directory term=NONE
-  hi EndOfBuffer term=NONE
   hi ErrorMsg term=bold,reverse
   hi FoldColumn term=NONE
   hi Folded term=NONE
