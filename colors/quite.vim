@@ -126,11 +126,12 @@ if &background ==# 'dark'
   hi DiffChange guifg=#87afd7 guibg=#080808 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d75f5f guibg=#080808 gui=reverse cterm=reverse
   hi DiffText guifg=#d787d7 guibg=#080808 gui=reverse cterm=reverse
-  hi IncSearch guifg=#ffaf00 guibg=#080808 gui=reverse cterm=reverse
+  hi IncSearch guifg=#ffaf00 guibg=#080808 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi Pmenu guifg=#080808 guibg=#87afd7 gui=NONE cterm=NONE
   hi PmenuSel guifg=#080808 guibg=#d787d7 gui=NONE cterm=NONE
   hi QuickFixLine guifg=#d787d7 guibg=#080808 gui=reverse cterm=reverse
-  hi Search guifg=#00afff guibg=#080808 gui=reverse cterm=reverse
+  hi Search guifg=#00afff guibg=#080808 gui=bold,reverse cterm=bold,reverse
+  hi CurSearch guifg=#00afff guibg=#080808 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi Visual guifg=#ffaf00 guibg=#080808 gui=reverse cterm=reverse
   hi CursorIM guifg=#080808 guibg=#afff00 gui=NONE cterm=NONE
 else
@@ -210,11 +211,12 @@ else
   hi DiffChange guifg=#afafd7 guibg=#121212 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d78787 guibg=#121212 gui=reverse cterm=reverse
   hi DiffText guifg=#d787d7 guibg=#121212 gui=reverse cterm=reverse
-  hi IncSearch guifg=#ffaf00 guibg=#121212 gui=reverse cterm=reverse
+  hi IncSearch guifg=#ffaf00 guibg=#121212 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi Pmenu guifg=#121212 guibg=#afafd7 gui=NONE cterm=NONE
   hi PmenuSel guifg=#121212 guibg=#d787d7 gui=NONE cterm=NONE
   hi QuickFixLine guifg=#d787d7 guibg=#121212 gui=reverse cterm=reverse
-  hi Search guifg=#00afff guibg=#121212 gui=reverse cterm=reverse
+  hi Search guifg=#00afff guibg=#121212 gui=bold,reverse cterm=bold,reverse
+  hi CurSearch guifg=#00afff guibg=#121212 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi Visual guifg=#ffaf00 guibg=#121212 gui=reverse cterm=reverse
   hi CursorIM guifg=#121212 guibg=#afff00 gui=NONE cterm=NONE
 endif
@@ -275,11 +277,12 @@ if s:t_Co >= 256
     hi DiffChange ctermfg=110 ctermbg=232 cterm=reverse
     hi DiffDelete ctermfg=167 ctermbg=232 cterm=reverse
     hi DiffText ctermfg=176 ctermbg=232 cterm=reverse
-    hi IncSearch ctermfg=214 ctermbg=232 cterm=reverse
+    hi IncSearch ctermfg=214 ctermbg=232 cterm=bold,reverse,underline
     hi Pmenu ctermfg=232 ctermbg=110 cterm=NONE
     hi PmenuSel ctermfg=232 ctermbg=176 cterm=NONE
     hi QuickFixLine ctermfg=176 ctermbg=232 cterm=reverse
-    hi Search ctermfg=39 ctermbg=232 cterm=reverse
+    hi Search ctermfg=39 ctermbg=232 cterm=bold,reverse
+    hi CurSearch ctermfg=39 ctermbg=232 cterm=bold,reverse,underline
     hi Visual ctermfg=214 ctermbg=232 cterm=reverse
     hi CursorIM ctermfg=232 ctermbg=154 cterm=NONE
   else
@@ -338,11 +341,12 @@ if s:t_Co >= 256
     hi DiffChange ctermfg=146 ctermbg=233 cterm=reverse
     hi DiffDelete ctermfg=174 ctermbg=233 cterm=reverse
     hi DiffText ctermfg=176 ctermbg=233 cterm=reverse
-    hi IncSearch ctermfg=214 ctermbg=233 cterm=reverse
+    hi IncSearch ctermfg=214 ctermbg=233 cterm=bold,reverse,underline
     hi Pmenu ctermfg=233 ctermbg=146 cterm=NONE
     hi PmenuSel ctermfg=233 ctermbg=176 cterm=NONE
     hi QuickFixLine ctermfg=176 ctermbg=233 cterm=reverse
-    hi Search ctermfg=39 ctermbg=233 cterm=reverse
+    hi Search ctermfg=39 ctermbg=233 cterm=bold,reverse
+    hi CurSearch ctermfg=39 ctermbg=233 cterm=bold,reverse,underline
     hi Visual ctermfg=214 ctermbg=233 cterm=reverse
     hi CursorIM ctermfg=233 ctermbg=154 cterm=NONE
   endif
@@ -391,7 +395,8 @@ if s:t_Co >= 8
     hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=standout
     hi QuickFixLine ctermfg=darkmagenta ctermbg=black cterm=reverse
-    hi Search ctermfg=darkcyan ctermbg=black cterm=reverse
+    hi Search ctermfg=darkcyan ctermbg=black cterm=bold,reverse
+    hi CurSearch ctermfg=darkcyan ctermbg=black cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
     hi SpellBad ctermfg=darkred ctermbg=NONE cterm=underline
     hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=underline
@@ -454,7 +459,8 @@ if s:t_Co >= 8
     hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=standout
     hi QuickFixLine ctermfg=darkmagenta ctermbg=black cterm=reverse
-    hi Search ctermfg=darkcyan ctermbg=black cterm=reverse
+    hi Search ctermfg=darkcyan ctermbg=black cterm=bold,reverse
+    hi CurSearch ctermfg=darkcyan ctermbg=black cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
     hi SpellBad ctermfg=darkred ctermbg=NONE cterm=underline
     hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=underline
