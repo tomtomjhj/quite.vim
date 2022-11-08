@@ -355,134 +355,68 @@ if s:t_Co >= 256
 endif
 
 if s:t_Co >= 8
-  if &background ==# 'dark'
-    hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
-    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi ColorColumn ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi CursorLineNr ctermfg=NONE ctermbg=NONE cterm=bold
-    hi DiffAdd ctermfg=darkgreen ctermbg=black cterm=reverse
-    hi DiffChange ctermfg=darkblue ctermbg=black cterm=reverse
-    hi DiffDelete ctermfg=darkred ctermbg=black cterm=reverse
-    hi DiffText ctermfg=darkmagenta ctermbg=black cterm=reverse
-    hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Folded ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi IncSearch ctermfg=darkyellow ctermbg=black cterm=bold,reverse,underline
-    hi LineNr ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
-    hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
-    hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi PmenuSbar ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold
-    hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Question ctermfg=NONE ctermbg=NONE cterm=standout
-    hi QuickFixLine ctermfg=darkmagenta ctermbg=black cterm=reverse
-    hi Search ctermfg=darkcyan ctermbg=black cterm=bold,reverse
-    hi CurSearch ctermfg=darkcyan ctermbg=black cterm=bold,reverse,underline
-    hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi SpellBad ctermfg=darkred ctermbg=NONE cterm=underline
-    hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=underline
-    hi SpellLocal ctermfg=darkmagenta ctermbg=NONE cterm=underline
-    hi SpellRare ctermfg=darkcyan ctermbg=NONE cterm=underline
-    hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi StatusLineNC ctermfg=NONE ctermbg=NONE cterm=bold,underline
-    hi TabLine ctermfg=NONE ctermbg=NONE cterm=bold,underline
-    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Visual ctermfg=darkyellow ctermbg=black cterm=reverse
-    hi VisualNOS ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=standout
-    hi WildMenu ctermfg=NONE ctermbg=NONE cterm=bold
-    hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
-    hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
-  else
-    " Light background
-    hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
-    hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi ColorColumn ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi CursorLineNr ctermfg=NONE ctermbg=NONE cterm=bold
-    hi DiffAdd ctermfg=darkgreen ctermbg=black cterm=reverse
-    hi DiffChange ctermfg=darkblue ctermbg=black cterm=reverse
-    hi DiffDelete ctermfg=darkred ctermbg=black cterm=reverse
-    hi DiffText ctermfg=darkmagenta ctermbg=black cterm=reverse
-    hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Folded ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi IncSearch ctermfg=darkyellow ctermbg=black cterm=bold,reverse,underline
-    hi LineNr ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
-    hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
-    hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi PmenuSbar ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold
-    hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Question ctermfg=NONE ctermbg=NONE cterm=standout
-    hi QuickFixLine ctermfg=darkmagenta ctermbg=black cterm=reverse
-    hi Search ctermfg=darkcyan ctermbg=black cterm=bold,reverse
-    hi CurSearch ctermfg=darkcyan ctermbg=black cterm=bold,reverse,underline
-    hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi SpellBad ctermfg=darkred ctermbg=NONE cterm=underline
-    hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=underline
-    hi SpellLocal ctermfg=darkmagenta ctermbg=NONE cterm=underline
-    hi SpellRare ctermfg=darkcyan ctermbg=NONE cterm=underline
-    hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi StatusLineNC ctermfg=NONE ctermbg=NONE cterm=bold,underline
-    hi TabLine ctermfg=NONE ctermbg=NONE cterm=bold,underline
-    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Visual ctermfg=darkyellow ctermbg=black cterm=reverse
-    hi VisualNOS ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=standout
-    hi WildMenu ctermfg=NONE ctermbg=NONE cterm=bold
-    hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
-    hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
-  endif
+  hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
+  hi ColorColumn ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi CursorLineNr ctermfg=NONE ctermbg=NONE cterm=bold
+  hi DiffAdd ctermfg=darkgreen ctermbg=NONE cterm=reverse
+  hi DiffChange ctermfg=darkblue ctermbg=NONE cterm=reverse
+  hi DiffDelete ctermfg=darkred ctermbg=NONE cterm=reverse
+  hi DiffText ctermfg=darkmagenta ctermbg=NONE cterm=reverse
+  hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Folded ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi IncSearch ctermfg=darkyellow ctermbg=NONE cterm=bold,reverse,underline
+  hi LineNr ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
+  hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
+  hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi NonText ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi PmenuSbar ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold
+  hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Question ctermfg=NONE ctermbg=NONE cterm=standout
+  hi QuickFixLine ctermfg=darkmagenta ctermbg=NONE cterm=reverse
+  hi Search ctermfg=darkcyan ctermbg=NONE cterm=bold,reverse
+  hi CurSearch ctermfg=darkcyan ctermbg=NONE cterm=bold,reverse,underline
+  hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi SpellBad ctermfg=darkred ctermbg=NONE cterm=underline
+  hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=underline
+  hi SpellLocal ctermfg=darkmagenta ctermbg=NONE cterm=underline
+  hi SpellRare ctermfg=darkcyan ctermbg=NONE cterm=underline
+  hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi StatusLineNC ctermfg=NONE ctermbg=NONE cterm=bold,underline
+  hi TabLine ctermfg=NONE ctermbg=NONE cterm=bold,underline
+  hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Visual ctermfg=darkyellow ctermbg=NONE cterm=reverse
+  hi VisualNOS ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=standout
+  hi WildMenu ctermfg=NONE ctermbg=NONE cterm=bold
+  hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
+  hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
   unlet s:t_Co
   finish
 endif
@@ -554,80 +488,84 @@ if s:t_Co >= 0
 endif
 
 " Background: dark
-" Color: fg0           #eeeeee           255               white
-" Color: fg1           #c6c6c6           251               white
-" Color: fg2           #a8a8a8           248               grey
-" Color: bg0           #080808           232               black
-" Color: bg1           #1c1c1c           234               black
-" Color: bg2           #303030           236               darkgrey
-" Color: bg3           #626262           241               darkgrey
-" Color: quite1        #d7005f           161               darkred
-" Color: quite2        #00af5f           35                darkgreen
-" Color: quite3        #d78700           172               darkyellow
-" Color: quite4        #0087d7           32                darkblue
-" Color: quite5        #d787d7           176               darkmagenta
-" Color: quite6        #00afaf           37                darkcyan
-" Color: quite9        #ff005f           197               red
-" Color: quite10       #00d75f           41                green
-" Color: quite11       #ffaf00           214               yellow
-" Color: quite12       #5fafff           75                blue
-" Color: quite13       #ff87ff           213               magenta
-" Color: quite14       #00d7d7           44                cyan
-" Color: diffred       #d75f5f           167               darkred
-" Color: diffgreen     #00af00           34                darkgreen
-" Color: diffblue      #87afd7           110               darkblue
-" Color: diffpink      #d787d7           176               darkmagenta
-" Color: uipink        #ff00af           199               magenta
-" Color: uilime        #afff00           154               green
-" Color: uiteal        #00ffaf           49                green
-" Color: uiblue        #00afff           39                blue
-" Color: uipurple      #af00ff           129               darkmagenta
-" Color: uiamber       #ffaf00           214               darkyellow
-" Color: errorred      #ff005f           197               red
+" Color: fg0           #eeeeee           255
+" Color: fg1           #c6c6c6           251
+" Color: fg2           #a8a8a8           248
+" Color: bg0           #080808           232
+" Color: bg1           #1c1c1c           234
+" Color: bg2           #303030           236
+" Color: bg3           #626262           241
+" Color: quite1        #d7005f           161
+" Color: quite2        #00af5f           35
+" Color: quite3        #d78700           172
+" Color: quite4        #0087d7           32
+" Color: quite5        #d787d7           176
+" Color: quite6        #00afaf           37
+" Color: quite9        #ff005f           197
+" Color: quite10       #00d75f           41
+" Color: quite11       #ffaf00           214
+" Color: quite12       #5fafff           75
+" Color: quite13       #ff87ff           213
+" Color: quite14       #00d7d7           44
+" Color: diffred       #d75f5f           167
+" Color: diffgreen     #00af00           34
+" Color: diffblue      #87afd7           110
+" Color: diffpink      #d787d7           176
+" Color: uipink        #ff00af           199
+" Color: uilime        #afff00           154
+" Color: uiteal        #00ffaf           49
+" Color: uiblue        #00afff           39
+" Color: uipurple      #af00ff           129
+" Color: uiamber       #ffaf00           214
+" Color: errorred      #ff005f           197
 " Term colors: bg0
 " Term colors: quite1 quite2 quite3 quite4 quite5 quite6
 " Term colors: fg2
 " Term colors: bg3
 " Term colors: quite9 quite10 quite11 quite12 quite13 quite14
 " Term colors: fg0
-" Color: black         #080808           232               black
 " Background: light
-" Color: fg0           #121212           233               black
-" Color: fg1           #3a3a3a           237               black
-" Color: fg2           #6c6c6c           242               darkgrey
-" Color: bg0           #eeeeee           255               white
-" Color: bg1           #dadada           253               white
-" Color: bg2           #c6c6c6           251               grey
-" Color: bg3           #9e9e9e           247               grey
-" Color: quite1        #af0000           124               darkred
-" Color: quite2        #005f00           22                darkgreen
-" Color: quite3        #af5f00           130               darkyellow
-" Color: quite4        #005faf           25                darkblue
-" Color: quite5        #870087           90                darkmagenta
-" Color: quite6        #008787           30                darkcyan
-" Color: quite9        #d70000           160               red
-" Color: quite10       #008700           28                green
-" Color: quite11       #d78700           172               yellow
-" Color: quite12       #0087d7           32                blue
-" Color: quite13       #af00af           127               magenta
-" Color: quite14       #00afaf           37                cyan
-" Color: diffred       #d78787           174               red
-" Color: diffgreen     #87d787           114               green
-" Color: diffblue      #afafd7           146               blue
-" Color: diffpink      #d787d7           176               magenta
-" Color: uipink        #ff00af           199               magenta
-" Color: uilime        #afff00           154               green
-" Color: uiteal        #00ffaf           49                cyan
-" Color: uiblue        #00afff           39                blue
-" Color: uipurple      #af00ff           129               darkmagenta
-" Color: uiamber       #ffaf00           214               yellow
-" Color: errorred      #ff005f           197               red
+" Color: fg0           #121212           233
+" Color: fg1           #3a3a3a           237
+" Color: fg2           #6c6c6c           242
+" Color: bg0           #eeeeee           255
+" Color: bg1           #dadada           253
+" Color: bg2           #c6c6c6           251
+" Color: bg3           #9e9e9e           247
+" Color: quite1        #af0000           124
+" Color: quite2        #005f00           22
+" Color: quite3        #af5f00           130
+" Color: quite4        #005faf           25
+" Color: quite5        #870087           90
+" Color: quite6        #008787           30
+" Color: quite9        #d70000           160
+" Color: quite10       #008700           28
+" Color: quite11       #d78700           172
+" Color: quite12       #0087d7           32
+" Color: quite13       #af00af           127
+" Color: quite14       #00afaf           37
+" Color: diffred       #d78787           174
+" Color: diffgreen     #87d787           114
+" Color: diffblue      #afafd7           146
+" Color: diffpink      #d787d7           176
+" Color: uipink        #ff00af           199
+" Color: uilime        #afff00           154
+" Color: uiteal        #00ffaf           49
+" Color: uiblue        #00afff           39
+" Color: uipurple      #af00ff           129
+" Color: uiamber       #ffaf00           214
+" Color: errorred      #ff005f           197
 " Term colors: bg0
 " Term colors: quite1 quite2 quite3 quite4 quite5 quite6
 " Term colors: fg2
 " Term colors: bg3
 " Term colors: quite9 quite10 quite11 quite12 quite13 quite14
 " Term colors: fg0
-" Color: black         #080808           232               black
 " Background: any
+" Color: term1         #d7005f           161               darkred
+" Color: term2         #00af5f           35                darkgreen
+" Color: term3         #d78700           172               darkyellow
+" Color: term4         #0087d7           32                darkblue
+" Color: term5         #d787d7           176               darkmagenta
+" Color: term6         #00afaf           37                darkcyan
 " vim: et ts=2 sw=2
