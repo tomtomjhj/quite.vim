@@ -7,7 +7,7 @@ NormalFloat          none              bg1
 Comment              fg2               none
 Constant             none              none
 Identifier           none              none
-Statement            none              none
+Statement            none              none              bold
 PreProc              none              none
 Type                 none              none
 Special              none              none
