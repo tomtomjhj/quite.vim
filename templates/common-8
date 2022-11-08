@@ -1,6 +1,15 @@
 ; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
 
-Color: black         #080808           232               black
+Variant: 8
+
+; GUI and 256 color values are just placeholders taken from the dark variant.
+Color: term1         #d7005f           161               darkred
+Color: term2         #00af5f           35                darkgreen
+Color: term3         #d78700           172               darkyellow
+Color: term4         #0087d7           32                darkblue
+Color: term5         #d787d7           176               darkmagenta
+Color: term6         #00afaf           37                darkcyan
+
 
 Normal               none              none
 NormalFloat          none              none
@@ -25,15 +34,15 @@ Cursor               none              none              reverse
 CursorColumn         none              none
 CursorLine           none              none
 CursorLineNr         none              none              bold
-DiffAdd              quite2            black             reverse
-DiffChange           quite4            black             reverse
-DiffDelete           quite1            black             reverse
-DiffText             quite5            black             reverse
+DiffAdd              term2             none              reverse
+DiffChange           term4             none              reverse
+DiffDelete           term1             none              reverse
+DiffText             term5             none              reverse
 Directory            none              none
 ErrorMsg             none              none              reverse,bold
 FoldColumn           none              none
 Folded               none              none
-IncSearch            quite3            black             reverse,bold,underline
+IncSearch            term3             none              reverse,bold,underline
 LineNr               none              none
 MatchParen           none              none              bold,underline
 ModeMsg              none              none              bold
@@ -44,14 +53,14 @@ PmenuSbar            none              none              reverse
 PmenuSel             none              none              bold
 PmenuThumb           none              none
 Question             none              none              standout
-QuickFixLine         quite5            black             reverse
-Search               quite6            black             reverse,bold
-CurSearch            quite6            black             reverse,bold,underline
+QuickFixLine         term5             none              reverse
+Search               term6             none              reverse,bold
+CurSearch            term6             none              reverse,bold,underline
 SignColumn           none              none              reverse
-SpellBad             quite1            none              underline
-SpellCap             quite4            none              underline
-SpellLocal           quite5            none              underline
-SpellRare            quite6            none              underline
+SpellBad             term1             none              underline
+SpellCap             term4             none              underline
+SpellLocal           term5             none              underline
+SpellRare            term6             none              underline
 StatusLine           none              none              bold,reverse
 StatusLineNC         none              none              bold,underline
 TabLine              none              none              bold,underline
@@ -59,7 +68,7 @@ TabLineFill          none              none
 TabLineSel           none              none              reverse,bold
 Title                none              none
 VertSplit            none              none
-Visual               quite3            black             reverse
+Visual               term3             none              reverse
 VisualNOS            none              none
 WarningMsg           none              none              standout
 WildMenu             none              none              bold
@@ -70,5 +79,5 @@ ToolbarLine          none              none              reverse
 ToolbarButton        none              none              bold,reverse
 
 ; plugins and filetypes
-diffAdded            quite2            none
-diffRemoved          quite1            none
+diffAdded            term2             none
+diffRemoved          term1             none
