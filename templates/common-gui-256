@@ -13,26 +13,39 @@ Special              none              none
 Statement            none              none
 Type                 none              none
 Underlined           none              none              underline
+Error                errorred          black             reverse,bold
+Todo                 uiteal            black             reverse,bold
 
 ; :help highlight-groups
 ColorColumn          none              bg1
 Conceal              none              none
 Cursor               none              none              reverse
+CursorIM             black             uilime
 CursorColumn         none              bg2
 CursorLine           none              bg2
 CursorLineNr         none              bg2
+DiffAdd              diffgreen         black             reverse
+DiffChange           diffblue          black             reverse
+DiffDelete           diffred           black             reverse
+DiffText             diffpink          black             reverse
 Directory            none              none
 ErrorMsg             none              none              reverse
 FoldColumn           bg3               none
 Folded               bg3               none
+IncSearch            uiamber           black             reverse,bold,underline
 LineNr               fg2               none
 MatchParen           uipink            none              bold
 ModeMsg              none              none              bold
 MoreMsg              none              none
 NonText              bg3               none
+Pmenu                black             diffblue
+PmenuSel             black             diffpink
 PmenuSbar            none              bg3
 PmenuThumb           none              diffpink
 Question             none              none
+QuickFixLine         diffpink          black             reverse
+Search               uiblue            black             reverse,bold
+CurSearch            uiblue            black             reverse,bold,underline
 SignColumn           none              none
 SpellBad             quite1            none              t=underline g=undercurl s=quite1
 SpellCap             quite4            none              t=underline g=undercurl s=quite4
@@ -45,6 +58,7 @@ TabLineFill          none              bg2
 TabLineSel           none              none              bold
 Title                none              none
 VertSplit            bg3               none
+Visual               uiamber           black             reverse
 VisualNOS            none              bg2
 WarningMsg           none              none
 WildMenu             uiblue            none              bold
