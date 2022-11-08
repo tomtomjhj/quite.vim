@@ -28,8 +28,8 @@ hi! link Define PreProc
 hi! link Macro PreProc
 hi! link PreCondit PreProc
 hi! link StorageClass Type
-hi! link Structure Type
-hi! link Typedef Type
+hi! link Structure Statement
+hi! link Typedef Statement
 hi! link SpecialChar Special
 hi! link Tag Special
 hi! link Delimiter Special
