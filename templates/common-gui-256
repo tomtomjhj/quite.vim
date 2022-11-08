@@ -7,12 +7,12 @@ NormalFloat          none              bg1
 Comment              fg2               none
 Constant             none              none
 Identifier           none              none
-Ignore               none              none
-PreProc              none              none
-Special              none              none
 Statement            none              none
+PreProc              none              none
 Type                 none              none
+Special              none              none
 Underlined           none              none              underline
+Ignore               none              none
 Error                errorred          black             reverse,bold
 Todo                 uiteal            black             reverse,bold
 

@@ -14,34 +14,35 @@ Colortemplate Options: timestamp=0
 Color: black         #000000           16
 
 ; :help group-name
-Boolean              -> Constant
+String               -> Constant
 Character            -> Constant
-Conditional          -> Statement
-Define               -> PreProc
-Debug                -> Special
-Delimiter            -> Special
-Exception            -> Statement
+Number               -> Constant
+Boolean              -> Constant
 Float                -> Constant
 Function             -> Identifier
-Include              -> PreProc
-Keyword              -> Statement
-Label                -> Statement
-Macro                -> PreProc
-Number               -> Constant
-Operator             -> Statement
-PreCondit            -> PreProc
+Conditional          -> Statement
 Repeat               -> Statement
-SpecialChar          -> Special
-SpecialComment       -> Special
+Label                -> Statement
+Operator             -> Statement
+Keyword              -> Statement
+Exception            -> Statement
+Include              -> PreProc
+Define               -> PreProc
+Macro                -> PreProc
+PreCondit            -> PreProc
 StorageClass         -> Type
-String               -> Constant
 Structure            -> Type
-Tag                  -> Special
 Typedef              -> Type
+SpecialChar          -> Special
+Tag                  -> Special
+Delimiter            -> Special
+SpecialComment       -> Special
+Debug                -> Special
 
 ; :help highlight-groups
-Terminal             -> Normal
 EndOfBuffer          -> NonText
+MessageWindow        -> Pmenu
+PopupNotification    -> Todo
 ; vim uses SpecialKey for listchar
 #if has('nvim')
   SpecialKey         -> Special
@@ -50,8 +51,7 @@ EndOfBuffer          -> NonText
 #endif
 StatusLineTerm       -> StatusLine
 StatusLineTermNC     -> StatusLineNC
-MessageWindow        -> Pmenu
-PopupNotification    -> Todo
+Terminal             -> Normal
 
 ; :help lCursor
 lCursor              -> Cursor

@@ -17,15 +17,15 @@ NormalFloat          none              none
 ; :help group-name
 Comment              none              none              bold
 Constant             none              none
-Error                none              none              reverse,bold
 Identifier           none              none
-Ignore               none              none
-PreProc              none              none
-Special              none              none
 Statement            none              none
-Todo                 none              none              reverse,bold
+PreProc              none              none
 Type                 none              none
+Special              none              none
 Underlined           none              none              underline
+Ignore               none              none
+Error                none              none              reverse,bold
+Todo                 none              none              reverse,bold
 
 ; :help highlight-groups
 ColorColumn          none              none              reverse
