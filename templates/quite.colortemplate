@@ -31,8 +31,8 @@ Define               -> PreProc
 Macro                -> PreProc
 PreCondit            -> PreProc
 StorageClass         -> Type
-Structure            -> Type
-Typedef              -> Type
+Structure            -> Statement
+Typedef              -> Statement
 SpecialChar          -> Special
 Tag                  -> Special
 Delimiter            -> Special
