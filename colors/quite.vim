@@ -11,32 +11,33 @@ let g:colors_name = 'quite'
 
 let s:t_Co = has('nvim') || (exists('&t_Co') && !has('gui_running')) ? +&t_Co : -1
 
-hi! link Boolean Constant
+hi! link String Constant
 hi! link Character Constant
-hi! link Conditional Statement
-hi! link Define PreProc
-hi! link Debug Special
-hi! link Delimiter Special
-hi! link Exception Statement
+hi! link Number Constant
+hi! link Boolean Constant
 hi! link Float Constant
 hi! link Function Identifier
-hi! link Include PreProc
-hi! link Keyword Statement
-hi! link Label Statement
-hi! link Macro PreProc
-hi! link Number Constant
-hi! link Operator Statement
-hi! link PreCondit PreProc
+hi! link Conditional Statement
 hi! link Repeat Statement
-hi! link SpecialChar Special
-hi! link SpecialComment Special
+hi! link Label Statement
+hi! link Operator Statement
+hi! link Keyword Statement
+hi! link Exception Statement
+hi! link Include PreProc
+hi! link Define PreProc
+hi! link Macro PreProc
+hi! link PreCondit PreProc
 hi! link StorageClass Type
-hi! link String Constant
 hi! link Structure Type
-hi! link Tag Special
 hi! link Typedef Type
-hi! link Terminal Normal
+hi! link SpecialChar Special
+hi! link Tag Special
+hi! link Delimiter Special
+hi! link SpecialComment Special
+hi! link Debug Special
 hi! link EndOfBuffer NonText
+hi! link MessageWindow Pmenu
+hi! link PopupNotification Todo
 if has('nvim')
   hi! link SpecialKey Special
 else
@@ -44,8 +45,7 @@ else
 endif
 hi! link StatusLineTerm StatusLine
 hi! link StatusLineTermNC StatusLineNC
-hi! link MessageWindow Pmenu
-hi! link PopupNotification Todo
+hi! link Terminal Normal
 hi! link lCursor Cursor
 hi! link debugBreakpoint ModeMsg
 hi! link debugPC CursorLine
@@ -77,12 +77,12 @@ if &background ==# 'dark'
   hi Comment guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
+  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi ColorColumn guifg=NONE guibg=#1c1c1c gui=NONE cterm=NONE
@@ -162,12 +162,12 @@ else
   hi Comment guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
+  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi ColorColumn guifg=NONE guibg=#dadada gui=NONE cterm=NONE
@@ -228,12 +228,12 @@ if s:t_Co >= 256
     hi Comment ctermfg=248 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
+    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
     hi ColorColumn ctermfg=NONE ctermbg=234 cterm=NONE
@@ -292,12 +292,12 @@ if s:t_Co >= 256
     hi Comment ctermfg=242 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
+    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
     hi ColorColumn ctermfg=NONE ctermbg=253 cterm=NONE
@@ -359,15 +359,15 @@ if s:t_Co >= 8
   hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
   hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
+  hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi ColorColumn ctermfg=NONE ctermbg=NONE cterm=reverse
   hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
