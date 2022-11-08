@@ -77,7 +77,7 @@ if &background ==# 'dark'
   hi Comment guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Statement guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -162,7 +162,7 @@ else
   hi Comment guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Statement guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -228,7 +228,7 @@ if s:t_Co >= 256
     hi Comment ctermfg=248 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=NONE ctermbg=NONE cterm=bold
     hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -292,7 +292,7 @@ if s:t_Co >= 256
     hi Comment ctermfg=242 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=NONE ctermbg=NONE cterm=bold
     hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
