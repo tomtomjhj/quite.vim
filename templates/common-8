@@ -45,7 +45,8 @@ PmenuSel             none              none              bold
 PmenuThumb           none              none
 Question             none              none              standout
 QuickFixLine         quite5            black             reverse
-Search               quite6            black             reverse
+Search               quite6            black             reverse,bold
+CurSearch            quite6            black             reverse,bold,underline
 SignColumn           none              none              reverse
 SpellBad             quite1            none              underline
 SpellCap             quite4            none              underline
