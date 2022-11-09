@@ -73,7 +73,7 @@ if &background ==# 'dark'
     let g:terminal_color_15 = '#eeeeee'
   endif
   hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
-  hi NormalFloat guifg=NONE guibg=#1c1c1c gui=NONE cterm=NONE
+  hi NormalFloat guifg=NONE guibg=#262626 gui=NONE cterm=NONE
   hi Comment guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -85,13 +85,13 @@ if &background ==# 'dark'
   hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi ColorColumn guifg=NONE guibg=#1c1c1c gui=NONE cterm=NONE
+  hi ColorColumn guifg=NONE guibg=#262626 gui=NONE cterm=NONE
   hi Conceal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorIM guifg=#000000 guibg=#afff00 gui=NONE cterm=NONE
-  hi CursorColumn guifg=NONE guibg=#303030 gui=NONE cterm=NONE
-  hi CursorLine guifg=NONE guibg=#303030 gui=NONE cterm=NONE
-  hi CursorLineNr guifg=NONE guibg=#303030 gui=NONE cterm=NONE
+  hi CursorColumn guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
+  hi CursorLine guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
+  hi CursorLineNr guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
   hi DiffAdd guifg=#00af00 guibg=#000000 gui=reverse cterm=reverse
   hi DiffChange guifg=#87afd7 guibg=#000000 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d75f5f guibg=#000000 gui=reverse cterm=reverse
@@ -122,12 +122,12 @@ if &background ==# 'dark'
   hi StatusLine guifg=#080808 guibg=#eeeeee gui=bold cterm=bold
   hi StatusLineNC guifg=#080808 guibg=#626262 gui=NONE cterm=NONE
   hi TabLine guifg=NONE guibg=#626262 gui=NONE cterm=NONE
-  hi TabLineFill guifg=NONE guibg=#303030 gui=NONE cterm=NONE
+  hi TabLineFill guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Title guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi VertSplit guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
-  hi VisualNOS guifg=NONE guibg=#303030 gui=NONE cterm=NONE
+  hi VisualNOS guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -158,7 +158,7 @@ else
     let g:terminal_color_15 = '#121212'
   endif
   hi Normal guifg=#121212 guibg=#eeeeee gui=NONE cterm=NONE
-  hi NormalFloat guifg=NONE guibg=#dadada gui=NONE cterm=NONE
+  hi NormalFloat guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
   hi Comment guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -170,13 +170,13 @@ else
   hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi ColorColumn guifg=NONE guibg=#dadada gui=NONE cterm=NONE
+  hi ColorColumn guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
   hi Conceal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorIM guifg=#000000 guibg=#afff00 gui=NONE cterm=NONE
-  hi CursorColumn guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
-  hi CursorLine guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
-  hi CursorLineNr guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
+  hi CursorColumn guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
+  hi CursorLine guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
+  hi CursorLineNr guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi DiffAdd guifg=#87d787 guibg=#000000 gui=reverse cterm=reverse
   hi DiffChange guifg=#afafd7 guibg=#000000 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d78787 guibg=#000000 gui=reverse cterm=reverse
@@ -207,12 +207,12 @@ else
   hi StatusLine guifg=#eeeeee guibg=#121212 gui=bold cterm=bold
   hi StatusLineNC guifg=#eeeeee guibg=#9e9e9e gui=NONE cterm=NONE
   hi TabLine guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
-  hi TabLineFill guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
+  hi TabLineFill guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Title guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi VertSplit guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
-  hi VisualNOS guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
+  hi VisualNOS guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -224,7 +224,7 @@ endif
 if s:t_Co >= 256
   if &background ==# 'dark'
     hi Normal ctermfg=255 ctermbg=232 cterm=NONE
-    hi NormalFloat ctermfg=NONE ctermbg=234 cterm=NONE
+    hi NormalFloat ctermfg=NONE ctermbg=235 cterm=NONE
     hi Comment ctermfg=248 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -236,13 +236,13 @@ if s:t_Co >= 256
     hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
-    hi ColorColumn ctermfg=NONE ctermbg=234 cterm=NONE
+    hi ColorColumn ctermfg=NONE ctermbg=235 cterm=NONE
     hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
     hi CursorIM ctermfg=16 ctermbg=154 cterm=NONE
-    hi CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE
-    hi CursorLine ctermfg=NONE ctermbg=236 cterm=NONE
-    hi CursorLineNr ctermfg=NONE ctermbg=236 cterm=NONE
+    hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE
+    hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE
+    hi CursorLineNr ctermfg=NONE ctermbg=237 cterm=NONE
     hi DiffAdd ctermfg=34 ctermbg=16 cterm=reverse
     hi DiffChange ctermfg=110 ctermbg=16 cterm=reverse
     hi DiffDelete ctermfg=167 ctermbg=16 cterm=reverse
@@ -273,12 +273,12 @@ if s:t_Co >= 256
     hi StatusLine ctermfg=232 ctermbg=255 cterm=bold
     hi StatusLineNC ctermfg=232 ctermbg=241 cterm=NONE
     hi TabLine ctermfg=NONE ctermbg=241 cterm=NONE
-    hi TabLineFill ctermfg=NONE ctermbg=236 cterm=NONE
+    hi TabLineFill ctermfg=NONE ctermbg=237 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
     hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
     hi VertSplit ctermfg=241 ctermbg=NONE cterm=NONE
     hi Visual ctermfg=214 ctermbg=16 cterm=reverse
-    hi VisualNOS ctermfg=NONE ctermbg=236 cterm=NONE
+    hi VisualNOS ctermfg=NONE ctermbg=237 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -288,7 +288,7 @@ if s:t_Co >= 256
   else
     " Light background
     hi Normal ctermfg=233 ctermbg=255 cterm=NONE
-    hi NormalFloat ctermfg=NONE ctermbg=253 cterm=NONE
+    hi NormalFloat ctermfg=NONE ctermbg=252 cterm=NONE
     hi Comment ctermfg=242 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -300,13 +300,13 @@ if s:t_Co >= 256
     hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
-    hi ColorColumn ctermfg=NONE ctermbg=253 cterm=NONE
+    hi ColorColumn ctermfg=NONE ctermbg=252 cterm=NONE
     hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
     hi CursorIM ctermfg=16 ctermbg=154 cterm=NONE
-    hi CursorColumn ctermfg=NONE ctermbg=251 cterm=NONE
-    hi CursorLine ctermfg=NONE ctermbg=251 cterm=NONE
-    hi CursorLineNr ctermfg=NONE ctermbg=251 cterm=NONE
+    hi CursorColumn ctermfg=NONE ctermbg=250 cterm=NONE
+    hi CursorLine ctermfg=NONE ctermbg=250 cterm=NONE
+    hi CursorLineNr ctermfg=NONE ctermbg=250 cterm=NONE
     hi DiffAdd ctermfg=114 ctermbg=16 cterm=reverse
     hi DiffChange ctermfg=146 ctermbg=16 cterm=reverse
     hi DiffDelete ctermfg=174 ctermbg=16 cterm=reverse
@@ -337,12 +337,12 @@ if s:t_Co >= 256
     hi StatusLine ctermfg=255 ctermbg=233 cterm=bold
     hi StatusLineNC ctermfg=255 ctermbg=247 cterm=NONE
     hi TabLine ctermfg=NONE ctermbg=247 cterm=NONE
-    hi TabLineFill ctermfg=NONE ctermbg=251 cterm=NONE
+    hi TabLineFill ctermfg=NONE ctermbg=250 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
     hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
     hi VertSplit ctermfg=247 ctermbg=NONE cterm=NONE
     hi Visual ctermfg=214 ctermbg=16 cterm=reverse
-    hi VisualNOS ctermfg=NONE ctermbg=251 cterm=NONE
+    hi VisualNOS ctermfg=NONE ctermbg=250 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -493,8 +493,8 @@ endif
 " Color: fg1           #c6c6c6           251
 " Color: fg2           #a8a8a8           248
 " Color: bg0           #080808           232
-" Color: bg1           #1c1c1c           234
-" Color: bg2           #303030           236
+" Color: bg1           #262626           235
+" Color: bg2           #3a3a3a           237
 " Color: bg3           #626262           241
 " Color: quite1        #d7005f           161
 " Color: quite2        #00af5f           35
@@ -530,8 +530,8 @@ endif
 " Color: fg1           #3a3a3a           237
 " Color: fg2           #6c6c6c           242
 " Color: bg0           #eeeeee           255
-" Color: bg1           #dadada           253
-" Color: bg2           #c6c6c6           251
+" Color: bg1           #d0d0d0           252
+" Color: bg2           #bcbcbc           250
 " Color: bg3           #9e9e9e           247
 " Color: quite1        #af0000           124
 " Color: quite2        #005f00           22
