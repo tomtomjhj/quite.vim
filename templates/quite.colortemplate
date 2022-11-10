@@ -61,6 +61,10 @@ debugBreakpoint      -> ModeMsg
 debugPC              -> CursorLine
 ; }}}
 
+; NOTE: Moving this line variant declaration above the global definitions
+; doesn't make them only apply to gui and 256, because the gui config always runs.
+Variant: gui 256
+
 ; Background: dark {{{
 Background: dark
 
@@ -103,11 +107,7 @@ Color: errorred      #ff005f           197
 ; }}}
 
 Include: terminal
-
-; Variant: gui 256 {{{
-Variant: gui 256
 Include: common-gui-256
-; }}}
 ; }}}
 
 ; Background: light {{{
@@ -152,14 +152,13 @@ Color: errorred      #ff005f           197
 ; }}}
 
 Include: terminal
-
-; Variant: gui 256 {{{
-Variant: gui 256
 Include: common-gui-256
 ; }}}
-; }}}
 
-; Background: any {{{
+; 8 and 0 {{{
+; We don't care about the fidelity of 8 and 0.
+; They are just minimum viable fallback for weird environments.
+; Just make sure that the global definitions don't break them.
 Background: any
 
 Include: common-8
