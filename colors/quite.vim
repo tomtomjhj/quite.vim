@@ -73,7 +73,9 @@ if &background ==# 'dark'
     let g:terminal_color_15 = '#eeeeee'
   endif
   hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
-  hi NormalFloat guifg=NONE guibg=#262626 gui=NONE cterm=NONE
+  if has('nvim')
+    hi NormalFloat guifg=NONE guibg=#262626 gui=NONE cterm=NONE
+  endif
   hi Comment guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -158,7 +160,9 @@ else
     let g:terminal_color_15 = '#121212'
   endif
   hi Normal guifg=#121212 guibg=#eeeeee gui=NONE cterm=NONE
-  hi NormalFloat guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
+  if has('nvim')
+    hi NormalFloat guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
+  endif
   hi Comment guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -224,7 +228,9 @@ endif
 if s:t_Co >= 256
   if &background ==# 'dark'
     hi Normal ctermfg=255 ctermbg=232 cterm=NONE
-    hi NormalFloat ctermfg=NONE ctermbg=235 cterm=NONE
+    if has('nvim')
+      hi NormalFloat ctermfg=NONE ctermbg=235 cterm=NONE
+    endif
     hi Comment ctermfg=248 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -288,7 +294,9 @@ if s:t_Co >= 256
   else
     " Light background
     hi Normal ctermfg=233 ctermbg=255 cterm=NONE
-    hi NormalFloat ctermfg=NONE ctermbg=252 cterm=NONE
+    if has('nvim')
+      hi NormalFloat ctermfg=NONE ctermbg=252 cterm=NONE
+    endif
     hi Comment ctermfg=242 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -356,7 +364,9 @@ endif
 
 if s:t_Co >= 8
   hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
+  if has('nvim')
+    hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
+  endif
   hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
   hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -423,6 +433,9 @@ endif
 
 if s:t_Co >= 0
   hi Normal term=NONE
+  if has('nvim')
+    hi NormalFloat term=reverse
+  endif
   hi ColorColumn term=reverse
   hi Conceal term=NONE
   hi Cursor term=reverse
