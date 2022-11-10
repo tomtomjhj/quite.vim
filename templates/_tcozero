@@ -5,6 +5,9 @@ Variant: 0
 
 ; Group        Unused Unused  Term attributes
 Normal         omit   omit
+#if has('nvim')
+  NormalFloat  omit   omit    reverse
+#endif
 ColorColumn    omit   omit    reverse
 Conceal        omit   omit
 Cursor         omit   omit    reverse

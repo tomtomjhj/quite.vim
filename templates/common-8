@@ -12,7 +12,9 @@ Color: term6         #00afaf           37                darkcyan
 
 
 Normal               none              none
-NormalFloat          none              none
+#if has('nvim')
+  NormalFloat        none              none              reverse
+#endif
 
 ; :help group-name
 Comment              none              none              bold

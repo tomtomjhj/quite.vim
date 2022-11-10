@@ -1,7 +1,9 @@
 ; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
 
 Normal               fg0               bg0
-NormalFloat          none              bg1
+#if has('nvim')
+  NormalFloat        none              bg1
+#endif
 
 ; :help group-name
 Comment              fg2               none
