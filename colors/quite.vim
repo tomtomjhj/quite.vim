@@ -11,6 +11,17 @@ let g:colors_name = 'quite'
 
 let s:t_Co = has('nvim') || (exists('&t_Co') && !has('gui_running')) ? +&t_Co : -1
 
+hi! link MessageWindow Pmenu
+hi! link PopupNotification Todo
+if has('nvim')
+  hi! link SpecialKey Special
+else
+  hi! link SpecialKey NonText
+endif
+hi! link StatusLineTerm StatusLine
+hi! link StatusLineTermNC StatusLineNC
+hi! link Terminal Normal
+hi! link lCursor Cursor
 hi! link String Constant
 hi! link Character Constant
 hi! link Number Constant
@@ -33,18 +44,6 @@ hi! link Typedef Statement
 hi! link SpecialChar Special
 hi! link Tag Special
 hi! link Debug Special
-hi! link EndOfBuffer NonText
-hi! link MessageWindow Pmenu
-hi! link PopupNotification Todo
-if has('nvim')
-  hi! link SpecialKey Special
-else
-  hi! link SpecialKey NonText
-endif
-hi! link StatusLineTerm StatusLine
-hi! link StatusLineTermNC StatusLineNC
-hi! link Terminal Normal
-hi! link lCursor Cursor
 hi! link debugBreakpoint ModeMsg
 hi! link debugPC CursorLine
 
@@ -369,6 +368,18 @@ if s:t_Co >= 256
 endif
 
 if s:t_Co >= 8
+  hi clear
+  hi! link MessageWindow Pmenu
+  hi! link PopupNotification Todo
+  if has('nvim')
+    hi! link SpecialKey Special
+  else
+    hi! link SpecialKey NonText
+  endif
+  hi! link StatusLineTerm StatusLine
+  hi! link StatusLineTermNC StatusLineNC
+  hi! link Terminal Normal
+  hi! link lCursor Cursor
   hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
   if has('nvim')
     hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -438,6 +449,18 @@ if s:t_Co >= 8
 endif
 
 if s:t_Co >= 0
+  hi clear
+  hi! link MessageWindow Pmenu
+  hi! link PopupNotification Todo
+  if has('nvim')
+    hi! link SpecialKey Special
+  else
+    hi! link SpecialKey NonText
+  endif
+  hi! link StatusLineTerm StatusLine
+  hi! link StatusLineTermNC StatusLineNC
+  hi! link Terminal Normal
+  hi! link lCursor Cursor
   hi Normal term=NONE
   if has('nvim')
     hi NormalFloat term=reverse
