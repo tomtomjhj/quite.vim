@@ -13,6 +13,8 @@ Statement            none              none              bold
 PreProc              none              none
 Type                 none              none
 Special              none              none
+Delimiter            fg1               none
+SpecialComment       fg2               none              bold
 Underlined           none              none              underline
 Ignore               none              none
 Error                errorred          black             reverse,bold
@@ -30,7 +32,7 @@ DiffAdd              diffgreen         black             reverse
 DiffChange           diffblue          black             reverse
 DiffDelete           diffred           black             reverse
 DiffText             diffpink          black             reverse
-Directory            none              none
+Directory            none              none              bold
 ErrorMsg             none              none              reverse
 FoldColumn           bg3               none
 Folded               bg3               none
@@ -58,8 +60,8 @@ StatusLineNC         bg0               bg3
 TabLine              none              bg3
 TabLineFill          none              bg2
 TabLineSel           none              none              bold
-Title                none              none
-VertSplit            bg3               none
+Title                none              none              bold
+VertSplit            fg1               bg1
 Visual               uiamber           black             reverse
 VisualNOS            none              bg2
 WarningMsg           none              none

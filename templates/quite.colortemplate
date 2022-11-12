@@ -35,8 +35,6 @@ Structure            -> Statement
 Typedef              -> Statement
 SpecialChar          -> Special
 Tag                  -> Special
-Delimiter            -> Special
-SpecialComment       -> Special
 Debug                -> Special
 
 ; :help highlight-groups
