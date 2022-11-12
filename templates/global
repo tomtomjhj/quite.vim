@@ -1,0 +1,19 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
+
+; Things that are actually global to every combination
+
+; :help highlight-groups
+MessageWindow        -> Pmenu
+PopupNotification    -> Todo
+; vim uses SpecialKey for listchar
+#if has('nvim')
+  SpecialKey         -> Special
+#else
+  SpecialKey         -> NonText
+#endif
+StatusLineTerm       -> StatusLine
+StatusLineTermNC     -> StatusLineNC
+Terminal             -> Normal
+
+; :help lCursor
+lCursor              -> Cursor

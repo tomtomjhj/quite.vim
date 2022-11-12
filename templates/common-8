@@ -2,6 +2,11 @@
 
 Variant: 8
 
+verbatim
+hi clear
+endverbatim
+Include: global
+
 ; GUI and 256 color values are just placeholders taken from the dark variant.
 Color: term1         #d7005f           161               darkred
 Color: term2         #00af5f           35                darkgreen

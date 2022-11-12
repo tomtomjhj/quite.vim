@@ -11,6 +11,8 @@ Colortemplate Options: timestamp=0
 ; }}}
 
 ; Global definitions {{{
+Include: global
+
 Color: black         #000000           16
 
 ; :help group-name
@@ -38,21 +40,6 @@ Tag                  -> Special
 Debug                -> Special
 
 ; :help highlight-groups
-EndOfBuffer          -> NonText
-MessageWindow        -> Pmenu
-PopupNotification    -> Todo
-; vim uses SpecialKey for listchar
-#if has('nvim')
-  SpecialKey         -> Special
-#else
-  SpecialKey         -> NonText
-#endif
-StatusLineTerm       -> StatusLine
-StatusLineTermNC     -> StatusLineNC
-Terminal             -> Normal
-
-; :help lCursor
-lCursor              -> Cursor
 
 ; plugins and filetypes
 debugBreakpoint      -> ModeMsg
@@ -153,10 +140,9 @@ Include: terminal
 Include: common-gui-256
 ; }}}
 
-; 8 and 0 {{{
+; fallbacks for 8 and 0 {{{
 ; We don't care about the fidelity of 8 and 0.
 ; They are just minimum viable fallback for weird environments.
-; Just make sure that the global definitions don't break them.
 Background: any
 
 Include: common-8
