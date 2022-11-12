@@ -95,7 +95,7 @@ if &background ==# 'dark'
   hi CursorLine guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
   hi CursorLineNr guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
   hi DiffAdd guifg=#00af00 guibg=#000000 gui=reverse cterm=reverse
-  hi DiffChange guifg=#87afd7 guibg=#000000 gui=reverse cterm=reverse
+  hi DiffChange guifg=#8787af guibg=#000000 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d75f5f guibg=#000000 gui=reverse cterm=reverse
   hi DiffText guifg=#d787d7 guibg=#000000 gui=reverse cterm=reverse
   hi Directory guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -108,7 +108,7 @@ if &background ==# 'dark'
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NonText guifg=#626262 guibg=NONE gui=NONE cterm=NONE
-  hi Pmenu guifg=#000000 guibg=#87afd7 gui=NONE cterm=NONE
+  hi Pmenu guifg=#000000 guibg=#8787af gui=NONE cterm=NONE
   hi PmenuSel guifg=#000000 guibg=#d787d7 gui=NONE cterm=NONE
   hi PmenuSbar guifg=NONE guibg=#626262 gui=NONE cterm=NONE
   hi PmenuThumb guifg=NONE guibg=#d787d7 gui=NONE cterm=NONE
@@ -250,7 +250,7 @@ if s:t_Co >= 256
     hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE
     hi CursorLineNr ctermfg=NONE ctermbg=237 cterm=NONE
     hi DiffAdd ctermfg=34 ctermbg=16 cterm=reverse
-    hi DiffChange ctermfg=110 ctermbg=16 cterm=reverse
+    hi DiffChange ctermfg=103 ctermbg=16 cterm=reverse
     hi DiffDelete ctermfg=167 ctermbg=16 cterm=reverse
     hi DiffText ctermfg=176 ctermbg=16 cterm=reverse
     hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -263,7 +263,7 @@ if s:t_Co >= 256
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi NonText ctermfg=241 ctermbg=NONE cterm=NONE
-    hi Pmenu ctermfg=16 ctermbg=110 cterm=NONE
+    hi Pmenu ctermfg=16 ctermbg=103 cterm=NONE
     hi PmenuSel ctermfg=16 ctermbg=176 cterm=NONE
     hi PmenuSbar ctermfg=NONE ctermbg=241 cterm=NONE
     hi PmenuThumb ctermfg=NONE ctermbg=176 cterm=NONE
@@ -523,7 +523,7 @@ endif
 " Color: quite14       #00d7d7           44
 " Color: diffred       #d75f5f           167
 " Color: diffgreen     #00af00           34
-" Color: diffblue      #87afd7           110
+" Color: diffblue      #8787af           103
 " Color: diffpink      #d787d7           176
 " Color: uipink        #ff00af           199
 " Color: uilime        #afff00           154
