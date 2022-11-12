@@ -32,8 +32,6 @@ hi! link Structure Statement
 hi! link Typedef Statement
 hi! link SpecialChar Special
 hi! link Tag Special
-hi! link Delimiter Special
-hi! link SpecialComment Special
 hi! link Debug Special
 hi! link EndOfBuffer NonText
 hi! link MessageWindow Pmenu
@@ -83,6 +81,8 @@ if &background ==# 'dark'
   hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Delimiter guifg=#c6c6c6 guibg=NONE gui=NONE cterm=NONE
+  hi SpecialComment guifg=#a8a8a8 guibg=NONE gui=bold cterm=bold
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
@@ -98,7 +98,7 @@ if &background ==# 'dark'
   hi DiffChange guifg=#8787af guibg=#000000 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d75f5f guibg=#000000 gui=reverse cterm=reverse
   hi DiffText guifg=#d787d7 guibg=#000000 gui=reverse cterm=reverse
-  hi Directory guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#626262 guibg=NONE gui=NONE cterm=NONE
@@ -126,8 +126,8 @@ if &background ==# 'dark'
   hi TabLine guifg=NONE guibg=#626262 gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Title guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi VertSplit guifg=#626262 guibg=NONE gui=NONE cterm=NONE
+  hi Title guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi VertSplit guifg=#c6c6c6 guibg=#262626 gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -170,6 +170,8 @@ else
   hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Delimiter guifg=#3a3a3a guibg=NONE gui=NONE cterm=NONE
+  hi SpecialComment guifg=#6c6c6c guibg=NONE gui=bold cterm=bold
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
@@ -185,7 +187,7 @@ else
   hi DiffChange guifg=#afafd7 guibg=#000000 gui=reverse cterm=reverse
   hi DiffDelete guifg=#d78787 guibg=#000000 gui=reverse cterm=reverse
   hi DiffText guifg=#d787d7 guibg=#000000 gui=reverse cterm=reverse
-  hi Directory guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi FoldColumn guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
@@ -213,8 +215,8 @@ else
   hi TabLine guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Title guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi VertSplit guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
+  hi Title guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi VertSplit guifg=#3a3a3a guibg=#d0d0d0 gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -238,6 +240,8 @@ if s:t_Co >= 256
     hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Delimiter ctermfg=251 ctermbg=NONE cterm=NONE
+    hi SpecialComment ctermfg=248 ctermbg=NONE cterm=bold
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
@@ -253,7 +257,7 @@ if s:t_Co >= 256
     hi DiffChange ctermfg=103 ctermbg=16 cterm=reverse
     hi DiffDelete ctermfg=167 ctermbg=16 cterm=reverse
     hi DiffText ctermfg=176 ctermbg=16 cterm=reverse
-    hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
     hi FoldColumn ctermfg=241 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=241 ctermbg=NONE cterm=NONE
@@ -281,8 +285,8 @@ if s:t_Co >= 256
     hi TabLine ctermfg=NONE ctermbg=241 cterm=NONE
     hi TabLineFill ctermfg=NONE ctermbg=237 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
-    hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi VertSplit ctermfg=241 ctermbg=NONE cterm=NONE
+    hi Title ctermfg=NONE ctermbg=NONE cterm=bold
+    hi VertSplit ctermfg=251 ctermbg=235 cterm=NONE
     hi Visual ctermfg=214 ctermbg=16 cterm=reverse
     hi VisualNOS ctermfg=NONE ctermbg=237 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -304,6 +308,8 @@ if s:t_Co >= 256
     hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Delimiter ctermfg=237 ctermbg=NONE cterm=NONE
+    hi SpecialComment ctermfg=242 ctermbg=NONE cterm=bold
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
@@ -319,7 +325,7 @@ if s:t_Co >= 256
     hi DiffChange ctermfg=146 ctermbg=16 cterm=reverse
     hi DiffDelete ctermfg=174 ctermbg=16 cterm=reverse
     hi DiffText ctermfg=176 ctermbg=16 cterm=reverse
-    hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
     hi FoldColumn ctermfg=247 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=247 ctermbg=NONE cterm=NONE
@@ -347,8 +353,8 @@ if s:t_Co >= 256
     hi TabLine ctermfg=NONE ctermbg=247 cterm=NONE
     hi TabLineFill ctermfg=NONE ctermbg=250 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
-    hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi VertSplit ctermfg=247 ctermbg=NONE cterm=NONE
+    hi Title ctermfg=NONE ctermbg=NONE cterm=bold
+    hi VertSplit ctermfg=237 ctermbg=252 cterm=NONE
     hi Visual ctermfg=214 ctermbg=16 cterm=reverse
     hi VisualNOS ctermfg=NONE ctermbg=250 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
