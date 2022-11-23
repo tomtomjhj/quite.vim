@@ -76,10 +76,9 @@ Color: quite12       #5fafff           75
 Color: quite13       #ff87ff           213
 Color: quite14       #00d7d7           44
 
-Color: diffred       #d75f5f           167
-Color: diffgreen     #00af00           34
-Color: diffblue      #8787af           103
-Color: diffpink      #d787d7           176
+Color: diffgreen     #304030           22
+Color: diffblue      #404868           60
+Color: diffpink      #704470           96
 
 Color: uipink        #ff00af           199
 Color: uilime        #afff00           154
@@ -121,10 +120,9 @@ Color: quite12       #0087d7           32
 Color: quite13       #af00af           127
 Color: quite14       #00afaf           37
 
-Color: diffred       #d78787           174
-Color: diffgreen     #87d787           114
-Color: diffblue      #afafd7           146
-Color: diffpink      #d787d7           176
+Color: diffgreen     #b7d2b7           151
+Color: diffblue      #a0afd7           146
+Color: diffpink      #d7a0d7           176
 
 Color: uipink        #ff00af           199
 Color: uilime        #afff00           154
