@@ -93,10 +93,10 @@ if &background ==# 'dark'
   hi CursorColumn guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
   hi CursorLine guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
   hi CursorLineNr guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
-  hi DiffAdd guifg=#00af00 guibg=#000000 gui=reverse cterm=reverse
-  hi DiffChange guifg=#8787af guibg=#000000 gui=reverse cterm=reverse
-  hi DiffDelete guifg=#d75f5f guibg=#000000 gui=reverse cterm=reverse
-  hi DiffText guifg=#d787d7 guibg=#000000 gui=reverse cterm=reverse
+  hi DiffAdd guifg=NONE guibg=#304030 gui=NONE cterm=NONE
+  hi DiffChange guifg=NONE guibg=#404868 gui=NONE cterm=NONE
+  hi DiffDelete guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
+  hi DiffText guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
@@ -107,12 +107,12 @@ if &background ==# 'dark'
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NonText guifg=#626262 guibg=NONE gui=NONE cterm=NONE
-  hi Pmenu guifg=#000000 guibg=#8787af gui=NONE cterm=NONE
-  hi PmenuSel guifg=#000000 guibg=#d787d7 gui=NONE cterm=NONE
+  hi Pmenu guifg=NONE guibg=#404868 gui=NONE cterm=NONE
+  hi PmenuSel guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi PmenuSbar guifg=NONE guibg=#626262 gui=NONE cterm=NONE
-  hi PmenuThumb guifg=NONE guibg=#d787d7 gui=NONE cterm=NONE
+  hi PmenuThumb guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi QuickFixLine guifg=#d787d7 guibg=#000000 gui=reverse cterm=reverse
+  hi QuickFixLine guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi CurSearch guifg=#00afff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -182,10 +182,10 @@ else
   hi CursorColumn guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi CursorLine guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi CursorLineNr guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
-  hi DiffAdd guifg=#87d787 guibg=#000000 gui=reverse cterm=reverse
-  hi DiffChange guifg=#afafd7 guibg=#000000 gui=reverse cterm=reverse
-  hi DiffDelete guifg=#d78787 guibg=#000000 gui=reverse cterm=reverse
-  hi DiffText guifg=#d787d7 guibg=#000000 gui=reverse cterm=reverse
+  hi DiffAdd guifg=NONE guibg=#b7d2b7 gui=NONE cterm=NONE
+  hi DiffChange guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
+  hi DiffDelete guifg=#af0000 guibg=NONE gui=NONE cterm=NONE
+  hi DiffText guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi FoldColumn guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
@@ -196,12 +196,12 @@ else
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NonText guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
-  hi Pmenu guifg=#000000 guibg=#afafd7 gui=NONE cterm=NONE
-  hi PmenuSel guifg=#000000 guibg=#d787d7 gui=NONE cterm=NONE
+  hi Pmenu guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
+  hi PmenuSel guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi PmenuSbar guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
-  hi PmenuThumb guifg=NONE guibg=#d787d7 gui=NONE cterm=NONE
+  hi PmenuThumb guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi QuickFixLine guifg=#d787d7 guibg=#000000 gui=reverse cterm=reverse
+  hi QuickFixLine guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi CurSearch guifg=#00afff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -252,10 +252,10 @@ if s:t_Co >= 256
     hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE
     hi CursorLineNr ctermfg=NONE ctermbg=237 cterm=NONE
-    hi DiffAdd ctermfg=34 ctermbg=16 cterm=reverse
-    hi DiffChange ctermfg=103 ctermbg=16 cterm=reverse
-    hi DiffDelete ctermfg=167 ctermbg=16 cterm=reverse
-    hi DiffText ctermfg=176 ctermbg=16 cterm=reverse
+    hi DiffAdd ctermfg=NONE ctermbg=22 cterm=NONE
+    hi DiffChange ctermfg=NONE ctermbg=60 cterm=NONE
+    hi DiffDelete ctermfg=161 ctermbg=NONE cterm=NONE
+    hi DiffText ctermfg=NONE ctermbg=96 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
     hi FoldColumn ctermfg=241 ctermbg=NONE cterm=NONE
@@ -266,12 +266,12 @@ if s:t_Co >= 256
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi NonText ctermfg=241 ctermbg=NONE cterm=NONE
-    hi Pmenu ctermfg=16 ctermbg=103 cterm=NONE
-    hi PmenuSel ctermfg=16 ctermbg=176 cterm=NONE
+    hi Pmenu ctermfg=NONE ctermbg=60 cterm=NONE
+    hi PmenuSel ctermfg=NONE ctermbg=96 cterm=NONE
     hi PmenuSbar ctermfg=NONE ctermbg=241 cterm=NONE
-    hi PmenuThumb ctermfg=NONE ctermbg=176 cterm=NONE
+    hi PmenuThumb ctermfg=NONE ctermbg=96 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi QuickFixLine ctermfg=176 ctermbg=16 cterm=reverse
+    hi QuickFixLine ctermfg=NONE ctermbg=96 cterm=NONE
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
     hi CurSearch ctermfg=39 ctermbg=16 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -320,10 +320,10 @@ if s:t_Co >= 256
     hi CursorColumn ctermfg=NONE ctermbg=250 cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=250 cterm=NONE
     hi CursorLineNr ctermfg=NONE ctermbg=250 cterm=NONE
-    hi DiffAdd ctermfg=114 ctermbg=16 cterm=reverse
-    hi DiffChange ctermfg=146 ctermbg=16 cterm=reverse
-    hi DiffDelete ctermfg=174 ctermbg=16 cterm=reverse
-    hi DiffText ctermfg=176 ctermbg=16 cterm=reverse
+    hi DiffAdd ctermfg=NONE ctermbg=151 cterm=NONE
+    hi DiffChange ctermfg=NONE ctermbg=146 cterm=NONE
+    hi DiffDelete ctermfg=124 ctermbg=NONE cterm=NONE
+    hi DiffText ctermfg=NONE ctermbg=176 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
     hi FoldColumn ctermfg=247 ctermbg=NONE cterm=NONE
@@ -334,12 +334,12 @@ if s:t_Co >= 256
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi NonText ctermfg=247 ctermbg=NONE cterm=NONE
-    hi Pmenu ctermfg=16 ctermbg=146 cterm=NONE
-    hi PmenuSel ctermfg=16 ctermbg=176 cterm=NONE
+    hi Pmenu ctermfg=NONE ctermbg=146 cterm=NONE
+    hi PmenuSel ctermfg=NONE ctermbg=176 cterm=NONE
     hi PmenuSbar ctermfg=NONE ctermbg=247 cterm=NONE
     hi PmenuThumb ctermfg=NONE ctermbg=176 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi QuickFixLine ctermfg=176 ctermbg=16 cterm=reverse
+    hi QuickFixLine ctermfg=NONE ctermbg=176 cterm=NONE
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
     hi CurSearch ctermfg=39 ctermbg=16 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -550,10 +550,9 @@ endif
 " Color: quite12       #5fafff           75
 " Color: quite13       #ff87ff           213
 " Color: quite14       #00d7d7           44
-" Color: diffred       #d75f5f           167
-" Color: diffgreen     #00af00           34
-" Color: diffblue      #8787af           103
-" Color: diffpink      #d787d7           176
+" Color: diffgreen     #304030           22
+" Color: diffblue      #404868           60
+" Color: diffpink      #704470           96
 " Color: uipink        #ff00af           199
 " Color: uilime        #afff00           154
 " Color: uiteal        #00ffaf           49
@@ -587,10 +586,9 @@ endif
 " Color: quite12       #0087d7           32
 " Color: quite13       #af00af           127
 " Color: quite14       #00afaf           37
-" Color: diffred       #d78787           174
-" Color: diffgreen     #87d787           114
-" Color: diffblue      #afafd7           146
-" Color: diffpink      #d787d7           176
+" Color: diffgreen     #b7d2b7           151
+" Color: diffblue      #a0afd7           146
+" Color: diffpink      #d7a0d7           176
 " Color: uipink        #ff00af           199
 " Color: uilime        #afff00           154
 " Color: uiteal        #00ffaf           49
