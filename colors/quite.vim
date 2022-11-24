@@ -49,24 +49,24 @@ hi! link debugPC CursorLine
 
 if &background ==# 'dark'
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#080808', '#d7005f', '#00af5f', '#d78700', '#0087d7', '#d787d7', '#00afaf', '#a8a8a8', '#626262', '#ff005f', '#00d75f', '#ffaf00', '#5fafff', '#ff87ff', '#00d7d7', '#eeeeee']
+    let g:terminal_ansi_colors = ['#080808', '#d7005f', '#00cc11', '#d78700', '#0087d7', '#d787d7', '#00cccc', '#a8a8a8', '#626262', '#ff005f', '#00ee77', '#ffaf00', '#5fafff', '#ff87ff', '#00eeee', '#eeeeee']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#080808'
     let g:terminal_color_1 = '#d7005f'
-    let g:terminal_color_2 = '#00af5f'
+    let g:terminal_color_2 = '#00cc11'
     let g:terminal_color_3 = '#d78700'
     let g:terminal_color_4 = '#0087d7'
     let g:terminal_color_5 = '#d787d7'
-    let g:terminal_color_6 = '#00afaf'
+    let g:terminal_color_6 = '#00cccc'
     let g:terminal_color_7 = '#a8a8a8'
     let g:terminal_color_8 = '#626262'
     let g:terminal_color_9 = '#ff005f'
-    let g:terminal_color_10 = '#00d75f'
+    let g:terminal_color_10 = '#00ee77'
     let g:terminal_color_11 = '#ffaf00'
     let g:terminal_color_12 = '#5fafff'
     let g:terminal_color_13 = '#ff87ff'
-    let g:terminal_color_14 = '#00d7d7'
+    let g:terminal_color_14 = '#00eeee'
     let g:terminal_color_15 = '#eeeeee'
   endif
   hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
@@ -119,7 +119,7 @@ if &background ==# 'dark'
   hi SpellBad guifg=#d7005f guibg=NONE guisp=#d7005f gui=undercurl cterm=underline
   hi SpellCap guifg=#0087d7 guibg=NONE guisp=#0087d7 gui=undercurl cterm=underline
   hi SpellLocal guifg=#d787d7 guibg=NONE guisp=#d787d7 gui=undercurl cterm=underline
-  hi SpellRare guifg=#00afaf guibg=NONE guisp=#00afaf gui=undercurl cterm=underline
+  hi SpellRare guifg=#00cccc guibg=NONE guisp=#00cccc gui=undercurl cterm=underline
   hi StatusLine guifg=#080808 guibg=#eeeeee gui=bold cterm=bold
   hi StatusLineNC guifg=#080808 guibg=#626262 gui=NONE cterm=NONE
   hi TabLine guifg=NONE guibg=#626262 gui=NONE cterm=NONE
@@ -133,7 +133,7 @@ if &background ==# 'dark'
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi diffAdded guifg=#00af5f guibg=NONE gui=NONE cterm=NONE
+  hi diffAdded guifg=#00cc11 guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
 else
   " Light background
@@ -278,7 +278,7 @@ if s:t_Co >= 256
     hi SpellBad ctermfg=161 ctermbg=NONE cterm=underline
     hi SpellCap ctermfg=32 ctermbg=NONE cterm=underline
     hi SpellLocal ctermfg=176 ctermbg=NONE cterm=underline
-    hi SpellRare ctermfg=37 ctermbg=NONE cterm=underline
+    hi SpellRare ctermfg=44 ctermbg=NONE cterm=underline
     hi StatusLine ctermfg=232 ctermbg=255 cterm=bold
     hi StatusLineNC ctermfg=232 ctermbg=241 cterm=NONE
     hi TabLine ctermfg=NONE ctermbg=241 cterm=NONE
@@ -292,7 +292,7 @@ if s:t_Co >= 256
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold
-    hi diffAdded ctermfg=35 ctermbg=NONE cterm=NONE
+    hi diffAdded ctermfg=40 ctermbg=NONE cterm=NONE
     hi diffRemoved ctermfg=161 ctermbg=NONE cterm=NONE
   else
     " Light background
@@ -539,17 +539,17 @@ endif
 " Color: bg2           #3a3a3a           237
 " Color: bg3           #626262           241
 " Color: quite1        #d7005f           161
-" Color: quite2        #00af5f           35
+" Color: quite2        #00cc11           40
 " Color: quite3        #d78700           172
 " Color: quite4        #0087d7           32
 " Color: quite5        #d787d7           176
-" Color: quite6        #00afaf           37
+" Color: quite6        #00cccc           44
 " Color: quite9        #ff005f           197
-" Color: quite10       #00d75f           41
+" Color: quite10       #00ee77           48
 " Color: quite11       #ffaf00           214
 " Color: quite12       #5fafff           75
 " Color: quite13       #ff87ff           213
-" Color: quite14       #00d7d7           44
+" Color: quite14       #00eeee           51
 " Color: diffgreen     #304030           22
 " Color: diffblue      #404868           60
 " Color: diffpink      #704470           96
