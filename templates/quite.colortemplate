@@ -64,17 +64,17 @@ Color: bg2           #3a3a3a           237
 Color: bg3           #626262           241
 
 Color: quite1        #d7005f           161
-Color: quite2        #00af5f           35
+Color: quite2        #00cc11           40
 Color: quite3        #d78700           172
 Color: quite4        #0087d7           32
 Color: quite5        #d787d7           176
-Color: quite6        #00afaf           37
+Color: quite6        #00cccc           44
 Color: quite9        #ff005f           197
-Color: quite10       #00d75f           41
+Color: quite10       #00ee77           48
 Color: quite11       #ffaf00           214
 Color: quite12       #5fafff           75
 Color: quite13       #ff87ff           213
-Color: quite14       #00d7d7           44
+Color: quite14       #00eeee           51
 
 Color: diffgreen     #304030           22
 Color: diffblue      #404868           60
