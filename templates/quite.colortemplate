@@ -59,8 +59,8 @@ Color: fg0           #eeeeee           255
 Color: fg1           #c6c6c6           251
 Color: fg2           #a8a8a8           248
 Color: bg0           #080808           232
-Color: bg1           #262626           235
-Color: bg2           #3a3a3a           237
+Color: bg1           #303030           236
+Color: bg2           #444444           238
 Color: bg3           #626262           241
 
 Color: quite1        #d7005f           161
