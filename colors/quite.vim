@@ -49,7 +49,7 @@ hi! link debugPC CursorLine
 
 if &background ==# 'dark'
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#080808', '#d7005f', '#00cc11', '#d78700', '#0087d7', '#d787d7', '#00cccc', '#a8a8a8', '#626262', '#ff005f', '#00ee77', '#ffaf00', '#5fafff', '#ff87ff', '#00eeee', '#eeeeee']
+    let g:terminal_ansi_colors = ['#080808', '#d7005f', '#00cc11', '#d78700', '#0087d7', '#d787d7', '#00cccc', '#bcbcbc', '#626262', '#ff005f', '#00ee77', '#ffaf00', '#5fafff', '#ff87ff', '#00eeee', '#eeeeee']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#080808'
@@ -59,7 +59,7 @@ if &background ==# 'dark'
     let g:terminal_color_4 = '#0087d7'
     let g:terminal_color_5 = '#d787d7'
     let g:terminal_color_6 = '#00cccc'
-    let g:terminal_color_7 = '#a8a8a8'
+    let g:terminal_color_7 = '#bcbcbc'
     let g:terminal_color_8 = '#626262'
     let g:terminal_color_9 = '#ff005f'
     let g:terminal_color_10 = '#00ee77'
@@ -73,15 +73,15 @@ if &background ==# 'dark'
   if has('nvim')
     hi NormalFloat guifg=NONE guibg=#303030 gui=NONE cterm=NONE
   endif
-  hi Comment guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
+  hi Comment guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Delimiter guifg=#c6c6c6 guibg=NONE gui=NONE cterm=NONE
-  hi SpecialComment guifg=#a8a8a8 guibg=NONE gui=bold cterm=bold
+  hi Delimiter guifg=#d0d0d0 guibg=NONE gui=NONE cterm=NONE
+  hi SpecialComment guifg=#bcbcbc guibg=NONE gui=bold cterm=bold
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
@@ -102,7 +102,7 @@ if &background ==# 'dark'
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi IncSearch guifg=#ffaf00 guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
-  hi LineNr guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
+  hi LineNr guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -126,7 +126,7 @@ if &background ==# 'dark'
   hi TabLineFill guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Title guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi VertSplit guifg=#c6c6c6 guibg=#303030 gui=NONE cterm=NONE
+  hi VertSplit guifg=#d0d0d0 guibg=#303030 gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -138,7 +138,7 @@ if &background ==# 'dark'
 else
   " Light background
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#eeeeee', '#af0000', '#005f00', '#af5f00', '#005faf', '#870087', '#008787', '#6c6c6c', '#9e9e9e', '#d70000', '#008700', '#d78700', '#0087d7', '#af00af', '#00afaf', '#121212']
+    let g:terminal_ansi_colors = ['#eeeeee', '#af0000', '#005f00', '#af5f00', '#005faf', '#870087', '#008787', '#626262', '#a8a8a8', '#d70000', '#008700', '#d78700', '#0087d7', '#af00af', '#00afaf', '#121212']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#eeeeee'
@@ -148,8 +148,8 @@ else
     let g:terminal_color_4 = '#005faf'
     let g:terminal_color_5 = '#870087'
     let g:terminal_color_6 = '#008787'
-    let g:terminal_color_7 = '#6c6c6c'
-    let g:terminal_color_8 = '#9e9e9e'
+    let g:terminal_color_7 = '#626262'
+    let g:terminal_color_8 = '#a8a8a8'
     let g:terminal_color_9 = '#d70000'
     let g:terminal_color_10 = '#008700'
     let g:terminal_color_11 = '#d78700'
@@ -162,7 +162,7 @@ else
   if has('nvim')
     hi NormalFloat guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
   endif
-  hi Comment guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
+  hi Comment guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
@@ -170,7 +170,7 @@ else
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Delimiter guifg=#3a3a3a guibg=NONE gui=NONE cterm=NONE
-  hi SpecialComment guifg=#6c6c6c guibg=NONE gui=bold cterm=bold
+  hi SpecialComment guifg=#626262 guibg=NONE gui=bold cterm=bold
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
@@ -188,17 +188,17 @@ else
   hi DiffText guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi FoldColumn guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
-  hi Folded guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
+  hi FoldColumn guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
+  hi Folded guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi IncSearch guifg=#ffaf00 guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
-  hi LineNr guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
+  hi LineNr guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
+  hi NonText guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi Pmenu guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
   hi PmenuSel guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
-  hi PmenuSbar guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
+  hi PmenuSbar guifg=NONE guibg=#a8a8a8 gui=NONE cterm=NONE
   hi PmenuThumb guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi QuickFixLine guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
@@ -210,8 +210,8 @@ else
   hi SpellLocal guifg=#870087 guibg=NONE guisp=#870087 gui=undercurl cterm=underline
   hi SpellRare guifg=#008787 guibg=NONE guisp=#008787 gui=undercurl cterm=underline
   hi StatusLine guifg=#eeeeee guibg=#121212 gui=bold cterm=bold
-  hi StatusLineNC guifg=#eeeeee guibg=#9e9e9e gui=NONE cterm=NONE
-  hi TabLine guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
+  hi StatusLineNC guifg=#eeeeee guibg=#a8a8a8 gui=NONE cterm=NONE
+  hi TabLine guifg=NONE guibg=#a8a8a8 gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Title guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
@@ -232,15 +232,15 @@ if s:t_Co >= 256
     if has('nvim')
       hi NormalFloat ctermfg=NONE ctermbg=236 cterm=NONE
     endif
-    hi Comment ctermfg=248 ctermbg=NONE cterm=NONE
+    hi Comment ctermfg=250 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Statement ctermfg=NONE ctermbg=NONE cterm=bold
     hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Delimiter ctermfg=251 ctermbg=NONE cterm=NONE
-    hi SpecialComment ctermfg=248 ctermbg=NONE cterm=bold
+    hi Delimiter ctermfg=252 ctermbg=NONE cterm=NONE
+    hi SpecialComment ctermfg=250 ctermbg=NONE cterm=bold
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
@@ -261,7 +261,7 @@ if s:t_Co >= 256
     hi FoldColumn ctermfg=241 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=241 ctermbg=NONE cterm=NONE
     hi IncSearch ctermfg=214 ctermbg=16 cterm=bold,reverse,underline
-    hi LineNr ctermfg=248 ctermbg=NONE cterm=NONE
+    hi LineNr ctermfg=250 ctermbg=NONE cterm=NONE
     hi MatchParen ctermfg=199 ctermbg=NONE cterm=bold
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -285,7 +285,7 @@ if s:t_Co >= 256
     hi TabLineFill ctermfg=NONE ctermbg=238 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
     hi Title ctermfg=NONE ctermbg=NONE cterm=bold
-    hi VertSplit ctermfg=251 ctermbg=236 cterm=NONE
+    hi VertSplit ctermfg=252 ctermbg=236 cterm=NONE
     hi Visual ctermfg=214 ctermbg=16 cterm=reverse
     hi VisualNOS ctermfg=NONE ctermbg=238 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -300,7 +300,7 @@ if s:t_Co >= 256
     if has('nvim')
       hi NormalFloat ctermfg=NONE ctermbg=252 cterm=NONE
     endif
-    hi Comment ctermfg=242 ctermbg=NONE cterm=NONE
+    hi Comment ctermfg=241 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Statement ctermfg=NONE ctermbg=NONE cterm=bold
@@ -308,7 +308,7 @@ if s:t_Co >= 256
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=237 ctermbg=NONE cterm=NONE
-    hi SpecialComment ctermfg=242 ctermbg=NONE cterm=bold
+    hi SpecialComment ctermfg=241 ctermbg=NONE cterm=bold
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
@@ -326,17 +326,17 @@ if s:t_Co >= 256
     hi DiffText ctermfg=NONE ctermbg=176 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi FoldColumn ctermfg=247 ctermbg=NONE cterm=NONE
-    hi Folded ctermfg=247 ctermbg=NONE cterm=NONE
+    hi FoldColumn ctermfg=248 ctermbg=NONE cterm=NONE
+    hi Folded ctermfg=248 ctermbg=NONE cterm=NONE
     hi IncSearch ctermfg=214 ctermbg=16 cterm=bold,reverse,underline
-    hi LineNr ctermfg=242 ctermbg=NONE cterm=NONE
+    hi LineNr ctermfg=241 ctermbg=NONE cterm=NONE
     hi MatchParen ctermfg=199 ctermbg=NONE cterm=bold
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=247 ctermbg=NONE cterm=NONE
+    hi NonText ctermfg=248 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=146 cterm=NONE
     hi PmenuSel ctermfg=NONE ctermbg=176 cterm=NONE
-    hi PmenuSbar ctermfg=NONE ctermbg=247 cterm=NONE
+    hi PmenuSbar ctermfg=NONE ctermbg=248 cterm=NONE
     hi PmenuThumb ctermfg=NONE ctermbg=176 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
     hi QuickFixLine ctermfg=NONE ctermbg=176 cterm=NONE
@@ -348,8 +348,8 @@ if s:t_Co >= 256
     hi SpellLocal ctermfg=90 ctermbg=NONE cterm=underline
     hi SpellRare ctermfg=30 ctermbg=NONE cterm=underline
     hi StatusLine ctermfg=255 ctermbg=233 cterm=bold
-    hi StatusLineNC ctermfg=255 ctermbg=247 cterm=NONE
-    hi TabLine ctermfg=NONE ctermbg=247 cterm=NONE
+    hi StatusLineNC ctermfg=255 ctermbg=248 cterm=NONE
+    hi TabLine ctermfg=NONE ctermbg=248 cterm=NONE
     hi TabLineFill ctermfg=NONE ctermbg=250 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
     hi Title ctermfg=NONE ctermbg=NONE cterm=bold
@@ -532,8 +532,8 @@ endif
 " Color: black         #000000           16
 " Background: dark
 " Color: fg0           #eeeeee           255
-" Color: fg1           #c6c6c6           251
-" Color: fg2           #a8a8a8           248
+" Color: fg1           #d0d0d0           252
+" Color: fg2           #bcbcbc           250
 " Color: bg0           #080808           232
 " Color: bg1           #303030           236
 " Color: bg2           #444444           238
@@ -569,11 +569,11 @@ endif
 " Background: light
 " Color: fg0           #121212           233
 " Color: fg1           #3a3a3a           237
-" Color: fg2           #6c6c6c           242
+" Color: fg2           #626262           241
 " Color: bg0           #eeeeee           255
 " Color: bg1           #d0d0d0           252
 " Color: bg2           #bcbcbc           250
-" Color: bg3           #9e9e9e           247
+" Color: bg3           #a8a8a8           248
 " Color: quite1        #af0000           124
 " Color: quite2        #005f00           22
 " Color: quite3        #af5f00           130
