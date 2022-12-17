@@ -38,7 +38,7 @@ hi! link Include PreProc
 hi! link Define PreProc
 hi! link Macro PreProc
 hi! link PreCondit PreProc
-hi! link StorageClass Type
+hi! link StorageClass Statement
 hi! link Structure Statement
 hi! link Typedef Statement
 hi! link SpecialChar Special
@@ -77,7 +77,7 @@ if &background ==# 'dark'
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi PreProc guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Delimiter guifg=#d0d0d0 guibg=NONE gui=NONE cterm=NONE
@@ -98,7 +98,7 @@ if &background ==# 'dark'
   hi DiffDelete guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi DiffText guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi ErrorMsg guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi IncSearch guifg=#ffaf00 guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
@@ -138,11 +138,11 @@ if &background ==# 'dark'
 else
   " Light background
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#eeeeee', '#af0000', '#005f00', '#af5f00', '#005faf', '#870087', '#008787', '#626262', '#a8a8a8', '#d70000', '#008700', '#d78700', '#0087d7', '#af00af', '#00afaf', '#121212']
+    let g:terminal_ansi_colors = ['#eeeeee', '#af0011', '#005f00', '#af5f00', '#005faf', '#870087', '#008787', '#626262', '#a8a8a8', '#d70000', '#008700', '#d78700', '#0087d7', '#af00af', '#00afaf', '#121212']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#eeeeee'
-    let g:terminal_color_1 = '#af0000'
+    let g:terminal_color_1 = '#af0011'
     let g:terminal_color_2 = '#005f00'
     let g:terminal_color_3 = '#af5f00'
     let g:terminal_color_4 = '#005faf'
@@ -166,7 +166,7 @@ else
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi PreProc guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi PreProc guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Special guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Delimiter guifg=#3a3a3a guibg=NONE gui=NONE cterm=NONE
@@ -184,10 +184,10 @@ else
   hi CursorLineNr guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi DiffAdd guifg=NONE guibg=#b7d2b7 gui=NONE cterm=NONE
   hi DiffChange guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
-  hi DiffDelete guifg=#af0000 guibg=NONE gui=NONE cterm=NONE
+  hi DiffDelete guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi DiffText guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi ErrorMsg guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi IncSearch guifg=#ffaf00 guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
@@ -205,7 +205,7 @@ else
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi CurSearch guifg=#00afff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi SpellBad guifg=#af0000 guibg=NONE guisp=#af0000 gui=undercurl cterm=underline
+  hi SpellBad guifg=#af0011 guibg=NONE guisp=#af0011 gui=undercurl cterm=underline
   hi SpellCap guifg=#005faf guibg=NONE guisp=#005faf gui=undercurl cterm=underline
   hi SpellLocal guifg=#870087 guibg=NONE guisp=#870087 gui=undercurl cterm=underline
   hi SpellRare guifg=#008787 guibg=NONE guisp=#008787 gui=undercurl cterm=underline
@@ -223,7 +223,7 @@ else
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi diffAdded guifg=#005f00 guibg=NONE gui=NONE cterm=NONE
-  hi diffRemoved guifg=#af0000 guibg=NONE gui=NONE cterm=NONE
+  hi diffRemoved guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
 endif
 
 if s:t_Co >= 256
@@ -236,7 +236,7 @@ if s:t_Co >= 256
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Statement ctermfg=NONE ctermbg=NONE cterm=bold
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi PreProc ctermfg=NONE ctermbg=NONE cterm=bold
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=252 ctermbg=NONE cterm=NONE
@@ -257,7 +257,7 @@ if s:t_Co >= 256
     hi DiffDelete ctermfg=161 ctermbg=NONE cterm=NONE
     hi DiffText ctermfg=NONE ctermbg=96 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
-    hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
+    hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=241 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=241 ctermbg=NONE cterm=NONE
     hi IncSearch ctermfg=214 ctermbg=16 cterm=bold,reverse,underline
@@ -304,7 +304,7 @@ if s:t_Co >= 256
     hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Statement ctermfg=NONE ctermbg=NONE cterm=bold
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi PreProc ctermfg=NONE ctermbg=NONE cterm=bold
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=237 ctermbg=NONE cterm=NONE
@@ -325,7 +325,7 @@ if s:t_Co >= 256
     hi DiffDelete ctermfg=124 ctermbg=NONE cterm=NONE
     hi DiffText ctermfg=NONE ctermbg=176 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
-    hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=reverse
+    hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=248 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=248 ctermbg=NONE cterm=NONE
     hi IncSearch ctermfg=214 ctermbg=16 cterm=bold,reverse,underline
@@ -574,7 +574,7 @@ endif
 " Color: bg1           #d0d0d0           252
 " Color: bg2           #bcbcbc           250
 " Color: bg3           #a8a8a8           248
-" Color: quite1        #af0000           124
+" Color: quite1        #af0011           124
 " Color: quite2        #005f00           22
 " Color: quite3        #af5f00           130
 " Color: quite4        #005faf           25
