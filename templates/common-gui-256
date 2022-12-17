@@ -10,7 +10,7 @@ Comment              fg2               none
 Constant             none              none
 Identifier           none              none
 Statement            none              none              bold
-PreProc              none              none
+PreProc              none              none              bold
 Type                 none              none
 Special              none              none
 Delimiter            fg1               none
@@ -33,7 +33,7 @@ DiffChange           none              diffblue
 DiffDelete           quite1            none
 DiffText             none              diffpink
 Directory            none              none              bold
-ErrorMsg             none              none              reverse
+ErrorMsg             none              none              reverse,bold
 FoldColumn           bg3               none
 Folded               bg3               none
 IncSearch            uiamber           black             reverse,bold,underline

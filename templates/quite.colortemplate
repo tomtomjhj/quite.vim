@@ -32,7 +32,7 @@ Include              -> PreProc
 Define               -> PreProc
 Macro                -> PreProc
 PreCondit            -> PreProc
-StorageClass         -> Type
+StorageClass         -> Statement
 Structure            -> Statement
 Typedef              -> Statement
 SpecialChar          -> Special
@@ -107,7 +107,7 @@ Color: bg1           #d0d0d0           252
 Color: bg2           #bcbcbc           250
 Color: bg3           #a8a8a8           248
 
-Color: quite1        #af0000           124
+Color: quite1        #af0011           124
 Color: quite2        #005f00           22
 Color: quite3        #af5f00           130
 Color: quite4        #005faf           25
