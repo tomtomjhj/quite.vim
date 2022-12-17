@@ -7,12 +7,14 @@ Normal               fg0               bg0
 
 ; :help group-name
 Comment              fg2               none
-Constant             none              none
+Constant             fg_1              none              italic
 Identifier           none              none
 Statement            none              none              bold
+Label                labelpink         none              bold
 PreProc              none              none              bold
+Macro                specialcyan       none              italic
 Type                 none              none
-Special              none              none
+Special              specialcyan       none
 Delimiter            fg1               none
 SpecialComment       fg2               none              bold
 Underlined           none              none              underline
@@ -22,7 +24,7 @@ Todo                 uiteal            black             reverse,bold
 
 ; :help highlight-groups
 ColorColumn          none              bg1
-Conceal              none              none
+Conceal              specialcyan       none
 Cursor               none              none              reverse
 CursorIM             black             uilime
 CursorColumn         none              bg2
@@ -60,7 +62,7 @@ StatusLineNC         bg0               bg3
 TabLine              none              bg3
 TabLineFill          none              bg2
 TabLineSel           none              none              bold
-Title                none              none              bold
+Title                labelpink         none              bold,underline
 VertSplit            fg1               bg1
 Visual               uiamber           black             reverse
 VisualNOS            none              bg2
@@ -71,6 +73,8 @@ WildMenu             uiblue            none              bold
 ToolbarLine          none              none
 ToolbarButton        none              none              bold
 
+; Custom groups
+Literal              literalyellow     none
 ; plugins and filetypes
 diffAdded            quite2            none
 diffRemoved          quite1            none

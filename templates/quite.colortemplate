@@ -16,21 +16,19 @@ Include: global
 Color: black         #000000           16
 
 ; :help group-name
-String               -> Constant
-Character            -> Constant
-Number               -> Constant
-Boolean              -> Constant
-Float                -> Constant
+String               -> Literal
+Character            -> Literal
+Number               -> Literal
+Boolean              -> Literal
+Float                -> Literal
 Function             -> Identifier
 Conditional          -> Statement
 Repeat               -> Statement
-Label                -> Statement
 Operator             -> Statement
 Keyword              -> Statement
 Exception            -> Statement
 Include              -> PreProc
 Define               -> PreProc
-Macro                -> PreProc
 PreCondit            -> PreProc
 StorageClass         -> Statement
 Structure            -> Statement
@@ -55,6 +53,7 @@ Background: dark
 
 ; Color palette for dark variant {{{
 ; Color name         GUI               Base256           Base16 (optional)
+Color: fg_1          #ffffff           231
 Color: fg0           #eeeeee           255
 Color: fg1           #d0d0d0           252
 Color: fg2           #bcbcbc           250
@@ -87,6 +86,10 @@ Color: uiblue        #00afff           39
 Color: uipurple      #af00ff           129
 Color: uiamber       #ffaf00           214
 
+Color: specialcyan   #afd7d7           152
+Color: literalyellow #d7d7af           187
+Color: labelpink     #d7c0d7           182
+
 Color: errorred      #ff005f           197
 ; }}}
 
@@ -99,6 +102,7 @@ Background: light
 
 ; Color palette for light variant {{{
 ; Color name         GUI               Base256           Base16 (optional)
+Color: fg_1          #000000           16
 Color: fg0           #121212           233
 Color: fg1           #3a3a3a           237
 Color: fg2           #626262           241
@@ -130,6 +134,10 @@ Color: uiteal        #00ffaf           49
 Color: uiblue        #00afff           39
 Color: uipurple      #af00ff           129
 Color: uiamber       #ffaf00           214
+
+Color: specialcyan   #234e5f           23
+Color: literalyellow #5c5c23           58
+Color: labelpink     #603060           53
 
 Color: errorred      #ff005f           197
 ; }}}
