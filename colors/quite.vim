@@ -117,10 +117,10 @@ if &background ==# 'dark'
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi CurSearch guifg=#00afff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi SpellBad guifg=#d7005f guibg=NONE guisp=#d7005f gui=undercurl cterm=underline
-  hi SpellCap guifg=#0087d7 guibg=NONE guisp=#0087d7 gui=undercurl cterm=underline
-  hi SpellLocal guifg=#d787d7 guibg=NONE guisp=#d787d7 gui=undercurl cterm=underline
-  hi SpellRare guifg=#00cccc guibg=NONE guisp=#00cccc gui=undercurl cterm=underline
+  hi SpellBad guifg=NONE guibg=NONE guisp=#d7005f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellCap guifg=NONE guibg=NONE guisp=#0087d7 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellLocal guifg=NONE guibg=NONE guisp=#d787d7 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellRare guifg=NONE guibg=NONE guisp=#00cccc gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi StatusLine guifg=#080808 guibg=#eeeeee gui=bold cterm=bold
   hi StatusLineNC guifg=#080808 guibg=#626262 gui=NONE cterm=NONE
   hi TabLine guifg=NONE guibg=#626262 gui=NONE cterm=NONE
@@ -213,10 +213,10 @@ else
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi CurSearch guifg=#00afff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi SpellBad guifg=#af0011 guibg=NONE guisp=#af0011 gui=undercurl cterm=underline
-  hi SpellCap guifg=#005faf guibg=NONE guisp=#005faf gui=undercurl cterm=underline
-  hi SpellLocal guifg=#870087 guibg=NONE guisp=#870087 gui=undercurl cterm=underline
-  hi SpellRare guifg=#008787 guibg=NONE guisp=#008787 gui=undercurl cterm=underline
+  hi SpellBad guifg=NONE guibg=NONE guisp=#af0011 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellCap guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellLocal guifg=NONE guibg=NONE guisp=#870087 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellRare guifg=NONE guibg=NONE guisp=#008787 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi StatusLine guifg=#eeeeee guibg=#121212 gui=bold cterm=bold
   hi StatusLineNC guifg=#eeeeee guibg=#a8a8a8 gui=NONE cterm=NONE
   hi TabLine guifg=NONE guibg=#a8a8a8 gui=NONE cterm=NONE
@@ -290,10 +290,10 @@ if s:t_Co >= 256
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
     hi CurSearch ctermfg=39 ctermbg=16 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi SpellBad ctermfg=161 ctermbg=NONE cterm=underline
-    hi SpellCap ctermfg=32 ctermbg=NONE cterm=underline
-    hi SpellLocal ctermfg=176 ctermbg=NONE cterm=underline
-    hi SpellRare ctermfg=44 ctermbg=NONE cterm=underline
+    hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellLocal ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellRare ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi StatusLine ctermfg=232 ctermbg=255 cterm=bold
     hi StatusLineNC ctermfg=232 ctermbg=241 cterm=NONE
     hi TabLine ctermfg=NONE ctermbg=241 cterm=NONE
@@ -365,10 +365,10 @@ if s:t_Co >= 256
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
     hi CurSearch ctermfg=39 ctermbg=16 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi SpellBad ctermfg=124 ctermbg=NONE cterm=underline
-    hi SpellCap ctermfg=25 ctermbg=NONE cterm=underline
-    hi SpellLocal ctermfg=90 ctermbg=NONE cterm=underline
-    hi SpellRare ctermfg=30 ctermbg=NONE cterm=underline
+    hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellLocal ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellRare ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi StatusLine ctermfg=255 ctermbg=233 cterm=bold
     hi StatusLineNC ctermfg=255 ctermbg=248 cterm=NONE
     hi TabLine ctermfg=NONE ctermbg=248 cterm=NONE
