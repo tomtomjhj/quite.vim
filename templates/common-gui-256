@@ -53,10 +53,10 @@ QuickFixLine         none              diffpink
 Search               uiblue            black             reverse,bold
 CurSearch            uiblue            black             reverse,bold,underline
 SignColumn           none              none
-SpellBad             quite1            none              t=underline g=undercurl s=quite1
-SpellCap             quite4            none              t=underline g=undercurl s=quite4
-SpellLocal           quite5            none              t=underline g=undercurl s=quite5
-SpellRare            quite6            none              t=underline g=undercurl s=quite6
+SpellBad             none              none              t=undercurl g=undercurl s=quite1
+SpellCap             none              none              t=undercurl g=undercurl s=quite4
+SpellLocal           none              none              t=undercurl g=undercurl s=quite5
+SpellRare            none              none              t=undercurl g=undercurl s=quite6
 StatusLine           bg0               fg0               bold
 StatusLineNC         bg0               bg3
 TabLine              none              bg3
