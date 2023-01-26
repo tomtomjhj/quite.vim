@@ -43,6 +43,44 @@ hi! link Typedef Statement
 hi! link SpecialChar Special
 hi! link Tag Special
 hi! link Debug Special
+if has('nvim-0.8')
+  hi! link @punctuation.special PunctuationSpecial
+  hi! link @string.regex Special
+  hi! link @function Label
+  hi! link @function.builtin Constant
+  hi! link @function.call NONE
+  hi! link @function.macro Macro
+  hi! link @method Label
+  hi! link @method.call NONE
+  hi! link @constructor NONE
+  hi! link @type.builtin Constant
+  hi! link @type.qualifier StorageClass
+  hi! link @storageclass.lifetime Literal
+  hi! link @attribute Special
+  hi! link @variable.builtin Constant
+  hi! link @constant.builtin Constant
+  hi! link @namespace NONE
+  hi! link @text.strong Bold
+  hi! link @text.emphasis Italic
+  hi! link @text.underline Underlined
+  hi! link @text.strike Strikethrough
+  hi! link @text.title Title
+  hi! link @text.literal NormalFloat
+  hi! link @text.uri Underlined
+  hi! link @text.math Literal
+  hi! link @text.reference Underlined
+  hi! link @text.todo Todo
+  hi! link @text.note Todo
+  hi! link @text.warning Error
+  hi! link @text.danger Error
+  hi! link @text.diff.add diffAdded
+  hi! link @text.diff.delete diffRemoved
+  hi! link @tag Statement
+  hi! link @tag.attribute None
+  hi! link @tag.delimiter Delimiter
+endif
+if has('nvim-0.9')
+endif
 hi! link debugBreakpoint ModeMsg
 hi! link debugPC CursorLine
 if has('nvim')
