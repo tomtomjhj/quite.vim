@@ -45,6 +45,53 @@ hi! link Tag Special
 hi! link Debug Special
 hi! link debugBreakpoint ModeMsg
 hi! link debugPC CursorLine
+if has('nvim')
+  hi! link CmpItemAbbrMatch Bold
+  hi! link CmpItemKind NONE
+endif
+hi! link UndotreeBranch NONE
+hi! link coqTerm Keyword
+hi! link coqTactic Constant
+hi! link coqLtac Constant
+hi! link coqTacticKwd Constant
+hi! link helpCommand Literal
+hi! link helpExample Literal
+hi! link helpHyperTextJump Underlined
+hi! link helpOption Underlined
+hi! link htmlBold Bold
+hi! link htmlItalic Italic
+hi! link htmlBoldItalic BoldItalic
+hi! link htmlStrike Strikethrough
+hi! link luaFunction Keyword
+hi! link markdownCode NormalFloat
+hi! link markdownCodeBlock NormalFloat
+hi! link markdownHeadingDelimiter Keyword
+hi! link markdownListMarker PunctuationSpecial
+hi! link markdownHeadingDelimiter PunctuationSpecial
+hi! link ocamlModPath NONE
+hi! link ocamlFullMod NONE
+hi! link ocamlOperator Operator
+hi! link pythonBuiltin Constant
+hi! link pythonExceptions NONE
+hi! link rustCommentLineDoc Comment
+hi! link rustModPath NONE
+hi! link shCommandSub NONE
+hi! link shArithmetic NONE
+hi! link shShellVariables NONE
+hi! link shSpecial NONE
+hi! link shSpecialDQ NONE
+hi! link shSpecialSQ NONE
+hi! link texCmd Constant
+hi! link texCmdType Constant
+hi! link texMathDelim Constant
+hi! link texMathZone Literal
+hi! link texNewcmdArgName Label
+hi! link texPartArgTitle Title
+hi! link texTitleArg Title
+hi! link vimAutoEvent Constant
+hi! link vimCommentTitle SpecialComment
+hi! link vimEnvvar Constant
+hi! link vimOption Constant
 
 if &background ==# 'dark'
   if (has('termguicolors') && &termguicolors) || has('gui_running')
@@ -132,12 +179,32 @@ if &background ==# 'dark'
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Bold guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Italic guifg=NONE guibg=NONE gui=italic ctermfg=NONE ctermbg=NONE cterm=italic
+  hi BoldItalic guifg=NONE guibg=NONE gui=bold,italic ctermfg=NONE ctermbg=NONE cterm=bold,italic
+  hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
   hi Literal guifg=#d7d7af guibg=NONE gui=NONE cterm=NONE
+  hi PunctuationSpecial guifg=#afd7d7 guibg=NONE gui=bold cterm=bold
   hi diffAdded guifg=#00cc11 guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
+  hi LspReferenceText guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
+  hi LspReferenceRead guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
+  hi LspReferenceWrite guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
+  hi LspCodeLens guifg=NONE guibg=#303030 gui=NONE cterm=NONE
+  hi LspCodeLensSeparator guifg=NONE guibg=#303030 gui=bold cterm=bold
+  hi DiagnosticError guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticWarn guifg=#d78700 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticInfo guifg=#00cccc guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticHint guifg=#0087d7 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#d7005f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#d78700 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#00cccc gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#0087d7 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
+    hi Italic gui=NONE cterm=NONE
+    hi BoldItalic gui=bold cterm=bold
   endif
 else
   " Light background
@@ -226,12 +293,32 @@ else
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Bold guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Italic guifg=NONE guibg=NONE gui=italic ctermfg=NONE ctermbg=NONE cterm=italic
+  hi BoldItalic guifg=NONE guibg=NONE gui=bold,italic ctermfg=NONE ctermbg=NONE cterm=bold,italic
+  hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
   hi Literal guifg=#5c5c23 guibg=NONE gui=NONE cterm=NONE
+  hi PunctuationSpecial guifg=#234e5f guibg=NONE gui=bold cterm=bold
   hi diffAdded guifg=#005f00 guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
+  hi LspReferenceText guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
+  hi LspReferenceRead guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
+  hi LspReferenceWrite guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
+  hi LspCodeLens guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
+  hi LspCodeLensSeparator guifg=NONE guibg=#d0d0d0 gui=bold cterm=bold
+  hi DiagnosticError guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticWarn guifg=#af5f00 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticInfo guifg=#008787 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticHint guifg=#005faf guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#af0011 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#af5f00 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#008787 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
+    hi Italic gui=NONE cterm=NONE
+    hi BoldItalic gui=bold cterm=bold
   endif
 endif
 
@@ -301,12 +388,32 @@ if s:t_Co >= 256
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold
+    hi Bold ctermfg=NONE ctermbg=NONE cterm=bold
+    hi Italic ctermfg=NONE ctermbg=NONE cterm=italic
+    hi BoldItalic ctermfg=NONE ctermbg=NONE cterm=bold,italic
+    hi Strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
     hi Literal ctermfg=187 ctermbg=NONE cterm=NONE
+    hi PunctuationSpecial ctermfg=152 ctermbg=NONE cterm=bold
     hi diffAdded ctermfg=40 ctermbg=NONE cterm=NONE
     hi diffRemoved ctermfg=161 ctermbg=NONE cterm=NONE
+    hi LspReferenceText ctermfg=252 ctermbg=NONE cterm=reverse
+    hi LspReferenceRead ctermfg=252 ctermbg=NONE cterm=reverse
+    hi LspReferenceWrite ctermfg=252 ctermbg=NONE cterm=reverse
+    hi LspCodeLens ctermfg=NONE ctermbg=236 cterm=NONE
+    hi LspCodeLensSeparator ctermfg=NONE ctermbg=236 cterm=bold
+    hi DiagnosticError ctermfg=161 ctermbg=NONE cterm=NONE
+    hi DiagnosticWarn ctermfg=172 ctermbg=NONE cterm=NONE
+    hi DiagnosticInfo ctermfg=44 ctermbg=NONE cterm=NONE
+    hi DiagnosticHint ctermfg=32 ctermbg=NONE cterm=NONE
+    hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
+      hi Italic cterm=NONE
+      hi BoldItalic cterm=bold
     endif
   else
     " Light background
@@ -374,12 +481,32 @@ if s:t_Co >= 256
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold
+    hi Bold ctermfg=NONE ctermbg=NONE cterm=bold
+    hi Italic ctermfg=NONE ctermbg=NONE cterm=italic
+    hi BoldItalic ctermfg=NONE ctermbg=NONE cterm=bold,italic
+    hi Strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
     hi Literal ctermfg=58 ctermbg=NONE cterm=NONE
+    hi PunctuationSpecial ctermfg=23 ctermbg=NONE cterm=bold
     hi diffAdded ctermfg=22 ctermbg=NONE cterm=NONE
     hi diffRemoved ctermfg=124 ctermbg=NONE cterm=NONE
+    hi LspReferenceText ctermfg=237 ctermbg=NONE cterm=reverse
+    hi LspReferenceRead ctermfg=237 ctermbg=NONE cterm=reverse
+    hi LspReferenceWrite ctermfg=237 ctermbg=NONE cterm=reverse
+    hi LspCodeLens ctermfg=NONE ctermbg=252 cterm=NONE
+    hi LspCodeLensSeparator ctermfg=NONE ctermbg=252 cterm=bold
+    hi DiagnosticError ctermfg=124 ctermbg=NONE cterm=NONE
+    hi DiagnosticWarn ctermfg=130 ctermbg=NONE cterm=NONE
+    hi DiagnosticInfo ctermfg=30 ctermbg=NONE cterm=NONE
+    hi DiagnosticHint ctermfg=25 ctermbg=NONE cterm=NONE
+    hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
+      hi Italic cterm=NONE
+      hi BoldItalic cterm=bold
     endif
   endif
   unlet s:t_Co s:italics
