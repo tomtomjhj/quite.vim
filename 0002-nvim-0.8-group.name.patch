@@ -1,0 +1,40 @@
+From 94b8e688ccdfed5ecc82dea94dc4b6bf2ddac1c0 Mon Sep 17 00:00:00 2001
+From: Jaehwang Jung <tomtomjhj@gmail.com>
+Date: Thu, 24 Nov 2022 20:39:21 +0900
+Subject: [PATCH 2/2] nvim 0.8 @group.name
+
+---
+ autoload/colortemplate.vim | 4 ++--
+ syntax/colortemplate.vim   | 1 +
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/autoload/colortemplate.vim b/autoload/colortemplate.vim
+index c328245..0e0764d 100644
+--- a/autoload/colortemplate.vim
++++ b/autoload/colortemplate.vim
+@@ -1355,8 +1355,8 @@ fun! s:token.next() dict
+     let self.kind = 'EOL'
+     let self.spos = len(s:getl()) - 1 " For correct error location
+     let self.pos = len(s:getl()) " Makes next() at eol idempotent
+-  elseif l:char =~? '\m\a'
+-    let [self.value, self.spos, self.pos] = matchstrpos(s:getl(), '\w\+', self.pos - 1)
++  elseif l:char =~? '\m\a\|@'
++    let [self.value, self.spos, self.pos] = matchstrpos(s:getl(), '@\?\w\+\(\.\w\+\)*', self.pos - 1)
+     let self.kind = 'WORD'
+   elseif l:char =~# '\m[0-9]'
+     let [self.value, self.spos, self.pos] = matchstrpos(s:getl(), '\d\+', self.pos - 1)
+diff --git a/syntax/colortemplate.vim b/syntax/colortemplate.vim
+index e4cd998..534d645 100644
+--- a/syntax/colortemplate.vim
++++ b/syntax/colortemplate.vim
+@@ -12,6 +12,7 @@ syn case    match
+ syn match   colortemplateAttrs        "\<\%(te\?r\?m\?\|gu\?i\?\)=\S\+" contains=colortemplateAttr,colortemplateSpecial
+ syn match   colortemplateGuisp        "\<\%(guisp\|sp\?\)="
+ syn match   colortemplateTermCode     "\<st\%(art\|op\)="
++syn match   colortemplateHiGroup      "@\w\+\%(\.\w\+\)*"
+ syn match   colortemplateHiGroup      "\<Conceal\>"
+ syn match   colortemplateHiGroup      "\<Include\>"
+ syn match   colortemplateHiGroup      "\<Terminal\>"
+-- 
+2.36.0
+
