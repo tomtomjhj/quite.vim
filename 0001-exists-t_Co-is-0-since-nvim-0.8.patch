@@ -3,7 +3,9 @@ From: Jaehwang Jung <tomtomjhj@gmail.com>
 Date: Tue, 1 Nov 2022 02:42:01 +0900
 Subject: [PATCH] exists('&t_Co') is 0 since nvim 0.8
 
-bug?
+nvim bug.
+
+fixed in nvim 30f606fc602f835fbed869140d3d658e24129c22
 ---
  autoload/colortemplate.vim | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)

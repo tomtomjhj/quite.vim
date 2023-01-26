@@ -10,9 +10,7 @@ Include: global
 
 ; Group        Unused Unused  Term attributes
 Normal         omit   omit
-#if has('nvim')
-  NormalFloat  omit   omit    reverse
-#endif
+NormalFloat    omit   omit    reverse
 ColorColumn    omit   omit    reverse
 Conceal        omit   omit
 Cursor         omit   omit    reverse
