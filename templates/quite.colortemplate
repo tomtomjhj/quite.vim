@@ -39,9 +39,84 @@ Debug                -> Special
 
 ; :help highlight-groups
 
-; plugins and filetypes
+; plugins and filetypes {{{
 debugBreakpoint      -> ModeMsg
 debugPC              -> CursorLine
+; nvim-cmp {{{
+#if has('nvim')
+  CmpItemAbbrMatch   -> Bold
+  CmpItemKind        -> NONE
+#endif
+; }}}
+; undotree {{{
+UndotreeBranch       -> NONE
+; }}}
+; Coq: {{{
+coqTerm              -> Keyword
+coqTactic            -> Constant
+coqLtac              -> Constant
+coqTacticKwd         -> Constant
+; }}}
+; Help: {{{
+helpCommand          -> Literal
+helpExample          -> Literal
+helpHyperTextJump    -> Underlined
+helpOption           -> Underlined
+; }}}
+; HTML: {{{
+htmlBold             -> Bold
+htmlItalic           -> Italic
+htmlBoldItalic       -> BoldItalic
+htmlStrike           -> Strikethrough
+; }}}
+; Lua: {{{
+luaFunction          -> Keyword
+; }}}
+; Markdown: {{{
+; See also HTML
+markdownCode         -> NormalFloat    ; Literal
+markdownCodeBlock    -> NormalFloat    ; Literal
+markdownHeadingDelimiter -> Keyword
+markdownListMarker   -> PunctuationSpecial
+markdownHeadingDelimiter -> PunctuationSpecial
+; }}}
+; Ocaml: {{{
+ocamlModPath         -> NONE
+ocamlFullMod         -> NONE
+ocamlOperator        -> Operator
+; }}}
+; Python: {{{
+pythonBuiltin        -> Constant
+pythonExceptions     -> NONE
+; }}}
+; Rust: {{{
+rustCommentLineDoc   -> Comment
+rustModPath          -> NONE
+; }}}
+; sh: {{{
+shCommandSub         -> NONE
+shArithmetic         -> NONE
+shShellVariables     -> NONE
+shSpecial            -> NONE
+shSpecialDQ          -> NONE
+shSpecialSQ          -> NONE
+; }}}
+; Tex: {{{
+texCmd               -> Constant
+texCmdType           -> Constant
+texMathDelim         -> Constant
+texMathZone          -> Literal
+texNewcmdArgName     -> Label
+texPartArgTitle      -> Title
+texTitleArg          -> Title
+; }}}
+; Vim: {{{
+vimAutoEvent         -> Constant
+vimCommentTitle      -> SpecialComment
+vimEnvvar            -> Constant
+vimOption            -> Constant
+; }}}
+; }}}
 ; }}}
 
 ; NOTE: Moving this line variant declaration above the global definitions

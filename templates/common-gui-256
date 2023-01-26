@@ -72,7 +72,31 @@ ToolbarLine          none              none
 ToolbarButton        none              none              bold
 
 ; Custom groups
+Bold                 none              none              bold
+Italic               none              none              italic
+BoldItalic           none              none              bold,italic
+Strikethrough        none              none              strikethrough
 Literal              literalyellow     none
+PunctuationSpecial   specialcyan       none              bold
+
 ; plugins and filetypes
 diffAdded            quite2            none
 diffRemoved          quite1            none
+
+; :h lsp-lighlight
+LspReferenceText     fg1               none              reverse
+LspReferenceRead     fg1               none              reverse
+LspReferenceWrite    fg1               none              reverse
+LspCodeLens          none              bg1
+LspCodeLensSeparator none              bg1               bold
+
+; :h diagnostic-highlights
+; TODO: DiagnosticOk
+DiagnosticError           quite1       none
+DiagnosticWarn            quite3       none
+DiagnosticInfo            quite6       none
+DiagnosticHint            quite4       none
+DiagnosticUnderlineError  none         none              t=undercurl g=undercurl s=quite1
+DiagnosticUnderlineWarn   none         none              t=undercurl g=undercurl s=quite3
+DiagnosticUnderlineInfo   none         none              t=undercurl g=undercurl s=quite6
+DiagnosticUnderlineHint   none         none              t=undercurl g=undercurl s=quite4
