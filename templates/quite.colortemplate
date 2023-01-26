@@ -39,6 +39,109 @@ Debug                -> Special
 
 ; :help highlight-groups
 
+; nvim treesitter {{{
+; https://github.com/nvim-treesitter/nvim-treesitter/blob/619f1ace03860d668c7a661332c38480f2db2584/CONTRIBUTING.md
+; See also :h treesitter-highlight-groups
+#if has('nvim-0.8')
+  ; misc
+  ; @comment
+  ; @error
+  ; @none
+  ; @preproc hebangs
+  ; @define
+  ; @operator
+
+  ; punctuation
+  ; @punctuation.delimiter
+  ; @punctuation.bracket
+  @punctuation.special -> PunctuationSpecial
+
+  ; literals
+  ; @string
+  @string.regex      -> Special
+  ; @string.escape
+  ; @string.special
+  ; @character
+  ; @character.special
+  ; @boolean
+  ; @number
+  ; @float
+
+  ; functions
+  @function          -> Label
+  @function.builtin  -> Constant
+  @function.call     -> NONE
+  @function.macro    -> Macro
+  @method            -> Label
+  @method.call       -> NONE
+  ; NOTE: used for both calls and definitions
+  @constructor       -> NONE
+  ; @parameter
+
+  ; keywords
+  ; @keyword
+  ; @keyword.function
+  ; @keyword.operator
+  ; @keyword.return
+  ; @conditional
+  ; @conditional.ternary
+  ; @repeat
+  ; @debug
+  ; @label
+  ; @include
+  ; @exception
+
+  ; types
+  ; @type
+  @type.builtin      -> Constant
+  ; @type.definition
+  @type.qualifier    -> StorageClass
+  ; @storageclass
+  @storageclass.lifetime -> Literal
+  @attribute         -> Special
+  ; @field
+  ; @property
+
+  ; identifiers
+  ; @variable
+  @variable.builtin  -> Constant
+  ; @constant
+  @constant.builtin  -> Constant
+  ; @constant.macro
+  @namespace         -> NONE
+  ; @symbol
+
+  ; text
+  ; @text
+  @text.strong       -> Bold
+  @text.emphasis     -> Italic
+  @text.underline    -> Underlined
+  @text.strike       -> Strikethrough
+  @text.title        -> Title
+  ; NOTE: using bg for non-UI is bad because bg can change e.g. floating window, diff mode, ...
+  @text.literal      -> NormalFloat    ; Literal
+  @text.uri          -> Underlined
+  @text.math         -> Literal
+  ; @text.environment
+  ; @text.environment.name
+  @text.reference    -> Underlined
+  @text.todo         -> Todo
+  @text.note         -> Todo
+  @text.warning      -> Error
+  @text.danger       -> Error
+  @text.diff.add     -> diffAdded
+  @text.diff.delete  -> diffRemoved
+
+  ; tags
+  @tag               -> Statement
+  @tag.attribute     -> None
+  @tag.delimiter     -> Delimiter
+#endif
+; }}}
+; :h lsp-semantic_tokens {{{
+#if has('nvim-0.9')
+#endif
+; }}}
 ; plugins and filetypes {{{
 debugBreakpoint      -> ModeMsg
 debugPC              -> CursorLine
