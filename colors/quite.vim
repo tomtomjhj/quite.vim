@@ -1,5 +1,5 @@
 " Name:         quite
-" Description:  A variant of "quiet" by neutaaaaan
+" Description:  A colorscheme derived from neutaaaaan's "quiet"
 " Author:       Jaehwang Jung <tomtomjhj@gmail.com>
 " Maintainer:   Jaehwang Jung <tomtomjhj@gmail.com>
 " License:      Vim License (see `:help license`)
@@ -69,9 +69,7 @@ if &background ==# 'dark'
     let g:terminal_color_15 = '#eeeeee'
   endif
   hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
-  if has('nvim')
-    hi NormalFloat guifg=NONE guibg=#303030 gui=NONE cterm=NONE
-  endif
+  hi NormalFloat guifg=NONE guibg=#303030 gui=NONE cterm=NONE
   hi Comment guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=#ffffff guibg=NONE gui=italic cterm=italic
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -165,9 +163,7 @@ else
     let g:terminal_color_15 = '#121212'
   endif
   hi Normal guifg=#121212 guibg=#eeeeee gui=NONE cterm=NONE
-  if has('nvim')
-    hi NormalFloat guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
-  endif
+  hi NormalFloat guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
   hi Comment guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=#000000 guibg=NONE gui=italic cterm=italic
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -242,9 +238,7 @@ endif
 if s:t_Co >= 256
   if &background ==# 'dark'
     hi Normal ctermfg=255 ctermbg=232 cterm=NONE
-    if has('nvim')
-      hi NormalFloat ctermfg=NONE ctermbg=236 cterm=NONE
-    endif
+    hi NormalFloat ctermfg=NONE ctermbg=236 cterm=NONE
     hi Comment ctermfg=250 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=231 ctermbg=NONE cterm=italic
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -317,9 +311,7 @@ if s:t_Co >= 256
   else
     " Light background
     hi Normal ctermfg=233 ctermbg=255 cterm=NONE
-    if has('nvim')
-      hi NormalFloat ctermfg=NONE ctermbg=252 cterm=NONE
-    endif
+    hi NormalFloat ctermfg=NONE ctermbg=252 cterm=NONE
     hi Comment ctermfg=241 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=16 ctermbg=NONE cterm=italic
     hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -408,9 +400,7 @@ if s:t_Co >= 8
   hi! link Terminal Normal
   hi! link lCursor Cursor
   hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
-  if has('nvim')
-    hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
-  endif
+  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
   hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
   hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -489,9 +479,7 @@ if s:t_Co >= 0
   hi! link Terminal Normal
   hi! link lCursor Cursor
   hi Normal term=NONE
-  if has('nvim')
-    hi NormalFloat term=reverse
-  endif
+  hi NormalFloat term=reverse
   hi ColorColumn term=reverse
   hi Conceal term=NONE
   hi Cursor term=reverse
