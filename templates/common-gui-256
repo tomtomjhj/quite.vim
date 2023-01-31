@@ -16,7 +16,7 @@ Special              specialcyan       none
 Delimiter            fg1               none
 SpecialComment       fg2               none              bold
 Underlined           none              none              underline
-Ignore               none              none
+Ignore               bg3               none
 Error                errorred          black             reverse,bold
 Todo                 uiteal            black             reverse,bold
 
