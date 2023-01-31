@@ -167,7 +167,7 @@ if &background ==# 'dark'
   hi Delimiter guifg=#d0d0d0 guibg=NONE gui=NONE cterm=NONE
   hi SpecialComment guifg=#bcbcbc guibg=NONE gui=bold cterm=bold
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Ignore guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi ColorColumn guifg=NONE guibg=#303030 gui=NONE cterm=NONE
@@ -281,7 +281,7 @@ else
   hi Delimiter guifg=#3a3a3a guibg=NONE gui=NONE cterm=NONE
   hi SpecialComment guifg=#626262 guibg=NONE gui=bold cterm=bold
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Ignore guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi ColorColumn guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
@@ -376,7 +376,7 @@ if s:t_Co >= 256
     hi Delimiter ctermfg=252 ctermbg=NONE cterm=NONE
     hi SpecialComment ctermfg=250 ctermbg=NONE cterm=bold
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=241 ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
     hi ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE
@@ -469,7 +469,7 @@ if s:t_Co >= 256
     hi Delimiter ctermfg=237 ctermbg=NONE cterm=NONE
     hi SpecialComment ctermfg=241 ctermbg=NONE cterm=bold
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=248 ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
     hi ColorColumn ctermfg=NONE ctermbg=252 cterm=NONE
