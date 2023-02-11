@@ -290,13 +290,13 @@ Color: bg2           #bcbcbc           250
 Color: bg3           #a8a8a8           248
 
 Color: quite1        #af0011           124
-Color: quite2        #005f00           22
+Color: quite2        #007700           28
 Color: quite3        #af5f00           130
 Color: quite4        #005faf           25
 Color: quite5        #870087           90
 Color: quite6        #008787           30
 Color: quite9        #d70000           160
-Color: quite10       #008700           28
+Color: quite10       #00af00           34
 Color: quite11       #d78700           172
 Color: quite12       #0087d7           32
 Color: quite13       #af00af           127
