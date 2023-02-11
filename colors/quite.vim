@@ -247,12 +247,12 @@ if &background ==# 'dark'
 else
   " Light background
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#eeeeee', '#af0011', '#005f00', '#af5f00', '#005faf', '#870087', '#008787', '#626262', '#a8a8a8', '#d70000', '#008700', '#d78700', '#0087d7', '#af00af', '#00afaf', '#121212']
+    let g:terminal_ansi_colors = ['#eeeeee', '#af0011', '#007700', '#af5f00', '#005faf', '#870087', '#008787', '#626262', '#a8a8a8', '#d70000', '#00af00', '#d78700', '#0087d7', '#af00af', '#00afaf', '#121212']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#eeeeee'
     let g:terminal_color_1 = '#af0011'
-    let g:terminal_color_2 = '#005f00'
+    let g:terminal_color_2 = '#007700'
     let g:terminal_color_3 = '#af5f00'
     let g:terminal_color_4 = '#005faf'
     let g:terminal_color_5 = '#870087'
@@ -260,7 +260,7 @@ else
     let g:terminal_color_7 = '#626262'
     let g:terminal_color_8 = '#a8a8a8'
     let g:terminal_color_9 = '#d70000'
-    let g:terminal_color_10 = '#008700'
+    let g:terminal_color_10 = '#00af00'
     let g:terminal_color_11 = '#d78700'
     let g:terminal_color_12 = '#0087d7'
     let g:terminal_color_13 = '#af00af'
@@ -337,7 +337,7 @@ else
   hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
   hi Literal guifg=#5c5c23 guibg=NONE gui=NONE cterm=NONE
   hi PunctuationSpecial guifg=#234e5f guibg=NONE gui=bold cterm=bold
-  hi diffAdded guifg=#005f00 guibg=NONE gui=NONE cterm=NONE
+  hi diffAdded guifg=#007700 guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi LspReferenceText guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
@@ -525,7 +525,7 @@ if s:t_Co >= 256
     hi Strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
     hi Literal ctermfg=58 ctermbg=NONE cterm=NONE
     hi PunctuationSpecial ctermfg=23 ctermbg=NONE cterm=bold
-    hi diffAdded ctermfg=22 ctermbg=NONE cterm=NONE
+    hi diffAdded ctermfg=28 ctermbg=NONE cterm=NONE
     hi diffRemoved ctermfg=124 ctermbg=NONE cterm=NONE
     hi LspReferenceText ctermfg=237 ctermbg=NONE cterm=reverse
     hi LspReferenceRead ctermfg=237 ctermbg=NONE cterm=reverse
@@ -760,13 +760,13 @@ endif
 " Color: bg2           #bcbcbc           250
 " Color: bg3           #a8a8a8           248
 " Color: quite1        #af0011           124
-" Color: quite2        #005f00           22
+" Color: quite2        #007700           28
 " Color: quite3        #af5f00           130
 " Color: quite4        #005faf           25
 " Color: quite5        #870087           90
 " Color: quite6        #008787           30
 " Color: quite9        #d70000           160
-" Color: quite10       #008700           28
+" Color: quite10       #00af00           34
 " Color: quite11       #d78700           172
 " Color: quite12       #0087d7           32
 " Color: quite13       #af00af           127
