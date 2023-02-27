@@ -94,7 +94,7 @@ Debug                -> Special
   ; types
   ; @type
   @type.builtin      -> Constant
-  ; @type.definition
+  @type.definition   -> Label
   @type.qualifier    -> StorageClass
   ; @storageclass
   @storageclass.lifetime -> Literal
