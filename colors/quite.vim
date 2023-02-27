@@ -54,6 +54,7 @@ if has('nvim-0.8')
   hi! link @method.call NONE
   hi! link @constructor NONE
   hi! link @type.builtin Constant
+  hi! link @type.definition Label
   hi! link @type.qualifier StorageClass
   hi! link @storageclass.lifetime Literal
   hi! link @attribute Special
