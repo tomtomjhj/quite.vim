@@ -3,11 +3,6 @@
 ; Template for black & white terminals
 Variant: 0
 
-verbatim
-hi clear
-endverbatim
-Include: global
-
 ; Group        Unused Unused  Term attributes
 Normal         omit   omit
 NormalFloat    omit   omit    reverse

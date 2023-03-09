@@ -11,8 +11,6 @@ Colortemplate Options: timestamp=0
 ; }}}
 
 ; Global definitions {{{
-Include: global
-
 Color: black         #000000           16
 
 ; :help group-name
@@ -38,6 +36,20 @@ Tag                  -> Special
 Debug                -> Special
 
 ; :help highlight-groups
+MessageWindow        -> Pmenu
+PopupNotification    -> Todo
+; vim uses SpecialKey for listchar
+#if has('nvim')
+  SpecialKey         -> Special
+#else
+  SpecialKey         -> NonText
+#endif
+StatusLineTerm       -> StatusLine
+StatusLineTermNC     -> StatusLineNC
+Terminal             -> Normal
+
+; :help lCursor
+lCursor              -> Cursor
 
 ; nvim treesitter {{{
 ; https://github.com/nvim-treesitter/nvim-treesitter/blob/619f1ace03860d668c7a661332c38480f2db2584/CONTRIBUTING.md
