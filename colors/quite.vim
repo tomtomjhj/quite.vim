@@ -12,17 +12,6 @@ let g:colors_name = 'quite'
 let s:t_Co = has('nvim') || (exists('&t_Co') && !has('gui_running')) ? +&t_Co : -1
 let s:italics = (&t_ZH != '' && &t_ZH != '[7m') || has('gui_running') || has('nvim')
 
-hi! link MessageWindow Pmenu
-hi! link PopupNotification Todo
-if has('nvim')
-  hi! link SpecialKey Special
-else
-  hi! link SpecialKey NonText
-endif
-hi! link StatusLineTerm StatusLine
-hi! link StatusLineTermNC StatusLineNC
-hi! link Terminal Normal
-hi! link lCursor Cursor
 hi! link String Literal
 hi! link Character Literal
 hi! link Number Literal
@@ -43,6 +32,17 @@ hi! link Typedef Statement
 hi! link SpecialChar Special
 hi! link Tag Special
 hi! link Debug Special
+hi! link MessageWindow Pmenu
+hi! link PopupNotification Todo
+if has('nvim')
+  hi! link SpecialKey Special
+else
+  hi! link SpecialKey NonText
+endif
+hi! link StatusLineTerm StatusLine
+hi! link StatusLineTermNC StatusLineNC
+hi! link Terminal Normal
+hi! link lCursor Cursor
 if has('nvim-0.8')
   hi! link @punctuation.special PunctuationSpecial
   hi! link @string.regex Special
@@ -553,18 +553,6 @@ if s:t_Co >= 256
 endif
 
 if s:t_Co >= 8
-  hi clear
-  hi! link MessageWindow Pmenu
-  hi! link PopupNotification Todo
-  if has('nvim')
-    hi! link SpecialKey Special
-  else
-    hi! link SpecialKey NonText
-  endif
-  hi! link StatusLineTerm StatusLine
-  hi! link StatusLineTermNC StatusLineNC
-  hi! link Terminal Normal
-  hi! link lCursor Cursor
   hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
   hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
@@ -632,18 +620,6 @@ if s:t_Co >= 8
 endif
 
 if s:t_Co >= 0
-  hi clear
-  hi! link MessageWindow Pmenu
-  hi! link PopupNotification Todo
-  if has('nvim')
-    hi! link SpecialKey Special
-  else
-    hi! link SpecialKey NonText
-  endif
-  hi! link StatusLineTerm StatusLine
-  hi! link StatusLineTermNC StatusLineNC
-  hi! link Terminal Normal
-  hi! link lCursor Cursor
   hi Normal term=NONE
   hi NormalFloat term=reverse
   hi ColorColumn term=reverse
