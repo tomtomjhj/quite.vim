@@ -1,4 +1,4 @@
-From 94b8e688ccdfed5ecc82dea94dc4b6bf2ddac1c0 Mon Sep 17 00:00:00 2001
+From 5f77925ce2d142f4a241bf246ccfec7fc20e2627 Mon Sep 17 00:00:00 2001
 From: Jaehwang Jung <tomtomjhj@gmail.com>
 Date: Thu, 24 Nov 2022 20:39:21 +0900
 Subject: [PATCH 2/2] nvim 0.8 @group.name
@@ -9,7 +9,7 @@ Subject: [PATCH 2/2] nvim 0.8 @group.name
  2 files changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/autoload/colortemplate.vim b/autoload/colortemplate.vim
-index c328245..0e0764d 100644
+index 61a4cac..1cb0b60 100644
 --- a/autoload/colortemplate.vim
 +++ b/autoload/colortemplate.vim
 @@ -1355,8 +1355,8 @@ fun! s:token.next() dict
