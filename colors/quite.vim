@@ -193,13 +193,17 @@ if &background ==# 'dark'
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NonText guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Pmenu guifg=NONE guibg=#404868 gui=NONE cterm=NONE
-  hi PmenuSel guifg=NONE guibg=#704470 gui=NONE cterm=NONE
+  hi PmenuExtra guifg=NONE guibg=#404868 gui=NONE cterm=NONE
+  hi PmenuKind guifg=NONE guibg=#404868 gui=bold cterm=bold
   hi PmenuSbar guifg=NONE guibg=#626262 gui=NONE cterm=NONE
-  hi PmenuThumb guifg=NONE guibg=#704470 gui=NONE cterm=NONE
+  hi PmenuSel guifg=NONE guibg=#704470 gui=NONE cterm=NONE
+  hi PmenuExtraSel guifg=NONE guibg=#704470 gui=NONE cterm=NONE
+  hi PmenuKindSel guifg=NONE guibg=#704470 gui=bold cterm=bold
+  hi PmenuThumb guifg=#704470 guibg=#704470 gui=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi QuickFixLine guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi CurSearch guifg=#00afff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
+  hi CurSearch guifg=#ff5fff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi SpellBad guifg=NONE guibg=NONE guisp=#d7005f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE guisp=#0087d7 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -307,13 +311,17 @@ else
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NonText guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
   hi Pmenu guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
-  hi PmenuSel guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
+  hi PmenuExtra guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
+  hi PmenuKind guifg=NONE guibg=#a0afd7 gui=bold cterm=bold
   hi PmenuSbar guifg=NONE guibg=#a8a8a8 gui=NONE cterm=NONE
-  hi PmenuThumb guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
+  hi PmenuSel guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
+  hi PmenuExtraSel guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
+  hi PmenuKindSel guifg=NONE guibg=#d7a0d7 gui=bold cterm=bold
+  hi PmenuThumb guifg=#d7a0d7 guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi QuickFixLine guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi CurSearch guifg=#00afff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
+  hi CurSearch guifg=#ff5fff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi SpellBad guifg=NONE guibg=NONE guisp=#af0011 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -402,13 +410,17 @@ if s:t_Co >= 256
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi NonText ctermfg=241 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=60 cterm=NONE
-    hi PmenuSel ctermfg=NONE ctermbg=96 cterm=NONE
+    hi PmenuExtra ctermfg=NONE ctermbg=60 cterm=NONE
+    hi PmenuKind ctermfg=NONE ctermbg=60 cterm=bold
     hi PmenuSbar ctermfg=NONE ctermbg=241 cterm=NONE
-    hi PmenuThumb ctermfg=NONE ctermbg=96 cterm=NONE
+    hi PmenuSel ctermfg=NONE ctermbg=96 cterm=NONE
+    hi PmenuExtraSel ctermfg=NONE ctermbg=96 cterm=NONE
+    hi PmenuKindSel ctermfg=NONE ctermbg=96 cterm=bold
+    hi PmenuThumb ctermfg=96 ctermbg=96 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
     hi QuickFixLine ctermfg=NONE ctermbg=96 cterm=NONE
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
-    hi CurSearch ctermfg=39 ctermbg=16 cterm=bold,reverse,underline
+    hi CurSearch ctermfg=207 ctermbg=16 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -495,13 +507,17 @@ if s:t_Co >= 256
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi NonText ctermfg=248 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=146 cterm=NONE
-    hi PmenuSel ctermfg=NONE ctermbg=176 cterm=NONE
+    hi PmenuExtra ctermfg=NONE ctermbg=146 cterm=NONE
+    hi PmenuKind ctermfg=NONE ctermbg=146 cterm=bold
     hi PmenuSbar ctermfg=NONE ctermbg=248 cterm=NONE
-    hi PmenuThumb ctermfg=NONE ctermbg=176 cterm=NONE
+    hi PmenuSel ctermfg=NONE ctermbg=176 cterm=NONE
+    hi PmenuExtraSel ctermfg=NONE ctermbg=176 cterm=NONE
+    hi PmenuKindSel ctermfg=NONE ctermbg=176 cterm=bold
+    hi PmenuThumb ctermfg=176 ctermbg=176 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
     hi QuickFixLine ctermfg=NONE ctermbg=176 cterm=NONE
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
-    hi CurSearch ctermfg=39 ctermbg=16 cterm=bold,reverse,underline
+    hi CurSearch ctermfg=207 ctermbg=16 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -564,7 +580,7 @@ if s:t_Co >= 8
   hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Error ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Error ctermfg=darkred ctermbg=NONE cterm=bold,reverse
   hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi ColorColumn ctermfg=NONE ctermbg=NONE cterm=reverse
   hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -587,13 +603,17 @@ if s:t_Co >= 8
   hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NonText ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi PmenuSbar ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold
+  hi PmenuExtraSel ctermfg=NONE ctermbg=NONE cterm=bold
+  hi PmenuKindSel ctermfg=NONE ctermbg=NONE cterm=bold
   hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Question ctermfg=NONE ctermbg=NONE cterm=standout
   hi QuickFixLine ctermfg=darkmagenta ctermbg=NONE cterm=reverse
   hi Search ctermfg=darkcyan ctermbg=NONE cterm=bold,reverse
-  hi CurSearch ctermfg=darkcyan ctermbg=NONE cterm=bold,reverse,underline
+  hi CurSearch ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse,underline
   hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
   hi SpellBad ctermfg=darkred ctermbg=NONE cterm=underline
   hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=underline
@@ -717,6 +737,7 @@ endif
 " Color: uiblue        #00afff           39
 " Color: uipurple      #af00ff           129
 " Color: uiamber       #ffaf00           214
+" Color: uicursearch   #ff5fff           207
 " Color: specialcyan   #afd7d7           152
 " Color: literalyellow #d7d7af           187
 " Color: labelpink     #d7c0d7           182
@@ -757,6 +778,7 @@ endif
 " Color: uiblue        #00afff           39
 " Color: uipurple      #af00ff           129
 " Color: uiamber       #ffaf00           214
+" Color: uicursearch   #ff5fff           207
 " Color: specialcyan   #234e5f           23
 " Color: literalyellow #5c5c23           58
 " Color: labelpink     #603060           53
