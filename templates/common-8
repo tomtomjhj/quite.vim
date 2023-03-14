@@ -1,14 +1,12 @@
 ; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
 
-Variant: 8
-
-; GUI and 256 color values are just placeholders taken from the dark variant.
+; GUI and 256 color values are synced with the dark variant
 Color: term1         #d7005f           161               darkred
-Color: term2         #00af5f           35                darkgreen
+Color: term2         #00cc11           40                darkgreen
 Color: term3         #d78700           172               darkyellow
 Color: term4         #0087d7           32                darkblue
 Color: term5         #d787d7           176               darkmagenta
-Color: term6         #00afaf           37                darkcyan
+Color: term6         #00cccc           44                darkcyan
 
 
 Normal               none              none

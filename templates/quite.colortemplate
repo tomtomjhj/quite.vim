@@ -343,6 +343,7 @@ Include: common-gui-256
 ; They are just minimum viable fallback for weird environments.
 Background: any
 
+Variant: 8
 Include: common-8
 
 Include: _tcozero

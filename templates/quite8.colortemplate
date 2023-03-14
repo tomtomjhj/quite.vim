@@ -1,0 +1,28 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
+
+; Information {{{
+Full name:     quite8
+Short name:    quite8
+Author:        Jaehwang Jung <tomtomjhj@gmail.com>
+Description:   A colorscheme derived from neutaaaaan's "quiet"
+Neovim:        yes
+
+Colortemplate Options: timestamp=0
+; }}}
+
+; vim uses SpecialKey for listchar
+#if has('nvim')
+  SpecialKey         -> Special
+#else
+  SpecialKey         -> NonText
+#endif
+Terminal             -> Normal
+StatusLineTerm       -> StatusLine
+StatusLineTermNC     -> StatusLineNC
+
+
+Variant: 8 gui
+Background: any
+Include: common-8
+
+Include: _tcozero
