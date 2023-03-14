@@ -791,9 +791,9 @@ endif
 " Term colors: fg0
 " Background: any
 " Color: term1         #d7005f           161               darkred
-" Color: term2         #00af5f           35                darkgreen
+" Color: term2         #00cc11           40                darkgreen
 " Color: term3         #d78700           172               darkyellow
 " Color: term4         #0087d7           32                darkblue
 " Color: term5         #d787d7           176               darkmagenta
-" Color: term6         #00afaf           37                darkcyan
+" Color: term6         #00cccc           44                darkcyan
 " vim: et ts=2 sw=2
