@@ -275,6 +275,7 @@ Color: uiteal        #00ffaf           49
 Color: uiblue        #00afff           39
 Color: uipurple      #af00ff           129
 Color: uiamber       #ffaf00           214
+Color: uicursearch   #ff5fff           207
 
 Color: specialcyan   #afd7d7           152
 Color: literalyellow #d7d7af           187
@@ -324,6 +325,7 @@ Color: uiteal        #00ffaf           49
 Color: uiblue        #00afff           39
 Color: uipurple      #af00ff           129
 Color: uiamber       #ffaf00           214
+Color: uicursearch   #ff5fff           207
 
 Color: specialcyan   #234e5f           23
 Color: literalyellow #5c5c23           58

@@ -24,7 +24,7 @@ Type                 none              none
 Special              none              none
 Underlined           none              none              underline
 Ignore               none              none
-Error                none              none              reverse,bold
+Error                term1             none              reverse,bold
 Todo                 none              none              reverse,bold
 
 ; :help highlight-groups
@@ -49,13 +49,17 @@ ModeMsg              none              none              bold
 MoreMsg              none              none
 NonText              none              none
 Pmenu                none              none              reverse
+PmenuExtra           none              none              reverse
+PmenuKind            none              none              reverse,bold
 PmenuSbar            none              none              reverse
 PmenuSel             none              none              bold
+PmenuExtraSel        none              none              bold
+PmenuKindSel         none              none              bold
 PmenuThumb           none              none
 Question             none              none              standout
 QuickFixLine         term5             none              reverse
 Search               term6             none              reverse,bold
-CurSearch            term6             none              reverse,bold,underline
+CurSearch            term5             none              reverse,bold,underline
 SignColumn           none              none              reverse
 SpellBad             term1             none              underline
 SpellCap             term4             none              underline

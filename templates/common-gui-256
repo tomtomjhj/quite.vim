@@ -43,13 +43,17 @@ ModeMsg              none              none              bold
 MoreMsg              none              none
 NonText              bg3               none
 Pmenu                none              diffblue
-PmenuSel             none              diffpink
+PmenuExtra           none              diffblue
+PmenuKind            none              diffblue          bold
 PmenuSbar            none              bg3
-PmenuThumb           none              diffpink
+PmenuSel             none              diffpink
+PmenuExtraSel        none              diffpink
+PmenuKindSel         none              diffpink          bold
+PmenuThumb           diffpink          diffpink
 Question             none              none
 QuickFixLine         none              diffpink
 Search               uiblue            black             reverse,bold
-CurSearch            uiblue            black             reverse,bold,underline
+CurSearch            uicursearch       black             reverse,bold,underline
 SignColumn           none              none
 SpellBad             none              none              t=undercurl g=undercurl s=quite1
 SpellCap             none              none              t=undercurl g=undercurl s=quite4
