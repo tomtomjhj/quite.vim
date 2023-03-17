@@ -50,6 +50,7 @@ if has('nvim-0.8')
   hi! link @function.builtin Constant
   hi! link @function.call NONE
   hi! link @function.macro Macro
+  hi! link @function.latex Constant
   hi! link @method Label
   hi! link @method.call NONE
   hi! link @constructor NONE
