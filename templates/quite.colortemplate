@@ -84,6 +84,8 @@ lCursor              -> Cursor
   @function.builtin  -> Constant
   @function.call     -> NONE
   @function.macro    -> Macro
+  ; NOTE: @function.latex is used for both invocation and defintion. https://github.com/nvim-treesitter/nvim-treesitter/pull/3959#pullrequestreview-1218830075
+  @function.latex    -> Constant
   @method            -> Label
   @method.call       -> NONE
   ; NOTE: used for both calls and definitions
