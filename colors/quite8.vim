@@ -39,15 +39,15 @@ hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reve
 hi CursorColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi CursorLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi CursorLineNr guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-hi DiffAdd guifg=#00cc11 guibg=NONE gui=reverse cterm=reverse
-hi DiffChange guifg=#0087d7 guibg=NONE gui=reverse cterm=reverse
+hi DiffAdd guifg=#00bf17 guibg=NONE gui=reverse cterm=reverse
+hi DiffChange guifg=#0080dd guibg=NONE gui=reverse cterm=reverse
 hi DiffDelete guifg=#d7005f guibg=NONE gui=reverse cterm=reverse
-hi DiffText guifg=#d787d7 guibg=NONE gui=reverse cterm=reverse
+hi DiffText guifg=#d777d7 guibg=NONE gui=reverse cterm=reverse
 hi Directory guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
 hi FoldColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Folded guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi IncSearch guifg=#d78700 guibg=NONE gui=bold,reverse,underline cterm=bold,reverse,underline
+hi IncSearch guifg=#d79600 guibg=NONE gui=bold,reverse,underline cterm=bold,reverse,underline
 hi LineNr guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi MatchParen guifg=NONE guibg=NONE gui=bold,underline ctermfg=NONE ctermbg=NONE cterm=bold,underline
 hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
@@ -62,13 +62,13 @@ hi PmenuExtraSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=
 hi PmenuKindSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi PmenuThumb guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Question guifg=NONE guibg=NONE gui=standout ctermfg=NONE ctermbg=NONE cterm=standout
-hi QuickFixLine guifg=#d787d7 guibg=NONE gui=reverse cterm=reverse
+hi QuickFixLine guifg=#d777d7 guibg=NONE gui=reverse cterm=reverse
 hi Search guifg=#00cccc guibg=NONE gui=bold,reverse cterm=bold,reverse
-hi CurSearch guifg=#d787d7 guibg=NONE gui=bold,reverse,underline cterm=bold,reverse,underline
+hi CurSearch guifg=#d777d7 guibg=NONE gui=bold,reverse,underline cterm=bold,reverse,underline
 hi SignColumn guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
 hi SpellBad guifg=#d7005f guibg=NONE gui=underline cterm=underline
-hi SpellCap guifg=#0087d7 guibg=NONE gui=underline cterm=underline
-hi SpellLocal guifg=#d787d7 guibg=NONE gui=underline cterm=underline
+hi SpellCap guifg=#0080dd guibg=NONE gui=underline cterm=underline
+hi SpellLocal guifg=#d777d7 guibg=NONE gui=underline cterm=underline
 hi SpellRare guifg=#00cccc guibg=NONE gui=underline cterm=underline
 hi StatusLine guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
 hi StatusLineNC guifg=NONE guibg=NONE gui=bold,underline ctermfg=NONE ctermbg=NONE cterm=bold,underline
@@ -77,14 +77,14 @@ hi TabLineFill guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NO
 hi TabLineSel guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
 hi Title guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi VertSplit guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi Visual guifg=#d78700 guibg=NONE gui=reverse cterm=reverse
+hi Visual guifg=#d79600 guibg=NONE gui=reverse cterm=reverse
 hi VisualNOS guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi WarningMsg guifg=NONE guibg=NONE gui=standout ctermfg=NONE ctermbg=NONE cterm=standout
 hi WildMenu guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi CursorIM guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi ToolbarLine guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
 hi ToolbarButton guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-hi diffAdded guifg=#00cc11 guibg=NONE gui=NONE cterm=NONE
+hi diffAdded guifg=#00bf17 guibg=NONE gui=NONE cterm=NONE
 hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
 
 if s:t_Co >= 8
@@ -227,9 +227,9 @@ endif
 
 " Background: any
 " Color: term1         #d7005f           161               darkred
-" Color: term2         #00cc11           40                darkgreen
-" Color: term3         #d78700           172               darkyellow
-" Color: term4         #0087d7           32                darkblue
-" Color: term5         #d787d7           176               darkmagenta
+" Color: term2         #00bf17           34                darkgreen
+" Color: term3         #d79600           172               darkyellow
+" Color: term4         #0080dd           32                darkblue
+" Color: term5         #d777d7           176               darkmagenta
 " Color: term6         #00cccc           44                darkcyan
 " vim: et ts=2 sw=2
