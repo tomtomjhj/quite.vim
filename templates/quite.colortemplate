@@ -52,11 +52,12 @@ Terminal             -> Normal
 lCursor              -> Cursor
 
 ; nvim treesitter {{{
-; https://github.com/nvim-treesitter/nvim-treesitter/blob/619f1ace03860d668c7a661332c38480f2db2584/CONTRIBUTING.md
+; https://github.com/nvim-treesitter/nvim-treesitter/blob/1f087c91f5ca76a2257b855d72d371a2b5302986/CONTRIBUTING.md
 ; See also :h treesitter-highlight-groups
 #if has('nvim-0.8')
   ; misc
   ; @comment
+  ; @comment.documentation
   ; @error
   ; @none
   ; @preproc hebangs
@@ -70,6 +71,7 @@ lCursor              -> Cursor
 
   ; literals
   ; @string
+  ; @string.documentation
   @string.regex      -> Special
   ; @string.escape
   ; @string.special
@@ -94,6 +96,7 @@ lCursor              -> Cursor
 
   ; keywords
   ; @keyword
+  ; @keyword.coroutine
   ; @keyword.function
   ; @keyword.operator
   ; @keyword.return
@@ -134,6 +137,7 @@ lCursor              -> Cursor
   @text.title        -> Title
   ; NOTE: using bg for non-UI is bad because bg can change e.g. floating window, diff mode, ...
   @text.literal      -> NormalFloat    ; Literal
+  ; @text.quote
   @text.uri          -> Underlined
   @text.math         -> Literal
   ; @text.environment
