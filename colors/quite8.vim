@@ -21,7 +21,7 @@ hi! link StatusLineTerm StatusLine
 hi! link StatusLineTermNC StatusLineNC
 
 hi Normal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi NormalFloat guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
+hi NormalFloat guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Comment guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -37,7 +37,7 @@ hi ColorColumn guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm
 hi Conceal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
 hi CursorColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi CursorLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+hi CursorLine guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
 hi CursorLineNr guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi DiffAdd guifg=#00bf17 guibg=NONE gui=reverse cterm=reverse
 hi DiffChange guifg=#0080dd guibg=NONE gui=reverse cterm=reverse
@@ -57,7 +57,7 @@ hi Pmenu guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=rever
 hi PmenuExtra guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
 hi PmenuKind guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
 hi PmenuSbar guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
-hi PmenuSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+hi PmenuSel guifg=NONE guibg=NONE gui=bold,underline ctermfg=NONE ctermbg=NONE cterm=bold,underline
 hi PmenuExtraSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi PmenuKindSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi PmenuThumb guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -86,10 +86,14 @@ hi ToolbarLine guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm
 hi ToolbarButton guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
 hi diffAdded guifg=#00bf17 guibg=NONE gui=NONE cterm=NONE
 hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
+hi SpellBad guifg=NONE guibg=NONE guisp=#d7005f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi SpellCap guifg=NONE guibg=NONE guisp=#0080dd gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi SpellLocal guifg=NONE guibg=NONE guisp=#d777d7 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi SpellRare guifg=NONE guibg=NONE guisp=#00cccc gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
 
 if s:t_Co >= 8
   hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
   hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -105,7 +109,7 @@ if s:t_Co >= 8
   hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline
   hi CursorLineNr ctermfg=NONE ctermbg=NONE cterm=bold
   hi DiffAdd ctermfg=darkgreen ctermbg=NONE cterm=reverse
   hi DiffChange ctermfg=darkblue ctermbg=NONE cterm=reverse
@@ -125,7 +129,7 @@ if s:t_Co >= 8
   hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi PmenuSbar ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold
+  hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi PmenuExtraSel ctermfg=NONE ctermbg=NONE cterm=bold
   hi PmenuKindSel ctermfg=NONE ctermbg=NONE cterm=bold
   hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE

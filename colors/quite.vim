@@ -571,7 +571,7 @@ endif
 
 if s:t_Co >= 8
   hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
   hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -587,7 +587,7 @@ if s:t_Co >= 8
   hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline
   hi CursorLineNr ctermfg=NONE ctermbg=NONE cterm=bold
   hi DiffAdd ctermfg=darkgreen ctermbg=NONE cterm=reverse
   hi DiffChange ctermfg=darkblue ctermbg=NONE cterm=reverse
@@ -607,7 +607,7 @@ if s:t_Co >= 8
   hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi PmenuSbar ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold
+  hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi PmenuExtraSel ctermfg=NONE ctermbg=NONE cterm=bold
   hi PmenuKindSel ctermfg=NONE ctermbg=NONE cterm=bold
   hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
