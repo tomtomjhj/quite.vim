@@ -25,4 +25,10 @@ Variant: 8 gui
 Background: any
 Include: common-8
 
+Variant: gui
+SpellBad             none              none              t=undercurl g=undercurl s=term1
+SpellCap             none              none              t=undercurl g=undercurl s=term4
+SpellLocal           none              none              t=undercurl g=undercurl s=term5
+SpellRare            none              none              t=undercurl g=undercurl s=term6
+
 Include: _tcozero

@@ -10,7 +10,7 @@ Color: term6         #00cccc           44                darkcyan
 
 
 Normal               none              none
-NormalFloat          none              none              reverse
+NormalFloat          none              none
 
 ; :help group-name
 Comment              none              none              bold
@@ -30,7 +30,7 @@ ColorColumn          none              none              reverse
 Conceal              none              none
 Cursor               none              none              reverse
 CursorColumn         none              none
-CursorLine           none              none
+CursorLine           none              none              underline
 CursorLineNr         none              none              bold
 DiffAdd              term2             none              reverse
 DiffChange           term4             none              reverse
@@ -50,7 +50,7 @@ Pmenu                none              none              reverse
 PmenuExtra           none              none              reverse
 PmenuKind            none              none              reverse,bold
 PmenuSbar            none              none              reverse
-PmenuSel             none              none              bold
+PmenuSel             none              none              bold,underline
 PmenuExtraSel        none              none              bold
 PmenuKindSel         none              none              bold
 PmenuThumb           none              none
