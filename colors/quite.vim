@@ -156,7 +156,7 @@ if &background ==# 'dark'
     let g:terminal_color_15 = '#eeeeee'
   endif
   hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
-  hi NormalFloat guifg=NONE guibg=#303030 gui=NONE cterm=NONE
+  hi NormalFloat guifg=NONE guibg=#333333 gui=NONE cterm=NONE
   hi Comment guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=#ffffff guibg=NONE gui=italic cterm=italic
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -172,17 +172,17 @@ if &background ==# 'dark'
   hi Ignore guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi ColorColumn guifg=NONE guibg=#303030 gui=NONE cterm=NONE
+  hi ColorColumn guifg=NONE guibg=#333333 gui=NONE cterm=NONE
   hi Conceal guifg=#afd7d7 guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorIM guifg=#000000 guibg=#afff00 gui=NONE cterm=NONE
   hi CursorColumn guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi CursorLine guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi CursorLineNr guifg=NONE guibg=#444444 gui=NONE cterm=NONE
-  hi DiffAdd guifg=NONE guibg=#304030 gui=NONE cterm=NONE
-  hi DiffChange guifg=NONE guibg=#404868 gui=NONE cterm=NONE
+  hi DiffAdd guifg=NONE guibg=#284028 gui=NONE cterm=NONE
+  hi DiffChange guifg=NONE guibg=#304848 gui=NONE cterm=NONE
   hi DiffDelete guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
-  hi DiffText guifg=NONE guibg=#704470 gui=NONE cterm=NONE
+  hi DiffText guifg=NONE guibg=#606030 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
@@ -200,7 +200,7 @@ if &background ==# 'dark'
   hi PmenuSel guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi PmenuExtraSel guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi PmenuKindSel guifg=NONE guibg=#704470 gui=bold cterm=bold
-  hi PmenuThumb guifg=#704470 guibg=#704470 gui=NONE cterm=NONE
+  hi PmenuThumb guifg=#606030 guibg=#704470 gui=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi QuickFixLine guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
@@ -216,7 +216,7 @@ if &background ==# 'dark'
   hi TabLineFill guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Title guifg=#d7c0d7 guibg=NONE gui=bold,underline cterm=bold,underline
-  hi VertSplit guifg=#d0d0d0 guibg=#303030 gui=NONE cterm=NONE
+  hi VertSplit guifg=#d0d0d0 guibg=#333333 gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -234,8 +234,8 @@ if &background ==# 'dark'
   hi LspReferenceText guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
-  hi LspCodeLens guifg=NONE guibg=#303030 gui=NONE cterm=NONE
-  hi LspCodeLensSeparator guifg=NONE guibg=#303030 gui=bold cterm=bold
+  hi LspCodeLens guifg=NONE guibg=#333333 gui=NONE cterm=NONE
+  hi LspCodeLensSeparator guifg=NONE guibg=#333333 gui=bold cterm=bold
   hi DiagnosticError guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticWarn guifg=#d79600 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticInfo guifg=#00cccc guibg=NONE gui=NONE cterm=NONE
@@ -298,9 +298,9 @@ else
   hi CursorLine guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi CursorLineNr guifg=NONE guibg=#bcbcbc gui=NONE cterm=NONE
   hi DiffAdd guifg=NONE guibg=#b7d2b7 gui=NONE cterm=NONE
-  hi DiffChange guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
+  hi DiffChange guifg=NONE guibg=#afd7d7 gui=NONE cterm=NONE
   hi DiffDelete guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
-  hi DiffText guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
+  hi DiffText guifg=NONE guibg=#ddd099 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
@@ -318,7 +318,7 @@ else
   hi PmenuSel guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi PmenuExtraSel guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi PmenuKindSel guifg=NONE guibg=#d7a0d7 gui=bold cterm=bold
-  hi PmenuThumb guifg=#d7a0d7 guibg=#d7a0d7 gui=NONE cterm=NONE
+  hi PmenuThumb guifg=#ddd099 guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi QuickFixLine guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
@@ -397,9 +397,9 @@ if s:t_Co >= 256
     hi CursorLine ctermfg=NONE ctermbg=238 cterm=NONE
     hi CursorLineNr ctermfg=NONE ctermbg=238 cterm=NONE
     hi DiffAdd ctermfg=NONE ctermbg=22 cterm=NONE
-    hi DiffChange ctermfg=NONE ctermbg=60 cterm=NONE
+    hi DiffChange ctermfg=NONE ctermbg=23 cterm=NONE
     hi DiffDelete ctermfg=161 ctermbg=NONE cterm=NONE
-    hi DiffText ctermfg=NONE ctermbg=96 cterm=NONE
+    hi DiffText ctermfg=NONE ctermbg=58 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=241 ctermbg=NONE cterm=NONE
@@ -417,7 +417,7 @@ if s:t_Co >= 256
     hi PmenuSel ctermfg=NONE ctermbg=96 cterm=NONE
     hi PmenuExtraSel ctermfg=NONE ctermbg=96 cterm=NONE
     hi PmenuKindSel ctermfg=NONE ctermbg=96 cterm=bold
-    hi PmenuThumb ctermfg=96 ctermbg=96 cterm=NONE
+    hi PmenuThumb ctermfg=58 ctermbg=96 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
     hi QuickFixLine ctermfg=NONE ctermbg=96 cterm=NONE
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
@@ -494,9 +494,9 @@ if s:t_Co >= 256
     hi CursorLine ctermfg=NONE ctermbg=250 cterm=NONE
     hi CursorLineNr ctermfg=NONE ctermbg=250 cterm=NONE
     hi DiffAdd ctermfg=NONE ctermbg=151 cterm=NONE
-    hi DiffChange ctermfg=NONE ctermbg=146 cterm=NONE
+    hi DiffChange ctermfg=NONE ctermbg=152 cterm=NONE
     hi DiffDelete ctermfg=124 ctermbg=NONE cterm=NONE
-    hi DiffText ctermfg=NONE ctermbg=176 cterm=NONE
+    hi DiffText ctermfg=NONE ctermbg=186 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=248 ctermbg=NONE cterm=NONE
@@ -514,7 +514,7 @@ if s:t_Co >= 256
     hi PmenuSel ctermfg=NONE ctermbg=176 cterm=NONE
     hi PmenuExtraSel ctermfg=NONE ctermbg=176 cterm=NONE
     hi PmenuKindSel ctermfg=NONE ctermbg=176 cterm=bold
-    hi PmenuThumb ctermfg=176 ctermbg=176 cterm=NONE
+    hi PmenuThumb ctermfg=186 ctermbg=176 cterm=NONE
     hi Question ctermfg=NONE ctermbg=NONE cterm=NONE
     hi QuickFixLine ctermfg=NONE ctermbg=176 cterm=NONE
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
@@ -714,7 +714,7 @@ endif
 " Color: fg1           #d0d0d0           252
 " Color: fg2           #bcbcbc           250
 " Color: bg0           #080808           232
-" Color: bg1           #303030           236
+" Color: bg1           #333333           236
 " Color: bg2           #444444           238
 " Color: bg3           #626262           241
 " Color: quite1        #d7005f           161
@@ -729,9 +729,11 @@ endif
 " Color: quite12       #5fafff           75
 " Color: quite13       #ff87ff           213
 " Color: quite14       #00eeff           87
-" Color: diffgreen     #304030           22
-" Color: diffblue      #404868           60
-" Color: diffpink      #704470           96
+" Color: bggreen       #284028           22
+" Color: bgblue        #404868           60
+" Color: bgpink        #704470           96
+" Color: bgyellow      #606030           58
+" Color: bgcyan        #304848           23
 " Color: uipink        #ff00af           199
 " Color: uilime        #afff00           154
 " Color: uiteal        #00ffaf           49
@@ -770,9 +772,11 @@ endif
 " Color: quite12       #0087d7           32
 " Color: quite13       #af10af           127
 " Color: quite14       #00bfbf           37
-" Color: diffgreen     #b7d2b7           151
-" Color: diffblue      #a0afd7           146
-" Color: diffpink      #d7a0d7           176
+" Color: bggreen       #b7d2b7           151
+" Color: bgblue        #a0afd7           146
+" Color: bgpink        #d7a0d7           176
+" Color: bgyellow      #ddd099           186
+" Color: bgcyan        #afd7d7           152
 " Color: uipink        #ff00af           199
 " Color: uilime        #afff00           154
 " Color: uiteal        #00ffaf           49
