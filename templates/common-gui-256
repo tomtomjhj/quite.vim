@@ -28,10 +28,10 @@ CursorIM             black             uilime
 CursorColumn         none              bg2
 CursorLine           none              bg2
 CursorLineNr         none              bg2
-DiffAdd              none              diffgreen
-DiffChange           none              diffblue
+DiffAdd              none              bggreen
+DiffChange           none              bgcyan
 DiffDelete           quite1            none
-DiffText             none              diffpink
+DiffText             none              bgyellow
 Directory            none              none              bold
 ErrorMsg             none              none              reverse,bold
 FoldColumn           bg3               none
@@ -42,16 +42,16 @@ MatchParen           uipink            none              bold
 ModeMsg              none              none              bold
 MoreMsg              none              none
 NonText              bg3               none
-Pmenu                none              diffblue
-PmenuExtra           none              diffblue
-PmenuKind            none              diffblue          bold
+Pmenu                none              bgblue
+PmenuExtra           none              bgblue
+PmenuKind            none              bgblue            bold
 PmenuSbar            none              bg3
-PmenuSel             none              diffpink
-PmenuExtraSel        none              diffpink
-PmenuKindSel         none              diffpink          bold
-PmenuThumb           diffpink          diffpink
+PmenuSel             none              bgpink
+PmenuExtraSel        none              bgpink
+PmenuKindSel         none              bgpink            bold
+PmenuThumb           bgyellow          bgpink
 Question             none              none
-QuickFixLine         none              diffpink
+QuickFixLine         none              bgpink
 Search               uiblue            black             reverse,bold
 CurSearch            uicursearch       black             reverse,bold,underline
 SignColumn           none              none
