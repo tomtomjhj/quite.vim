@@ -2,7 +2,7 @@
 
 ; GUI and 256 color values are synced with the dark variant
 Color: term1         #d7005f           161               darkred
-Color: term2         #00bf17           34                darkgreen
+Color: term2         #22bf00           34                darkgreen
 Color: term3         #d79600           172               darkyellow
 Color: term4         #0080dd           32                darkblue
 Color: term5         #d777d7           176               darkmagenta
