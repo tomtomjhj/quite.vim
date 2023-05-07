@@ -135,12 +135,12 @@ hi! link vimOption Constant
 
 if &background ==# 'dark'
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#080808', '#d7005f', '#00bf17', '#d79600', '#0080dd', '#d777d7', '#00cccc', '#bcbcbc', '#626262', '#ff2266', '#00ff5f', '#ffaf00', '#5fafff', '#ff87ff', '#00eeff', '#eeeeee']
+    let g:terminal_ansi_colors = ['#080808', '#d7005f', '#22bf00', '#d79600', '#0080dd', '#d777d7', '#00cccc', '#bcbcbc', '#626262', '#ff2266', '#55ff00', '#ffaf00', '#5fafff', '#ff87ff', '#00eeff', '#eeeeee']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#080808'
     let g:terminal_color_1 = '#d7005f'
-    let g:terminal_color_2 = '#00bf17'
+    let g:terminal_color_2 = '#22bf00'
     let g:terminal_color_3 = '#d79600'
     let g:terminal_color_4 = '#0080dd'
     let g:terminal_color_5 = '#d777d7'
@@ -148,7 +148,7 @@ if &background ==# 'dark'
     let g:terminal_color_7 = '#bcbcbc'
     let g:terminal_color_8 = '#626262'
     let g:terminal_color_9 = '#ff2266'
-    let g:terminal_color_10 = '#00ff5f'
+    let g:terminal_color_10 = '#55ff00'
     let g:terminal_color_11 = '#ffaf00'
     let g:terminal_color_12 = '#5fafff'
     let g:terminal_color_13 = '#ff87ff'
@@ -229,7 +229,7 @@ if &background ==# 'dark'
   hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
   hi Literal guifg=#d7d7af guibg=NONE gui=NONE cterm=NONE
   hi PunctuationSpecial guifg=#afd7d7 guibg=NONE gui=bold cterm=bold
-  hi diffAdded guifg=#00bf17 guibg=NONE gui=NONE cterm=NONE
+  hi diffAdded guifg=#22bf00 guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi LspReferenceText guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
@@ -253,12 +253,12 @@ if &background ==# 'dark'
 else
   " Light background
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#eeeeee', '#af0011', '#007700', '#af7700', '#005faf', '#871087', '#009999', '#626262', '#a8a8a8', '#d70011', '#00af00', '#d79700', '#0087d7', '#af10af', '#00bfbf', '#121212']
+    let g:terminal_ansi_colors = ['#eeeeee', '#af0011', '#177700', '#af7700', '#005faf', '#871087', '#009999', '#626262', '#a8a8a8', '#d70011', '#30af00', '#d79700', '#0087d7', '#af10af', '#00bfbf', '#121212']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#eeeeee'
     let g:terminal_color_1 = '#af0011'
-    let g:terminal_color_2 = '#007700'
+    let g:terminal_color_2 = '#177700'
     let g:terminal_color_3 = '#af7700'
     let g:terminal_color_4 = '#005faf'
     let g:terminal_color_5 = '#871087'
@@ -266,7 +266,7 @@ else
     let g:terminal_color_7 = '#626262'
     let g:terminal_color_8 = '#a8a8a8'
     let g:terminal_color_9 = '#d70011'
-    let g:terminal_color_10 = '#00af00'
+    let g:terminal_color_10 = '#30af00'
     let g:terminal_color_11 = '#d79700'
     let g:terminal_color_12 = '#0087d7'
     let g:terminal_color_13 = '#af10af'
@@ -347,7 +347,7 @@ else
   hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
   hi Literal guifg=#5c5c23 guibg=NONE gui=NONE cterm=NONE
   hi PunctuationSpecial guifg=#234e5f guibg=NONE gui=bold cterm=bold
-  hi diffAdded guifg=#007700 guibg=NONE gui=NONE cterm=NONE
+  hi diffAdded guifg=#177700 guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi LspReferenceText guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
@@ -718,13 +718,13 @@ endif
 " Color: bg2           #444444           238
 " Color: bg3           #626262           241
 " Color: quite1        #d7005f           161
-" Color: quite2        #00bf17           34
+" Color: quite2        #22bf00           34
 " Color: quite3        #d79600           172
 " Color: quite4        #0080dd           32
 " Color: quite5        #d777d7           176
 " Color: quite6        #00cccc           44
 " Color: quite9        #ff2266           197
-" Color: quite10       #00ff5f           47
+" Color: quite10       #55ff00           82
 " Color: quite11       #ffaf00           214
 " Color: quite12       #5fafff           75
 " Color: quite13       #ff87ff           213
@@ -761,13 +761,13 @@ endif
 " Color: bg2           #bcbcbc           250
 " Color: bg3           #a8a8a8           248
 " Color: quite1        #af0011           124
-" Color: quite2        #007700           28
+" Color: quite2        #177700           28
 " Color: quite3        #af7700           136
 " Color: quite4        #005faf           25
 " Color: quite5        #871087           90
 " Color: quite6        #009999           30
 " Color: quite9        #d70011           160
-" Color: quite10       #00af00           34
+" Color: quite10       #30af00           34
 " Color: quite11       #d79700           172
 " Color: quite12       #0087d7           32
 " Color: quite13       #af10af           127
@@ -796,7 +796,7 @@ endif
 " Term colors: fg0
 " Background: any
 " Color: term1         #d7005f           161               darkred
-" Color: term2         #00bf17           34                darkgreen
+" Color: term2         #22bf00           34                darkgreen
 " Color: term3         #d79600           172               darkyellow
 " Color: term4         #0080dd           32                darkblue
 " Color: term5         #d777d7           176               darkmagenta

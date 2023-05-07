@@ -39,7 +39,7 @@ hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reve
 hi CursorColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi CursorLine guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
 hi CursorLineNr guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-hi DiffAdd guifg=#00bf17 guibg=NONE gui=reverse cterm=reverse
+hi DiffAdd guifg=#22bf00 guibg=NONE gui=reverse cterm=reverse
 hi DiffChange guifg=#0080dd guibg=NONE gui=reverse cterm=reverse
 hi DiffDelete guifg=#d7005f guibg=NONE gui=reverse cterm=reverse
 hi DiffText guifg=#d777d7 guibg=NONE gui=reverse cterm=reverse
@@ -84,7 +84,7 @@ hi WildMenu guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi CursorIM guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi ToolbarLine guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
 hi ToolbarButton guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-hi diffAdded guifg=#00bf17 guibg=NONE gui=NONE cterm=NONE
+hi diffAdded guifg=#22bf00 guibg=NONE gui=NONE cterm=NONE
 hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
 hi SpellBad guifg=NONE guibg=NONE guisp=#d7005f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
 hi SpellCap guifg=NONE guibg=NONE guisp=#0080dd gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -231,7 +231,7 @@ endif
 
 " Background: any
 " Color: term1         #d7005f           161               darkred
-" Color: term2         #00bf17           34                darkgreen
+" Color: term2         #22bf00           34                darkgreen
 " Color: term3         #d79600           172               darkyellow
 " Color: term4         #0080dd           32                darkblue
 " Color: term5         #d777d7           176               darkmagenta
