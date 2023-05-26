@@ -52,7 +52,7 @@ Terminal             -> Normal
 lCursor              -> Cursor
 
 ; nvim treesitter {{{
-; https://github.com/nvim-treesitter/nvim-treesitter/blob/1f087c91f5ca76a2257b855d72d371a2b5302986/CONTRIBUTING.md
+; https://github.com/nvim-treesitter/nvim-treesitter/blob/1b5a7334bb9862abafcf6676d2a2a6973d15ae3a/CONTRIBUTING.md
 ; See also :h treesitter-highlight-groups
 #if has('nvim-0.8')
   ; misc
@@ -60,7 +60,7 @@ lCursor              -> Cursor
   ; @comment.documentation
   ; @error
   ; @none
-  ; @preproc hebangs
+  ; @preproc
   ; @define
   ; @operator
 
@@ -135,14 +135,14 @@ lCursor              -> Cursor
   @text.underline    -> Underlined
   @text.strike       -> Strikethrough
   @text.title        -> Title
-  ; NOTE: using bg for non-UI is bad because bg can change e.g. floating window, diff mode, ...
-  @text.literal      -> NormalFloat    ; Literal
   ; @text.quote
   @text.uri          -> Underlined
   @text.math         -> Literal
   ; @text.environment
   ; @text.environment.name
   @text.reference    -> Underlined
+  ; NOTE: using bg for non-UI is bad because bg can change e.g. floating window, diff mode, ...
+  @text.literal      -> NormalFloat    ; Literal
   @text.todo         -> Todo
   @text.note         -> Todo
   @text.warning      -> Error
@@ -254,7 +254,7 @@ Color: fg0           #eeeeee           255
 Color: fg1           #d0d0d0           252
 Color: fg2           #bcbcbc           250
 Color: bg0           #080808           232
-Color: bg1           #333333           236
+Color: bg1           #303030           236
 Color: bg2           #444444           238
 Color: bg3           #626262           241
 

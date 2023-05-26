@@ -50,7 +50,7 @@ PmenuSel             none              bgpink
 PmenuExtraSel        none              bgpink
 PmenuKindSel         none              bgpink            bold
 PmenuThumb           bgyellow          bgpink
-Question             none              none
+Question             none              none              bold
 QuickFixLine         none              bgpink
 Search               uiblue            black             reverse,bold
 CurSearch            uicursearch       black             reverse,bold,underline

@@ -30,7 +30,7 @@ Pmenu          omit   omit    reverse
 PmenuSbar      omit   omit    reverse
 PmenuSel       omit   omit    bold
 PmenuThumb     omit   omit
-Question       omit   omit    standout
+Question       omit   omit    bold
 Search         omit   omit    reverse
 SignColumn     omit   omit    reverse
 SpellBad       omit   omit    underline

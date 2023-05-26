@@ -34,18 +34,18 @@ CursorLine           none              none              underline
 CursorLineNr         none              none              bold
 DiffAdd              term2             none              reverse
 DiffChange           term4             none              reverse
-DiffDelete           term1             none              reverse
+DiffDelete           term1             none
 DiffText             term5             none              reverse
 Directory            none              none
 ErrorMsg             none              none              reverse,bold
-FoldColumn           none              none
+FoldColumn           none              none              reverse
 Folded               none              none
 IncSearch            term3             none              reverse,bold,underline
 LineNr               none              none
 MatchParen           none              none              bold,underline
 ModeMsg              none              none              bold
 MoreMsg              none              none
-NonText              none              none
+NonText              term3             none
 Pmenu                none              none              reverse
 PmenuExtra           none              none              reverse
 PmenuKind            none              none              reverse,bold
@@ -54,7 +54,7 @@ PmenuSel             none              none              bold,underline
 PmenuExtraSel        none              none              bold
 PmenuKindSel         none              none              bold
 PmenuThumb           none              none
-Question             none              none              standout
+Question             none              none              bold
 QuickFixLine         term5             none              reverse
 Search               term6             none              reverse,bold
 CurSearch            term5             none              reverse,bold,underline
