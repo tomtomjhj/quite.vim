@@ -1,0 +1,123 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
+
+; I don't need 256, but colortemplate requires it anyway.
+Variant: 8 16 256 gui
+Normal               none              none
+NormalFloat          none              none
+
+; :help group-name
+Variant: 16 256 gui
+Comment              term8             none              bold
+Variant: 8
+Comment              none              none              bold
+Variant: 8 16 256 gui
+Constant             none              none
+String               term2             none
+Identifier           none              none
+Statement            term4             none
+PreProc              term5             none
+Type                 none              none
+Special              none              none              bold
+Underlined           none              none              underline
+Ignore               none              none
+Error                term1             none              reverse,bold
+Todo                 none              none              reverse,bold
+
+; :help highlight-groups
+Variant: 16 256 gui
+ColorColumn          none              term8
+Variant: 8
+ColorColumn          none              none              reverse
+Variant: 8 16 256 gui
+Conceal              term3             none
+Cursor               none              none              reverse
+CursorColumn         none              none
+CursorLine           none              none              underline
+CursorLineNr         none              none              bold
+DiffAdd              term2             none              reverse
+DiffChange           term4             none              reverse
+DiffDelete           term1             none
+DiffText             term5             none              reverse
+Directory            none              none
+ErrorMsg             none              none              reverse,bold
+Variant: 16 256 gui
+FoldColumn           term8             none              reverse
+Variant: 8
+FoldColumn           none              none              reverse
+Variant: 8 16 256 gui
+Folded               none              none
+IncSearch            term3             none              reverse,bold,underline
+Variant: 16 256 gui
+LineNr               term8             none
+Variant: 8
+LineNr               none              none
+Variant: 8 16 256 gui
+MatchParen           none              none              bold,underline
+ModeMsg              none              none              bold
+MoreMsg              none              none
+Variant: 16 256 gui
+NonText              term8             none
+Variant: 8
+NonText              term3             none
+Variant: 8 16 256 gui
+; NOTE: nvim-cmp's PmenuSel is combined with Pmenu, because its menu uses winhighlight
+Pmenu                none              none              reverse
+PmenuExtra           none              none              reverse
+PmenuKind            none              none              reverse,bold
+PmenuSbar            none              none              reverse
+Variant: 16 256 gui
+PmenuSel             term8             none              reverse,bold,underline
+PmenuExtraSel        term8             none              reverse,bold
+PmenuKindSel         term8             none              reverse,bold
+Variant: 8
+PmenuSel             none              none              bold,underline
+PmenuExtraSel        none              none              bold
+PmenuKindSel         none              none              bold
+Variant: 8 16 256 gui
+PmenuThumb           none              none
+Question             none              none              standout
+QuickFixLine         term5             none              reverse
+Search               term6             none              reverse,bold
+CurSearch            term5             none              reverse,bold,underline
+SignColumn           none              none
+Variant: 8 16 256
+SpellBad             term1             none              underline
+SpellCap             term4             none              underline
+SpellLocal           term5             none              underline
+SpellRare            term6             none              underline
+Variant: gui
+SpellBad             none              none              t=undercurl g=undercurl s=term1
+SpellCap             none              none              t=undercurl g=undercurl s=term4
+SpellLocal           none              none              t=undercurl g=undercurl s=term5
+SpellRare            none              none              t=undercurl g=undercurl s=term6
+Variant: 8 16 256 gui
+StatusLine           none              none              bold,reverse
+Variant: 16 256 gui
+StatusLineNC         term8             none              bold,reverse
+Variant: 8
+StatusLineNC         none              none              bold,underline
+Variant: 16 256 gui
+TabLine              none              term8             bold
+Variant: 8
+TabLine              none              none              bold,reverse
+Variant: 8 16 256 gui
+TabLineFill          none              none              reverse
+TabLineSel           none              none              bold
+Title                term4             none              bold,underline
+VertSplit            none              none
+Visual               term3             none              reverse
+VisualNOS            none              none
+WarningMsg           none              none              standout
+WildMenu             none              none              bold
+CursorIM             none              none
+
+; :help window-toolbar
+ToolbarLine          none              none              reverse
+ToolbarButton        none              none              bold,reverse
+
+; plugins and filetypes
+diffAdded            term2             none
+diffRemoved          term1             none
+
+
+Term Colors: term0 term1 term2 term3 term4 term5 term6 term7 term8 term9 term10 term11 term12 term13 term14 term15
