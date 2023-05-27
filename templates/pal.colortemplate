@@ -1,0 +1,202 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
+
+; Information {{{
+Full name:     pal
+Short name:    pal
+Author:        Jaehwang Jung <tomtomjhj@gmail.com>
+Description:   0-7 + 8
+Neovim:        yes
+
+Colortemplate Options: timestamp=0
+; }}}
+
+; Global definitions {{{
+; :help group-name
+Character            -> String
+Number               -> String
+Boolean              -> String
+Float                -> String
+StorageClass         -> Statement
+Structure            -> Statement
+Typedef              -> Statement
+
+; :help highlight-groups
+; vim uses SpecialKey for listchar
+#if has('nvim')
+  SpecialKey         -> Special
+#else
+  SpecialKey         -> NonText
+#endif
+Terminal             -> Normal
+StatusLineTerm       -> StatusLine
+StatusLineTermNC     -> StatusLineNC
+
+; nvim treesitter {{{
+; https://github.com/nvim-treesitter/nvim-treesitter/blob/1f087c91f5ca76a2257b855d72d371a2b5302986/CONTRIBUTING.md
+; See also :h treesitter-highlight-groups
+#if has('nvim-0.8')
+  ; misc
+  ; @comment
+  ; @comment.documentation
+  ; @error
+  ; @none
+  ; @preproc hebangs
+  ; @define
+  ; @operator
+
+  ; punctuation
+  ; @punctuation.delimiter
+  ; @punctuation.bracket
+  ; @punctuation.special
+
+  ; literals
+  ; @string
+  ; @string.documentation
+  ; @string.regex
+  ; @string.escape
+  ; @string.special
+  ; @character
+  ; @character.special
+  ; @boolean
+  ; @number
+  ; @float
+
+  ; functions
+  ; @function
+  ; @function.builtin
+  ; @function.call
+  ; @function.macro
+  ; @method
+  ; @method.call
+  @constructor       -> NONE
+  ; @parameter
+
+  ; keywords
+  ; @keyword
+  ; @keyword.coroutine
+  ; @keyword.function
+  ; @keyword.operator
+  ; @keyword.return
+  ; @conditional
+  ; @conditional.ternary
+  ; @repeat
+  ; @debug
+  ; @label
+  ; @include
+  ; @exception
+
+  ; types
+  ; @type
+  ; @type.builtin
+  ; @type.definition
+  ; @type.qualifier
+  ; @storageclass
+  @storageclass.lifetime -> String
+  ; @attribute
+  ; @field
+  ; @property
+
+  ; identifiers
+  ; @variable
+  ; @variable.builtin
+  ; @constant
+  @constant.builtin  -> Constant
+  ; @constant.macro
+  ; @namespace
+  ; @symbol
+
+  ; text
+  ; @text
+  verbatim
+  hi @text.strong       ctermfg=NONE ctermbg=NONE cterm=bold guifg=NONE guibg=NONE gui=bold
+  hi @text.emphasis     ctermfg=NONE ctermbg=NONE cterm=italic guifg=NONE guibg=NONE gui=italic
+  hi @text.underline    ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+  hi @text.strike       ctermfg=NONE ctermbg=NONE cterm=strikethrough guifg=NONE guibg=NONE gui=strikethrough
+  endverbatim
+  ; @text.title
+  @text.literal      -> String
+  @text.literal.markdown -> NONE
+  ; @text.quote
+  ; @text.uri
+  ; @text.math
+  ; @text.environment
+  ; @text.environment.name
+  @text.reference    -> Underlined
+  ; @text.todo
+  @text.note         -> Todo
+  @text.warning      -> Error
+  @text.danger       -> Error
+  @text.diff.add     -> diffAdded
+  @text.diff.delete  -> diffRemoved
+
+  ; tags
+  @tag               -> Statement
+  @tag.attribute     -> None
+  @tag.delimiter     -> Delimiter
+#endif
+; }}}
+; }}}
+
+; Background: dark {{{
+Background: dark
+
+; Not using the named colors, because the actual meaning depends on t_Co (e.g. darkgrey is 242 t_Co=256).
+Color: term0         none              ~
+Color: term7         none              ~
+Color: term15        none              ~
+; Error DiffDelete diffRemoved SpellBad
+; ~~Constant~~
+Color: term1         #d7005f           1                 1  ; darkred
+; DiffAdd diffAdded
+; String
+Color: term2         #22bf00           2                 2  ; darkgreen
+; Visual IncSearch
+; Conceal, NonText
+Color: term3         #d79600           3                 3  ; darkyellow
+; DiffChange SpellCap
+; Statement, Title
+Color: term4         #0080dd           4                 4  ; darkblue
+; DiffText QuickFixLine CurSearch SpellLocal
+; PreProc
+Color: term5         #d777d7           5                 5  ; darkmagenta
+; [x] Search SpellRare
+Color: term6         #00cccc           6                 6  ; darkcyan
+; Can't assume about relation between 1,7,15 and bg/fg,
+; but it's clear that 8 will have some contrast with all of them.
+Color: term8         #808080           8                 8  ; darkgrey
+; not used
+Color: term9         #ff2266           9                 9  ; red
+Color: term10        #55ff00           10                10 ; green
+Color: term11        #ffaf00           11                11 ; yellow
+Color: term12        #5fafff           12                12 ; blue
+Color: term13        #ff87ff           13                13 ; magenta
+Color: term14        #00eeff           14                14 ; cyan
+
+Include: pal-common
+; }}}
+
+; Background: light {{{
+Background: light
+
+Color: term0         none              ~
+Color: term7         none              ~
+Color: term15        none              ~
+Color: term1         #af0011           1                 1
+Color: term2         #177700           2                 2
+Color: term3         #af7700           3                 3
+Color: term4         #005faf           4                 4
+Color: term5         #871087           5                 5
+Color: term6         #009999           6                 6
+Color: term8         #808080           8                 8
+Color: term9         #d70011           9                 9
+Color: term10        #30af00           10                10
+Color: term11        #d79700           11                11
+Color: term12        #0087d7           12                12
+Color: term13        #af10af           13                13
+Color: term14        #00bfbf           14                14
+
+Include: pal-common
+; }}}
+
+Background: any
+Include: _tcozero
