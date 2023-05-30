@@ -88,8 +88,8 @@ StatusLineTermNC     -> StatusLineNC
   ; types
   ; @type
   ; @type.builtin
-  ; @type.definition
-  ; @type.qualifier
+  @type.definition   -> Type
+  @type.qualifier    -> StorageClass
   ; @storageclass
   @storageclass.lifetime -> String
   ; @attribute

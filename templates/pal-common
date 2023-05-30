@@ -14,8 +14,9 @@ Variant: 8 16 256 gui
 Constant             none              none
 String               term2             none
 Identifier           none              none
+Function             term5             none
 Statement            term4             none
-PreProc              term5             none
+PreProc              term6             none
 Type                 none              none
 Special              none              none              bold
 Underlined           none              none              underline
@@ -38,7 +39,7 @@ DiffAdd              term2             none              reverse
 DiffChange           term4             none              reverse
 DiffDelete           term1             none
 DiffText             term5             none              reverse
-Directory            none              none
+Directory            term4             none
 ErrorMsg             none              none              reverse,bold
 Variant: 16 256 gui
 FoldColumn           term8             none              reverse
