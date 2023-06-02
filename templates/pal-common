@@ -76,7 +76,7 @@ PmenuExtraSel        none              none              bold
 PmenuKindSel         none              none              bold
 Variant: 8 16 256 gui
 PmenuThumb           none              none
-Question             none              none              standout
+Question             none              none              bold
 QuickFixLine         term5             none              reverse
 Search               term6             none              reverse,bold
 CurSearch            term5             none              reverse,bold,underline
