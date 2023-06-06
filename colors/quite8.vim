@@ -41,18 +41,18 @@ hi CursorLine guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cter
 hi CursorLineNr guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi DiffAdd guifg=#22bf00 guibg=NONE gui=reverse cterm=reverse
 hi DiffChange guifg=#0080dd guibg=NONE gui=reverse cterm=reverse
-hi DiffDelete guifg=#d7005f guibg=NONE gui=reverse cterm=reverse
+hi DiffDelete guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
 hi DiffText guifg=#d777d7 guibg=NONE gui=reverse cterm=reverse
 hi Directory guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-hi FoldColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+hi FoldColumn guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
 hi Folded guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi IncSearch guifg=#d79600 guibg=NONE gui=bold,reverse,underline cterm=bold,reverse,underline
 hi LineNr guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi MatchParen guifg=NONE guibg=NONE gui=bold,underline ctermfg=NONE ctermbg=NONE cterm=bold,underline
 hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi NonText guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+hi NonText guifg=#d79600 guibg=NONE gui=NONE cterm=NONE
 hi Pmenu guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
 hi PmenuExtra guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
 hi PmenuKind guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -61,7 +61,7 @@ hi PmenuSel guifg=NONE guibg=NONE gui=bold,underline ctermfg=NONE ctermbg=NONE c
 hi PmenuExtraSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi PmenuKindSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi PmenuThumb guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi Question guifg=NONE guibg=NONE gui=standout ctermfg=NONE ctermbg=NONE cterm=standout
+hi Question guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi QuickFixLine guifg=#d777d7 guibg=NONE gui=reverse cterm=reverse
 hi Search guifg=#00cccc guibg=NONE gui=bold,reverse cterm=bold,reverse
 hi CurSearch guifg=#d777d7 guibg=NONE gui=bold,reverse,underline cterm=bold,reverse,underline
@@ -113,18 +113,18 @@ if s:t_Co >= 8
   hi CursorLineNr ctermfg=NONE ctermbg=NONE cterm=bold
   hi DiffAdd ctermfg=darkgreen ctermbg=NONE cterm=reverse
   hi DiffChange ctermfg=darkblue ctermbg=NONE cterm=reverse
-  hi DiffDelete ctermfg=darkred ctermbg=NONE cterm=reverse
+  hi DiffDelete ctermfg=darkred ctermbg=NONE cterm=NONE
   hi DiffText ctermfg=darkmagenta ctermbg=NONE cterm=reverse
   hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-  hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi FoldColumn ctermfg=NONE ctermbg=NONE cterm=reverse
   hi Folded ctermfg=NONE ctermbg=NONE cterm=NONE
   hi IncSearch ctermfg=darkyellow ctermbg=NONE cterm=bold,reverse,underline
   hi LineNr ctermfg=NONE ctermbg=NONE cterm=NONE
   hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi NonText ctermfg=darkyellow ctermbg=NONE cterm=NONE
   hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -133,7 +133,7 @@ if s:t_Co >= 8
   hi PmenuExtraSel ctermfg=NONE ctermbg=NONE cterm=bold
   hi PmenuKindSel ctermfg=NONE ctermbg=NONE cterm=bold
   hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Question ctermfg=NONE ctermbg=NONE cterm=standout
+  hi Question ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine ctermfg=darkmagenta ctermbg=NONE cterm=reverse
   hi Search ctermfg=darkcyan ctermbg=NONE cterm=bold,reverse
   hi CurSearch ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse,underline
@@ -189,7 +189,7 @@ if s:t_Co >= 0
   hi PmenuSbar term=reverse
   hi PmenuSel term=bold
   hi PmenuThumb term=NONE
-  hi Question term=standout
+  hi Question term=bold
   hi Search term=reverse
   hi SignColumn term=reverse
   hi SpellBad term=underline
