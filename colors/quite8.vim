@@ -9,7 +9,7 @@
 hi clear
 let g:colors_name = 'quite8'
 
-let s:t_Co = has('nvim') || (exists('&t_Co') && !has('gui_running')) ? +&t_Co : -1
+let s:t_Co = exists('&t_Co') && !has('gui_running') ? +&t_Co : -1
 
 if has('nvim')
   hi! link SpecialKey Special
@@ -236,4 +236,4 @@ endif
 " Color: term4         #0080dd           32                darkblue
 " Color: term5         #d777d7           176               darkmagenta
 " Color: term6         #00cccc           44                darkcyan
-" vim: et ts=2 sw=2
+" vim: et ts=8 sw=2 sts=2
