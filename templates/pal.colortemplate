@@ -32,7 +32,7 @@ StatusLineTerm       -> StatusLine
 StatusLineTermNC     -> StatusLineNC
 
 ; nvim treesitter {{{
-; https://github.com/nvim-treesitter/nvim-treesitter/blob/1f087c91f5ca76a2257b855d72d371a2b5302986/CONTRIBUTING.md
+; https://github.com/nvim-treesitter/nvim-treesitter/blob/1b5a7334bb9862abafcf6676d2a2a6973d15ae3a/CONTRIBUTING.md
 ; See also :h treesitter-highlight-groups
 #if has('nvim-0.8')
   ; misc
@@ -40,7 +40,7 @@ StatusLineTermNC     -> StatusLineNC
   ; @comment.documentation
   ; @error
   ; @none
-  ; @preproc hebangs
+  ; @preproc
   ; @define
   ; @operator
 
@@ -115,7 +115,7 @@ StatusLineTermNC     -> StatusLineNC
   endverbatim
   ; @text.title
   @text.literal      -> String
-  @text.literal.markdown -> NONE
+  @text.literal.block -> NONE
   ; @text.quote
   ; @text.uri
   ; @text.math
