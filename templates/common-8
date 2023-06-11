@@ -65,9 +65,9 @@ SpellLocal           term5             none              underline
 SpellRare            term6             none              underline
 StatusLine           none              none              bold,reverse
 StatusLineNC         none              none              bold,underline
-TabLine              none              none              bold,underline
-TabLineFill          none              none
-TabLineSel           none              none              reverse,bold
+TabLine              none              none              reverse
+TabLineFill          none              none              underline
+TabLineSel           none              none              bold
 Title                none              none
 VertSplit            none              none
 Visual               term3             none              reverse
