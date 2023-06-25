@@ -234,16 +234,19 @@ if &background ==# 'dark'
   hi LspReferenceText guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
-  hi LspCodeLens guifg=NONE guibg=#303030 gui=NONE cterm=NONE
+  hi LspInlayHint guifg=#afd7d7 guibg=#303030 gui=NONE cterm=NONE
+  hi LspCodeLens guifg=#afd7d7 guibg=#303030 gui=NONE cterm=NONE
   hi LspCodeLensSeparator guifg=NONE guibg=#303030 gui=bold cterm=bold
   hi DiagnosticError guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticWarn guifg=#d79600 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticInfo guifg=#00cccc guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticHint guifg=#0080dd guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticOk guifg=#22bf00 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#d7005f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#d79600 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#00cccc gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#0080dd gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#22bf00 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -352,16 +355,19 @@ else
   hi LspReferenceText guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
-  hi LspCodeLens guifg=NONE guibg=#d0d0d0 gui=NONE cterm=NONE
+  hi LspInlayHint guifg=#234e5f guibg=#d0d0d0 gui=NONE cterm=NONE
+  hi LspCodeLens guifg=#234e5f guibg=#d0d0d0 gui=NONE cterm=NONE
   hi LspCodeLensSeparator guifg=NONE guibg=#d0d0d0 gui=bold cterm=bold
   hi DiagnosticError guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticWarn guifg=#af7700 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticInfo guifg=#009999 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticHint guifg=#005faf guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticOk guifg=#177700 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#af0011 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#af7700 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#009999 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#177700 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -451,16 +457,19 @@ if s:t_Co >= 256
     hi LspReferenceText ctermfg=252 ctermbg=NONE cterm=reverse
     hi LspReferenceRead ctermfg=252 ctermbg=NONE cterm=reverse
     hi LspReferenceWrite ctermfg=252 ctermbg=NONE cterm=reverse
-    hi LspCodeLens ctermfg=NONE ctermbg=236 cterm=NONE
+    hi LspInlayHint ctermfg=152 ctermbg=236 cterm=NONE
+    hi LspCodeLens ctermfg=152 ctermbg=236 cterm=NONE
     hi LspCodeLensSeparator ctermfg=NONE ctermbg=236 cterm=bold
     hi DiagnosticError ctermfg=161 ctermbg=NONE cterm=NONE
     hi DiagnosticWarn ctermfg=172 ctermbg=NONE cterm=NONE
     hi DiagnosticInfo ctermfg=44 ctermbg=NONE cterm=NONE
     hi DiagnosticHint ctermfg=32 ctermbg=NONE cterm=NONE
+    hi DiagnosticOk ctermfg=34 ctermbg=NONE cterm=NONE
     hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -548,16 +557,19 @@ if s:t_Co >= 256
     hi LspReferenceText ctermfg=237 ctermbg=NONE cterm=reverse
     hi LspReferenceRead ctermfg=237 ctermbg=NONE cterm=reverse
     hi LspReferenceWrite ctermfg=237 ctermbg=NONE cterm=reverse
-    hi LspCodeLens ctermfg=NONE ctermbg=252 cterm=NONE
+    hi LspInlayHint ctermfg=23 ctermbg=252 cterm=NONE
+    hi LspCodeLens ctermfg=23 ctermbg=252 cterm=NONE
     hi LspCodeLensSeparator ctermfg=NONE ctermbg=252 cterm=bold
     hi DiagnosticError ctermfg=124 ctermbg=NONE cterm=NONE
     hi DiagnosticWarn ctermfg=136 ctermbg=NONE cterm=NONE
     hi DiagnosticInfo ctermfg=30 ctermbg=NONE cterm=NONE
     hi DiagnosticHint ctermfg=25 ctermbg=NONE cterm=NONE
+    hi DiagnosticOk ctermfg=28 ctermbg=NONE cterm=NONE
     hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
