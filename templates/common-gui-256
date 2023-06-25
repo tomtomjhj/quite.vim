@@ -91,16 +91,20 @@ diffRemoved          quite1            none
 LspReferenceText     fg1               none              reverse
 LspReferenceRead     fg1               none              reverse
 LspReferenceWrite    fg1               none              reverse
-LspCodeLens          none              bg1
+LspInlayHint         specialcyan       bg1
+LspCodeLens          specialcyan       bg1
 LspCodeLensSeparator none              bg1               bold
 
 ; :h diagnostic-highlights
-; TODO: DiagnosticOk
 DiagnosticError           quite1       none
 DiagnosticWarn            quite3       none
 DiagnosticInfo            quite6       none
 DiagnosticHint            quite4       none
+DiagnosticOk              quite2       none
 DiagnosticUnderlineError  none         none              t=undercurl g=undercurl s=quite1
 DiagnosticUnderlineWarn   none         none              t=undercurl g=undercurl s=quite3
 DiagnosticUnderlineInfo   none         none              t=undercurl g=undercurl s=quite6
 DiagnosticUnderlineHint   none         none              t=undercurl g=undercurl s=quite4
+DiagnosticUnderlineOk     none         none              t=undercurl g=undercurl s=quite2
+; DiagnosticDeprecated
+; DiagnosticUnnecessary
