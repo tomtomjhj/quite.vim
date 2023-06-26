@@ -229,8 +229,6 @@ if &background ==# 'dark'
   hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
   hi Literal guifg=#d7d7af guibg=NONE gui=NONE cterm=NONE
   hi PunctuationSpecial guifg=#afd7d7 guibg=NONE gui=bold cterm=bold
-  hi diffAdded guifg=#22bf00 guibg=NONE gui=NONE cterm=NONE
-  hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi LspReferenceText guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
@@ -247,6 +245,9 @@ if &background ==# 'dark'
   hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#00cccc gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#0080dd gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#22bf00 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi diffAdded guifg=#22bf00 guibg=NONE gui=NONE cterm=NONE
+  hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
+  hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -350,8 +351,6 @@ else
   hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
   hi Literal guifg=#5c5c23 guibg=NONE gui=NONE cterm=NONE
   hi PunctuationSpecial guifg=#234e5f guibg=NONE gui=bold cterm=bold
-  hi diffAdded guifg=#177700 guibg=NONE gui=NONE cterm=NONE
-  hi diffRemoved guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi LspReferenceText guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
@@ -368,6 +367,9 @@ else
   hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#009999 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#177700 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi diffAdded guifg=#177700 guibg=NONE gui=NONE cterm=NONE
+  hi diffRemoved guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
+  hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -452,8 +454,6 @@ if s:t_Co >= 256
     hi Strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
     hi Literal ctermfg=187 ctermbg=NONE cterm=NONE
     hi PunctuationSpecial ctermfg=152 ctermbg=NONE cterm=bold
-    hi diffAdded ctermfg=34 ctermbg=NONE cterm=NONE
-    hi diffRemoved ctermfg=161 ctermbg=NONE cterm=NONE
     hi LspReferenceText ctermfg=252 ctermbg=NONE cterm=reverse
     hi LspReferenceRead ctermfg=252 ctermbg=NONE cterm=reverse
     hi LspReferenceWrite ctermfg=252 ctermbg=NONE cterm=reverse
@@ -470,6 +470,9 @@ if s:t_Co >= 256
     hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi diffAdded ctermfg=34 ctermbg=NONE cterm=NONE
+    hi diffRemoved ctermfg=161 ctermbg=NONE cterm=NONE
+    hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -552,8 +555,6 @@ if s:t_Co >= 256
     hi Strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
     hi Literal ctermfg=58 ctermbg=NONE cterm=NONE
     hi PunctuationSpecial ctermfg=23 ctermbg=NONE cterm=bold
-    hi diffAdded ctermfg=28 ctermbg=NONE cterm=NONE
-    hi diffRemoved ctermfg=124 ctermbg=NONE cterm=NONE
     hi LspReferenceText ctermfg=237 ctermbg=NONE cterm=reverse
     hi LspReferenceRead ctermfg=237 ctermbg=NONE cterm=reverse
     hi LspReferenceWrite ctermfg=237 ctermbg=NONE cterm=reverse
@@ -570,6 +571,9 @@ if s:t_Co >= 256
     hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi diffAdded ctermfg=28 ctermbg=NONE cterm=NONE
+    hi diffRemoved ctermfg=124 ctermbg=NONE cterm=NONE
+    hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -720,6 +724,7 @@ if s:t_Co >= 0
 endif
 
 " Color: black         #000000           16
+" Color: white         #ffffff           231
 " Background: dark
 " Color: fg_1          #ffffff           231
 " Color: fg0           #eeeeee           255
