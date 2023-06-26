@@ -157,7 +157,7 @@ lCursor              -> Cursor
   @tag.delimiter     -> Delimiter
 #endif
 ; }}}
-; :h lsp-semantic_tokens {{{
+; :h lsp-semantic-highlight {{{
 #if has('nvim-0.9')
 #endif
 ; }}}

@@ -10,6 +10,9 @@ Neovim:        yes
 Colortemplate Options: timestamp=0
 ; }}}
 
+; NOTE: Probably not needed anymore thanks to t_Co configuration with variable.
+; But I'm not doing that because it requires base-16 values for colors not used in 8 variant
+
 ; vim uses SpecialKey for listchar
 #if has('nvim')
   SpecialKey         -> Special
