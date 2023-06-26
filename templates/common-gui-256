@@ -83,10 +83,6 @@ Strikethrough        none              none              strikethrough
 Literal              literalyellow     none
 PunctuationSpecial   specialcyan       none              bold
 
-; plugins and filetypes
-diffAdded            quite2            none
-diffRemoved          quite1            none
-
 ; :h lsp-lighlight
 LspReferenceText     fg1               none              reverse
 LspReferenceRead     fg1               none              reverse
@@ -108,3 +104,10 @@ DiagnosticUnderlineHint   none         none              t=undercurl g=undercurl
 DiagnosticUnderlineOk     none         none              t=undercurl g=undercurl s=quite2
 ; DiagnosticDeprecated
 ; DiagnosticUnnecessary
+
+; plugins and filetypes
+; diff
+diffAdded            quite2            none
+diffRemoved          quite1            none
+; vim-sneak
+Sneak                white             uiblue            bold

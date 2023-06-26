@@ -12,6 +12,7 @@ Colortemplate Options: timestamp=0
 
 ; Global definitions {{{
 Color: black         #000000           16
+Color: white         #ffffff           231
 
 ; :help group-name
 String               -> Literal
