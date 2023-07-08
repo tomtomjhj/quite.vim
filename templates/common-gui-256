@@ -1,7 +1,7 @@
 ; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
 
 Normal               fg0               bg0
-NormalFloat          none              bg1
+NormalFloat          none              bg2
 
 ; :help group-name
 Comment              fg2               none
@@ -16,7 +16,7 @@ Special              specialcyan       none
 Delimiter            fg1               none
 SpecialComment       fg2               none              bold
 Underlined           none              none              underline
-Ignore               bg3               none
+Ignore               bg4               none
 Error                errorred          black             reverse,bold
 Todo                 uiteal            black             reverse,bold
 
@@ -25,27 +25,27 @@ ColorColumn          none              bg1
 Conceal              specialcyan       none
 Cursor               none              none              reverse
 CursorIM             black             uilime
-CursorColumn         none              bg2
-CursorLine           none              bg2
-CursorLineNr         none              bg2
+CursorColumn         none              bg3
+CursorLine           none              bg3
+CursorLineNr         none              bg3
 DiffAdd              none              bggreen
 DiffChange           none              bgcyan
 DiffDelete           quite1            none
 DiffText             none              bgyellow
 Directory            none              none              bold
 ErrorMsg             none              none              reverse,bold
-FoldColumn           bg3               none
-Folded               bg3               none
+FoldColumn           bg4               none
+Folded               fg2               bg1
 IncSearch            uiamber           black             reverse,bold,underline
 LineNr               fg2               none
 MatchParen           uipink            none              bold
 ModeMsg              none              none              bold
 MoreMsg              none              none
-NonText              bg3               none
+NonText              bg4               none
 Pmenu                none              bgblue
 PmenuExtra           none              bgblue
 PmenuKind            none              bgblue            bold
-PmenuSbar            none              bg3
+PmenuSbar            none              bg4
 PmenuSel             none              bgpink
 PmenuExtraSel        none              bgpink
 PmenuKindSel         none              bgpink            bold
@@ -60,14 +60,14 @@ SpellCap             none              none              t=undercurl g=undercurl
 SpellLocal           none              none              t=undercurl g=undercurl s=quite5
 SpellRare            none              none              t=undercurl g=undercurl s=quite6
 StatusLine           bg0               fg0               bold
-StatusLineNC         bg0               bg3
-TabLine              none              bg3
-TabLineFill          none              bg2
+StatusLineNC         bg0               bg4
+TabLine              none              bg4
+TabLineFill          none              bg3
 TabLineSel           none              none              bold
 Title                labelpink         none              bold,underline
-VertSplit            fg1               bg1
+VertSplit            fg1               bg3
 Visual               uiamber           black             reverse
-VisualNOS            none              bg2
+VisualNOS            none              bg3
 WarningMsg           none              none
 WildMenu             uiblue            none              bold
 
