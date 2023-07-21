@@ -7,7 +7,7 @@ NormalFloat          none              none
 
 ; :help group-name
 Variant: 16 256 gui
-Comment              term8             none              bold
+Comment              term3             none
 Variant: 8
 Comment              none              none              bold
 Variant: 8 16 256 gui
@@ -30,7 +30,7 @@ ColorColumn          none              term8
 Variant: 8
 ColorColumn          none              none              reverse
 Variant: 8 16 256 gui
-Conceal              term3             none
+Conceal              none              none
 Cursor               none              none              reverse
 CursorColumn         none              none
 CursorLine           none              none              underline
@@ -106,7 +106,11 @@ TabLineFill          none              none              reverse
 TabLineSel           none              none              bold
 Title                term4             none              bold,underline
 VertSplit            none              none
+Variant: 16 256 gui
+Visual               term8             none              reverse
+Variant: 8
 Visual               term3             none              reverse
+Variant: 8 16 256 gui
 VisualNOS            none              none
 WarningMsg           none              none              standout
 WildMenu             none              none              bold
