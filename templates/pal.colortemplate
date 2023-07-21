@@ -135,6 +135,23 @@ StatusLineTermNC     -> StatusLineNC
   @tag.delimiter     -> Delimiter
 #endif
 ; }}}
+; :h lsp-lighlight {{{
+LspCodeLens          -> NonText
+LspCodeLensSeparator -> NonText
+; }}}
+; plugins and filetypes {{{
+; Coq: {{{
+coqKwd               -> Keyword
+coqProofDelim        -> PreProc
+; }}}
+; Help: {{{
+helpHyperTextJump    -> Underlined
+helpOption           -> Underlined
+; }}}
+; Markdown: {{{
+markdownCode         -> String
+; }}}
+; }}}
 ; }}}
 
 ; Background: dark {{{
