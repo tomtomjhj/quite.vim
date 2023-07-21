@@ -150,19 +150,22 @@ Color: term1         #d7005f           1                 1  ; darkred
 ; DiffAdd diffAdded
 ; String
 Color: term2         #22bf00           2                 2  ; darkgreen
-; Visual IncSearch
-; Conceal, NonText
+; IncSearch ~~Conceal~~
+; 8: Visual NonText
+; >16: Comment
 Color: term3         #d79600           3                 3  ; darkyellow
 ; DiffChange SpellCap
-; Statement, Title
+; Statement, Title, Directory
 Color: term4         #0080dd           4                 4  ; darkblue
 ; DiffText QuickFixLine CurSearch SpellLocal
-; PreProc
+; Function
 Color: term5         #d777d7           5                 5  ; darkmagenta
 ; [x] Search SpellRare
+; PreProc
 Color: term6         #00cccc           6                 6  ; darkcyan
 ; Can't assume about relation between 1,7,15 and bg/fg,
 ; but it's clear that 8 will have some contrast with all of them.
+; >16: Visual NonText
 Color: term8         #808080           8                 8  ; darkgrey
 ; not used
 Color: term9         #ff2266           9                 9  ; red
