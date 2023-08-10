@@ -32,6 +32,7 @@ hi! link Typedef Statement
 hi! link SpecialChar Special
 hi! link Tag Special
 hi! link Debug Special
+hi! link FloatBorder NormalFloat
 hi! link MessageWindow Pmenu
 hi! link PopupNotification Todo
 if has('nvim')
