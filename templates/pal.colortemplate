@@ -21,6 +21,7 @@ Structure            -> Statement
 Typedef              -> Statement
 
 ; :help highlight-groups
+FloatBorder          -> NormalFloat
 ; vim uses SpecialKey for listchar
 #if has('nvim')
   SpecialKey         -> Special

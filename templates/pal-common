@@ -3,7 +3,7 @@
 ; I don't need 256, but colortemplate requires it anyway.
 Variant: 8 16 256 gui
 Normal               none              none
-NormalFloat          none              none
+NormalFloat          none              none              reverse
 
 ; :help group-name
 Variant: 16 256 gui
