@@ -37,6 +37,7 @@ Tag                  -> Special
 Debug                -> Special
 
 ; :help highlight-groups
+FloatBorder          -> NormalFloat
 MessageWindow        -> Pmenu
 PopupNotification    -> Todo
 ; vim uses SpecialKey for listchar
