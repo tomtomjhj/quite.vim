@@ -48,7 +48,7 @@ StatusLineTermNC     -> StatusLineNC
   ; punctuation
   ; @punctuation.delimiter
   ; @punctuation.bracket
-  ; @punctuation.special
+  @punctuation.special -> Special
 
   ; literals
   ; @string
