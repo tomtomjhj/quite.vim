@@ -19,6 +19,7 @@ Statement            term4             none
 PreProc              term6             none
 Type                 none              none
 Special              none              none              bold
+Delimiter            none              none
 Underlined           none              none              underline
 Ignore               none              none
 Error                term1             none              reverse,bold
