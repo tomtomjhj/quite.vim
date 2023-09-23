@@ -290,7 +290,7 @@ Color: uicursearch   #ff5fff           207
 
 Color: specialcyan   #afd7d7           152
 Color: literalyellow #d7d7af           187
-Color: labelpink     #d7c0d7           182
+Color: labelpink     #d7b7d7           182
 
 Color: errorred      #ff005f           197
 ; }}}
