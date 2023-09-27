@@ -162,7 +162,7 @@ if &background ==# 'dark'
   hi Constant guifg=#ffffff guibg=NONE gui=italic cterm=italic
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Label guifg=#d7b7d7 guibg=NONE gui=bold cterm=bold
+  hi Label guifg=#d7afd7 guibg=NONE gui=bold cterm=bold
   hi PreProc guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Macro guifg=#afd7d7 guibg=NONE gui=italic cterm=italic
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -216,7 +216,7 @@ if &background ==# 'dark'
   hi TabLine guifg=NONE guibg=#626262 gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Title guifg=#d7b7d7 guibg=NONE gui=bold,underline cterm=bold,underline
+  hi Title guifg=#d7afd7 guibg=NONE gui=bold,underline cterm=bold,underline
   hi VertSplit guifg=#d0d0d0 guibg=#444444 gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#444444 gui=NONE cterm=NONE
@@ -284,7 +284,7 @@ else
   hi Constant guifg=#000000 guibg=NONE gui=italic cterm=italic
   hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Label guifg=#603060 guibg=NONE gui=bold cterm=bold
+  hi Label guifg=#5c235c guibg=NONE gui=bold cterm=bold
   hi PreProc guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Macro guifg=#234e5f guibg=NONE gui=italic cterm=italic
   hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -338,7 +338,7 @@ else
   hi TabLine guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Title guifg=#603060 guibg=NONE gui=bold,underline cterm=bold,underline
+  hi Title guifg=#5c235c guibg=NONE gui=bold,underline cterm=bold,underline
   hi VertSplit guifg=#3a3a3a guibg=#b2b2b2 gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
@@ -762,7 +762,7 @@ endif
 " Color: uicursearch   #ff5fff           207
 " Color: specialcyan   #afd7d7           152
 " Color: literalyellow #d7d7af           187
-" Color: labelpink     #d7b7d7           182
+" Color: labelpink     #d7afd7           182
 " Color: errorred      #ff005f           197
 " Term colors: bg0
 " Term colors: quite1 quite2 quite3 quite4 quite5 quite6
@@ -806,7 +806,7 @@ endif
 " Color: uicursearch   #ff5fff           207
 " Color: specialcyan   #234e5f           23
 " Color: literalyellow #5c5c23           58
-" Color: labelpink     #603060           53
+" Color: labelpink     #5c235c           53
 " Color: errorred      #ff005f           197
 " Term colors: bg0
 " Term colors: quite1 quite2 quite3 quite4 quite5 quite6
