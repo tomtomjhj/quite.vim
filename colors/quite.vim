@@ -249,6 +249,7 @@ if &background ==# 'dark'
   hi diffAdded guifg=#22bf00 guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
+  hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -371,6 +372,7 @@ else
   hi diffAdded guifg=#177700 guibg=NONE gui=NONE cterm=NONE
   hi diffRemoved guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
+  hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -474,6 +476,7 @@ if s:t_Co >= 256
     hi diffAdded ctermfg=34 ctermbg=NONE cterm=NONE
     hi diffRemoved ctermfg=161 ctermbg=NONE cterm=NONE
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
+    hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -575,6 +578,7 @@ if s:t_Co >= 256
     hi diffAdded ctermfg=28 ctermbg=NONE cterm=NONE
     hi diffRemoved ctermfg=124 ctermbg=NONE cterm=NONE
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
+    hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -586,16 +590,140 @@ if s:t_Co >= 256
   finish
 endif
 
-if s:t_Co >= 8
+if s:t_Co >= 16
+  if has('nvim-0.8')
+    hi! link @text.literal Comment
+  endif
   hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Comment ctermfg=NONE ctermbg=NONE cterm=bold
+  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi Comment ctermfg=8 ctermbg=NONE cterm=bold
   hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Label ctermfg=NONE ctermbg=NONE cterm=bold
   hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Macro ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi SpecialComment ctermfg=NONE ctermbg=NONE cterm=italic
+  hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
+  hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Error ctermfg=darkred ctermbg=NONE cterm=bold,reverse
+  hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi ColorColumn ctermfg=8 ctermbg=NONE cterm=reverse
+  hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline
+  hi CursorLineNr ctermfg=NONE ctermbg=NONE cterm=bold
+  hi DiffAdd ctermfg=darkgreen ctermbg=NONE cterm=reverse
+  hi DiffChange ctermfg=darkblue ctermbg=NONE cterm=reverse
+  hi DiffDelete ctermfg=darkred ctermbg=NONE cterm=NONE
+  hi DiffText ctermfg=darkmagenta ctermbg=NONE cterm=reverse
+  hi Directory ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi FoldColumn ctermfg=8 ctermbg=NONE cterm=reverse
+  hi Folded ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi IncSearch ctermfg=darkyellow ctermbg=NONE cterm=bold,reverse,underline
+  hi LineNr ctermfg=8 ctermbg=NONE cterm=NONE
+  hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
+  hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
+  hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi NonText ctermfg=8 ctermbg=NONE cterm=NONE
+  hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi PmenuSbar ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi PmenuSel ctermfg=8 ctermbg=NONE cterm=bold,reverse,underline
+  hi PmenuExtraSel ctermfg=8 ctermbg=NONE cterm=bold,reverse
+  hi PmenuKindSel ctermfg=8 ctermbg=NONE cterm=bold,reverse
+  hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Question ctermfg=NONE ctermbg=NONE cterm=bold
+  hi QuickFixLine ctermfg=darkmagenta ctermbg=NONE cterm=reverse
+  hi Search ctermfg=darkcyan ctermbg=NONE cterm=bold,reverse
+  hi CurSearch ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse,underline
+  hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
+  if !s:italics
+    hi SpecialComment cterm=NONE
+  endif
+  if has('nvim')
+    hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellLocal ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellRare ctermfg=NONE ctermbg=NONE cterm=undercurl
+  else
+    hi SpellBad ctermfg=darkred ctermbg=NONE cterm=undercurl
+    hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=undercurl
+    hi SpellLocal ctermfg=darkmagenta ctermbg=NONE cterm=undercurl
+    hi SpellRare ctermfg=darkcyan ctermbg=NONE cterm=undercurl
+  endif
+  hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi StatusLineNC ctermfg=8 ctermbg=NONE cterm=bold,reverse
+  hi TabLine ctermfg=NONE ctermbg=8 cterm=bold
+  hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
+  hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Title ctermfg=NONE ctermbg=NONE cterm=bold,underline
+  hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Visual ctermfg=darkyellow ctermbg=NONE cterm=reverse
+  hi VisualNOS ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=standout
+  hi WildMenu ctermfg=NONE ctermbg=NONE cterm=bold
+  hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Italic ctermfg=NONE ctermbg=NONE cterm=italic
+  hi BoldItalic ctermfg=NONE ctermbg=NONE cterm=bold,italic
+  hi Strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
+  hi Literal ctermfg=NONE ctermbg=NONE cterm=italic
+  hi PunctuationSpecial ctermfg=NONE ctermbg=NONE cterm=bold
+  hi LspReferenceText ctermfg=8 ctermbg=NONE cterm=reverse
+  hi LspReferenceRead ctermfg=8 ctermbg=NONE cterm=reverse
+  hi LspReferenceWrite ctermfg=8 ctermbg=NONE cterm=reverse
+  hi LspInlayHint ctermfg=8 ctermbg=NONE cterm=reverse
+  hi LspCodeLens ctermfg=8 ctermbg=NONE cterm=reverse
+  hi LspCodeLensSeparator ctermfg=8 ctermbg=NONE cterm=bold,reverse
+  hi DiagnosticError ctermfg=darkred ctermbg=NONE cterm=NONE
+  hi DiagnosticWarn ctermfg=darkyellow ctermbg=NONE cterm=NONE
+  hi DiagnosticInfo ctermfg=darkcyan ctermbg=NONE cterm=NONE
+  hi DiagnosticHint ctermfg=darkblue ctermbg=NONE cterm=NONE
+  hi DiagnosticOk ctermfg=darkgreen ctermbg=NONE cterm=NONE
+  hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
+  hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
+  hi Sneak ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
+  hi SneakLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
+  if !s:italics
+    hi Italic cterm=NONE
+    hi BoldItalic cterm=bold
+    hi Literal cterm=NONE
+  endif
+  unlet s:t_Co s:italics
+  finish
+endif
+
+if s:t_Co >= 8
+  if has('nvim-0.8')
+    hi! link @text.literal Comment
+  endif
+  hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi Comment ctermfg=NONE ctermbg=NONE cterm=bold,italic
+  hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Statement ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Label ctermfg=NONE ctermbg=NONE cterm=bold
+  hi PreProc ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Macro ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Special ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi SpecialComment ctermfg=NONE ctermbg=NONE cterm=italic
   hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error ctermfg=darkred ctermbg=NONE cterm=bold,reverse
@@ -603,6 +731,7 @@ if s:t_Co >= 8
   hi ColorColumn ctermfg=NONE ctermbg=NONE cterm=reverse
   hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
   hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
   hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline
   hi CursorLineNr ctermfg=NONE ctermbg=NONE cterm=bold
@@ -633,26 +762,65 @@ if s:t_Co >= 8
   hi Search ctermfg=darkcyan ctermbg=NONE cterm=bold,reverse
   hi CurSearch ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse,underline
   hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi SpellBad ctermfg=darkred ctermbg=NONE cterm=underline
-  hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=underline
-  hi SpellLocal ctermfg=darkmagenta ctermbg=NONE cterm=underline
-  hi SpellRare ctermfg=darkcyan ctermbg=NONE cterm=underline
+  if !s:italics
+    hi Comment cterm=bold
+    hi SpecialComment cterm=NONE
+  endif
+  if has('nvim')
+    hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellLocal ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi SpellRare ctermfg=NONE ctermbg=NONE cterm=undercurl
+  else
+    hi SpellBad ctermfg=darkred ctermbg=NONE cterm=undercurl
+    hi SpellCap ctermfg=darkblue ctermbg=NONE cterm=undercurl
+    hi SpellLocal ctermfg=darkmagenta ctermbg=NONE cterm=undercurl
+    hi SpellRare ctermfg=darkcyan ctermbg=NONE cterm=undercurl
+  endif
   hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi StatusLineNC ctermfg=NONE ctermbg=NONE cterm=bold,underline
-  hi TabLine ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi TabLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
   hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Title ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Visual ctermfg=darkyellow ctermbg=NONE cterm=reverse
   hi VisualNOS ctermfg=NONE ctermbg=NONE cterm=NONE
   hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=standout
   hi WildMenu ctermfg=NONE ctermbg=NONE cterm=bold
-  hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
   hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Italic ctermfg=NONE ctermbg=NONE cterm=italic
+  hi BoldItalic ctermfg=NONE ctermbg=NONE cterm=bold,italic
+  hi Strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
+  hi Literal ctermfg=NONE ctermbg=NONE cterm=italic
+  hi PunctuationSpecial ctermfg=NONE ctermbg=NONE cterm=bold
+  hi LspReferenceText ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi LspReferenceRead ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi LspReferenceWrite ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi LspInlayHint ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi LspCodeLens ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi LspCodeLensSeparator ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi DiagnosticError ctermfg=darkred ctermbg=NONE cterm=NONE
+  hi DiagnosticWarn ctermfg=darkyellow ctermbg=NONE cterm=NONE
+  hi DiagnosticInfo ctermfg=darkcyan ctermbg=NONE cterm=NONE
+  hi DiagnosticHint ctermfg=darkblue ctermbg=NONE cterm=NONE
+  hi DiagnosticOk ctermfg=darkgreen ctermbg=NONE cterm=NONE
+  hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
   hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
+  hi Sneak ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
+  hi SneakLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
+  if !s:italics
+    hi Italic cterm=NONE
+    hi BoldItalic cterm=bold
+    hi Literal cterm=NONE
+  endif
   unlet s:t_Co s:italics
   finish
 endif
@@ -821,4 +989,5 @@ endif
 " Color: term4         #0080dd           32                darkblue
 " Color: term5         #d777d7           176               darkmagenta
 " Color: term6         #00cccc           44                darkcyan
+" Color: term8         #808080           8                 8  ; darkgrey
 " vim: et ts=8 sw=2 sts=2
