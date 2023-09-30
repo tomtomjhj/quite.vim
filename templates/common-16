@@ -1,0 +1,179 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
+
+; GUI and 256 color values are synced with the dark variant
+Color: term1         #d7005f           161               darkred
+Color: term2         #22bf00           34                darkgreen
+Color: term3         #d79600           172               darkyellow
+Color: term4         #0080dd           32                darkblue
+Color: term5         #d777d7           176               darkmagenta
+Color: term6         #00cccc           44                darkcyan
+Color: term8         #808080           8                 8  ; darkgrey
+
+; Override global definitions {{{
+#if has('nvim-0.8')
+  @text.literal      -> Comment
+#endif
+; }}}
+
+Normal               none              none
+NormalFloat          none              none              reverse
+
+; :help group-name
+Variant: 16
+Comment              term8             none              bold
+Variant: 8
+Comment              none              none              bold,italic
+Variant: 8 16
+Constant             none              none
+Identifier           none              none
+Statement            none              none
+Label                none              none              bold
+PreProc              none              none
+Macro                none              none
+Type                 none              none
+Special              none              none
+Delimiter            none              none
+SpecialComment       none              none              italic
+Underlined           none              none              underline
+Ignore               none              none
+Error                term1             none              reverse,bold
+Todo                 none              none              reverse,bold
+
+; :help highlight-groups
+Variant: 16
+ColorColumn          term8             none              reverse
+Variant: 8
+ColorColumn          none              none              reverse
+Variant: 8 16
+Conceal              none              none
+Cursor               none              none              reverse
+CursorIM             none              none
+CursorColumn         none              none
+CursorLine           none              none              underline
+CursorLineNr         none              none              bold
+DiffAdd              term2             none              reverse
+DiffChange           term4             none              reverse
+DiffDelete           term1             none
+DiffText             term5             none              reverse
+Directory            none              none
+ErrorMsg             none              none              reverse,bold
+Variant: 16
+FoldColumn           term8             none              reverse
+Variant: 8
+FoldColumn           none              none              reverse
+Variant: 8 16
+Folded               none              none
+IncSearch            term3             none              reverse,bold,underline
+Variant: 16
+LineNr               term8             none
+Variant: 8
+LineNr               none              none
+Variant: 8 16
+MatchParen           none              none              bold,underline
+ModeMsg              none              none              bold
+MoreMsg              none              none
+Variant: 16
+NonText              term8             none
+Variant: 8
+NonText              term3             none
+Variant: 8 16
+Pmenu                none              none              reverse
+PmenuExtra           none              none              reverse
+PmenuKind            none              none              reverse,bold
+PmenuSbar            none              none              reverse
+Variant: 16
+PmenuSel             term8             none              reverse,bold,underline
+PmenuExtraSel        term8             none              reverse,bold
+PmenuKindSel         term8             none              reverse,bold
+Variant: 8
+PmenuSel             none              none              bold,underline
+PmenuExtraSel        none              none              bold
+PmenuKindSel         none              none              bold
+Variant: 8 16
+PmenuThumb           none              none
+Question             none              none              bold
+QuickFixLine         term5             none              reverse
+Search               term6             none              reverse,bold
+CurSearch            term5             none              reverse,bold,underline
+SignColumn           none              none              reverse
+; In nvim, guisp works with notermguicolors
+#if has('nvim')
+SpellBad             none              none              undercurl s=term1
+SpellCap             none              none              undercurl s=term4
+SpellLocal           none              none              undercurl s=term5
+SpellRare            none              none              undercurl s=term6
+#else
+SpellBad             term1             none              undercurl
+SpellCap             term4             none              undercurl
+SpellLocal           term5             none              undercurl
+SpellRare            term6             none              undercurl
+#endif
+StatusLine           none              none              bold,reverse
+Variant: 16
+StatusLineNC         term8             none              bold,reverse
+Variant: 8
+StatusLineNC         none              none              bold,underline
+Variant: 16
+TabLine              none              term8             bold
+Variant: 8
+TabLine              none              none              bold,reverse
+Variant: 8 16
+TabLineFill          none              none              underline
+TabLineSel           none              none              bold
+Title                none              none              bold,underline
+VertSplit            none              none
+Visual               term3             none              reverse
+VisualNOS            none              none
+WarningMsg           none              none              standout
+WildMenu             none              none              bold
+
+; :help window-toolbar
+ToolbarLine          none              none              reverse
+ToolbarButton        none              none              bold,reverse
+
+; Custom groups
+Bold                 none              none              bold
+Italic               none              none              italic
+BoldItalic           none              none              bold,italic
+Strikethrough        none              none              strikethrough
+Literal              none              none              italic
+PunctuationSpecial   none              none              bold
+
+; :h lsp-lighlight
+Variant: 16
+LspReferenceText     term8             none              reverse
+LspReferenceRead     term8             none              reverse
+LspReferenceWrite    term8             none              reverse
+LspInlayHint         term8             none              reverse
+LspCodeLens          term8             none              reverse
+LspCodeLensSeparator term8             none              reverse,bold
+Variant: 8
+LspReferenceText     none              none              reverse
+LspReferenceRead     none              none              reverse
+LspReferenceWrite    none              none              reverse
+LspInlayHint         none              none              reverse
+LspCodeLens          none              none              reverse
+LspCodeLensSeparator none              none              reverse,bold
+Variant: 8 16
+
+; :h diagnostic-highlights
+DiagnosticError           term1        none
+DiagnosticWarn            term3        none
+DiagnosticInfo            term6        none
+DiagnosticHint            term4        none
+DiagnosticOk              term2        none
+DiagnosticUnderlineError  none         none              undercurl s=term1
+DiagnosticUnderlineWarn   none         none              undercurl s=term3
+DiagnosticUnderlineInfo   none         none              undercurl s=term6
+DiagnosticUnderlineHint   none         none              undercurl s=term4
+DiagnosticUnderlineOk     none         none              undercurl s=term2
+; DiagnosticDeprecated
+; DiagnosticUnnecessary
+
+; plugins and filetypes
+; diff
+diffAdded            term2             none
+diffRemoved          term1             none
+; vim-sneak
+Sneak                term5             none              bold,reverse
+SneakLabel           term5             none              bold,reverse

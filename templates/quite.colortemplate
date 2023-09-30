@@ -352,13 +352,13 @@ Include: terminal
 Include: common-gui-256
 ; }}}
 
-; fallbacks for 8 and 0 {{{
-; We don't care about the fidelity of 8 and 0.
+; fallbacks for 16, 8, and 0 {{{
+; We don't care about the fidelity of these variants.
 ; They are just minimum viable fallback for weird environments.
 Background: any
 
-Variant: 8
-Include: common-8
+Variant: 8 16
+Include: common-16
 
 Include: _tcozero
 ; }}}

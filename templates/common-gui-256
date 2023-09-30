@@ -55,10 +55,10 @@ QuickFixLine         none              bgpink
 Search               uiblue            black             reverse,bold
 CurSearch            uicursearch       black             reverse,bold,underline
 SignColumn           none              none
-SpellBad             none              none              t=undercurl g=undercurl s=quite1
-SpellCap             none              none              t=undercurl g=undercurl s=quite4
-SpellLocal           none              none              t=undercurl g=undercurl s=quite5
-SpellRare            none              none              t=undercurl g=undercurl s=quite6
+SpellBad             none              none              undercurl s=quite1
+SpellCap             none              none              undercurl s=quite4
+SpellLocal           none              none              undercurl s=quite5
+SpellRare            none              none              undercurl s=quite6
 StatusLine           bg0               fg0               bold
 StatusLineNC         bg0               bg4
 TabLine              none              bg4
@@ -97,11 +97,11 @@ DiagnosticWarn            quite3       none
 DiagnosticInfo            quite6       none
 DiagnosticHint            quite4       none
 DiagnosticOk              quite2       none
-DiagnosticUnderlineError  none         none              t=undercurl g=undercurl s=quite1
-DiagnosticUnderlineWarn   none         none              t=undercurl g=undercurl s=quite3
-DiagnosticUnderlineInfo   none         none              t=undercurl g=undercurl s=quite6
-DiagnosticUnderlineHint   none         none              t=undercurl g=undercurl s=quite4
-DiagnosticUnderlineOk     none         none              t=undercurl g=undercurl s=quite2
+DiagnosticUnderlineError  none         none              undercurl s=quite1
+DiagnosticUnderlineWarn   none         none              undercurl s=quite3
+DiagnosticUnderlineInfo   none         none              undercurl s=quite6
+DiagnosticUnderlineHint   none         none              undercurl s=quite4
+DiagnosticUnderlineOk     none         none              undercurl s=quite2
 ; DiagnosticDeprecated
 ; DiagnosticUnnecessary
 
@@ -111,3 +111,4 @@ diffAdded            quite2            none
 diffRemoved          quite1            none
 ; vim-sneak
 Sneak                white             uiblue            bold
+SneakLabel           white             uiblue            bold
