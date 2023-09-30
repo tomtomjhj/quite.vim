@@ -82,16 +82,24 @@ QuickFixLine         term5             none              reverse
 Search               term6             none              reverse,bold
 CurSearch            term5             none              reverse,bold,underline
 SignColumn           none              none
-Variant: 8 16 256
-SpellBad             term1             none              underline
-SpellCap             term4             none              underline
-SpellLocal           term5             none              underline
-SpellRare            term6             none              underline
 Variant: gui
-SpellBad             none              none              t=undercurl g=undercurl s=term1
-SpellCap             none              none              t=undercurl g=undercurl s=term4
-SpellLocal           none              none              t=undercurl g=undercurl s=term5
-SpellRare            none              none              t=undercurl g=undercurl s=term6
+SpellBad             none              none              undercurl s=term1
+SpellCap             none              none              undercurl s=term4
+SpellLocal           none              none              undercurl s=term5
+SpellRare            none              none              undercurl s=term6
+Variant: 8 16 256
+; In nvim, guisp works with notermguicolors
+#if has('nvim')
+SpellBad             none              none              undercurl s=term1
+SpellCap             none              none              undercurl s=term4
+SpellLocal           none              none              undercurl s=term5
+SpellRare            none              none              undercurl s=term6
+#else
+SpellBad             term1             none              undercurl
+SpellCap             term4             none              undercurl
+SpellLocal           term5             none              undercurl
+SpellRare            term6             none              undercurl
+#endif
 Variant: 8 16 256 gui
 StatusLine           none              none              bold,reverse
 Variant: 16 256 gui
