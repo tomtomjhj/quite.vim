@@ -113,7 +113,7 @@ TabLine              none              none              bold,reverse
 Variant: 8 16 256 gui
 TabLineFill          none              none              reverse
 TabLineSel           none              none              bold
-Title                term4             none              bold,underline
+Title                term5             none              bold,underline
 VertSplit            none              none
 Variant: 16 256 gui
 Visual               term8             none              reverse

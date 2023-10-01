@@ -152,6 +152,14 @@ helpOption           -> Underlined
 ; Markdown: {{{
 markdownCode         -> String
 ; }}}
+; Tex: {{{
+texMathZone          -> NONE
+texRefArg            -> NONE
+texMathEnvArgName    -> PreProc
+texMathDelimZone     -> PreProc
+texPartArgTitle      -> Title
+texTitleArg          -> Title
+; }}}
 ; }}}
 ; }}}
 
