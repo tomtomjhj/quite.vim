@@ -177,3 +177,6 @@ diffRemoved          term1             none
 ; vim-sneak
 Sneak                term5             none              bold,reverse
 SneakLabel           term5             none              bold,reverse
+; flash.nvim
+FlashLabel           term5             none              reverse,bold
+FlashBackdrop        none              none

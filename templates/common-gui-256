@@ -112,3 +112,5 @@ diffRemoved          quite1            none
 ; vim-sneak
 Sneak                white             uiblue            bold
 SneakLabel           white             uiblue            bold
+; flash.nvim
+FlashLabel           white             uiblue            bold
