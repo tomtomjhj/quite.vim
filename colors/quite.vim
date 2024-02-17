@@ -250,6 +250,7 @@ if &background ==# 'dark'
   hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
+  hi FlashLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -373,6 +374,7 @@ else
   hi diffRemoved guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
+  hi FlashLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -477,6 +479,7 @@ if s:t_Co >= 256
     hi diffRemoved ctermfg=161 ctermbg=NONE cterm=NONE
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
+    hi FlashLabel ctermfg=231 ctermbg=39 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -579,6 +582,7 @@ if s:t_Co >= 256
     hi diffRemoved ctermfg=124 ctermbg=NONE cterm=NONE
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
+    hi FlashLabel ctermfg=231 ctermbg=39 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -698,6 +702,8 @@ if s:t_Co >= 16
   hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
   hi Sneak ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
   hi SneakLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
+  hi FlashLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
+  hi FlashBackdrop ctermfg=NONE ctermbg=NONE cterm=NONE
   if !s:italics
     hi Italic cterm=NONE
     hi BoldItalic cterm=bold
@@ -816,6 +822,8 @@ if s:t_Co >= 8
   hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
   hi Sneak ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
   hi SneakLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
+  hi FlashLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
+  hi FlashBackdrop ctermfg=NONE ctermbg=NONE cterm=NONE
   if !s:italics
     hi Italic cterm=NONE
     hi BoldItalic cterm=bold
