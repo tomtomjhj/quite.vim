@@ -24,6 +24,9 @@ Underlined           none              none              underline
 Ignore               none              none
 Error                term1             none              reverse,bold
 Todo                 none              none              reverse,bold
+Added                term2             none
+Changed              term6             none
+Removed              term1             none
 
 ; :help highlight-groups
 Variant: 16 256 gui
