@@ -43,44 +43,34 @@ endif
 hi! link StatusLineTerm StatusLine
 hi! link StatusLineTermNC StatusLineNC
 hi! link Terminal Normal
+hi! link VertSplit WinSeparator
 hi! link lCursor Cursor
 if has('nvim-0.8')
-  hi! link @punctuation.special PunctuationSpecial
-  hi! link @string.regex Special
+  hi! link @variable.builtin Constant
+  hi! link @constant.builtin Constant
+  hi! link @constant.macro Constant
+  hi! link @module NONE
+  hi! link @module.builtin Constant
+  hi! link @type.builtin Constant
+  hi! link @type.definition Label
+  hi! link @type.qualifier StorageClass
+  hi! link @attribute Special
   hi! link @function Label
   hi! link @function.builtin Constant
   hi! link @function.call NONE
   hi! link @function.macro Macro
+  hi! link @function.method Label
+  hi! link @function.method.call NONE
   hi! link @function.latex Constant
-  hi! link @method Label
-  hi! link @method.call NONE
   hi! link @constructor NONE
-  hi! link @type.builtin Constant
-  hi! link @type.definition Label
-  hi! link @type.qualifier StorageClass
-  hi! link @storageclass.lifetime Literal
-  hi! link @attribute Special
-  hi! link @variable.builtin Constant
-  hi! link @constant.builtin Constant
-  hi! link @namespace NONE
-  hi! link @text.strong Bold
-  hi! link @text.emphasis Italic
-  hi! link @text.underline Underlined
-  hi! link @text.strike Strikethrough
-  hi! link @text.title Title
-  hi! link @text.uri Underlined
-  hi! link @text.math Literal
-  hi! link @text.reference Underlined
-  hi! link @text.literal NormalFloat
-  hi! link @text.todo Todo
-  hi! link @text.note Todo
-  hi! link @text.warning Error
-  hi! link @text.danger Error
-  hi! link @text.diff.add diffAdded
-  hi! link @text.diff.delete diffRemoved
+  hi! link @keyword.storage.lifetime Literal
+  hi! link @punctuation.special PunctuationSpecial
+  hi! link @markup.quote NONE
+  hi! link @markup.math Literal
+  hi! link @markup.raw NormalFloat
+  hi! link @markup.list PunctuationSpecial
   hi! link @tag Statement
-  hi! link @tag.attribute None
-  hi! link @tag.delimiter Delimiter
+  hi! link @tag.attribute NONE
 endif
 if has('nvim-0.9')
 endif
@@ -160,12 +150,12 @@ if &background ==# 'dark'
   hi NormalFloat guifg=NONE guibg=#333333 gui=NONE cterm=NONE
   hi Comment guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=#ffffff guibg=NONE gui=italic cterm=italic
-  hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Identifier guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
+  hi Statement guifg=#eeeeee guibg=NONE gui=bold cterm=bold
   hi Label guifg=#d7afd7 guibg=NONE gui=bold cterm=bold
-  hi PreProc guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi PreProc guifg=#eeeeee guibg=NONE gui=bold cterm=bold
   hi Macro guifg=#afd7d7 guibg=NONE gui=italic cterm=italic
-  hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Type guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
   hi Special guifg=#afd7d7 guibg=NONE gui=NONE cterm=NONE
   hi Delimiter guifg=#d0d0d0 guibg=NONE gui=NONE cterm=NONE
   hi SpecialComment guifg=#bcbcbc guibg=NONE gui=bold cterm=bold
@@ -173,6 +163,9 @@ if &background ==# 'dark'
   hi Ignore guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
+  hi Added guifg=#22bf00 guibg=NONE gui=NONE cterm=NONE
+  hi Changed guifg=#00cccc guibg=NONE gui=NONE cterm=NONE
+  hi Removed guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi ColorColumn guifg=NONE guibg=#222222 gui=NONE cterm=NONE
   hi Conceal guifg=#afd7d7 guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -217,11 +210,11 @@ if &background ==# 'dark'
   hi TabLineFill guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Title guifg=#d7afd7 guibg=NONE gui=bold,underline cterm=bold,underline
-  hi VertSplit guifg=#d0d0d0 guibg=#444444 gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
+  hi WinSeparator guifg=#d0d0d0 guibg=#444444 gui=NONE cterm=NONE
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Bold guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
@@ -246,8 +239,6 @@ if &background ==# 'dark'
   hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#00cccc gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#0080dd gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#22bf00 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi diffAdded guifg=#22bf00 guibg=NONE gui=NONE cterm=NONE
-  hi diffRemoved guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
@@ -284,12 +275,12 @@ else
   hi NormalFloat guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
   hi Comment guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=#000000 guibg=NONE gui=italic cterm=italic
-  hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Statement guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi Identifier guifg=#121212 guibg=NONE gui=NONE cterm=NONE
+  hi Statement guifg=#121212 guibg=NONE gui=bold cterm=bold
   hi Label guifg=#5c235c guibg=NONE gui=bold cterm=bold
-  hi PreProc guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi PreProc guifg=#121212 guibg=NONE gui=bold cterm=bold
   hi Macro guifg=#234e5f guibg=NONE gui=italic cterm=italic
-  hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Type guifg=#121212 guibg=NONE gui=NONE cterm=NONE
   hi Special guifg=#234e5f guibg=NONE gui=NONE cterm=NONE
   hi Delimiter guifg=#3a3a3a guibg=NONE gui=NONE cterm=NONE
   hi SpecialComment guifg=#626262 guibg=NONE gui=bold cterm=bold
@@ -297,6 +288,9 @@ else
   hi Ignore guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
+  hi Added guifg=#177700 guibg=NONE gui=NONE cterm=NONE
+  hi Changed guifg=#009999 guibg=NONE gui=NONE cterm=NONE
+  hi Removed guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi ColorColumn guifg=NONE guibg=#dadada gui=NONE cterm=NONE
   hi Conceal guifg=#234e5f guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -341,11 +335,11 @@ else
   hi TabLineFill guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Title guifg=#5c235c guibg=NONE gui=bold,underline cterm=bold,underline
-  hi VertSplit guifg=#3a3a3a guibg=#b2b2b2 gui=NONE cterm=NONE
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
+  hi WinSeparator guifg=#3a3a3a guibg=#b2b2b2 gui=NONE cterm=NONE
   hi ToolbarLine guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi Bold guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
@@ -370,8 +364,6 @@ else
   hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#009999 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#177700 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi diffAdded guifg=#177700 guibg=NONE gui=NONE cterm=NONE
-  hi diffRemoved guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
@@ -389,12 +381,12 @@ if s:t_Co >= 256
     hi NormalFloat ctermfg=NONE ctermbg=236 cterm=NONE
     hi Comment ctermfg=250 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=231 ctermbg=NONE cterm=italic
-    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=bold
+    hi Identifier ctermfg=255 ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=255 ctermbg=NONE cterm=bold
     hi Label ctermfg=182 ctermbg=NONE cterm=bold
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=bold
+    hi PreProc ctermfg=255 ctermbg=NONE cterm=bold
     hi Macro ctermfg=152 ctermbg=NONE cterm=italic
-    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Type ctermfg=255 ctermbg=NONE cterm=NONE
     hi Special ctermfg=152 ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=252 ctermbg=NONE cterm=NONE
     hi SpecialComment ctermfg=250 ctermbg=NONE cterm=bold
@@ -402,6 +394,9 @@ if s:t_Co >= 256
     hi Ignore ctermfg=241 ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
+    hi Added ctermfg=34 ctermbg=NONE cterm=NONE
+    hi Changed ctermfg=44 ctermbg=NONE cterm=NONE
+    hi Removed ctermfg=161 ctermbg=NONE cterm=NONE
     hi ColorColumn ctermfg=NONE ctermbg=235 cterm=NONE
     hi Conceal ctermfg=152 ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -446,11 +441,11 @@ if s:t_Co >= 256
     hi TabLineFill ctermfg=NONE ctermbg=238 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
     hi Title ctermfg=182 ctermbg=NONE cterm=bold,underline
-    hi VertSplit ctermfg=252 ctermbg=238 cterm=NONE
     hi Visual ctermfg=214 ctermbg=16 cterm=reverse
     hi VisualNOS ctermfg=NONE ctermbg=238 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
+    hi WinSeparator ctermfg=252 ctermbg=238 cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold
     hi Bold ctermfg=NONE ctermbg=NONE cterm=bold
@@ -475,8 +470,6 @@ if s:t_Co >= 256
     hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
-    hi diffAdded ctermfg=34 ctermbg=NONE cterm=NONE
-    hi diffRemoved ctermfg=161 ctermbg=NONE cterm=NONE
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     hi FlashLabel ctermfg=231 ctermbg=39 cterm=bold
@@ -492,12 +485,12 @@ if s:t_Co >= 256
     hi NormalFloat ctermfg=NONE ctermbg=251 cterm=NONE
     hi Comment ctermfg=241 ctermbg=NONE cterm=NONE
     hi Constant ctermfg=16 ctermbg=NONE cterm=italic
-    hi Identifier ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=NONE ctermbg=NONE cterm=bold
+    hi Identifier ctermfg=233 ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=233 ctermbg=NONE cterm=bold
     hi Label ctermfg=53 ctermbg=NONE cterm=bold
-    hi PreProc ctermfg=NONE ctermbg=NONE cterm=bold
+    hi PreProc ctermfg=233 ctermbg=NONE cterm=bold
     hi Macro ctermfg=23 ctermbg=NONE cterm=italic
-    hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Type ctermfg=233 ctermbg=NONE cterm=NONE
     hi Special ctermfg=23 ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=237 ctermbg=NONE cterm=NONE
     hi SpecialComment ctermfg=241 ctermbg=NONE cterm=bold
@@ -505,6 +498,9 @@ if s:t_Co >= 256
     hi Ignore ctermfg=247 ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
+    hi Added ctermfg=28 ctermbg=NONE cterm=NONE
+    hi Changed ctermfg=30 ctermbg=NONE cterm=NONE
+    hi Removed ctermfg=124 ctermbg=NONE cterm=NONE
     hi ColorColumn ctermfg=NONE ctermbg=253 cterm=NONE
     hi Conceal ctermfg=23 ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -549,11 +545,11 @@ if s:t_Co >= 256
     hi TabLineFill ctermfg=NONE ctermbg=249 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
     hi Title ctermfg=53 ctermbg=NONE cterm=bold,underline
-    hi VertSplit ctermfg=237 ctermbg=249 cterm=NONE
     hi Visual ctermfg=214 ctermbg=16 cterm=reverse
     hi VisualNOS ctermfg=NONE ctermbg=249 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
+    hi WinSeparator ctermfg=237 ctermbg=249 cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold
     hi Bold ctermfg=NONE ctermbg=NONE cterm=bold
@@ -578,8 +574,6 @@ if s:t_Co >= 256
     hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
-    hi diffAdded ctermfg=28 ctermbg=NONE cterm=NONE
-    hi diffRemoved ctermfg=124 ctermbg=NONE cterm=NONE
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     hi FlashLabel ctermfg=231 ctermbg=39 cterm=bold
@@ -615,6 +609,9 @@ if s:t_Co >= 16
   hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error ctermfg=darkred ctermbg=NONE cterm=bold,reverse
   hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Added ctermfg=darkgreen ctermbg=NONE cterm=NONE
+  hi Changed ctermfg=darkcyan ctermbg=NONE cterm=NONE
+  hi Removed ctermfg=darkred ctermbg=NONE cterm=NONE
   hi ColorColumn ctermfg=8 ctermbg=NONE cterm=reverse
   hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -698,8 +695,6 @@ if s:t_Co >= 16
   hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
-  hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
   hi Sneak ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
   hi SneakLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
   hi FlashLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
@@ -734,6 +729,9 @@ if s:t_Co >= 8
   hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Error ctermfg=darkred ctermbg=NONE cterm=bold,reverse
   hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Added ctermfg=darkgreen ctermbg=NONE cterm=NONE
+  hi Changed ctermfg=darkcyan ctermbg=NONE cterm=NONE
+  hi Removed ctermfg=darkred ctermbg=NONE cterm=NONE
   hi ColorColumn ctermfg=NONE ctermbg=NONE cterm=reverse
   hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -818,8 +816,6 @@ if s:t_Co >= 8
   hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi diffAdded ctermfg=darkgreen ctermbg=NONE cterm=NONE
-  hi diffRemoved ctermfg=darkred ctermbg=NONE cterm=NONE
   hi Sneak ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
   hi SneakLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
   hi FlashLabel ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse
