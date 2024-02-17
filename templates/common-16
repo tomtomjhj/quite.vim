@@ -38,6 +38,9 @@ Underlined           none              none              underline
 Ignore               none              none
 Error                term1             none              reverse,bold
 Todo                 none              none              reverse,bold
+Added                term2             none
+Changed              term6             none
+Removed              term1             none
 
 ; :help highlight-groups
 Variant: 16
@@ -171,9 +174,6 @@ DiagnosticUnderlineOk     none         none              undercurl s=term2
 ; DiagnosticUnnecessary
 
 ; plugins and filetypes
-; diff
-diffAdded            term2             none
-diffRemoved          term1             none
 ; vim-sneak
 Sneak                term5             none              bold,reverse
 SneakLabel           term5             none              bold,reverse

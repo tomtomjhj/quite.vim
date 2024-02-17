@@ -6,12 +6,12 @@ NormalFloat          none              bg2
 ; :help group-name
 Comment              fg2               none
 Constant             fg_1              none              italic
-Identifier           none              none
-Statement            none              none              bold
+Identifier           fg0               none
+Statement            fg0               none              bold
 Label                labelpink         none              bold
-PreProc              none              none              bold
+PreProc              fg0               none              bold
 Macro                specialcyan       none              italic
-Type                 none              none
+Type                 fg0               none
 Special              specialcyan       none
 Delimiter            fg1               none
 SpecialComment       fg2               none              bold
@@ -19,6 +19,9 @@ Underlined           none              none              underline
 Ignore               bg4               none
 Error                errorred          black             reverse,bold
 Todo                 uiteal            black             reverse,bold
+Added                quite2            none
+Changed              quite6            none
+Removed              quite1            none
 
 ; :help highlight-groups
 ColorColumn          none              bg1
@@ -65,11 +68,11 @@ TabLine              none              bg4
 TabLineFill          none              bg3
 TabLineSel           none              none              bold
 Title                labelpink         none              bold,underline
-VertSplit            fg1               bg3
 Visual               uiamber           black             reverse
 VisualNOS            none              bg3
 WarningMsg           none              none
 WildMenu             uiblue            none              bold
+WinSeparator         fg1               bg3
 
 ; :help window-toolbar
 ToolbarLine          none              none
@@ -106,9 +109,6 @@ DiagnosticUnderlineOk     none         none              undercurl s=quite2
 ; DiagnosticUnnecessary
 
 ; plugins and filetypes
-; diff
-diffAdded            quite2            none
-diffRemoved          quite1            none
 ; vim-sneak
 Sneak                white             uiblue            bold
 SneakLabel           white             uiblue            bold
