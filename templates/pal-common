@@ -132,6 +132,13 @@ ToolbarButton        none              none              bold,reverse
 ; plugins and filetypes
 diffAdded            term2             none
 diffRemoved          term1             none
+; flash.nvim
+FlashLabel           term5             none              reverse,bold
+Variant: 16 256 gui
+FlashBackdrop        term8             none
+Variant: 8
+FlashBackdrop        none              none
+Variant: 8 16 256 gui
 
 
 Term Colors: term0 term1 term2 term3 term4 term5 term6 term7 term8 term9 term10 term11 term12 term13 term14 term15
