@@ -38,7 +38,7 @@ DiffText             none              bgyellow
 Directory            none              none              bold
 ErrorMsg             none              none              reverse,bold
 FoldColumn           bg4               none
-Folded               fg2               bg1
+Folded               fg1               bg1
 IncSearch            uiamber           black             reverse,bold,underline
 LineNr               fg2               none
 MatchParen           uipink            none              bold
@@ -90,8 +90,8 @@ PunctuationSpecial   specialcyan       none              bold
 LspReferenceText     fg1               none              reverse
 LspReferenceRead     fg1               none              reverse
 LspReferenceWrite    fg1               none              reverse
-LspInlayHint         specialcyan       bg1
-LspCodeLens          specialcyan       bg1
+LspInlayHint         fg2               bg1
+LspCodeLens          fg2               bg1
 LspCodeLensSeparator none              bg1               bold
 
 ; :h diagnostic-highlights
