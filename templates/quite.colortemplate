@@ -232,11 +232,12 @@ shSpecialSQ          -> NONE
 ; Tex: {{{
 texCmd               -> Constant
 texCmdType           -> Constant
-texMathDelim         -> Constant
+texMathDelim         -> Delimiter
 texMathZone          -> Literal
 texNewcmdArgName     -> Label
 texPartArgTitle      -> Title
 texTitleArg          -> Title
+texZone              -> Literal
 ; }}}
 ; Vim: {{{
 vimAutoEvent         -> Constant
