@@ -114,11 +114,12 @@ hi! link shSpecialDQ NONE
 hi! link shSpecialSQ NONE
 hi! link texCmd Constant
 hi! link texCmdType Constant
-hi! link texMathDelim Constant
+hi! link texMathDelim Delimiter
 hi! link texMathZone Literal
 hi! link texNewcmdArgName Label
 hi! link texPartArgTitle Title
 hi! link texTitleArg Title
+hi! link texZone Literal
 hi! link vimAutoEvent Constant
 hi! link vimCommentTitle SpecialComment
 hi! link vimEnvvar Constant
