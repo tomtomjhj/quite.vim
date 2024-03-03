@@ -180,7 +180,7 @@ if &background ==# 'dark'
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
-  hi Folded guifg=#bcbcbc guibg=#222222 gui=NONE cterm=NONE
+  hi Folded guifg=#d0d0d0 guibg=#222222 gui=NONE cterm=NONE
   hi IncSearch guifg=#ffaf00 guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi LineNr guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
@@ -226,8 +226,8 @@ if &background ==# 'dark'
   hi LspReferenceText guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
-  hi LspInlayHint guifg=#afd7d7 guibg=#222222 gui=NONE cterm=NONE
-  hi LspCodeLens guifg=#afd7d7 guibg=#222222 gui=NONE cterm=NONE
+  hi LspInlayHint guifg=#bcbcbc guibg=#222222 gui=NONE cterm=NONE
+  hi LspCodeLens guifg=#bcbcbc guibg=#222222 gui=NONE cterm=NONE
   hi LspCodeLensSeparator guifg=NONE guibg=#222222 gui=bold cterm=bold
   hi DiagnosticError guifg=#d7005f guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticWarn guifg=#d79600 guibg=NONE gui=NONE cterm=NONE
@@ -305,7 +305,7 @@ else
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
-  hi Folded guifg=#626262 guibg=#dadada gui=NONE cterm=NONE
+  hi Folded guifg=#3a3a3a guibg=#dadada gui=NONE cterm=NONE
   hi IncSearch guifg=#ffaf00 guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi LineNr guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
@@ -351,8 +351,8 @@ else
   hi LspReferenceText guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
-  hi LspInlayHint guifg=#234e5f guibg=#dadada gui=NONE cterm=NONE
-  hi LspCodeLens guifg=#234e5f guibg=#dadada gui=NONE cterm=NONE
+  hi LspInlayHint guifg=#626262 guibg=#dadada gui=NONE cterm=NONE
+  hi LspCodeLens guifg=#626262 guibg=#dadada gui=NONE cterm=NONE
   hi LspCodeLensSeparator guifg=NONE guibg=#dadada gui=bold cterm=bold
   hi DiagnosticError guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticWarn guifg=#af7700 guibg=NONE gui=NONE cterm=NONE
@@ -411,7 +411,7 @@ if s:t_Co >= 256
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=241 ctermbg=NONE cterm=NONE
-    hi Folded ctermfg=250 ctermbg=235 cterm=NONE
+    hi Folded ctermfg=252 ctermbg=235 cterm=NONE
     hi IncSearch ctermfg=214 ctermbg=16 cterm=bold,reverse,underline
     hi LineNr ctermfg=250 ctermbg=NONE cterm=NONE
     hi MatchParen ctermfg=199 ctermbg=NONE cterm=bold
@@ -457,8 +457,8 @@ if s:t_Co >= 256
     hi LspReferenceText ctermfg=252 ctermbg=NONE cterm=reverse
     hi LspReferenceRead ctermfg=252 ctermbg=NONE cterm=reverse
     hi LspReferenceWrite ctermfg=252 ctermbg=NONE cterm=reverse
-    hi LspInlayHint ctermfg=152 ctermbg=235 cterm=NONE
-    hi LspCodeLens ctermfg=152 ctermbg=235 cterm=NONE
+    hi LspInlayHint ctermfg=250 ctermbg=235 cterm=NONE
+    hi LspCodeLens ctermfg=250 ctermbg=235 cterm=NONE
     hi LspCodeLensSeparator ctermfg=NONE ctermbg=235 cterm=bold
     hi DiagnosticError ctermfg=161 ctermbg=NONE cterm=NONE
     hi DiagnosticWarn ctermfg=172 ctermbg=NONE cterm=NONE
@@ -515,7 +515,7 @@ if s:t_Co >= 256
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=247 ctermbg=NONE cterm=NONE
-    hi Folded ctermfg=241 ctermbg=253 cterm=NONE
+    hi Folded ctermfg=237 ctermbg=253 cterm=NONE
     hi IncSearch ctermfg=214 ctermbg=16 cterm=bold,reverse,underline
     hi LineNr ctermfg=241 ctermbg=NONE cterm=NONE
     hi MatchParen ctermfg=199 ctermbg=NONE cterm=bold
@@ -561,8 +561,8 @@ if s:t_Co >= 256
     hi LspReferenceText ctermfg=237 ctermbg=NONE cterm=reverse
     hi LspReferenceRead ctermfg=237 ctermbg=NONE cterm=reverse
     hi LspReferenceWrite ctermfg=237 ctermbg=NONE cterm=reverse
-    hi LspInlayHint ctermfg=23 ctermbg=253 cterm=NONE
-    hi LspCodeLens ctermfg=23 ctermbg=253 cterm=NONE
+    hi LspInlayHint ctermfg=241 ctermbg=253 cterm=NONE
+    hi LspCodeLens ctermfg=241 ctermbg=253 cterm=NONE
     hi LspCodeLensSeparator ctermfg=NONE ctermbg=253 cterm=bold
     hi DiagnosticError ctermfg=124 ctermbg=NONE cterm=NONE
     hi DiagnosticWarn ctermfg=136 ctermbg=NONE cterm=NONE
