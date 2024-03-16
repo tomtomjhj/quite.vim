@@ -53,7 +53,6 @@ if has('nvim-0.8')
   hi! link @module.builtin Constant
   hi! link @type.builtin Constant
   hi! link @type.definition Label
-  hi! link @type.qualifier StorageClass
   hi! link @attribute Special
   hi! link @function Label
   hi! link @function.builtin Constant
@@ -63,7 +62,6 @@ if has('nvim-0.8')
   hi! link @function.method.call NONE
   hi! link @function.latex Constant
   hi! link @constructor NONE
-  hi! link @keyword.storage.lifetime Literal
   hi! link @punctuation.special PunctuationSpecial
   hi! link @markup.quote NONE
   hi! link @markup.math Literal
@@ -591,7 +589,7 @@ endif
 
 if s:t_Co >= 16
   if has('nvim-0.8')
-    hi! link @text.literal Comment
+    hi! link @markup.raw Comment
   endif
   hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -711,7 +709,7 @@ endif
 
 if s:t_Co >= 8
   if has('nvim-0.8')
-    hi! link @text.literal Comment
+    hi! link @markup.raw Comment
   endif
   hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NormalFloat ctermfg=NONE ctermbg=NONE cterm=reverse
