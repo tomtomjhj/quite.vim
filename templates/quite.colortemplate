@@ -55,13 +55,14 @@ VertSplit            -> WinSeparator
 lCursor              -> Cursor
 
 ; nvim treesitter {{{
-; https://github.com/nvim-treesitter/nvim-treesitter/blob/cc908cfcd7258b2e5c1a9c583e2f3feda0caf23b/CONTRIBUTING.md
+; https://github.com/nvim-treesitter/nvim-treesitter/blob/f5062ebc8d5c0542465c6e2432d6cd544a92f348/CONTRIBUTING.md
 ; See also :h treesitter-highlight-groups
 #if has('nvim-0.8')
   ; identifiers
   ; @variable
   @variable.builtin  -> Constant
   ; @variable.parameter
+  ; @variable.parameter.builtin
   ; @variable.member
   ; @constant
   @constant.builtin  -> Constant
@@ -89,8 +90,8 @@ lCursor              -> Cursor
   ; @type
   @type.builtin      -> Constant
   @type.definition   -> Label
-  @type.qualifier    -> StorageClass
   @attribute         -> Special
+  ; @attribute.builtin
   ; @property
 
   ; functions
@@ -111,8 +112,8 @@ lCursor              -> Cursor
   ; @keyword.function
   ; @keyword.operator
   ; @keyword.import
-  ; @keyword.storage
-  @keyword.storage.lifetime -> Literal ; why is this @keyword?
+  ; @keyword.type
+  ; @keyword.modifier
   ; @keyword.repeat
   ; @keyword.return
   ; @keyword.debug
@@ -143,7 +144,6 @@ lCursor              -> Cursor
   ; @markup.heading
   @markup.quote      -> NONE
   @markup.math       -> Literal
-  ; @markup.environment
   ; @markup.link
   ; @markup.link.label
   ; @markup.link.url
@@ -159,6 +159,7 @@ lCursor              -> Cursor
   ; @diff.delta
 
   @tag               -> Statement
+  ; @tag.builtin
   @tag.attribute     -> NONE
   ; @tag.delimiter
 #endif

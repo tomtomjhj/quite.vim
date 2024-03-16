@@ -11,7 +11,7 @@ Color: term8         #808080           8                 8  ; darkgrey
 
 ; Override global definitions {{{
 #if has('nvim-0.8')
-  @text.literal      -> Comment
+  @markup.raw        -> Comment
 #endif
 ; }}}
 
