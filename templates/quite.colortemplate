@@ -59,7 +59,7 @@ lCursor              -> Cursor
 ; See also :h treesitter-highlight-groups
 #if has('nvim-0.8')
   ; identifiers
-  ; @variable
+  @variable          -> Identifier
   @variable.builtin  -> Constant
   ; @variable.parameter
   ; @variable.parameter.builtin
