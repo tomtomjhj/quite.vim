@@ -46,6 +46,7 @@ hi! link Terminal Normal
 hi! link VertSplit WinSeparator
 hi! link lCursor Cursor
 if has('nvim-0.8')
+  hi! link @variable Identifier
   hi! link @variable.builtin Constant
   hi! link @constant.builtin Constant
   hi! link @constant.macro Constant
@@ -240,7 +241,7 @@ if &background ==# 'dark'
   hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#22bf00 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
-  hi FlashLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
+  hi FlashLabel guifg=#000000 guibg=#ff00af gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -365,7 +366,7 @@ else
   hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#177700 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
-  hi FlashLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
+  hi FlashLabel guifg=#000000 guibg=#ff00af gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -471,7 +472,7 @@ if s:t_Co >= 256
     hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
-    hi FlashLabel ctermfg=231 ctermbg=39 cterm=bold
+    hi FlashLabel ctermfg=16 ctermbg=199 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -575,7 +576,7 @@ if s:t_Co >= 256
     hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
-    hi FlashLabel ctermfg=231 ctermbg=39 cterm=bold
+    hi FlashLabel ctermfg=16 ctermbg=199 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
