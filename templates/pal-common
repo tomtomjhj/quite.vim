@@ -61,9 +61,9 @@ MatchParen           none              none              bold,underline
 ModeMsg              none              none              bold
 MoreMsg              none              none
 Variant: 16 256 gui
-NonText              term8             none
+NonText              term8             none              nocombine
 Variant: 8
-NonText              term3             none
+NonText              term3             none              nocombine
 Variant: 8 16 256 gui
 ; NOTE: nvim-cmp's PmenuSel is combined with Pmenu, because its menu uses winhighlight
 Pmenu                none              none              reverse
