@@ -76,9 +76,9 @@ MatchParen           none              none              bold,underline
 ModeMsg              none              none              bold
 MoreMsg              none              none
 Variant: 16
-NonText              term8             none
+NonText              term8             none              nocombine
 Variant: 8
-NonText              term3             none
+NonText              term3             none              nocombine
 Variant: 8 16
 Pmenu                none              none              reverse
 PmenuExtra           none              none              reverse

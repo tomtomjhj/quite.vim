@@ -44,7 +44,7 @@ LineNr               fg2               none
 MatchParen           uipink            none              bold
 ModeMsg              none              none              bold
 MoreMsg              none              none
-NonText              bg4               none
+NonText              bg4               none              nocombine
 Pmenu                none              bgblue
 PmenuExtra           none              bgblue
 PmenuKind            none              bgblue            bold
