@@ -186,7 +186,7 @@ if &background ==# 'dark'
   hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText guifg=#626262 guibg=NONE gui=NONE cterm=NONE
+  hi NonText guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
   hi Pmenu guifg=NONE guibg=#404868 gui=NONE cterm=NONE
   hi PmenuExtra guifg=NONE guibg=#404868 gui=NONE cterm=NONE
   hi PmenuKind guifg=NONE guibg=#404868 gui=bold cterm=bold
@@ -241,7 +241,7 @@ if &background ==# 'dark'
   hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#22bf00 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
-  hi FlashLabel guifg=#000000 guibg=#ff00af gui=bold cterm=bold
+  hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -311,7 +311,7 @@ else
   hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
+  hi NonText guifg=#9e9e9e guibg=NONE gui=nocombine cterm=nocombine
   hi Pmenu guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
   hi PmenuExtra guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
   hi PmenuKind guifg=NONE guibg=#a0afd7 gui=bold cterm=bold
@@ -366,7 +366,7 @@ else
   hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#177700 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
-  hi FlashLabel guifg=#000000 guibg=#ff00af gui=bold cterm=bold
+  hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
   if !s:italics
     hi Constant gui=NONE cterm=NONE
     hi Macro gui=NONE cterm=NONE
@@ -417,7 +417,7 @@ if s:t_Co >= 256
     hi MatchParen ctermfg=199 ctermbg=NONE cterm=bold
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=241 ctermbg=NONE cterm=NONE
+    hi NonText ctermfg=241 ctermbg=NONE cterm=nocombine
     hi Pmenu ctermfg=NONE ctermbg=60 cterm=NONE
     hi PmenuExtra ctermfg=NONE ctermbg=60 cterm=NONE
     hi PmenuKind ctermfg=NONE ctermbg=60 cterm=bold
@@ -472,7 +472,7 @@ if s:t_Co >= 256
     hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
-    hi FlashLabel ctermfg=16 ctermbg=199 cterm=bold
+    hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -521,7 +521,7 @@ if s:t_Co >= 256
     hi MatchParen ctermfg=199 ctermbg=NONE cterm=bold
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=247 ctermbg=NONE cterm=NONE
+    hi NonText ctermfg=247 ctermbg=NONE cterm=nocombine
     hi Pmenu ctermfg=NONE ctermbg=146 cterm=NONE
     hi PmenuExtra ctermfg=NONE ctermbg=146 cterm=NONE
     hi PmenuKind ctermfg=NONE ctermbg=146 cterm=bold
@@ -576,7 +576,7 @@ if s:t_Co >= 256
     hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
-    hi FlashLabel ctermfg=16 ctermbg=199 cterm=bold
+    hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
     if !s:italics
       hi Constant cterm=NONE
       hi Macro cterm=NONE
@@ -632,7 +632,7 @@ if s:t_Co >= 16
   hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText ctermfg=8 ctermbg=NONE cterm=NONE
+  hi NonText ctermfg=8 ctermbg=NONE cterm=nocombine
   hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -752,7 +752,7 @@ if s:t_Co >= 8
   hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText ctermfg=darkyellow ctermbg=NONE cterm=NONE
+  hi NonText ctermfg=darkyellow ctermbg=NONE cterm=nocombine
   hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -851,7 +851,7 @@ if s:t_Co >= 0
   hi MatchParen term=bold,underline
   hi ModeMsg term=bold
   hi MoreMsg term=NONE
-  hi NonText term=NONE
+  hi NonText term=nocombine
   hi Pmenu term=reverse
   hi PmenuSbar term=reverse
   hi PmenuSel term=bold
