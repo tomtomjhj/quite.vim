@@ -64,8 +64,14 @@ if has('nvim-0.8')
   hi! link @function.latex Constant
   hi! link @constructor NONE
   hi! link @punctuation.special PunctuationSpecial
+  hi! link @markup.strong Bold
+  hi! link @markup.italic Italic
+  hi! link @markup.strikethrough Strikethrough
+  hi! link @markup.underline Underlined
+  hi! link @markup.heading Title
   hi! link @markup.quote NONE
   hi! link @markup.math Literal
+  hi! link @markup.link Underlined
   hi! link @markup.raw NormalFloat
   hi! link @markup.list PunctuationSpecial
   hi! link @tag Statement
@@ -75,6 +81,8 @@ if has('nvim-0.9')
 endif
 hi! link debugBreakpoint ModeMsg
 hi! link debugPC CursorLine
+hi! link diffAdded Added
+hi! link diffRemoved Removed
 if has('nvim')
   hi! link CmpItemAbbrMatch Bold
   hi! link CmpItemKind NONE
