@@ -16,6 +16,7 @@ Character            -> String
 Number               -> String
 Boolean              -> String
 Float                -> String
+Operator             -> Statement
 StorageClass         -> Statement
 Structure            -> Statement
 Typedef              -> Statement
@@ -33,107 +34,111 @@ StatusLineTerm       -> StatusLine
 StatusLineTermNC     -> StatusLineNC
 
 ; nvim treesitter {{{
-; https://github.com/nvim-treesitter/nvim-treesitter/blob/1b5a7334bb9862abafcf6676d2a2a6973d15ae3a/CONTRIBUTING.md
+; https://github.com/nvim-treesitter/nvim-treesitter/blob/cc908cfcd7258b2e5c1a9c583e2f3feda0caf23b/CONTRIBUTING.md
 ; See also :h treesitter-highlight-groups
 #if has('nvim-0.8')
-  ; misc
-  ; @comment
-  ; @comment.documentation
-  ; @error
-  ; @none
-  ; @preproc
-  ; @define
-  ; @operator
-
-  ; punctuation
-  ; @punctuation.delimiter
-  ; @punctuation.bracket
-  @punctuation.special -> Special
+  ; identifiers
+  ; @variable
+  @variable.builtin  -> @variable
+  ; @variable.parameter
+  ; @variable.member
+  ; @constant
+  @constant.builtin  -> Constant
+  ; @constant.macro
+  @module            -> NONE
+  @module.builtin    -> Constant
+  ; @label
 
   ; literals
   ; @string
   ; @string.documentation
-  ; @string.regex
+  ; @string.regexp
   ; @string.escape
   ; @string.special
+  ; @string.special.symbol
+  ; @string.special.url
+  ; @string.special.path
   ; @character
   ; @character.special
   ; @boolean
   ; @number
-  ; @float
+  ; @number.float
+
+  ; types
+  ; @type
+  @type.builtin      -> Constant
+  @type.definition   -> Type
+  @attribute         -> Macro
+  @attribute.builtin -> Macro
+  ; @property
 
   ; functions
   ; @function
   ; @function.builtin
   ; @function.call
-  ; @function.macro
-  ; @method
-  ; @method.call
-  @constructor       -> NONE
-  ; @parameter
+  @function.macro    -> Macro
+  ; @function.method
+  ; @function.method.call
+  @constructor       -> Function
+  ; @operator
 
   ; keywords
   ; @keyword
   ; @keyword.coroutine
   ; @keyword.function
   ; @keyword.operator
+  ; @keyword.import
+  ; @keyword.type
+  ; @keyword.modifier
+  ; @keyword.repeat
   ; @keyword.return
-  ; @conditional
-  ; @conditional.ternary
-  ; @repeat
-  ; @debug
-  ; @label
-  ; @include
-  ; @exception
+  ; @keyword.debug
+  ; @keyword.exception
+  ; @keyword.conditional
+  ; @keyword.conditional.ternary
+  ; @keyword.directive
+  ; @keyword.directive.define
 
-  ; types
-  ; @type
-  ; @type.builtin
-  @type.definition   -> Type
-  @type.qualifier    -> StorageClass
-  ; @storageclass
-  @storageclass.lifetime -> String
-  ; @attribute
-  ; @field
-  ; @property
+  ; punctuation
+  ; @punctuation.delimiter
+  ; @punctuation.bracket
+  @punctuation.special -> Special
 
-  ; identifiers
-  ; @variable
-  ; @variable.builtin
-  ; @constant
-  @constant.builtin  -> Constant
-  ; @constant.macro
-  ; @namespace
-  ; @symbol
+  ; comments
+  ; @comment
+  ; @comment.documentation
+  ; @comment.error
+  ; @comment.warning
+  ; @comment.todo
+  ; @comment.note
 
-  ; text
-  ; @text
+  ; markup
   verbatim
-  hi @text.strong       ctermfg=NONE ctermbg=NONE cterm=bold guifg=NONE guibg=NONE gui=bold
-  hi @text.emphasis     ctermfg=NONE ctermbg=NONE cterm=italic guifg=NONE guibg=NONE gui=italic
-  hi @text.underline    ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
-  hi @text.strike       ctermfg=NONE ctermbg=NONE cterm=strikethrough guifg=NONE guibg=NONE gui=strikethrough
+  hi @markup.strong        ctermfg=NONE ctermbg=NONE cterm=bold guifg=NONE guibg=NONE gui=bold
+  hi @markup.italic        ctermfg=NONE ctermbg=NONE cterm=italic guifg=NONE guibg=NONE gui=italic
+  hi @markup.strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough guifg=NONE guibg=NONE gui=strikethrough
   endverbatim
-  ; @text.title
-  @text.literal      -> String
-  @text.literal.block -> NONE
-  ; @text.quote
-  ; @text.uri
-  ; @text.math
-  ; @text.environment
-  ; @text.environment.name
-  @text.reference    -> Underlined
-  ; @text.todo
-  @text.note         -> Todo
-  @text.warning      -> Error
-  @text.danger       -> Error
-  @text.diff.add     -> diffAdded
-  @text.diff.delete  -> diffRemoved
+  @markup.underline  -> Underlined
+  @markup.heading    -> Title
+  @markup.quote      -> NONE
+  @markup.math       -> String
+  ; @markup.environment
+  @markup.link       -> Underlined
+  ; @markup.link.label
+  ; @markup.link.url
+  @markup.raw        -> String
+  @markup.raw.block  -> NONE
+  @markup.list       -> Stat
+  ; @markup.list.checked
+  ; @markup.list.unchecked
 
-  ; tags
+  ; @diff.plus
+  ; @diff.minus
+  ; @diff.delta
+
   @tag               -> Statement
-  @tag.attribute     -> None
-  @tag.delimiter     -> Delimiter
+  @tag.attribute     -> NONE
+  ; @tag.delimiter
 #endif
 ; }}}
 ; :h lsp-lighlight {{{
@@ -141,6 +146,8 @@ LspCodeLens          -> NonText
 LspCodeLensSeparator -> NonText
 ; }}}
 ; plugins and filetypes {{{
+diffAdded            -> Added
+diffRemoved          -> Removed
 ; Coq: {{{
 coqKwd               -> Keyword
 coqProofDelim        -> PreProc
