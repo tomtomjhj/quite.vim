@@ -137,14 +137,14 @@ lCursor              -> Cursor
   ; @comment.note
 
   ; markup
-  ; @markup.strong
-  ; @markup.italic
-  ; @markup.strikethrough
-  ; @markup.underline
-  ; @markup.heading
+  @markup.strong     -> Bold
+  @markup.italic     -> Italic
+  @markup.strikethrough -> Strikethrough
+  @markup.underline  -> Underlined
+  @markup.heading    -> Title
   @markup.quote      -> NONE
   @markup.math       -> Literal
-  ; @markup.link
+  @markup.link       -> Underlined
   ; @markup.link.label
   ; @markup.link.url
   ; NOTE: using bg for non-UI is bad because bg can change e.g. floating window, diff mode, ...
@@ -171,6 +171,8 @@ lCursor              -> Cursor
 ; plugins and filetypes {{{
 debugBreakpoint      -> ModeMsg
 debugPC              -> CursorLine
+diffAdded            -> Added
+diffRemoved          -> Removed
 ; nvim-cmp {{{
 #if has('nvim')
   CmpItemAbbrMatch   -> Bold
