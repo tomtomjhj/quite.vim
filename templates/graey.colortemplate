@@ -1,10 +1,10 @@
 ; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
 
 ; Information {{{
-Full name:     quite
-Short name:    quite
+Full name:     graey
+Short name:    graey
 Author:        Jaehwang Jung <tomtomjhj@gmail.com>
-Description:   A colorscheme derived from neutaaaaan's "quiet"
+Description:   A gr[ae]y colorscheme
 Neovim:        yes
 
 Colortemplate Options: timestamp=0
@@ -41,9 +41,7 @@ FloatBorder          -> NormalFloat
 MessageWindow        -> Pmenu
 PopupNotification    -> Todo
 ; vim uses SpecialKey for listchar
-#if has('nvim')
-  SpecialKey         -> Special
-#else
+#if !has('nvim')
   SpecialKey         -> NonText
 #endif
 StatusLineTerm       -> StatusLine
@@ -262,6 +260,7 @@ Background: dark
 ; Color name         GUI               Base256           Base16 (optional)
 Color: fg_1          #ffffff           231
 Color: fg0           #eeeeee           255
+Color: fg05          #dfdfdf           254
 Color: fg1           #d0d0d0           252
 Color: fg2           #bcbcbc           250
 Color: bg0           #080808           232
@@ -297,15 +296,11 @@ Color: uipurple      #af00ff           129
 Color: uiamber       #ffaf00           214
 Color: uicursearch   #ff5fff           207
 
-Color: specialcyan   #afd7d7           152
-Color: literalyellow #d7d7af           187
-Color: labelpink     #d7afd7           182
-
 Color: errorred      #ff005f           197
 ; }}}
 
 Include: terminal
-Include: quite-common-gui-256
+Include: graey-common-gui-256
 ; }}}
 
 ; Background: light {{{
@@ -315,6 +310,7 @@ Background: light
 ; Color name         GUI               Base256           Base16 (optional)
 Color: fg_1          #000000           16
 Color: fg0           #121212           233
+Color: fg05          #262626           235
 Color: fg1           #3a3a3a           237
 Color: fg2           #626262           241
 Color: bg0           #eeeeee           255
@@ -350,15 +346,11 @@ Color: uipurple      #af00ff           129
 Color: uiamber       #ffaf00           214
 Color: uicursearch   #ff5fff           207
 
-Color: specialcyan   #234e5f           23
-Color: literalyellow #5c5c23           58
-Color: labelpink     #5c235c           53
-
 Color: errorred      #ff005f           197
 ; }}}
 
 Include: terminal
-Include: quite-common-gui-256
+Include: graey-common-gui-256
 ; }}}
 
 ; fallbacks for 16, 8, and 0 {{{

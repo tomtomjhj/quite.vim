@@ -1,0 +1,118 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
+
+Normal               fg0               bg0
+NormalFloat          none              bg2
+
+; :help group-name
+Comment              fg2               none              nocombine
+Constant             fg_1              none              nocombine,italic
+Identifier           fg0               none              nocombine
+Statement            fg05              none              nocombine,bold
+Label                fg0               none              nocombine,bold,underline
+PreProc              fg0               none              nocombine,bold
+Macro                fg0               none              nocombine,italic,underline
+Type                 fg0               none              nocombine
+Special              fg0               none              nocombine,bold,italic
+Delimiter            fg1               none              nocombine
+SpecialComment       fg2               none              nocombine,bold
+Underlined           none              none              nocombine,underline
+Ignore               bg4               none              nocombine
+Error                errorred          black             nocombine,reverse,bold
+Todo                 uiteal            black             nocombine,reverse,bold
+Added                quite2            none              nocombine
+Changed              quite6            none              nocombine
+Removed              quite1            none              nocombine
+
+; :help highlight-groups
+ColorColumn          none              bg1
+Conceal              fg05              none
+Cursor               none              none              reverse
+CursorIM             black             uilime
+CursorColumn         none              bg3
+CursorLine           none              bg3
+CursorLineNr         none              bg3
+DiffAdd              none              bggreen
+DiffChange           none              bgcyan
+DiffDelete           quite1            none
+DiffText             none              bgyellow
+Directory            none              none              bold
+ErrorMsg             none              none              reverse,bold
+FoldColumn           bg4               none
+Folded               fg1               bg1
+IncSearch            uiamber           black             reverse,bold,underline
+LineNr               fg2               none
+MatchParen           uipink            none              bold
+ModeMsg              none              none              bold
+MoreMsg              none              none
+NonText              bg4               none              nocombine
+Pmenu                none              bgblue
+PmenuExtra           none              bgblue
+PmenuKind            none              bgblue            bold
+PmenuSbar            none              bg4
+PmenuSel             none              bgpink
+PmenuExtraSel        none              bgpink
+PmenuKindSel         none              bgpink            bold
+PmenuThumb           bgyellow          bgpink
+Question             none              none              bold
+QuickFixLine         none              bgpink
+Search               uiblue            black             reverse,bold
+CurSearch            uicursearch       black             reverse,bold,underline
+SignColumn           none              none
+SpecialKey           uipink            none
+SpellBad             none              none              undercurl s=quite1
+SpellCap             none              none              undercurl s=quite4
+SpellLocal           none              none              undercurl s=quite5
+SpellRare            none              none              undercurl s=quite6
+StatusLine           bg0               fg0               bold
+StatusLineNC         bg0               bg4
+TabLine              none              bg4
+TabLineFill          none              bg3
+TabLineSel           none              none              bold
+Title                fg_1              none              bold,underline
+Visual               uiamber           black             reverse
+VisualNOS            none              bg3
+WarningMsg           none              none
+WildMenu             uiblue            none              bold
+WinSeparator         fg1               bg3
+
+; :help window-toolbar
+ToolbarLine          none              none
+ToolbarButton        none              none              bold
+
+; Custom groups
+Bold                 none              none              bold
+Italic               none              none              italic
+BoldItalic           none              none              bold,italic
+Strikethrough        none              none              strikethrough
+Literal              fg1               none              italic
+PunctuationSpecial   fg_1              none              bold
+
+; :h lsp-lighlight
+LspReferenceText     fg1               none              reverse
+LspReferenceRead     fg1               none              reverse
+LspReferenceWrite    fg1               none              reverse
+LspInlayHint         fg2               bg1
+LspCodeLens          fg2               bg1
+LspCodeLensSeparator none              bg1               bold
+
+; :h diagnostic-highlights
+DiagnosticError           quite1       none
+DiagnosticWarn            quite3       none
+DiagnosticInfo            quite6       none
+DiagnosticHint            quite4       none
+DiagnosticOk              quite2       none
+DiagnosticUnderlineError  none         none              undercurl s=quite1
+DiagnosticUnderlineWarn   none         none              undercurl s=quite3
+DiagnosticUnderlineInfo   none         none              undercurl s=quite6
+DiagnosticUnderlineHint   none         none              undercurl s=quite4
+DiagnosticUnderlineOk     none         none              undercurl s=quite2
+; DiagnosticDeprecated
+; DiagnosticUnnecessary
+
+; plugins and filetypes
+; vim-sneak
+Sneak                white             uiblue            bold
+SneakLabel           white             uiblue            bold
+; flash.nvim
+FlashLabel           black             uilime            bold
+FlashBackdrop        fg2               none
