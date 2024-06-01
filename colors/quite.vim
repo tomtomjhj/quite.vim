@@ -134,7 +134,7 @@ hi! link vimOption Constant
 
 if &background ==# 'dark'
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#080808', '#d7005f', '#22bf00', '#d79600', '#0080dd', '#d777d7', '#00cccc', '#bcbcbc', '#626262', '#ff2266', '#55ff00', '#ffaf00', '#5fafff', '#ff87ff', '#00eeff', '#eeeeee']
+    let g:terminal_ansi_colors = ['#080808', '#d7005f', '#22bf00', '#d79600', '#0080dd', '#d777d7', '#00cccc', '#d0d0d0', '#626262', '#ff2266', '#55ff00', '#ffaf00', '#5fafff', '#ff87ff', '#00eeff', '#eeeeee']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#080808'
@@ -144,7 +144,7 @@ if &background ==# 'dark'
     let g:terminal_color_4 = '#0080dd'
     let g:terminal_color_5 = '#d777d7'
     let g:terminal_color_6 = '#00cccc'
-    let g:terminal_color_7 = '#bcbcbc'
+    let g:terminal_color_7 = '#d0d0d0'
     let g:terminal_color_8 = '#626262'
     let g:terminal_color_9 = '#ff2266'
     let g:terminal_color_10 = '#55ff00'
@@ -259,7 +259,7 @@ if &background ==# 'dark'
 else
   " Light background
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#eeeeee', '#af0011', '#177700', '#af7700', '#005faf', '#871087', '#009999', '#626262', '#9e9e9e', '#d70011', '#30af00', '#d79700', '#0087d7', '#af10af', '#00bfbf', '#121212']
+    let g:terminal_ansi_colors = ['#eeeeee', '#af0011', '#177700', '#af7700', '#005faf', '#871087', '#009999', '#3a3a3a', '#9e9e9e', '#d70011', '#30af00', '#d79700', '#0087d7', '#af10af', '#00bfbf', '#121212']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#eeeeee'
@@ -269,7 +269,7 @@ else
     let g:terminal_color_4 = '#005faf'
     let g:terminal_color_5 = '#871087'
     let g:terminal_color_6 = '#009999'
-    let g:terminal_color_7 = '#626262'
+    let g:terminal_color_7 = '#3a3a3a'
     let g:terminal_color_8 = '#9e9e9e'
     let g:terminal_color_9 = '#d70011'
     let g:terminal_color_10 = '#30af00'
@@ -946,7 +946,7 @@ endif
 " Color: errorred      #ff005f           197
 " Term colors: bg0
 " Term colors: quite1 quite2 quite3 quite4 quite5 quite6
-" Term colors: fg2
+" Term colors: fg1
 " Term colors: bg4
 " Term colors: quite9 quite10 quite11 quite12 quite13 quite14
 " Term colors: fg0
@@ -990,7 +990,7 @@ endif
 " Color: errorred      #ff005f           197
 " Term colors: bg0
 " Term colors: quite1 quite2 quite3 quite4 quite5 quite6
-" Term colors: fg2
+" Term colors: fg1
 " Term colors: bg4
 " Term colors: quite9 quite10 quite11 quite12 quite13 quite14
 " Term colors: fg0
