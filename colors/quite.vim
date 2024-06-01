@@ -206,7 +206,7 @@ if &background ==# 'dark'
   hi Question guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi CurSearch guifg=#ff5fff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
+  hi CurSearch guifg=#aa22aa guibg=#ffffff gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi SpellBad guifg=NONE guibg=NONE guisp=#d7005f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE guisp=#0080dd gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -437,7 +437,7 @@ if s:t_Co >= 256
     hi Question ctermfg=NONE ctermbg=NONE cterm=bold
     hi QuickFixLine ctermfg=NONE ctermbg=96 cterm=NONE
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
-    hi CurSearch ctermfg=207 ctermbg=16 cterm=bold,reverse,underline
+    hi CurSearch ctermfg=127 ctermbg=231 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -939,7 +939,7 @@ endif
 " Color: uiblue        #00afff           39
 " Color: uipurple      #af00ff           129
 " Color: uiamber       #ffaf00           214
-" Color: uicursearch   #ff5fff           207
+" Color: uicursearch   #aa22aa           127
 " Color: specialcyan   #afd7d7           152
 " Color: literalyellow #d7d7af           187
 " Color: labelpink     #d7afd7           182

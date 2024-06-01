@@ -294,7 +294,7 @@ Color: uiteal        #00ffaf           49
 Color: uiblue        #00afff           39
 Color: uipurple      #af00ff           129
 Color: uiamber       #ffaf00           214
-Color: uicursearch   #ff5fff           207
+Color: uicursearch   #aa22aa           127
 
 Color: errorred      #ff005f           197
 ; }}}
