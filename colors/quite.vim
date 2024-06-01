@@ -285,7 +285,7 @@ else
   hi Constant guifg=#000000 guibg=NONE gui=italic cterm=italic
   hi Identifier guifg=#121212 guibg=NONE gui=NONE cterm=NONE
   hi Statement guifg=#121212 guibg=NONE gui=bold cterm=bold
-  hi Label guifg=#5c235c guibg=NONE gui=bold cterm=bold
+  hi Label guifg=#602460 guibg=NONE gui=bold cterm=bold
   hi PreProc guifg=#121212 guibg=NONE gui=bold cterm=bold
   hi Macro guifg=#234e5f guibg=NONE gui=italic cterm=italic
   hi Type guifg=#121212 guibg=NONE gui=NONE cterm=NONE
@@ -342,7 +342,7 @@ else
   hi TabLine guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Title guifg=#5c235c guibg=NONE gui=bold,underline cterm=bold,underline
+  hi Title guifg=#602460 guibg=NONE gui=bold,underline cterm=bold,underline
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -986,7 +986,7 @@ endif
 " Color: uicursearch   #ff5fff           207
 " Color: specialcyan   #234e5f           23
 " Color: literalyellow #5c5c23           58
-" Color: labelpink     #5c235c           53
+" Color: labelpink     #602460           53
 " Color: errorred      #ff005f           197
 " Term colors: bg0
 " Term colors: quite1 quite2 quite3 quite4 quite5 quite6
