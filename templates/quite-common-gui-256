@@ -53,6 +53,8 @@ PmenuSel             none              bgpink
 PmenuExtraSel        none              bgpink
 PmenuKindSel         none              bgpink            bold
 PmenuThumb           bgyellow          bgpink
+PmenuMatch           none              bgblue            bold
+PmenuMatchSel        none              bgpink            bold
 Question             none              none              bold
 QuickFixLine         none              bgpink
 Search               uiblue            black             reverse,bold

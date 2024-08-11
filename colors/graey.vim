@@ -201,6 +201,8 @@ if &background ==# 'dark'
   hi PmenuExtraSel guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi PmenuKindSel guifg=NONE guibg=#704470 gui=bold cterm=bold
   hi PmenuThumb guifg=#606030 guibg=#704470 gui=NONE cterm=NONE
+  hi PmenuMatch guifg=NONE guibg=#404868 gui=bold cterm=bold
+  hi PmenuMatchSel guifg=NONE guibg=#704470 gui=bold cterm=bold
   hi Question guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine guifg=NONE guibg=#704470 gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
@@ -330,6 +332,8 @@ else
   hi PmenuExtraSel guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi PmenuKindSel guifg=NONE guibg=#d7a0d7 gui=bold cterm=bold
   hi PmenuThumb guifg=#ddd099 guibg=#d7a0d7 gui=NONE cterm=NONE
+  hi PmenuMatch guifg=NONE guibg=#a0afd7 gui=bold cterm=bold
+  hi PmenuMatchSel guifg=NONE guibg=#d7a0d7 gui=bold cterm=bold
   hi Question guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
@@ -440,6 +444,8 @@ if s:t_Co >= 256
     hi PmenuExtraSel ctermfg=NONE ctermbg=96 cterm=NONE
     hi PmenuKindSel ctermfg=NONE ctermbg=96 cterm=bold
     hi PmenuThumb ctermfg=58 ctermbg=96 cterm=NONE
+    hi PmenuMatch ctermfg=NONE ctermbg=60 cterm=bold
+    hi PmenuMatchSel ctermfg=NONE ctermbg=96 cterm=bold
     hi Question ctermfg=NONE ctermbg=NONE cterm=bold
     hi QuickFixLine ctermfg=NONE ctermbg=96 cterm=NONE
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
@@ -548,6 +554,8 @@ if s:t_Co >= 256
     hi PmenuExtraSel ctermfg=NONE ctermbg=176 cterm=NONE
     hi PmenuKindSel ctermfg=NONE ctermbg=176 cterm=bold
     hi PmenuThumb ctermfg=186 ctermbg=176 cterm=NONE
+    hi PmenuMatch ctermfg=NONE ctermbg=146 cterm=bold
+    hi PmenuMatchSel ctermfg=NONE ctermbg=176 cterm=bold
     hi Question ctermfg=NONE ctermbg=NONE cterm=bold
     hi QuickFixLine ctermfg=NONE ctermbg=176 cterm=NONE
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
