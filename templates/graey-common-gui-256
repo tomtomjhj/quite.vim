@@ -61,7 +61,12 @@ Search               uiblue            black             reverse,bold
 ; CurSearch fg should be opposite of normal bg to avoid confusing interaction with cursor
 CurSearch            uicursearch       fg_1              reverse,bold,underline
 SignColumn           none              none
+; vim uses SpecialKey for listchar
+#if has('nvim')
 SpecialKey           uipink            none
+#else
+NonText              bg4               none              nocombine
+#endif
 SpellBad             none              none              undercurl s=quite1
 SpellCap             none              none              undercurl s=quite4
 SpellLocal           none              none              undercurl s=quite5

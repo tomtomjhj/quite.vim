@@ -40,10 +40,6 @@ Debug                -> Special
 FloatBorder          -> NormalFloat
 MessageWindow        -> Pmenu
 PopupNotification    -> Todo
-; vim uses SpecialKey for listchar
-#if !has('nvim')
-  SpecialKey         -> NonText
-#endif
 StatusLineTerm       -> StatusLine
 StatusLineTermNC     -> StatusLineNC
 Terminal             -> Normal

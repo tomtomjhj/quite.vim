@@ -35,9 +35,6 @@ hi! link Debug Special
 hi! link FloatBorder NormalFloat
 hi! link MessageWindow Pmenu
 hi! link PopupNotification Todo
-if !has('nvim')
-  hi! link SpecialKey NonText
-endif
 hi! link StatusLineTerm StatusLine
 hi! link StatusLineTermNC StatusLineNC
 hi! link Terminal Normal
@@ -208,7 +205,16 @@ if &background ==# 'dark'
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi CurSearch guifg=#aa22aa guibg=#ffffff gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi SpecialKey guifg=#ff00af guibg=NONE gui=NONE cterm=NONE
+  if !s:italics
+    hi Constant gui=nocombine cterm=nocombine
+    hi Macro gui=nocombine,underline cterm=nocombine,underline
+    hi Special gui=bold,nocombine cterm=bold,nocombine
+  endif
+  if has('nvim')
+    hi SpecialKey guifg=#ff00af guibg=NONE gui=NONE cterm=NONE
+  else
+    hi NonText guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
+  endif
   hi SpellBad guifg=NONE guibg=NONE guisp=#d7005f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE guisp=#0080dd gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellLocal guifg=NONE guibg=NONE guisp=#d777d7 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -253,9 +259,6 @@ if &background ==# 'dark'
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
   hi FlashBackdrop guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
   if !s:italics
-    hi Constant gui=nocombine cterm=nocombine
-    hi Macro gui=nocombine,underline cterm=nocombine,underline
-    hi Special gui=bold,nocombine cterm=bold,nocombine
     hi Italic gui=NONE cterm=NONE
     hi BoldItalic gui=bold cterm=bold
     hi Literal gui=NONE cterm=NONE
@@ -339,7 +342,16 @@ else
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi CurSearch guifg=#ff5fff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi SpecialKey guifg=#ff00af guibg=NONE gui=NONE cterm=NONE
+  if !s:italics
+    hi Constant gui=nocombine cterm=nocombine
+    hi Macro gui=nocombine,underline cterm=nocombine,underline
+    hi Special gui=bold,nocombine cterm=bold,nocombine
+  endif
+  if has('nvim')
+    hi SpecialKey guifg=#ff00af guibg=NONE gui=NONE cterm=NONE
+  else
+    hi NonText guifg=#9e9e9e guibg=NONE gui=nocombine cterm=nocombine
+  endif
   hi SpellBad guifg=NONE guibg=NONE guisp=#af0011 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellLocal guifg=NONE guibg=NONE guisp=#871087 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -384,9 +396,6 @@ else
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
   hi FlashBackdrop guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   if !s:italics
-    hi Constant gui=nocombine cterm=nocombine
-    hi Macro gui=nocombine,underline cterm=nocombine,underline
-    hi Special gui=bold,nocombine cterm=bold,nocombine
     hi Italic gui=NONE cterm=NONE
     hi BoldItalic gui=bold cterm=bold
     hi Literal gui=NONE cterm=NONE
@@ -451,7 +460,16 @@ if s:t_Co >= 256
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
     hi CurSearch ctermfg=127 ctermbg=231 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi SpecialKey ctermfg=199 ctermbg=NONE cterm=NONE
+    if !s:italics
+      hi Constant cterm=nocombine
+      hi Macro cterm=nocombine,underline
+      hi Special cterm=bold,nocombine
+    endif
+    if has('nvim')
+      hi SpecialKey ctermfg=199 ctermbg=NONE cterm=NONE
+    else
+      hi NonText ctermfg=241 ctermbg=NONE cterm=nocombine
+    endif
     hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellLocal ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -496,9 +514,6 @@ if s:t_Co >= 256
     hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
     hi FlashBackdrop ctermfg=250 ctermbg=NONE cterm=NONE
     if !s:italics
-      hi Constant cterm=nocombine
-      hi Macro cterm=nocombine,underline
-      hi Special cterm=bold,nocombine
       hi Italic cterm=NONE
       hi BoldItalic cterm=bold
       hi Literal cterm=NONE
@@ -561,7 +576,16 @@ if s:t_Co >= 256
     hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
     hi CurSearch ctermfg=207 ctermbg=16 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi SpecialKey ctermfg=199 ctermbg=NONE cterm=NONE
+    if !s:italics
+      hi Constant cterm=nocombine
+      hi Macro cterm=nocombine,underline
+      hi Special cterm=bold,nocombine
+    endif
+    if has('nvim')
+      hi SpecialKey ctermfg=199 ctermbg=NONE cterm=NONE
+    else
+      hi NonText ctermfg=247 ctermbg=NONE cterm=nocombine
+    endif
     hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellLocal ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -606,9 +630,6 @@ if s:t_Co >= 256
     hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
     hi FlashBackdrop ctermfg=241 ctermbg=NONE cterm=NONE
     if !s:italics
-      hi Constant cterm=nocombine
-      hi Macro cterm=nocombine,underline
-      hi Special cterm=bold,nocombine
       hi Italic cterm=NONE
       hi BoldItalic cterm=bold
       hi Literal cterm=NONE
