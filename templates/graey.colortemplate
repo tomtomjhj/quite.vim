@@ -265,18 +265,19 @@ Color: bg2           #333333           236
 Color: bg3           #444444           238
 Color: bg4           #626262           241
 
-Color: quite1        #d7005f           161
-Color: quite2        #22bf00           34
-Color: quite3        #d79600           172
-Color: quite4        #0080dd           32
-Color: quite5        #d777d7           176
-Color: quite6        #00cccc           44
-Color: quite9        #ff2266           197
-Color: quite10       #55ff00           82
-Color: quite11       #ffaf00           214
-Color: quite12       #5fafff           75
-Color: quite13       #ff87ff           213
-Color: quite14       #00eeff           87
+; some colors have no diff for +8 version, but that's fine since we only use them for terminal
+Color: quite1        #ff5163           203
+Color: quite2        #68c601           76
+Color: quite3        #eaa104           214
+Color: quite4        #5696ff           33
+Color: quite5        #e573ff           207
+Color: quite6        #0accd5           44
+Color: quite9        #ff7477           210
+Color: quite10       #78db2f           76
+Color: quite11       #ffb32f           214
+Color: quite12       #67abff           75
+Color: quite13       #ff83ff           213
+Color: quite14       #38e1e2           44
 
 Color: bggreen       #284028           22
 Color: bgblue        #404868           60
