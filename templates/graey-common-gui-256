@@ -65,7 +65,7 @@ SignColumn           none              none
 #if has('nvim')
 SpecialKey           uipink            none
 #else
-NonText              bg4               none              nocombine
+SpecialKey           bg4               none              nocombine
 #endif
 SpellBad             none              none              undercurl s=quite1
 SpellCap             none              none              undercurl s=quite4

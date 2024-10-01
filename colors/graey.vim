@@ -213,7 +213,7 @@ if &background ==# 'dark'
   if has('nvim')
     hi SpecialKey guifg=#ff00af guibg=NONE gui=NONE cterm=NONE
   else
-    hi NonText guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
+    hi SpecialKey guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
   endif
   hi SpellBad guifg=NONE guibg=NONE guisp=#ff5163 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE guisp=#5696ff gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -350,7 +350,7 @@ else
   if has('nvim')
     hi SpecialKey guifg=#ff00af guibg=NONE gui=NONE cterm=NONE
   else
-    hi NonText guifg=#9e9e9e guibg=NONE gui=nocombine cterm=nocombine
+    hi SpecialKey guifg=#9e9e9e guibg=NONE gui=nocombine cterm=nocombine
   endif
   hi SpellBad guifg=NONE guibg=NONE guisp=#af0011 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -468,7 +468,7 @@ if s:t_Co >= 256
     if has('nvim')
       hi SpecialKey ctermfg=199 ctermbg=NONE cterm=NONE
     else
-      hi NonText ctermfg=241 ctermbg=NONE cterm=nocombine
+      hi SpecialKey ctermfg=241 ctermbg=NONE cterm=nocombine
     endif
     hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -584,7 +584,7 @@ if s:t_Co >= 256
     if has('nvim')
       hi SpecialKey ctermfg=199 ctermbg=NONE cterm=NONE
     else
-      hi NonText ctermfg=247 ctermbg=NONE cterm=nocombine
+      hi SpecialKey ctermfg=247 ctermbg=NONE cterm=nocombine
     endif
     hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
