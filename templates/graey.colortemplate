@@ -316,18 +316,18 @@ Color: bg2           #c6c6c6           251
 Color: bg3           #b2b2b2           249
 Color: bg4           #9e9e9e           247
 
-Color: quite1        #af0011           124
-Color: quite2        #177700           28
-Color: quite3        #af7700           136
-Color: quite4        #005faf           25
-Color: quite5        #871087           90
-Color: quite6        #009999           30
-Color: quite9        #d70011           160
-Color: quite10       #30af00           34
-Color: quite11       #d79700           172
-Color: quite12       #0087d7           32
-Color: quite13       #af10af           127
-Color: quite14       #00bfbf           37
+Color: quite1        #a5092d           88
+Color: quite2        #376e00           22
+Color: quite3        #946401           94
+Color: quite4        #0d53bd           26
+Color: quite5        #8a299e           91
+Color: quite6        #047e83           30
+Color: quite9        #e62848           197
+Color: quite10       #519c03           70
+Color: quite11       #c98a0e           172
+Color: quite12       #2a7bff           33
+Color: quite13       #bf46d9           134
+Color: quite14       #05adb4           37
 
 Color: bggreen       #b7d2b7           151
 Color: bgblue        #a0afd7           146

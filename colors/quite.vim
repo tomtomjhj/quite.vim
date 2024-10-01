@@ -261,24 +261,24 @@ if &background ==# 'dark'
 else
   " Light background
   if (has('termguicolors') && &termguicolors) || has('gui_running')
-    let g:terminal_ansi_colors = ['#eeeeee', '#af0011', '#177700', '#af7700', '#005faf', '#871087', '#009999', '#3a3a3a', '#9e9e9e', '#d70011', '#30af00', '#d79700', '#0087d7', '#af10af', '#00bfbf', '#121212']
+    let g:terminal_ansi_colors = ['#eeeeee', '#a5092d', '#376e00', '#946401', '#0d53bd', '#8a299e', '#047e83', '#3a3a3a', '#9e9e9e', '#e62848', '#519c03', '#c98a0e', '#2a7bff', '#bf46d9', '#05adb4', '#121212']
   endif
   if has('nvim')
     let g:terminal_color_0 = '#eeeeee'
-    let g:terminal_color_1 = '#af0011'
-    let g:terminal_color_2 = '#177700'
-    let g:terminal_color_3 = '#af7700'
-    let g:terminal_color_4 = '#005faf'
-    let g:terminal_color_5 = '#871087'
-    let g:terminal_color_6 = '#009999'
+    let g:terminal_color_1 = '#a5092d'
+    let g:terminal_color_2 = '#376e00'
+    let g:terminal_color_3 = '#946401'
+    let g:terminal_color_4 = '#0d53bd'
+    let g:terminal_color_5 = '#8a299e'
+    let g:terminal_color_6 = '#047e83'
     let g:terminal_color_7 = '#3a3a3a'
     let g:terminal_color_8 = '#9e9e9e'
-    let g:terminal_color_9 = '#d70011'
-    let g:terminal_color_10 = '#30af00'
-    let g:terminal_color_11 = '#d79700'
-    let g:terminal_color_12 = '#0087d7'
-    let g:terminal_color_13 = '#af10af'
-    let g:terminal_color_14 = '#00bfbf'
+    let g:terminal_color_9 = '#e62848'
+    let g:terminal_color_10 = '#519c03'
+    let g:terminal_color_11 = '#c98a0e'
+    let g:terminal_color_12 = '#2a7bff'
+    let g:terminal_color_13 = '#bf46d9'
+    let g:terminal_color_14 = '#05adb4'
     let g:terminal_color_15 = '#121212'
   endif
   hi Normal guifg=#121212 guibg=#eeeeee gui=NONE cterm=NONE
@@ -298,9 +298,9 @@ else
   hi Ignore guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
   hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi Added guifg=#177700 guibg=NONE gui=NONE cterm=NONE
-  hi Changed guifg=#009999 guibg=NONE gui=NONE cterm=NONE
-  hi Removed guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
+  hi Added guifg=#376e00 guibg=NONE gui=NONE cterm=NONE
+  hi Changed guifg=#047e83 guibg=NONE gui=NONE cterm=NONE
+  hi Removed guifg=#a5092d guibg=NONE gui=NONE cterm=NONE
   hi ColorColumn guifg=NONE guibg=#dadada gui=NONE cterm=NONE
   hi Conceal guifg=#234e5f guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -310,7 +310,7 @@ else
   hi CursorLineNr guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi DiffAdd guifg=NONE guibg=#b7d2b7 gui=NONE cterm=NONE
   hi DiffChange guifg=NONE guibg=#afd7d7 gui=NONE cterm=NONE
-  hi DiffDelete guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
+  hi DiffDelete guifg=#a5092d guibg=NONE gui=NONE cterm=NONE
   hi DiffText guifg=NONE guibg=#ddd099 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -337,10 +337,10 @@ else
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi CurSearch guifg=#ff5fff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi SpellBad guifg=NONE guibg=NONE guisp=#af0011 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi SpellCap guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi SpellLocal guifg=NONE guibg=NONE guisp=#871087 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi SpellRare guifg=NONE guibg=NONE guisp=#009999 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellBad guifg=NONE guibg=NONE guisp=#a5092d gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellCap guifg=NONE guibg=NONE guisp=#0d53bd gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellLocal guifg=NONE guibg=NONE guisp=#8a299e gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi SpellRare guifg=NONE guibg=NONE guisp=#047e83 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi StatusLine guifg=#eeeeee guibg=#121212 gui=bold cterm=bold
   hi StatusLineNC guifg=#eeeeee guibg=#9e9e9e gui=NONE cterm=NONE
   hi TabLine guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
@@ -366,16 +366,16 @@ else
   hi LspInlayHint guifg=#626262 guibg=#dadada gui=NONE cterm=NONE
   hi LspCodeLens guifg=#626262 guibg=#dadada gui=NONE cterm=NONE
   hi LspCodeLensSeparator guifg=NONE guibg=#dadada gui=bold cterm=bold
-  hi DiagnosticError guifg=#af0011 guibg=NONE gui=NONE cterm=NONE
-  hi DiagnosticWarn guifg=#af7700 guibg=NONE gui=NONE cterm=NONE
-  hi DiagnosticInfo guifg=#009999 guibg=NONE gui=NONE cterm=NONE
-  hi DiagnosticHint guifg=#005faf guibg=NONE gui=NONE cterm=NONE
-  hi DiagnosticOk guifg=#177700 guibg=NONE gui=NONE cterm=NONE
-  hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#af0011 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#af7700 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#009999 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#005faf gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
-  hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#177700 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticError guifg=#a5092d guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticWarn guifg=#946401 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticInfo guifg=#047e83 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticHint guifg=#0d53bd guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticOk guifg=#376e00 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#a5092d gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#946401 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#047e83 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#0d53bd gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#376e00 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
@@ -512,9 +512,9 @@ if s:t_Co >= 256
     hi Ignore ctermfg=247 ctermbg=NONE cterm=NONE
     hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
-    hi Added ctermfg=28 ctermbg=NONE cterm=NONE
+    hi Added ctermfg=22 ctermbg=NONE cterm=NONE
     hi Changed ctermfg=30 ctermbg=NONE cterm=NONE
-    hi Removed ctermfg=124 ctermbg=NONE cterm=NONE
+    hi Removed ctermfg=88 ctermbg=NONE cterm=NONE
     hi ColorColumn ctermfg=NONE ctermbg=253 cterm=NONE
     hi Conceal ctermfg=23 ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -524,7 +524,7 @@ if s:t_Co >= 256
     hi CursorLineNr ctermfg=NONE ctermbg=249 cterm=NONE
     hi DiffAdd ctermfg=NONE ctermbg=151 cterm=NONE
     hi DiffChange ctermfg=NONE ctermbg=152 cterm=NONE
-    hi DiffDelete ctermfg=124 ctermbg=NONE cterm=NONE
+    hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE
     hi DiffText ctermfg=NONE ctermbg=186 cterm=NONE
     hi Directory ctermfg=NONE ctermbg=NONE cterm=bold
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -580,11 +580,11 @@ if s:t_Co >= 256
     hi LspInlayHint ctermfg=241 ctermbg=253 cterm=NONE
     hi LspCodeLens ctermfg=241 ctermbg=253 cterm=NONE
     hi LspCodeLensSeparator ctermfg=NONE ctermbg=253 cterm=bold
-    hi DiagnosticError ctermfg=124 ctermbg=NONE cterm=NONE
-    hi DiagnosticWarn ctermfg=136 ctermbg=NONE cterm=NONE
+    hi DiagnosticError ctermfg=88 ctermbg=NONE cterm=NONE
+    hi DiagnosticWarn ctermfg=94 ctermbg=NONE cterm=NONE
     hi DiagnosticInfo ctermfg=30 ctermbg=NONE cterm=NONE
-    hi DiagnosticHint ctermfg=25 ctermbg=NONE cterm=NONE
-    hi DiagnosticOk ctermfg=28 ctermbg=NONE cterm=NONE
+    hi DiagnosticHint ctermfg=26 ctermbg=NONE cterm=NONE
+    hi DiagnosticOk ctermfg=22 ctermbg=NONE cterm=NONE
     hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -968,18 +968,18 @@ endif
 " Color: bg2           #c6c6c6           251
 " Color: bg3           #b2b2b2           249
 " Color: bg4           #9e9e9e           247
-" Color: quite1        #af0011           124
-" Color: quite2        #177700           28
-" Color: quite3        #af7700           136
-" Color: quite4        #005faf           25
-" Color: quite5        #871087           90
-" Color: quite6        #009999           30
-" Color: quite9        #d70011           160
-" Color: quite10       #30af00           34
-" Color: quite11       #d79700           172
-" Color: quite12       #0087d7           32
-" Color: quite13       #af10af           127
-" Color: quite14       #00bfbf           37
+" Color: quite1        #a5092d           88
+" Color: quite2        #376e00           22
+" Color: quite3        #946401           94
+" Color: quite4        #0d53bd           26
+" Color: quite5        #8a299e           91
+" Color: quite6        #047e83           30
+" Color: quite9        #e62848           197
+" Color: quite10       #519c03           70
+" Color: quite11       #c98a0e           172
+" Color: quite12       #2a7bff           33
+" Color: quite13       #bf46d9           134
+" Color: quite14       #05adb4           37
 " Color: bggreen       #b7d2b7           151
 " Color: bgblue        #a0afd7           146
 " Color: bgpink        #d7a0d7           176
