@@ -50,19 +50,19 @@ if has('nvim-0.8')
   hi! link @variable.builtin Constant
   hi! link @constant.builtin Constant
   hi! link @constant.macro Constant
-  hi! link @module NONE
+  hi! link @module Identifier
   hi! link @module.builtin Constant
   hi! link @type.builtin Constant
   hi! link @type.definition Label
   hi! link @attribute Special
   hi! link @function Label
   hi! link @function.builtin Constant
-  hi! link @function.call NONE
+  hi! link @function.call Identifier
   hi! link @function.macro Macro
   hi! link @function.method Label
-  hi! link @function.method.call NONE
+  hi! link @function.method.call Identifier
   hi! link @function.latex Constant
-  hi! link @constructor NONE
+  hi! link @constructor Identifier
   hi! link @punctuation.special PunctuationSpecial
   hi! link @markup.strong Bold
   hi! link @markup.italic Italic
@@ -75,7 +75,7 @@ if has('nvim-0.8')
   hi! link @markup.raw NormalFloat
   hi! link @markup.list PunctuationSpecial
   hi! link @tag Statement
-  hi! link @tag.attribute NONE
+  hi! link @tag.attribute Identifier
 endif
 if has('nvim-0.9')
 endif

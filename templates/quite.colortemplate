@@ -67,7 +67,7 @@ lCursor              -> Cursor
   ; @constant
   @constant.builtin  -> Constant
   @constant.macro    -> Constant
-  @module            -> NONE
+  @module            -> Identifier
   @module.builtin    -> Constant
   ; @label
 
@@ -97,13 +97,13 @@ lCursor              -> Cursor
   ; functions
   @function          -> Label
   @function.builtin  -> Constant
-  @function.call     -> NONE
+  @function.call     -> Identifier
   @function.macro    -> Macro
   @function.method   -> Label
-  @function.method.call -> NONE
+  @function.method.call -> Identifier
   ; NOTE: @function.latex is used for both invocation and defintion. https://github.com/nvim-treesitter/nvim-treesitter/pull/3959#pullrequestreview-1218830075
   @function.latex    -> Constant
-  @constructor       -> NONE
+  @constructor       -> Identifier
   ; @operator
 
   ; keywords
@@ -160,7 +160,7 @@ lCursor              -> Cursor
 
   @tag               -> Statement
   ; @tag.builtin
-  @tag.attribute     -> NONE
+  @tag.attribute     -> Identifier
   ; @tag.delimiter
 #endif
 ; }}}
