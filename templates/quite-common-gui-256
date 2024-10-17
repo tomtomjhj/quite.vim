@@ -69,7 +69,7 @@ StatusLine           bg0               fg0               bold
 StatusLineNC         bg0               bg4
 TabLine              none              bg4
 TabLineFill          none              bg3
-TabLineSel           none              none              bold
+TabLineSel           none              bg0               bold
 Title                labelpink         none              bold,underline
 Visual               uiamber           black             reverse
 VisualNOS            none              bg3

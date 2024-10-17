@@ -218,7 +218,7 @@ if &background ==# 'dark'
   hi StatusLineNC guifg=#080808 guibg=#626262 gui=NONE cterm=NONE
   hi TabLine guifg=NONE guibg=#626262 gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#444444 gui=NONE cterm=NONE
-  hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi TabLineSel guifg=NONE guibg=#080808 gui=bold cterm=bold
   hi Title guifg=#d7afd7 guibg=NONE gui=bold,underline cterm=bold,underline
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#444444 gui=NONE cterm=NONE
@@ -345,7 +345,7 @@ else
   hi StatusLineNC guifg=#eeeeee guibg=#9e9e9e gui=NONE cterm=NONE
   hi TabLine guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
-  hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi TabLineSel guifg=NONE guibg=#eeeeee gui=bold cterm=bold
   hi Title guifg=#602460 guibg=NONE gui=bold,underline cterm=bold,underline
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
@@ -453,7 +453,7 @@ if s:t_Co >= 256
     hi StatusLineNC ctermfg=232 ctermbg=241 cterm=NONE
     hi TabLine ctermfg=NONE ctermbg=241 cterm=NONE
     hi TabLineFill ctermfg=NONE ctermbg=238 cterm=NONE
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+    hi TabLineSel ctermfg=NONE ctermbg=232 cterm=bold
     hi Title ctermfg=182 ctermbg=NONE cterm=bold,underline
     hi Visual ctermfg=214 ctermbg=16 cterm=reverse
     hi VisualNOS ctermfg=NONE ctermbg=238 cterm=NONE
@@ -559,7 +559,7 @@ if s:t_Co >= 256
     hi StatusLineNC ctermfg=255 ctermbg=247 cterm=NONE
     hi TabLine ctermfg=NONE ctermbg=247 cterm=NONE
     hi TabLineFill ctermfg=NONE ctermbg=249 cterm=NONE
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+    hi TabLineSel ctermfg=NONE ctermbg=255 cterm=bold
     hi Title ctermfg=53 ctermbg=NONE cterm=bold,underline
     hi Visual ctermfg=214 ctermbg=16 cterm=reverse
     hi VisualNOS ctermfg=NONE ctermbg=249 cterm=NONE
