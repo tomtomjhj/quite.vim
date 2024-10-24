@@ -151,7 +151,7 @@ if &background ==# 'dark'
   endif
   hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
   hi NormalFloat guifg=NONE guibg=#333333 gui=NONE cterm=NONE
-  hi Comment guifg=#bcbcbc guibg=NONE gui=nocombine cterm=nocombine
+  hi Comment guifg=#b7b7b7 guibg=NONE gui=nocombine cterm=nocombine
   hi Constant guifg=#ffffff guibg=NONE gui=italic,nocombine cterm=italic,nocombine
   hi Identifier guifg=#eeeeee guibg=NONE gui=nocombine cterm=nocombine
   hi Statement guifg=#dfdfdf guibg=NONE gui=bold,nocombine cterm=bold,nocombine
@@ -161,7 +161,7 @@ if &background ==# 'dark'
   hi Type guifg=#eeeeee guibg=NONE gui=nocombine cterm=nocombine
   hi Special guifg=#eeeeee guibg=NONE gui=bold,italic,nocombine cterm=bold,italic,nocombine
   hi Delimiter guifg=#d0d0d0 guibg=NONE gui=nocombine cterm=nocombine
-  hi SpecialComment guifg=#bcbcbc guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi SpecialComment guifg=#b7b7b7 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
   hi Underlined guifg=NONE guibg=NONE gui=nocombine,underline ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
   hi Ignore guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
   hi Error guifg=#ff005f guibg=#000000 gui=bold,nocombine,reverse cterm=bold,nocombine,reverse
@@ -185,7 +185,7 @@ if &background ==# 'dark'
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#d0d0d0 guibg=#222222 gui=NONE cterm=NONE
   hi IncSearch guifg=#ffaf00 guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
-  hi LineNr guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
+  hi LineNr guifg=#b7b7b7 guibg=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -241,8 +241,8 @@ if &background ==# 'dark'
   hi LspReferenceText guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
-  hi LspInlayHint guifg=#bcbcbc guibg=#222222 gui=NONE cterm=NONE
-  hi LspCodeLens guifg=#bcbcbc guibg=#222222 gui=NONE cterm=NONE
+  hi LspInlayHint guifg=#b7b7b7 guibg=#222222 gui=NONE cterm=NONE
+  hi LspCodeLens guifg=#b7b7b7 guibg=#222222 gui=NONE cterm=NONE
   hi LspCodeLensSeparator guifg=NONE guibg=#222222 gui=bold cterm=bold
   hi DiagnosticError guifg=#ff5163 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticWarn guifg=#eaa104 guibg=NONE gui=NONE cterm=NONE
@@ -262,7 +262,7 @@ if &background ==# 'dark'
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
-  hi FlashBackdrop guifg=#bcbcbc guibg=NONE gui=NONE cterm=NONE
+  hi FlashBackdrop guifg=#b7b7b7 guibg=NONE gui=NONE cterm=NONE
   if !s:italics
     hi Italic gui=NONE cterm=NONE
     hi BoldItalic gui=bold cterm=bold
@@ -974,7 +974,7 @@ endif
 " Color: fg0           #eeeeee           255
 " Color: fg05          #dfdfdf           254
 " Color: fg1           #d0d0d0           252
-" Color: fg2           #bcbcbc           250
+" Color: fg2           #b7b7b7           250
 " Color: bg0           #080808           232
 " Color: bg1           #222222           235
 " Color: bg2           #333333           236
