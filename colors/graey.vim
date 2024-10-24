@@ -249,6 +249,11 @@ if &background ==# 'dark'
   hi DiagnosticInfo guifg=#0accd5 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticHint guifg=#5696ff guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticOk guifg=#68c601 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextError guifg=#ff5163 guibg=#222222 gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextWarn guifg=#eaa104 guibg=#222222 gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextInfo guifg=#0accd5 guibg=#222222 gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextHint guifg=#5696ff guibg=#222222 gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextOk guifg=#68c601 guibg=#222222 gui=NONE cterm=NONE
   hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#ff5163 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#eaa104 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#0accd5 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -386,6 +391,11 @@ else
   hi DiagnosticInfo guifg=#047e83 guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticHint guifg=#0d53bd guibg=NONE gui=NONE cterm=NONE
   hi DiagnosticOk guifg=#376e00 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextError guifg=#a5092d guibg=#dadada gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextWarn guifg=#946401 guibg=#dadada gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextInfo guifg=#047e83 guibg=#dadada gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextHint guifg=#0d53bd guibg=#dadada gui=NONE cterm=NONE
+  hi DiagnosticVirtualTextOk guifg=#376e00 guibg=#dadada gui=NONE cterm=NONE
   hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#a5092d gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#946401 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#047e83 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -504,6 +514,11 @@ if s:t_Co >= 256
     hi DiagnosticInfo ctermfg=44 ctermbg=NONE cterm=NONE
     hi DiagnosticHint ctermfg=33 ctermbg=NONE cterm=NONE
     hi DiagnosticOk ctermfg=76 ctermbg=NONE cterm=NONE
+    hi DiagnosticVirtualTextError ctermfg=203 ctermbg=235 cterm=NONE
+    hi DiagnosticVirtualTextWarn ctermfg=214 ctermbg=235 cterm=NONE
+    hi DiagnosticVirtualTextInfo ctermfg=44 ctermbg=235 cterm=NONE
+    hi DiagnosticVirtualTextHint ctermfg=33 ctermbg=235 cterm=NONE
+    hi DiagnosticVirtualTextOk ctermfg=76 ctermbg=235 cterm=NONE
     hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -620,6 +635,11 @@ if s:t_Co >= 256
     hi DiagnosticInfo ctermfg=30 ctermbg=NONE cterm=NONE
     hi DiagnosticHint ctermfg=26 ctermbg=NONE cterm=NONE
     hi DiagnosticOk ctermfg=22 ctermbg=NONE cterm=NONE
+    hi DiagnosticVirtualTextError ctermfg=88 ctermbg=253 cterm=NONE
+    hi DiagnosticVirtualTextWarn ctermfg=94 ctermbg=253 cterm=NONE
+    hi DiagnosticVirtualTextInfo ctermfg=30 ctermbg=253 cterm=NONE
+    hi DiagnosticVirtualTextHint ctermfg=26 ctermbg=253 cterm=NONE
+    hi DiagnosticVirtualTextOk ctermfg=22 ctermbg=253 cterm=NONE
     hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl

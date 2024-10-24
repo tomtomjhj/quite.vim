@@ -109,6 +109,11 @@ DiagnosticWarn            quite3       none
 DiagnosticInfo            quite6       none
 DiagnosticHint            quite4       none
 DiagnosticOk              quite2       none
+DiagnosticVirtualTextError quite1      bg1
+DiagnosticVirtualTextWarn  quite3      bg1
+DiagnosticVirtualTextInfo  quite6      bg1
+DiagnosticVirtualTextHint  quite4      bg1
+DiagnosticVirtualTextOk    quite2      bg1
 DiagnosticUnderlineError  none         none              undercurl s=quite1
 DiagnosticUnderlineWarn   none         none              undercurl s=quite3
 DiagnosticUnderlineInfo   none         none              undercurl s=quite6
