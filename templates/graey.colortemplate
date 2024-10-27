@@ -266,18 +266,18 @@ Color: bg3           #444444           238
 Color: bg4           #626262           241
 
 ; some colors have no diff for +8 version, but that's fine since we only use them for terminal
-Color: quite1        #ff5163           203
-Color: quite2        #68c601           76
-Color: quite3        #eaa104           214
-Color: quite4        #5696ff           33
-Color: quite5        #e573ff           207
-Color: quite6        #0accd5           44
-Color: quite9        #ff7477           210
-Color: quite10       #78db2f           76
-Color: quite11       #ffb32f           214
-Color: quite12       #67abff           75
-Color: quite13       #ff83ff           213
-Color: quite14       #38e1e2           44
+Color: quite1        #ff7d81           210
+Color: quite2        #73c660           77
+Color: quite3        #e1a103           214
+Color: quite4        #6da4ff           111
+Color: quite5        #da8aec           177
+Color: quite6        #04c5ce           44
+Color: quite9        #ffafae           217
+Color: quite10       #8fe47d           113
+Color: quite11       #ffbe3e           214
+Color: quite12       #9dc2ff           111
+Color: quite13       #f0aeff           219
+Color: quite14       #06e6ef           44
 
 Color: bggreen       #284028           22
 Color: bgblue        #404868           60
@@ -316,18 +316,18 @@ Color: bg2           #c6c6c6           251
 Color: bg3           #b2b2b2           249
 Color: bg4           #9e9e9e           247
 
-Color: quite1        #a5092d           88
-Color: quite2        #376e00           22
-Color: quite3        #946401           94
-Color: quite4        #0d53bd           26
-Color: quite5        #8a299e           91
-Color: quite6        #047e83           30
-Color: quite9        #e62848           197
-Color: quite10       #519c03           70
-Color: quite11       #c98a0e           172
-Color: quite12       #2a7bff           33
-Color: quite13       #bf46d9           134
-Color: quite14       #05adb4           37
+Color: quite1        #a52836           124
+Color: quite2        #207400           28
+Color: quite3        #8d6300           94
+Color: quite4        #1f58b6           26
+Color: quite5        #833794           90
+Color: quite6        #017b80           30
+Color: quite9        #d5565d           167
+Color: quite10       #4d9f3a           71
+Color: quite11       #c18a04           136
+Color: quite12       #4983e5           68
+Color: quite13       #af62c1           133
+Color: quite14       #07aab1           37
 
 Color: bggreen       #b7d2b7           151
 Color: bgblue        #a0afd7           146
