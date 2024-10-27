@@ -56,7 +56,7 @@ lCursor              -> Cursor
   @variable          -> Identifier
   @variable.builtin  -> Constant
   ; @variable.parameter
-  ; @variable.parameter.builtin
+  @variable.parameter.builtin -> Constant
   ; @variable.member
   ; @constant
   @constant.builtin  -> Constant

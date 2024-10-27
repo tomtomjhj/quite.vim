@@ -43,6 +43,7 @@ hi! link lCursor Cursor
 if has('nvim-0.8')
   hi! link @variable Identifier
   hi! link @variable.builtin Constant
+  hi! link @variable.parameter.builtin Constant
   hi! link @constant.builtin Constant
   hi! link @constant.macro Constant
   hi! link @module Identifier
