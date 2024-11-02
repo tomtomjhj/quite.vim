@@ -79,6 +79,10 @@ hi! link debugBreakpoint ModeMsg
 hi! link debugPC CursorLine
 hi! link diffAdded Added
 hi! link diffRemoved Removed
+hi! link diffFile Statement
+hi! link diffOldFile Label
+hi! link diffNewFile Label
+hi! link diffIndexLine Comment
 if has('nvim')
   hi! link CmpItemAbbrMatch Bold
   hi! link CmpItemKind NONE

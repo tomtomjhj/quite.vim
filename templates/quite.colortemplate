@@ -173,6 +173,12 @@ debugBreakpoint      -> ModeMsg
 debugPC              -> CursorLine
 diffAdded            -> Added
 diffRemoved          -> Removed
+diffFile             -> Statement
+diffOldFile          -> Label
+diffNewFile          -> Label
+diffIndexLine        -> Comment
+diffLine             -> PunctuationSpecial
+diffSubname          -> Literal
 ; nvim-cmp {{{
 #if has('nvim')
   CmpItemAbbrMatch   -> Bold
