@@ -163,24 +163,24 @@ if &background ==# 'dark'
   endif
   hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
   hi NormalFloat guifg=NONE guibg=#333333 gui=NONE cterm=NONE
-  hi Comment guifg=#b7b7b7 guibg=NONE gui=NONE cterm=NONE
-  hi Constant guifg=#ffffff guibg=NONE gui=italic cterm=italic
-  hi Identifier guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
-  hi Statement guifg=#eeeeee guibg=NONE gui=bold cterm=bold
-  hi Label guifg=#d7afd7 guibg=NONE gui=bold cterm=bold
-  hi PreProc guifg=#eeeeee guibg=NONE gui=bold cterm=bold
-  hi Macro guifg=#afd7d7 guibg=NONE gui=italic cterm=italic
-  hi Type guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
-  hi Special guifg=#afd7d7 guibg=NONE gui=NONE cterm=NONE
-  hi Delimiter guifg=#d0d0d0 guibg=NONE gui=NONE cterm=NONE
-  hi SpecialComment guifg=#b7b7b7 guibg=NONE gui=bold cterm=bold
-  hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-  hi Ignore guifg=#626262 guibg=NONE gui=NONE cterm=NONE
-  hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi Added guifg=#73c660 guibg=NONE gui=NONE cterm=NONE
-  hi Changed guifg=#04c5ce guibg=NONE gui=NONE cterm=NONE
-  hi Removed guifg=#ff7d81 guibg=NONE gui=NONE cterm=NONE
+  hi Comment guifg=#b7b7b7 guibg=NONE gui=nocombine cterm=nocombine
+  hi Constant guifg=#ffffff guibg=NONE gui=italic,nocombine cterm=italic,nocombine
+  hi Identifier guifg=#eeeeee guibg=NONE gui=nocombine cterm=nocombine
+  hi Statement guifg=#eeeeee guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi Label guifg=#d7afd7 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi PreProc guifg=#eeeeee guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi Macro guifg=#afd7d7 guibg=NONE gui=italic,nocombine cterm=italic,nocombine
+  hi Type guifg=#eeeeee guibg=NONE gui=nocombine cterm=nocombine
+  hi Special guifg=#afd7d7 guibg=NONE gui=nocombine cterm=nocombine
+  hi Delimiter guifg=#d0d0d0 guibg=NONE gui=nocombine cterm=nocombine
+  hi SpecialComment guifg=#b7b7b7 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi Underlined guifg=NONE guibg=NONE gui=nocombine,underline ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
+  hi Ignore guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
+  hi Error guifg=#ff005f guibg=#000000 gui=bold,nocombine,reverse cterm=bold,nocombine,reverse
+  hi Todo guifg=#00ffaf guibg=#000000 gui=bold,nocombine,reverse cterm=bold,nocombine,reverse
+  hi Added guifg=#73c660 guibg=NONE gui=nocombine cterm=nocombine
+  hi Changed guifg=#04c5ce guibg=NONE gui=nocombine cterm=nocombine
+  hi Removed guifg=#ff7d81 guibg=NONE gui=nocombine cterm=nocombine
   hi ColorColumn guifg=NONE guibg=#222222 gui=NONE cterm=NONE
   hi Conceal guifg=#afd7d7 guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -265,8 +265,8 @@ if &background ==# 'dark'
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
   if !s:italics
-    hi Constant gui=NONE cterm=NONE
-    hi Macro gui=NONE cterm=NONE
+    hi Constant gui=nocombine cterm=nocombine
+    hi Macro gui=nocombine cterm=nocombine
     hi Italic gui=NONE cterm=NONE
     hi BoldItalic gui=bold cterm=bold
   endif
@@ -295,24 +295,24 @@ else
   endif
   hi Normal guifg=#121212 guibg=#eeeeee gui=NONE cterm=NONE
   hi NormalFloat guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
-  hi Comment guifg=#626262 guibg=NONE gui=NONE cterm=NONE
-  hi Constant guifg=#000000 guibg=NONE gui=italic cterm=italic
-  hi Identifier guifg=#121212 guibg=NONE gui=NONE cterm=NONE
-  hi Statement guifg=#121212 guibg=NONE gui=bold cterm=bold
-  hi Label guifg=#602460 guibg=NONE gui=bold cterm=bold
-  hi PreProc guifg=#121212 guibg=NONE gui=bold cterm=bold
-  hi Macro guifg=#234e5f guibg=NONE gui=italic cterm=italic
-  hi Type guifg=#121212 guibg=NONE gui=NONE cterm=NONE
-  hi Special guifg=#234e5f guibg=NONE gui=NONE cterm=NONE
-  hi Delimiter guifg=#3a3a3a guibg=NONE gui=NONE cterm=NONE
-  hi SpecialComment guifg=#626262 guibg=NONE gui=bold cterm=bold
-  hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-  hi Ignore guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
-  hi Error guifg=#ff005f guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi Todo guifg=#00ffaf guibg=#000000 gui=bold,reverse cterm=bold,reverse
-  hi Added guifg=#207400 guibg=NONE gui=NONE cterm=NONE
-  hi Changed guifg=#017b80 guibg=NONE gui=NONE cterm=NONE
-  hi Removed guifg=#a52836 guibg=NONE gui=NONE cterm=NONE
+  hi Comment guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
+  hi Constant guifg=#000000 guibg=NONE gui=italic,nocombine cterm=italic,nocombine
+  hi Identifier guifg=#121212 guibg=NONE gui=nocombine cterm=nocombine
+  hi Statement guifg=#121212 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi Label guifg=#602460 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi PreProc guifg=#121212 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi Macro guifg=#234e5f guibg=NONE gui=italic,nocombine cterm=italic,nocombine
+  hi Type guifg=#121212 guibg=NONE gui=nocombine cterm=nocombine
+  hi Special guifg=#234e5f guibg=NONE gui=nocombine cterm=nocombine
+  hi Delimiter guifg=#3a3a3a guibg=NONE gui=nocombine cterm=nocombine
+  hi SpecialComment guifg=#626262 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi Underlined guifg=NONE guibg=NONE gui=nocombine,underline ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
+  hi Ignore guifg=#9e9e9e guibg=NONE gui=nocombine cterm=nocombine
+  hi Error guifg=#ff005f guibg=#000000 gui=bold,nocombine,reverse cterm=bold,nocombine,reverse
+  hi Todo guifg=#00ffaf guibg=#000000 gui=bold,nocombine,reverse cterm=bold,nocombine,reverse
+  hi Added guifg=#207400 guibg=NONE gui=nocombine cterm=nocombine
+  hi Changed guifg=#017b80 guibg=NONE gui=nocombine cterm=nocombine
+  hi Removed guifg=#a52836 guibg=NONE gui=nocombine cterm=nocombine
   hi ColorColumn guifg=NONE guibg=#dadada gui=NONE cterm=NONE
   hi Conceal guifg=#234e5f guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -397,8 +397,8 @@ else
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
   if !s:italics
-    hi Constant gui=NONE cterm=NONE
-    hi Macro gui=NONE cterm=NONE
+    hi Constant gui=nocombine cterm=nocombine
+    hi Macro gui=nocombine cterm=nocombine
     hi Italic gui=NONE cterm=NONE
     hi BoldItalic gui=bold cterm=bold
   endif
@@ -408,24 +408,24 @@ if s:t_Co >= 256
   if &background ==# 'dark'
     hi Normal ctermfg=255 ctermbg=232 cterm=NONE
     hi NormalFloat ctermfg=NONE ctermbg=236 cterm=NONE
-    hi Comment ctermfg=250 ctermbg=NONE cterm=NONE
-    hi Constant ctermfg=231 ctermbg=NONE cterm=italic
-    hi Identifier ctermfg=255 ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=255 ctermbg=NONE cterm=bold
-    hi Label ctermfg=182 ctermbg=NONE cterm=bold
-    hi PreProc ctermfg=255 ctermbg=NONE cterm=bold
-    hi Macro ctermfg=152 ctermbg=NONE cterm=italic
-    hi Type ctermfg=255 ctermbg=NONE cterm=NONE
-    hi Special ctermfg=152 ctermbg=NONE cterm=NONE
-    hi Delimiter ctermfg=252 ctermbg=NONE cterm=NONE
-    hi SpecialComment ctermfg=250 ctermbg=NONE cterm=bold
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi Ignore ctermfg=241 ctermbg=NONE cterm=NONE
-    hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
-    hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
-    hi Added ctermfg=77 ctermbg=NONE cterm=NONE
-    hi Changed ctermfg=44 ctermbg=NONE cterm=NONE
-    hi Removed ctermfg=210 ctermbg=NONE cterm=NONE
+    hi Comment ctermfg=250 ctermbg=NONE cterm=nocombine
+    hi Constant ctermfg=231 ctermbg=NONE cterm=italic,nocombine
+    hi Identifier ctermfg=255 ctermbg=NONE cterm=nocombine
+    hi Statement ctermfg=255 ctermbg=NONE cterm=bold,nocombine
+    hi Label ctermfg=182 ctermbg=NONE cterm=bold,nocombine
+    hi PreProc ctermfg=255 ctermbg=NONE cterm=bold,nocombine
+    hi Macro ctermfg=152 ctermbg=NONE cterm=italic,nocombine
+    hi Type ctermfg=255 ctermbg=NONE cterm=nocombine
+    hi Special ctermfg=152 ctermbg=NONE cterm=nocombine
+    hi Delimiter ctermfg=252 ctermbg=NONE cterm=nocombine
+    hi SpecialComment ctermfg=250 ctermbg=NONE cterm=bold,nocombine
+    hi Underlined ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
+    hi Ignore ctermfg=241 ctermbg=NONE cterm=nocombine
+    hi Error ctermfg=197 ctermbg=16 cterm=bold,nocombine,reverse
+    hi Todo ctermfg=49 ctermbg=16 cterm=bold,nocombine,reverse
+    hi Added ctermfg=77 ctermbg=NONE cterm=nocombine
+    hi Changed ctermfg=44 ctermbg=NONE cterm=nocombine
+    hi Removed ctermfg=210 ctermbg=NONE cterm=nocombine
     hi ColorColumn ctermfg=NONE ctermbg=235 cterm=NONE
     hi Conceal ctermfg=152 ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -510,8 +510,8 @@ if s:t_Co >= 256
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
     if !s:italics
-      hi Constant cterm=NONE
-      hi Macro cterm=NONE
+      hi Constant cterm=nocombine
+      hi Macro cterm=nocombine
       hi Italic cterm=NONE
       hi BoldItalic cterm=bold
     endif
@@ -519,24 +519,24 @@ if s:t_Co >= 256
     " Light background
     hi Normal ctermfg=233 ctermbg=255 cterm=NONE
     hi NormalFloat ctermfg=NONE ctermbg=251 cterm=NONE
-    hi Comment ctermfg=241 ctermbg=NONE cterm=NONE
-    hi Constant ctermfg=16 ctermbg=NONE cterm=italic
-    hi Identifier ctermfg=233 ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=233 ctermbg=NONE cterm=bold
-    hi Label ctermfg=53 ctermbg=NONE cterm=bold
-    hi PreProc ctermfg=233 ctermbg=NONE cterm=bold
-    hi Macro ctermfg=23 ctermbg=NONE cterm=italic
-    hi Type ctermfg=233 ctermbg=NONE cterm=NONE
-    hi Special ctermfg=23 ctermbg=NONE cterm=NONE
-    hi Delimiter ctermfg=237 ctermbg=NONE cterm=NONE
-    hi SpecialComment ctermfg=241 ctermbg=NONE cterm=bold
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi Ignore ctermfg=247 ctermbg=NONE cterm=NONE
-    hi Error ctermfg=197 ctermbg=16 cterm=bold,reverse
-    hi Todo ctermfg=49 ctermbg=16 cterm=bold,reverse
-    hi Added ctermfg=28 ctermbg=NONE cterm=NONE
-    hi Changed ctermfg=30 ctermbg=NONE cterm=NONE
-    hi Removed ctermfg=124 ctermbg=NONE cterm=NONE
+    hi Comment ctermfg=241 ctermbg=NONE cterm=nocombine
+    hi Constant ctermfg=16 ctermbg=NONE cterm=italic,nocombine
+    hi Identifier ctermfg=233 ctermbg=NONE cterm=nocombine
+    hi Statement ctermfg=233 ctermbg=NONE cterm=bold,nocombine
+    hi Label ctermfg=53 ctermbg=NONE cterm=bold,nocombine
+    hi PreProc ctermfg=233 ctermbg=NONE cterm=bold,nocombine
+    hi Macro ctermfg=23 ctermbg=NONE cterm=italic,nocombine
+    hi Type ctermfg=233 ctermbg=NONE cterm=nocombine
+    hi Special ctermfg=23 ctermbg=NONE cterm=nocombine
+    hi Delimiter ctermfg=237 ctermbg=NONE cterm=nocombine
+    hi SpecialComment ctermfg=241 ctermbg=NONE cterm=bold,nocombine
+    hi Underlined ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
+    hi Ignore ctermfg=247 ctermbg=NONE cterm=nocombine
+    hi Error ctermfg=197 ctermbg=16 cterm=bold,nocombine,reverse
+    hi Todo ctermfg=49 ctermbg=16 cterm=bold,nocombine,reverse
+    hi Added ctermfg=28 ctermbg=NONE cterm=nocombine
+    hi Changed ctermfg=30 ctermbg=NONE cterm=nocombine
+    hi Removed ctermfg=124 ctermbg=NONE cterm=nocombine
     hi ColorColumn ctermfg=NONE ctermbg=253 cterm=NONE
     hi Conceal ctermfg=23 ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
@@ -621,8 +621,8 @@ if s:t_Co >= 256
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
     if !s:italics
-      hi Constant cterm=NONE
-      hi Macro cterm=NONE
+      hi Constant cterm=nocombine
+      hi Macro cterm=nocombine
       hi Italic cterm=NONE
       hi BoldItalic cterm=bold
     endif

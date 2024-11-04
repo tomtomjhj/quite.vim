@@ -4,24 +4,24 @@ Normal               fg0               bg0
 NormalFloat          none              bg2
 
 ; :help group-name
-Comment              fg2               none
-Constant             fg_1              none              italic
-Identifier           fg0               none
-Statement            fg0               none              bold
-Label                labelpink         none              bold
-PreProc              fg0               none              bold
-Macro                specialcyan       none              italic
-Type                 fg0               none
-Special              specialcyan       none
-Delimiter            fg1               none
-SpecialComment       fg2               none              bold
-Underlined           none              none              underline
-Ignore               bg4               none
-Error                errorred          black             reverse,bold
-Todo                 uiteal            black             reverse,bold
-Added                quite2            none
-Changed              quite6            none
-Removed              quite1            none
+Comment              fg2               none              nocombine
+Constant             fg_1              none              nocombine,italic
+Identifier           fg0               none              nocombine
+Statement            fg0               none              nocombine,bold
+Label                labelpink         none              nocombine,bold
+PreProc              fg0               none              nocombine,bold
+Macro                specialcyan       none              nocombine,italic
+Type                 fg0               none              nocombine
+Special              specialcyan       none              nocombine
+Delimiter            fg1               none              nocombine
+SpecialComment       fg2               none              nocombine,bold
+Underlined           none              none              nocombine,underline
+Ignore               bg4               none              nocombine
+Error                errorred          black             nocombine,reverse,bold
+Todo                 uiteal            black             nocombine,reverse,bold
+Added                quite2            none              nocombine
+Changed              quite6            none              nocombine
+Removed              quite1            none              nocombine
 
 ; :help highlight-groups
 ColorColumn          none              bg1
