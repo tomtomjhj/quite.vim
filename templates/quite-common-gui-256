@@ -122,3 +122,4 @@ Sneak                white             uiblue            bold
 SneakLabel           white             uiblue            bold
 ; flash.nvim
 FlashLabel           black             uilime            bold
+FlashBackdrop        fg2               none

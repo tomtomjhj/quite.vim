@@ -264,6 +264,7 @@ if &background ==# 'dark'
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
+  hi FlashBackdrop guifg=#b7b7b7 guibg=NONE gui=NONE cterm=NONE
   if !s:italics
     hi Constant gui=nocombine cterm=nocombine
     hi Macro gui=nocombine cterm=nocombine
@@ -396,6 +397,7 @@ else
   hi Sneak guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
+  hi FlashBackdrop guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   if !s:italics
     hi Constant gui=nocombine cterm=nocombine
     hi Macro gui=nocombine cterm=nocombine
@@ -509,6 +511,7 @@ if s:t_Co >= 256
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
+    hi FlashBackdrop ctermfg=250 ctermbg=NONE cterm=NONE
     if !s:italics
       hi Constant cterm=nocombine
       hi Macro cterm=nocombine
@@ -620,6 +623,7 @@ if s:t_Co >= 256
     hi Sneak ctermfg=231 ctermbg=39 cterm=bold
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
+    hi FlashBackdrop ctermfg=241 ctermbg=NONE cterm=NONE
     if !s:italics
       hi Constant cterm=nocombine
       hi Macro cterm=nocombine
