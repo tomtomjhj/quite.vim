@@ -129,6 +129,8 @@ hi! link shSpecialSQ NONE
 hi! link texCmd Constant
 hi! link texCmdType Constant
 hi! link texMathDelim Delimiter
+hi! link texMathDelimZone PreProc
+hi! link texMathEnvArgName PreProc
 hi! link texMathZone Literal
 hi! link texNewcmdArgName Label
 hi! link texPartArgTitle Title

@@ -242,6 +242,8 @@ shSpecialSQ          -> NONE
 texCmd               -> Constant
 texCmdType           -> Constant
 texMathDelim         -> Delimiter
+texMathDelimZone     -> PreProc
+texMathEnvArgName    -> PreProc
 texMathZone          -> Literal
 texNewcmdArgName     -> Label
 texPartArgTitle      -> Title
