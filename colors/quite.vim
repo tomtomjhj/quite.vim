@@ -169,11 +169,11 @@ if &background ==# 'dark'
   hi Constant guifg=#ffffff guibg=NONE gui=italic,nocombine cterm=italic,nocombine
   hi Identifier guifg=#eeeeee guibg=NONE gui=nocombine cterm=nocombine
   hi Statement guifg=#eeeeee guibg=NONE gui=bold,nocombine cterm=bold,nocombine
-  hi Label guifg=#d7afd7 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi Label guifg=#d9b2d9 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
   hi PreProc guifg=#eeeeee guibg=NONE gui=bold,nocombine cterm=bold,nocombine
-  hi Macro guifg=#afd7d7 guibg=NONE gui=italic,nocombine cterm=italic,nocombine
+  hi Macro guifg=#aad7df guibg=NONE gui=italic,nocombine cterm=italic,nocombine
   hi Type guifg=#eeeeee guibg=NONE gui=nocombine cterm=nocombine
-  hi Special guifg=#afd7d7 guibg=NONE gui=nocombine cterm=nocombine
+  hi Special guifg=#aad7df guibg=NONE gui=nocombine cterm=nocombine
   hi Delimiter guifg=#d0d0d0 guibg=NONE gui=nocombine cterm=nocombine
   hi SpecialComment guifg=#b7b7b7 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
   hi Underlined guifg=NONE guibg=NONE gui=nocombine,underline ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
@@ -184,7 +184,7 @@ if &background ==# 'dark'
   hi Changed guifg=#04c5ce guibg=NONE gui=nocombine cterm=nocombine
   hi Removed guifg=#ff7d81 guibg=NONE gui=nocombine cterm=nocombine
   hi ColorColumn guifg=NONE guibg=#222222 gui=NONE cterm=NONE
-  hi Conceal guifg=#afd7d7 guibg=NONE gui=NONE cterm=NONE
+  hi Conceal guifg=#aad7df guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorIM guifg=#000000 guibg=#afff00 gui=NONE cterm=NONE
   hi CursorColumn guifg=NONE guibg=#444444 gui=NONE cterm=NONE
@@ -228,7 +228,7 @@ if &background ==# 'dark'
   hi TabLine guifg=NONE guibg=#626262 gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=#080808 gui=bold cterm=bold
-  hi Title guifg=#d7afd7 guibg=NONE gui=bold,underline cterm=bold,underline
+  hi Title guifg=#d9b2d9 guibg=NONE gui=bold,underline cterm=bold,underline
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -240,8 +240,8 @@ if &background ==# 'dark'
   hi Italic guifg=NONE guibg=NONE gui=italic ctermfg=NONE ctermbg=NONE cterm=italic
   hi BoldItalic guifg=NONE guibg=NONE gui=bold,italic ctermfg=NONE ctermbg=NONE cterm=bold,italic
   hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
-  hi Literal guifg=#d7d7af guibg=NONE gui=NONE cterm=NONE
-  hi PunctuationSpecial guifg=#afd7d7 guibg=NONE gui=bold cterm=bold
+  hi Literal guifg=#d4d4ac guibg=NONE gui=NONE cterm=NONE
+  hi PunctuationSpecial guifg=#aad7df guibg=NONE gui=bold cterm=bold
   hi LspReferenceText guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
@@ -302,11 +302,11 @@ else
   hi Constant guifg=#000000 guibg=NONE gui=italic,nocombine cterm=italic,nocombine
   hi Identifier guifg=#121212 guibg=NONE gui=nocombine cterm=nocombine
   hi Statement guifg=#121212 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
-  hi Label guifg=#602460 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
+  hi Label guifg=#613561 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
   hi PreProc guifg=#121212 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
-  hi Macro guifg=#234e5f guibg=NONE gui=italic,nocombine cterm=italic,nocombine
+  hi Macro guifg=#1c5060 guibg=NONE gui=italic,nocombine cterm=italic,nocombine
   hi Type guifg=#121212 guibg=NONE gui=nocombine cterm=nocombine
-  hi Special guifg=#234e5f guibg=NONE gui=nocombine cterm=nocombine
+  hi Special guifg=#1c5060 guibg=NONE gui=nocombine cterm=nocombine
   hi Delimiter guifg=#3a3a3a guibg=NONE gui=nocombine cterm=nocombine
   hi SpecialComment guifg=#626262 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
   hi Underlined guifg=NONE guibg=NONE gui=nocombine,underline ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
@@ -317,7 +317,7 @@ else
   hi Changed guifg=#017b80 guibg=NONE gui=nocombine cterm=nocombine
   hi Removed guifg=#a52836 guibg=NONE gui=nocombine cterm=nocombine
   hi ColorColumn guifg=NONE guibg=#dadada gui=NONE cterm=NONE
-  hi Conceal guifg=#234e5f guibg=NONE gui=NONE cterm=NONE
+  hi Conceal guifg=#1c5060 guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorIM guifg=#000000 guibg=#afff00 gui=NONE cterm=NONE
   hi CursorColumn guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
@@ -361,7 +361,7 @@ else
   hi TabLine guifg=NONE guibg=#9e9e9e gui=NONE cterm=NONE
   hi TabLineFill guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=#eeeeee gui=bold cterm=bold
-  hi Title guifg=#602460 guibg=NONE gui=bold,underline cterm=bold,underline
+  hi Title guifg=#613561 guibg=NONE gui=bold,underline cterm=bold,underline
   hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -373,8 +373,8 @@ else
   hi Italic guifg=NONE guibg=NONE gui=italic ctermfg=NONE ctermbg=NONE cterm=italic
   hi BoldItalic guifg=NONE guibg=NONE gui=bold,italic ctermfg=NONE ctermbg=NONE cterm=bold,italic
   hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
-  hi Literal guifg=#5c5c23 guibg=NONE gui=NONE cterm=NONE
-  hi PunctuationSpecial guifg=#234e5f guibg=NONE gui=bold cterm=bold
+  hi Literal guifg=#56561a guibg=NONE gui=NONE cterm=NONE
+  hi PunctuationSpecial guifg=#1c5060 guibg=NONE gui=bold cterm=bold
   hi LspReferenceText guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceWrite guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
@@ -981,9 +981,9 @@ endif
 " Color: uipurple      #af00ff           129
 " Color: uiamber       #ffaf00           214
 " Color: uicursearch   #aa22aa           127
-" Color: specialcyan   #afd7d7           152
-" Color: literalyellow #d7d7af           187
-" Color: labelpink     #d7afd7           182
+" Color: specialcyan   #aad7df           152 ; oklch(85% 0.048 210)
+" Color: literalyellow #d4d4ac           187 ; oklch(86% 0.0531 107.46)
+" Color: labelpink     #d9b2d9           182 ; oklch(81% 0.068 326.21)
 " Color: errorred      #ff005f           197
 " Term colors: bg0
 " Term colors: quite1 quite2 quite3 quite4 quite5 quite6
@@ -1025,9 +1025,9 @@ endif
 " Color: uipurple      #af00ff           129
 " Color: uiamber       #ffaf00           214
 " Color: uicursearch   #ff5fff           207
-" Color: specialcyan   #234e5f           23
-" Color: literalyellow #5c5c23           58
-" Color: labelpink     #602460           53
+" Color: specialcyan   #1c5060           23 ; oklch(40.3% 0.06 222) ; closest 256 colors is 24, but too bright
+" Color: literalyellow #56561a           58 ; oklch(44% 0.08 109)
+" Color: labelpink     #613561           53 ; oklch(40% 0.09 327)
 " Color: errorred      #ff005f           197
 " Term colors: bg0
 " Term colors: quite1 quite2 quite3 quite4 quite5 quite6

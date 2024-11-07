@@ -306,9 +306,9 @@ Color: uipurple      #af00ff           129
 Color: uiamber       #ffaf00           214
 Color: uicursearch   #aa22aa           127
 
-Color: specialcyan   #afd7d7           152
-Color: literalyellow #d7d7af           187
-Color: labelpink     #d7afd7           182
+Color: specialcyan   #aad7df           152 ; oklch(85% 0.048 210)
+Color: literalyellow #d4d4ac           187 ; oklch(86% 0.0531 107.46)
+Color: labelpink     #d9b2d9           182 ; oklch(81% 0.068 326.21)
 
 Color: errorred      #ff005f           197
 ; }}}
@@ -359,9 +359,9 @@ Color: uipurple      #af00ff           129
 Color: uiamber       #ffaf00           214
 Color: uicursearch   #ff5fff           207
 
-Color: specialcyan   #234e5f           23
-Color: literalyellow #5c5c23           58
-Color: labelpink     #602460           53
+Color: specialcyan   #1c5060           23 ; oklch(40.3% 0.06 222) ; closest 256 colors is 24, but too bright
+Color: literalyellow #56561a           58 ; oklch(44% 0.08 109)
+Color: labelpink     #613561           53 ; oklch(40% 0.09 327)
 
 Color: errorred      #ff005f           197
 ; }}}
