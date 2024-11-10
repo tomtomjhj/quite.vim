@@ -957,18 +957,18 @@ endif
 " Color: bg2           #333333           236
 " Color: bg3           #444444           238
 " Color: bg4           #626262           241
-" Color: quite1        #ff7d81           210
-" Color: quite2        #73c660           77
-" Color: quite3        #e1a103           214
-" Color: quite4        #6da4ff           111
-" Color: quite5        #da8aec           177
-" Color: quite6        #04c5ce           44
-" Color: quite9        #ffafae           217
-" Color: quite10       #8fe47d           113
-" Color: quite11       #ffbe3e           214
-" Color: quite12       #9dc2ff           111
-" Color: quite13       #f0aeff           219
-" Color: quite14       #06e6ef           44
+" Color: quite1        #ff7d81           210 ; oklch(74% 0.1586 20)
+" Color: quite2        #73c660           77  ; oklch(75% 0.16   140)
+" Color: quite3        #e1a103           214 ; oklch(75% 0.1548 80)
+" Color: quite4        #6da4ff           111 ; oklch(72% 0.1456 260)
+" Color: quite5        #da8aec           177 ; oklch(75% 0.16   320)
+" Color: quite6        #04c5ce           44  ; oklch(75% 0.1271 200)
+" Color: quite9        #ffafae           217 ; oklch(83% 0.0939 20)
+" Color: quite10       #8fe47d           113 ; oklch(84% 0.16   140)
+" Color: quite11       #ffbe3e           214 ; oklch(84% 0.1548 80)
+" Color: quite12       #9dc2ff           111 ; oklch(81% 0.095  260)
+" Color: quite13       #f0aeff           219 ; oklch(84% 0.1293 320)
+" Color: quite14       #06e6ef           44  ; oklch(84% 0.1423 200)
 " Color: bggreen       #284028           22
 " Color: bgblue        #404868           60
 " Color: bgpink        #704470           96
@@ -1001,18 +1001,18 @@ endif
 " Color: bg2           #c6c6c6           251
 " Color: bg3           #b2b2b2           249
 " Color: bg4           #9e9e9e           247
-" Color: quite1        #a52836           124
-" Color: quite2        #207400           28
-" Color: quite3        #8d6300           94
-" Color: quite4        #1f58b6           26
-" Color: quite5        #833794           90
-" Color: quite6        #017b80           30
-" Color: quite9        #d5565d           167
-" Color: quite10       #4d9f3a           71
-" Color: quite11       #c18a04           136
-" Color: quite12       #4983e5           68
-" Color: quite13       #af62c1           133
-" Color: quite14       #07aab1           37
+" Color: quite1        #a52836           124 ; oklch(48% 0.16   20)
+" Color: quite2        #207400           28  ; oklch(49% 0.1575 140)
+" Color: quite3        #8d6300           94  ; oklch(53% 0.1097 80)
+" Color: quite4        #1f58b6           26  ; oklch(48% 0.16   260)
+" Color: quite5        #833794           90  ; oklch(48% 0.16   320)
+" Color: quite6        #017b80           30  ; oklch(53% 0.09   200)
+" Color: quite9        #d5565d           167 ; oklch(62% 0.16  20)
+" Color: quite10       #4d9f3a           71  ; oklch(63% 0.16  140)
+" Color: quite11       #c18a04           136 ; oklch(67% 0.138 80)
+" Color: quite12       #4983e5           68  ; oklch(62% 0.16  260)
+" Color: quite13       #af62c1           133 ; oklch(62% 0.16  320)
+" Color: quite14       #07aab1           37  ; oklch(67% 0.113 200)
 " Color: bggreen       #b7d2b7           151
 " Color: bgblue        #a0afd7           146
 " Color: bgpink        #d7a0d7           176

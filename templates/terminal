@@ -5,8 +5,7 @@
 ; some terminal apps to work transparently in light background without changing
 ; their colorschemes when terminal colorscheme is changed. The problem is that
 ; they use 0,7,8,15 for bg/fg color and sometimes even mix them with terminal
-; bg/fg color, assuming that they match the terminal bg/fg colors. Examples:
-; bat's fg can't inherit terminal fg for fg, while bg does.
+; bg/fg color, assuming that they match the terminal bg/fg colors.
 
 Term colors: bg0
 Term colors: quite1 quite2 quite3 quite4 quite5 quite6
