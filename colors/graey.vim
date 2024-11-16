@@ -184,9 +184,9 @@ if &background ==# 'dark'
   hi CursorLine guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi CursorLineNr guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi DiffAdd guifg=NONE guibg=#284028 gui=NONE cterm=NONE
-  hi DiffChange guifg=NONE guibg=#304848 gui=NONE cterm=NONE
+  hi DiffChange guifg=NONE guibg=#284343 gui=NONE cterm=NONE
   hi DiffDelete guifg=#ff7d81 guibg=NONE gui=NONE cterm=NONE
-  hi DiffText guifg=NONE guibg=#606030 gui=NONE cterm=NONE
+  hi DiffText guifg=NONE guibg=#585828 gui=NONE cterm=NONE
   hi Directory guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
@@ -201,14 +201,14 @@ if &background ==# 'dark'
   hi PmenuExtra guifg=NONE guibg=#404868 gui=NONE cterm=NONE
   hi PmenuKind guifg=NONE guibg=#404868 gui=bold cterm=bold
   hi PmenuSbar guifg=NONE guibg=#626262 gui=NONE cterm=NONE
-  hi PmenuSel guifg=NONE guibg=#704470 gui=NONE cterm=NONE
-  hi PmenuExtraSel guifg=NONE guibg=#704470 gui=NONE cterm=NONE
-  hi PmenuKindSel guifg=NONE guibg=#704470 gui=bold cterm=bold
-  hi PmenuThumb guifg=#606030 guibg=#704470 gui=NONE cterm=NONE
+  hi PmenuSel guifg=NONE guibg=#6a426a gui=NONE cterm=NONE
+  hi PmenuExtraSel guifg=NONE guibg=#6a426a gui=NONE cterm=NONE
+  hi PmenuKindSel guifg=NONE guibg=#6a426a gui=bold cterm=bold
+  hi PmenuThumb guifg=#585828 guibg=#6a426a gui=NONE cterm=NONE
   hi PmenuMatch guifg=NONE guibg=#404868 gui=bold cterm=bold
-  hi PmenuMatchSel guifg=NONE guibg=#704470 gui=bold cterm=bold
+  hi PmenuMatchSel guifg=NONE guibg=#6a426a gui=bold cterm=bold
   hi Question guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi QuickFixLine guifg=NONE guibg=#704470 gui=NONE cterm=NONE
+  hi QuickFixLine guifg=NONE guibg=#6a426a gui=NONE cterm=NONE
   hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
   hi CurSearch guifg=#aa22aa guibg=#ffffff gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -1003,11 +1003,11 @@ endif
 " Color: quite12       #9dc2ff           111 ; oklch(81% 0.095  260)
 " Color: quite13       #f0aeff           219 ; oklch(84% 0.1293 320)
 " Color: quite14       #06e6ef           44  ; oklch(84% 0.1423 200)
-" Color: bggreen       #284028           22
-" Color: bgblue        #404868           60
-" Color: bgpink        #704470           96
-" Color: bgyellow      #606030           58
-" Color: bgcyan        #304848           23
+" Color: bggreen       #284028           22  ; oklch(34.42% 0.0509 144.37)
+" Color: bgblue        #404868           60  ; oklch(40.86% 0.0549 272.99)
+" Color: bgpink        #6a426a           96  ; oklch(44% 0.08 326.9)
+" Color: bgyellow      #585828           58  ; oklch(47.74% 0.0685 108.74)
+" Color: bgcyan        #284343           23  ; oklch(36% 0.033 195.98)
 " Color: uipink        #ff00af           199
 " Color: uilime        #afff00           154
 " Color: uiteal        #00ffaf           49
@@ -1045,11 +1045,11 @@ endif
 " Color: quite12       #4983e5           68  ; oklch(62% 0.16  260)
 " Color: quite13       #af62c1           133 ; oklch(62% 0.16  320)
 " Color: quite14       #07aab1           37  ; oklch(67% 0.113 200)
-" Color: bggreen       #b7d2b7           151
-" Color: bgblue        #a0afd7           146
-" Color: bgpink        #d7a0d7           176
-" Color: bgyellow      #ddd099           186
-" Color: bgcyan        #afd7d7           152
+" Color: bggreen       #b7d2b7           151 ; oklch(83.63% 0.0471 145.14)
+" Color: bgblue        #a0afd7           146 ; oklch(75.62% 0.0601 268.85)
+" Color: bgpink        #d7a0d7           176 ; oklch(77.5% 0.0976 326.47)
+" Color: bgyellow      #ddd099           186 ; oklch(85.5% 0.0731 96.41)
+" Color: bgcyan        #afd7d7           152 ; oklch(85.06% 0.042 196.39)
 " Color: uipink        #ff00af           199
 " Color: uilime        #afff00           154
 " Color: uiteal        #00ffaf           49
