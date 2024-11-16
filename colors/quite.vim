@@ -682,19 +682,21 @@ if s:t_Co >= 16
   hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NonText ctermfg=8 ctermbg=NONE cterm=nocombine
-  hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-  hi PmenuSbar ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi PmenuSel ctermfg=8 ctermbg=NONE cterm=bold,reverse,underline
-  hi PmenuExtraSel ctermfg=8 ctermbg=NONE cterm=bold,reverse
-  hi PmenuKindSel ctermfg=8 ctermbg=NONE cterm=bold,reverse
+  hi Pmenu ctermfg=NONE ctermbg=8 cterm=NONE
+  hi PmenuExtra ctermfg=NONE ctermbg=8 cterm=NONE
+  hi PmenuKind ctermfg=NONE ctermbg=8 cterm=bold
+  hi PmenuMatch ctermfg=NONE ctermbg=8 cterm=bold
+  hi PmenuSbar ctermfg=NONE ctermbg=8 cterm=NONE
+  hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  hi PmenuExtraSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  hi PmenuKindSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  hi PmenuMatchSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
   hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Question ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine ctermfg=darkmagenta ctermbg=NONE cterm=reverse
   hi Search ctermfg=darkcyan ctermbg=NONE cterm=bold,reverse
   hi CurSearch ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse,underline
-  hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
   if !s:italics
     hi SpecialComment cterm=NONE
   endif
@@ -711,9 +713,9 @@ if s:t_Co >= 16
   endif
   hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi StatusLineNC ctermfg=8 ctermbg=NONE cterm=bold,reverse
-  hi TabLine ctermfg=NONE ctermbg=8 cterm=bold
+  hi TabLine ctermfg=NONE ctermbg=8 cterm=nocombine
   hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
-  hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+  hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
   hi Title ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Visual ctermfg=darkyellow ctermbg=NONE cterm=reverse
@@ -805,16 +807,18 @@ if s:t_Co >= 8
   hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi PmenuMatch ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi PmenuSbar ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold,underline
-  hi PmenuExtraSel ctermfg=NONE ctermbg=NONE cterm=bold
-  hi PmenuKindSel ctermfg=NONE ctermbg=NONE cterm=bold
+  hi PmenuSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  hi PmenuExtraSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  hi PmenuKindSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  hi PmenuMatchSel ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
   hi PmenuThumb ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Question ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine ctermfg=darkmagenta ctermbg=NONE cterm=reverse
   hi Search ctermfg=darkcyan ctermbg=NONE cterm=bold,reverse
   hi CurSearch ctermfg=darkmagenta ctermbg=NONE cterm=bold,reverse,underline
-  hi SignColumn ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
   if !s:italics
     hi Comment cterm=bold
     hi SpecialComment cterm=NONE
@@ -832,9 +836,9 @@ if s:t_Co >= 8
   endif
   hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi StatusLineNC ctermfg=NONE ctermbg=NONE cterm=bold,underline
-  hi TabLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi TabLine ctermfg=NONE ctermbg=NONE cterm=nocombine,reverse
   hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
-  hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+  hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
   hi Title ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Visual ctermfg=darkyellow ctermbg=NONE cterm=reverse
@@ -1036,11 +1040,11 @@ endif
 " Term colors: quite9 quite10 quite11 quite12 quite13 quite14
 " Term colors: fg0
 " Background: any
-" Color: term1         #d7005f           161               darkred
-" Color: term2         #22bf00           34                darkgreen
-" Color: term3         #d79600           172               darkyellow
-" Color: term4         #0080dd           32                darkblue
-" Color: term5         #d777d7           176               darkmagenta
-" Color: term6         #00cccc           44                darkcyan
+" Color: term1         #ff7d81           210               darkred
+" Color: term2         #73c660           77                darkgreen
+" Color: term3         #e1a103           214               darkyellow
+" Color: term4         #6da4ff           111               darkblue
+" Color: term5         #da8aec           177               darkmagenta
+" Color: term6         #04c5ce           44                darkcyan
 " Color: term8         #808080           8                 8  ; darkgrey
 " vim: et ts=8 sw=2 sts=2

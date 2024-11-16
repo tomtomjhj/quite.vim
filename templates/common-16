@@ -1,12 +1,12 @@
 ; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
 
 ; GUI and 256 color values are synced with the dark variant
-Color: term1         #d7005f           161               darkred
-Color: term2         #22bf00           34                darkgreen
-Color: term3         #d79600           172               darkyellow
-Color: term4         #0080dd           32                darkblue
-Color: term5         #d777d7           176               darkmagenta
-Color: term6         #00cccc           44                darkcyan
+Color: term1         #ff7d81           210               darkred
+Color: term2         #73c660           77                darkgreen
+Color: term3         #e1a103           214               darkyellow
+Color: term4         #6da4ff           111               darkblue
+Color: term5         #da8aec           177               darkmagenta
+Color: term6         #04c5ce           44                darkcyan
 Color: term8         #808080           8                 8  ; darkgrey
 
 ; Override global definitions {{{
@@ -80,25 +80,46 @@ NonText              term8             none              nocombine
 Variant: 8
 NonText              term3             none              nocombine
 Variant: 8 16
+Variant: 16
+; ; This doesn't work well with cmp, which implements PmenuSel with winhighlight for CursorLine.
+; ; - combining reverse with reverse doens't un-reverse
+; ; - nocombine doesn't prevent combining of cursorline, because cursorline is the base highlight, and the original line highlight is combined on top of it.
+; ; - can't directly pass "bg", "fg" when Normal is empty.
+; Pmenu                term8             none              reverse
+; PmenuExtra           term8             none              reverse
+; PmenuKind            term8             none              reverse,bold
+; PmenuMatch           term8             none              reverse,bold
+; PmenuSbar            term8             none              reverse
+; PmenuSel             none              none              reverse,bold,underline
+; PmenuExtraSel        none              none              reverse,bold,underline
+; PmenuKindSel         none              none              reverse,bold,underline
+; PmenuMatchSel        none              none              reverse,bold,underline
+Pmenu                none              term8
+PmenuExtra           none              term8
+PmenuKind            none              term8             bold
+PmenuMatch           none              term8             bold
+PmenuSbar            none              term8
+PmenuSel             none              none              reverse,bold,underline
+PmenuExtraSel        none              none              reverse,bold,underline
+PmenuKindSel         none              none              reverse,bold underline
+PmenuMatchSel        none              none              reverse,bold underline
+Variant: 8
 Pmenu                none              none              reverse
 PmenuExtra           none              none              reverse
 PmenuKind            none              none              reverse,bold
+PmenuMatch           none              none              reverse,bold
 PmenuSbar            none              none              reverse
-Variant: 16
-PmenuSel             term8             none              reverse,bold,underline
-PmenuExtraSel        term8             none              reverse,bold
-PmenuKindSel         term8             none              reverse,bold
-Variant: 8
-PmenuSel             none              none              bold,underline
-PmenuExtraSel        none              none              bold
-PmenuKindSel         none              none              bold
+PmenuSel             none              none              reverse,bold,underline
+PmenuExtraSel        none              none              reverse,bold,underline
+PmenuKindSel         none              none              reverse,bold,underline
+PmenuMatchSel        none              none              reverse,bold,underline
 Variant: 8 16
 PmenuThumb           none              none
 Question             none              none              bold
 QuickFixLine         term5             none              reverse
 Search               term6             none              reverse,bold
 CurSearch            term5             none              reverse,bold,underline
-SignColumn           none              none              reverse
+SignColumn           none              none
 ; In nvim, guisp works with notermguicolors
 #if has('nvim')
 SpellBad             none              none              undercurl s=term1
@@ -117,12 +138,12 @@ StatusLineNC         term8             none              bold,reverse
 Variant: 8
 StatusLineNC         none              none              bold,underline
 Variant: 16
-TabLine              none              term8             bold
+TabLine              none              term8             nocombine
 Variant: 8
-TabLine              none              none              bold,reverse
+TabLine              none              none              reverse,nocombine
 Variant: 8 16
 TabLineFill          none              none              underline
-TabLineSel           none              none              bold
+TabLineSel           none              none              bold,nocombine
 Title                none              none              bold,underline
 VertSplit            none              none
 Visual               term3             none              reverse
