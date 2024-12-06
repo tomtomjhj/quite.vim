@@ -17,6 +17,7 @@ Delimiter            fg1               none              nocombine
 SpecialComment       fg2               none              nocombine,bold
 Underlined           none              none              underline
 Ignore               bg4               none              nocombine
+; Use reverse to preserve the noisy bg of Error/Todo even when combined with diff highlights
 Error                errorred          black             nocombine,reverse,bold
 Todo                 uiteal            black             nocombine,reverse,bold
 Added                quite2            none              nocombine
@@ -39,11 +40,23 @@ Directory            none              none              bold
 ErrorMsg             none              none              reverse,bold
 FoldColumn           bg4               none
 Folded               fg1               bg1
-IncSearch            uiamber           black             reverse,bold,underline
+IncSearch            black             uiamber           nocombine,bold,underline
 LineNr               fg2               none
 MatchParen           uipink            none              bold
 ModeMsg              none              none              bold
 MoreMsg              none              none
+; Combining behavior of listchar highlight in nvim
+; (only in nvim, https://github.com/neovim/neovim/issues/23869)
+; * It should not be combined with :syn highlights.
+;   This can be enforced by using nocombine in NonText.
+; * The desired behavior for combining with Visual/Search is
+;   fg = bg4 and bg = Visual/Search color.
+;   For this to work, Visual/Search should not use reverse.
+;   But not using reverse in Visual/Search result in
+;   weird combining with base groups that use reverse (e.g., Todo).
+;   To fix this, use nocombine in Visual/Search.
+;   Ideally, I want to preserve other attrs, but that's not possible.
+;   Maybe add attrs like "noreverse" in nvim?
 NonText              bg4               none              nocombine
 Pmenu                none              bgblue
 PmenuExtra           none              bgblue
@@ -57,9 +70,9 @@ PmenuMatch           none              bgblue            bold
 PmenuMatchSel        none              bgpink            bold
 Question             none              none              bold
 QuickFixLine         none              bgpink
-Search               uiblue            black             reverse,bold
+Search               black             uiblue            nocombine,bold
 ; CurSearch fg should be opposite of normal bg to avoid confusing interaction with cursor
-CurSearch            uicursearch       fg_1              reverse,bold,underline
+CurSearch            fg_1              uicursearch       nocombine,bold,underline
 SignColumn           none              none
 ; vim uses SpecialKey for listchar
 #if has('nvim')
@@ -77,7 +90,7 @@ TabLine              none              bg4
 TabLineFill          none              bg3
 TabLineSel           none              bg0               bold
 Title                fg_1              none              bold,underline
-Visual               uiamber           black             reverse
+Visual               black             uiamber           nocombine
 VisualNOS            none              bg3
 WarningMsg           none              none
 WildMenu             uiblue            none              bold
