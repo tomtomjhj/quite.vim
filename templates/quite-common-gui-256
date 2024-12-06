@@ -15,7 +15,7 @@ Type                 fg0               none              nocombine
 Special              specialcyan       none              nocombine
 Delimiter            fg1               none              nocombine
 SpecialComment       fg2               none              nocombine,bold
-Underlined           none              none              nocombine,underline
+Underlined           none              none              underline
 Ignore               bg4               none              nocombine
 Error                errorred          black             nocombine,reverse,bold
 Todo                 uiteal            black             nocombine,reverse,bold

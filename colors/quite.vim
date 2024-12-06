@@ -176,7 +176,7 @@ if &background ==# 'dark'
   hi Special guifg=#aad7df guibg=NONE gui=nocombine cterm=nocombine
   hi Delimiter guifg=#d0d0d0 guibg=NONE gui=nocombine cterm=nocombine
   hi SpecialComment guifg=#b7b7b7 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
-  hi Underlined guifg=NONE guibg=NONE gui=nocombine,underline ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
+  hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
   hi Error guifg=#ff005f guibg=#000000 gui=bold,nocombine,reverse cterm=bold,nocombine,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,nocombine,reverse cterm=bold,nocombine,reverse
@@ -309,7 +309,7 @@ else
   hi Special guifg=#1c5060 guibg=NONE gui=nocombine cterm=nocombine
   hi Delimiter guifg=#3a3a3a guibg=NONE gui=nocombine cterm=nocombine
   hi SpecialComment guifg=#626262 guibg=NONE gui=bold,nocombine cterm=bold,nocombine
-  hi Underlined guifg=NONE guibg=NONE gui=nocombine,underline ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
+  hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore guifg=#9e9e9e guibg=NONE gui=nocombine cterm=nocombine
   hi Error guifg=#ff005f guibg=#000000 gui=bold,nocombine,reverse cterm=bold,nocombine,reverse
   hi Todo guifg=#00ffaf guibg=#000000 gui=bold,nocombine,reverse cterm=bold,nocombine,reverse
@@ -423,7 +423,7 @@ if s:t_Co >= 256
     hi Special ctermfg=152 ctermbg=NONE cterm=nocombine
     hi Delimiter ctermfg=252 ctermbg=NONE cterm=nocombine
     hi SpecialComment ctermfg=250 ctermbg=NONE cterm=bold,nocombine
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
+    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=241 ctermbg=NONE cterm=nocombine
     hi Error ctermfg=197 ctermbg=16 cterm=bold,nocombine,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,nocombine,reverse
@@ -535,7 +535,7 @@ if s:t_Co >= 256
     hi Special ctermfg=23 ctermbg=NONE cterm=nocombine
     hi Delimiter ctermfg=237 ctermbg=NONE cterm=nocombine
     hi SpecialComment ctermfg=241 ctermbg=NONE cterm=bold,nocombine
-    hi Underlined ctermfg=NONE ctermbg=NONE cterm=nocombine,underline
+    hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=247 ctermbg=NONE cterm=nocombine
     hi Error ctermfg=197 ctermbg=16 cterm=bold,nocombine,reverse
     hi Todo ctermfg=49 ctermbg=16 cterm=bold,nocombine,reverse
