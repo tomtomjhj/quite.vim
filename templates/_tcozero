@@ -25,7 +25,7 @@ LineNr         omit   omit
 MatchParen     omit   omit    bold,underline
 ModeMsg        omit   omit    bold
 MoreMsg        omit   omit
-NonText        omit   omit    nocombine
+NonText        omit   omit
 Pmenu          omit   omit    reverse
 PmenuSbar      omit   omit    reverse
 PmenuSel       omit   omit    bold

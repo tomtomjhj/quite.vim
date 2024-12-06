@@ -40,24 +40,23 @@ Directory            none              none              bold
 ErrorMsg             none              none              reverse,bold
 FoldColumn           bg4               none
 Folded               fg1               bg1
-IncSearch            black             uiamber           nocombine,bold,underline
+IncSearch            uiamber           black             reverse,bold,underline
 LineNr               fg2               none
 MatchParen           uipink            none              bold
 ModeMsg              none              none              bold
 MoreMsg              none              none
-; Combining behavior of listchar highlight in nvim
-; (only in nvim, https://github.com/neovim/neovim/issues/23869)
-; * It should not be combined with :syn highlights.
-;   This can be enforced by using nocombine in NonText.
-; * The desired behavior for combining with Visual/Search is
-;   fg = bg4 and bg = Visual/Search color.
-;   For this to work, Visual/Search should not use reverse.
-;   But not using reverse in Visual/Search result in
-;   weird combining with base groups that use reverse (e.g., Todo).
-;   To fix this, use nocombine in Visual/Search.
-;   Ideally, I want to preserve other attrs, but that's not possible.
-;   Maybe add attrs like "noreverse" in nvim?
-NonText              bg4               none              nocombine
+; In nvim, listchar highlight is combined on top of others
+; (https://github.com/neovim/neovim/issues/23869).
+; It creates several issues.
+; * For :syn, combining can be undesirable if :syn group and listchar have same
+;   colors and are distinguished only by attrs.
+; * For Visual/Search that uses reverse, the combined result loses the desired bg color.
+;   * It's desirable to use reverse for Visual/Search that has noisy background
+;     color, because otherwise, it should use nocombine so that it is not
+;     affected by the base highlight's reverse attr (e.g., Todo). So it can't
+;     preserve other attrs.
+; These issues can only be fixed by allowing customization of combining behavior.
+NonText              bg4               none
 Pmenu                none              bgblue
 PmenuExtra           none              bgblue
 PmenuKind            none              bgblue            bold
@@ -70,15 +69,15 @@ PmenuMatch           none              bgblue            bold
 PmenuMatchSel        none              bgpink            bold
 Question             none              none              bold
 QuickFixLine         none              bgpink
-Search               black             uiblue            nocombine,bold
+Search               uiblue            black             reverse,bold
 ; CurSearch fg should be opposite of normal bg to avoid confusing interaction with cursor
-CurSearch            fg_1              uicursearch       nocombine,bold,underline
+CurSearch            uicursearch       fg_1              reverse,bold,underline
 SignColumn           none              none
 ; vim uses SpecialKey for listchar
 #if has('nvim')
 SpecialKey           uipink            none
 #else
-SpecialKey           bg4               none              nocombine
+SpecialKey           bg4               none
 #endif
 SpellBad             none              none              undercurl s=quite1
 SpellCap             none              none              undercurl s=quite4
@@ -90,7 +89,7 @@ TabLine              none              bg4
 TabLineFill          none              bg3
 TabLineSel           none              bg0               bold
 Title                fg_1              none              bold,underline
-Visual               black             uiamber           nocombine
+Visual               uiamber           black             reverse
 VisualNOS            none              bg3
 WarningMsg           none              none
 WildMenu             uiblue            none              bold

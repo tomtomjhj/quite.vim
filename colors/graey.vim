@@ -191,12 +191,12 @@ if &background ==# 'dark'
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#d0d0d0 guibg=#222222 gui=NONE cterm=NONE
-  hi IncSearch guifg=#000000 guibg=#ffaf00 gui=bold,nocombine,underline cterm=bold,nocombine,underline
+  hi IncSearch guifg=#ffaf00 guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi LineNr guifg=#b7b7b7 guibg=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
+  hi NonText guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi Pmenu guifg=NONE guibg=#404868 gui=NONE cterm=NONE
   hi PmenuExtra guifg=NONE guibg=#404868 gui=NONE cterm=NONE
   hi PmenuKind guifg=NONE guibg=#404868 gui=bold cterm=bold
@@ -209,8 +209,8 @@ if &background ==# 'dark'
   hi PmenuMatchSel guifg=NONE guibg=#6a426a gui=bold cterm=bold
   hi Question guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine guifg=NONE guibg=#6a426a gui=NONE cterm=NONE
-  hi Search guifg=#000000 guibg=#00afff gui=bold,nocombine cterm=bold,nocombine
-  hi CurSearch guifg=#ffffff guibg=#aa22aa gui=bold,nocombine,underline cterm=bold,nocombine,underline
+  hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
+  hi CurSearch guifg=#aa22aa guibg=#ffffff gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   if !s:italics
     hi Constant gui=nocombine cterm=nocombine
@@ -220,7 +220,7 @@ if &background ==# 'dark'
   if has('nvim')
     hi SpecialKey guifg=#ff00af guibg=NONE gui=NONE cterm=NONE
   else
-    hi SpecialKey guifg=#626262 guibg=NONE gui=nocombine cterm=nocombine
+    hi SpecialKey guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   endif
   hi SpellBad guifg=NONE guibg=NONE guisp=#ff7d81 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE guisp=#6da4ff gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -232,7 +232,7 @@ if &background ==# 'dark'
   hi TabLineFill guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=#080808 gui=bold cterm=bold
   hi Title guifg=#ffffff guibg=NONE gui=bold,underline cterm=bold,underline
-  hi Visual guifg=#000000 guibg=#ffaf00 gui=nocombine cterm=nocombine
+  hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#444444 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
@@ -333,12 +333,12 @@ else
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
   hi Folded guifg=#3a3a3a guibg=#dadada gui=NONE cterm=NONE
-  hi IncSearch guifg=#000000 guibg=#ffaf00 gui=bold,nocombine,underline cterm=bold,nocombine,underline
+  hi IncSearch guifg=#ffaf00 guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi LineNr guifg=#626262 guibg=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=#ff00af guibg=NONE gui=bold cterm=bold
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText guifg=#9e9e9e guibg=NONE gui=nocombine cterm=nocombine
+  hi NonText guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
   hi Pmenu guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
   hi PmenuExtra guifg=NONE guibg=#a0afd7 gui=NONE cterm=NONE
   hi PmenuKind guifg=NONE guibg=#a0afd7 gui=bold cterm=bold
@@ -351,8 +351,8 @@ else
   hi PmenuMatchSel guifg=NONE guibg=#d7a0d7 gui=bold cterm=bold
   hi Question guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine guifg=NONE guibg=#d7a0d7 gui=NONE cterm=NONE
-  hi Search guifg=#000000 guibg=#00afff gui=bold,nocombine cterm=bold,nocombine
-  hi CurSearch guifg=#000000 guibg=#ff5fff gui=bold,nocombine,underline cterm=bold,nocombine,underline
+  hi Search guifg=#00afff guibg=#000000 gui=bold,reverse cterm=bold,reverse
+  hi CurSearch guifg=#ff5fff guibg=#000000 gui=bold,reverse,underline cterm=bold,reverse,underline
   hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   if !s:italics
     hi Constant gui=nocombine cterm=nocombine
@@ -362,7 +362,7 @@ else
   if has('nvim')
     hi SpecialKey guifg=#ff00af guibg=NONE gui=NONE cterm=NONE
   else
-    hi SpecialKey guifg=#9e9e9e guibg=NONE gui=nocombine cterm=nocombine
+    hi SpecialKey guifg=#9e9e9e guibg=NONE gui=NONE cterm=NONE
   endif
   hi SpellBad guifg=NONE guibg=NONE guisp=#a52836 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi SpellCap guifg=NONE guibg=NONE guisp=#1f58b6 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -374,7 +374,7 @@ else
   hi TabLineFill guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi TabLineSel guifg=NONE guibg=#eeeeee gui=bold cterm=bold
   hi Title guifg=#000000 guibg=NONE gui=bold,underline cterm=bold,underline
-  hi Visual guifg=#000000 guibg=#ffaf00 gui=nocombine cterm=nocombine
+  hi Visual guifg=#ffaf00 guibg=#000000 gui=reverse cterm=reverse
   hi VisualNOS guifg=NONE guibg=#b2b2b2 gui=NONE cterm=NONE
   hi WarningMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi WildMenu guifg=#00afff guibg=NONE gui=bold cterm=bold
@@ -456,12 +456,12 @@ if s:t_Co >= 256
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=241 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=252 ctermbg=235 cterm=NONE
-    hi IncSearch ctermfg=16 ctermbg=214 cterm=bold,nocombine,underline
+    hi IncSearch ctermfg=214 ctermbg=16 cterm=bold,reverse,underline
     hi LineNr ctermfg=250 ctermbg=NONE cterm=NONE
     hi MatchParen ctermfg=199 ctermbg=NONE cterm=bold
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=241 ctermbg=NONE cterm=nocombine
+    hi NonText ctermfg=241 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=60 cterm=NONE
     hi PmenuExtra ctermfg=NONE ctermbg=60 cterm=NONE
     hi PmenuKind ctermfg=NONE ctermbg=60 cterm=bold
@@ -474,8 +474,8 @@ if s:t_Co >= 256
     hi PmenuMatchSel ctermfg=NONE ctermbg=96 cterm=bold
     hi Question ctermfg=NONE ctermbg=NONE cterm=bold
     hi QuickFixLine ctermfg=NONE ctermbg=96 cterm=NONE
-    hi Search ctermfg=16 ctermbg=39 cterm=bold,nocombine
-    hi CurSearch ctermfg=231 ctermbg=127 cterm=bold,nocombine,underline
+    hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
+    hi CurSearch ctermfg=127 ctermbg=231 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     if !s:italics
       hi Constant cterm=nocombine
@@ -485,7 +485,7 @@ if s:t_Co >= 256
     if has('nvim')
       hi SpecialKey ctermfg=199 ctermbg=NONE cterm=NONE
     else
-      hi SpecialKey ctermfg=241 ctermbg=NONE cterm=nocombine
+      hi SpecialKey ctermfg=241 ctermbg=NONE cterm=NONE
     endif
     hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -497,7 +497,7 @@ if s:t_Co >= 256
     hi TabLineFill ctermfg=NONE ctermbg=238 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=232 cterm=bold
     hi Title ctermfg=231 ctermbg=NONE cterm=bold,underline
-    hi Visual ctermfg=16 ctermbg=214 cterm=nocombine
+    hi Visual ctermfg=214 ctermbg=16 cterm=reverse
     hi VisualNOS ctermfg=NONE ctermbg=238 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
@@ -577,12 +577,12 @@ if s:t_Co >= 256
     hi ErrorMsg ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi FoldColumn ctermfg=247 ctermbg=NONE cterm=NONE
     hi Folded ctermfg=237 ctermbg=253 cterm=NONE
-    hi IncSearch ctermfg=16 ctermbg=214 cterm=bold,nocombine,underline
+    hi IncSearch ctermfg=214 ctermbg=16 cterm=bold,reverse,underline
     hi LineNr ctermfg=241 ctermbg=NONE cterm=NONE
     hi MatchParen ctermfg=199 ctermbg=NONE cterm=bold
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=247 ctermbg=NONE cterm=nocombine
+    hi NonText ctermfg=247 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=146 cterm=NONE
     hi PmenuExtra ctermfg=NONE ctermbg=146 cterm=NONE
     hi PmenuKind ctermfg=NONE ctermbg=146 cterm=bold
@@ -595,8 +595,8 @@ if s:t_Co >= 256
     hi PmenuMatchSel ctermfg=NONE ctermbg=176 cterm=bold
     hi Question ctermfg=NONE ctermbg=NONE cterm=bold
     hi QuickFixLine ctermfg=NONE ctermbg=176 cterm=NONE
-    hi Search ctermfg=16 ctermbg=39 cterm=bold,nocombine
-    hi CurSearch ctermfg=16 ctermbg=207 cterm=bold,nocombine,underline
+    hi Search ctermfg=39 ctermbg=16 cterm=bold,reverse
+    hi CurSearch ctermfg=207 ctermbg=16 cterm=bold,reverse,underline
     hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     if !s:italics
       hi Constant cterm=nocombine
@@ -606,7 +606,7 @@ if s:t_Co >= 256
     if has('nvim')
       hi SpecialKey ctermfg=199 ctermbg=NONE cterm=NONE
     else
-      hi SpecialKey ctermfg=247 ctermbg=NONE cterm=nocombine
+      hi SpecialKey ctermfg=247 ctermbg=NONE cterm=NONE
     endif
     hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -618,7 +618,7 @@ if s:t_Co >= 256
     hi TabLineFill ctermfg=NONE ctermbg=249 cterm=NONE
     hi TabLineSel ctermfg=NONE ctermbg=255 cterm=bold
     hi Title ctermfg=16 ctermbg=NONE cterm=bold,underline
-    hi Visual ctermfg=16 ctermbg=214 cterm=nocombine
+    hi Visual ctermfg=214 ctermbg=16 cterm=reverse
     hi VisualNOS ctermfg=NONE ctermbg=249 cterm=NONE
     hi WarningMsg ctermfg=NONE ctermbg=NONE cterm=NONE
     hi WildMenu ctermfg=39 ctermbg=NONE cterm=bold
@@ -710,7 +710,7 @@ if s:t_Co >= 16
   hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText ctermfg=8 ctermbg=NONE cterm=nocombine
+  hi NonText ctermfg=8 ctermbg=NONE cterm=NONE
   hi Pmenu ctermfg=NONE ctermbg=8 cterm=NONE
   hi PmenuExtra ctermfg=NONE ctermbg=8 cterm=NONE
   hi PmenuKind ctermfg=NONE ctermbg=8 cterm=bold
@@ -832,7 +832,7 @@ if s:t_Co >= 8
   hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText ctermfg=darkyellow ctermbg=NONE cterm=nocombine
+  hi NonText ctermfg=darkyellow ctermbg=NONE cterm=NONE
   hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
   hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -933,7 +933,7 @@ if s:t_Co >= 0
   hi MatchParen term=bold,underline
   hi ModeMsg term=bold
   hi MoreMsg term=NONE
-  hi NonText term=nocombine
+  hi NonText term=NONE
   hi Pmenu term=reverse
   hi PmenuSbar term=reverse
   hi PmenuSel term=bold

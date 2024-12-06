@@ -76,9 +76,9 @@ MatchParen           none              none              bold,underline
 ModeMsg              none              none              bold
 MoreMsg              none              none
 Variant: 16
-NonText              term8             none              nocombine
+NonText              term8             none
 Variant: 8
-NonText              term3             none              nocombine
+NonText              term3             none
 Variant: 8 16
 Variant: 16
 ; ; This doesn't work well with cmp, which implements PmenuSel with winhighlight for CursorLine.
