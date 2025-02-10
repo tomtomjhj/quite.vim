@@ -240,7 +240,7 @@ if &background ==# 'dark'
   hi Italic guifg=NONE guibg=NONE gui=italic ctermfg=NONE ctermbg=NONE cterm=italic
   hi BoldItalic guifg=NONE guibg=NONE gui=bold,italic ctermfg=NONE ctermbg=NONE cterm=bold,italic
   hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
-  hi Literal guifg=#d4d4ac guibg=NONE gui=NONE cterm=NONE
+  hi Literal guifg=#d4d4ac guibg=NONE gui=nocombine cterm=nocombine
   hi PunctuationSpecial guifg=#aad7df guibg=NONE gui=bold cterm=bold
   hi LspReferenceText guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#d0d0d0 guibg=NONE gui=reverse cterm=reverse
@@ -373,7 +373,7 @@ else
   hi Italic guifg=NONE guibg=NONE gui=italic ctermfg=NONE ctermbg=NONE cterm=italic
   hi BoldItalic guifg=NONE guibg=NONE gui=bold,italic ctermfg=NONE ctermbg=NONE cterm=bold,italic
   hi Strikethrough guifg=NONE guibg=NONE gui=strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
-  hi Literal guifg=#56561a guibg=NONE gui=NONE cterm=NONE
+  hi Literal guifg=#56561a guibg=NONE gui=nocombine cterm=nocombine
   hi PunctuationSpecial guifg=#1c5060 guibg=NONE gui=bold cterm=bold
   hi LspReferenceText guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
   hi LspReferenceRead guifg=#3a3a3a guibg=NONE gui=reverse cterm=reverse
@@ -487,7 +487,7 @@ if s:t_Co >= 256
     hi Italic ctermfg=NONE ctermbg=NONE cterm=italic
     hi BoldItalic ctermfg=NONE ctermbg=NONE cterm=bold,italic
     hi Strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
-    hi Literal ctermfg=187 ctermbg=NONE cterm=NONE
+    hi Literal ctermfg=187 ctermbg=NONE cterm=nocombine
     hi PunctuationSpecial ctermfg=152 ctermbg=NONE cterm=bold
     hi LspReferenceText ctermfg=252 ctermbg=NONE cterm=reverse
     hi LspReferenceRead ctermfg=252 ctermbg=NONE cterm=reverse
@@ -599,7 +599,7 @@ if s:t_Co >= 256
     hi Italic ctermfg=NONE ctermbg=NONE cterm=italic
     hi BoldItalic ctermfg=NONE ctermbg=NONE cterm=bold,italic
     hi Strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough
-    hi Literal ctermfg=58 ctermbg=NONE cterm=NONE
+    hi Literal ctermfg=58 ctermbg=NONE cterm=nocombine
     hi PunctuationSpecial ctermfg=23 ctermbg=NONE cterm=bold
     hi LspReferenceText ctermfg=237 ctermbg=NONE cterm=reverse
     hi LspReferenceRead ctermfg=237 ctermbg=NONE cterm=reverse

@@ -98,7 +98,7 @@ Bold                 none              none              bold
 Italic               none              none              italic
 BoldItalic           none              none              bold,italic
 Strikethrough        none              none              strikethrough
-Literal              literalyellow     none
+Literal              literalyellow     none              nocombine
 PunctuationSpecial   specialcyan       none              bold
 
 ; :h lsp-lighlight
