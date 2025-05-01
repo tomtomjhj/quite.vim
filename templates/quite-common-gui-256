@@ -135,3 +135,13 @@ SneakLabel           white             uiblue            bold
 ; flash.nvim
 FlashLabel           black             uilime            bold
 FlashBackdrop        fg2               none
+
+; CSV
+csvCol1              quite2            none
+csvCol2              quite5            none
+csvCol3              fg1               none
+csvCol4              quite4            none
+csvCol5              quite3            none
+csvCol6              fg_1               none
+csvCol7              quite1            none
+csvCol8              quite6            none

@@ -267,6 +267,14 @@ if &background ==# 'dark'
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
   hi FlashBackdrop guifg=#b7b7b7 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol1 guifg=#73c660 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol2 guifg=#da8aec guibg=NONE gui=NONE cterm=NONE
+  hi csvCol3 guifg=#d0d0d0 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol4 guifg=#6da4ff guibg=NONE gui=NONE cterm=NONE
+  hi csvCol5 guifg=#e1a103 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol6 guifg=#ffffff guibg=NONE gui=NONE cterm=NONE
+  hi csvCol7 guifg=#ff7d81 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol8 guifg=#04c5ce guibg=NONE gui=NONE cterm=NONE
   if !s:italics
     hi Constant gui=nocombine cterm=nocombine
     hi Macro gui=nocombine cterm=nocombine
@@ -400,6 +408,14 @@ else
   hi SneakLabel guifg=#ffffff guibg=#00afff gui=bold cterm=bold
   hi FlashLabel guifg=#000000 guibg=#afff00 gui=bold cterm=bold
   hi FlashBackdrop guifg=#626262 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol1 guifg=#207400 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol2 guifg=#833794 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol3 guifg=#3a3a3a guibg=NONE gui=NONE cterm=NONE
+  hi csvCol4 guifg=#1f58b6 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol5 guifg=#8d6300 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol6 guifg=#000000 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol7 guifg=#a52836 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol8 guifg=#017b80 guibg=NONE gui=NONE cterm=NONE
   if !s:italics
     hi Constant gui=nocombine cterm=nocombine
     hi Macro gui=nocombine cterm=nocombine
@@ -514,6 +530,14 @@ if s:t_Co >= 256
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
     hi FlashBackdrop ctermfg=250 ctermbg=NONE cterm=NONE
+    hi csvCol1 ctermfg=77 ctermbg=NONE cterm=NONE
+    hi csvCol2 ctermfg=177 ctermbg=NONE cterm=NONE
+    hi csvCol3 ctermfg=252 ctermbg=NONE cterm=NONE
+    hi csvCol4 ctermfg=111 ctermbg=NONE cterm=NONE
+    hi csvCol5 ctermfg=214 ctermbg=NONE cterm=NONE
+    hi csvCol6 ctermfg=231 ctermbg=NONE cterm=NONE
+    hi csvCol7 ctermfg=210 ctermbg=NONE cterm=NONE
+    hi csvCol8 ctermfg=44 ctermbg=NONE cterm=NONE
     if !s:italics
       hi Constant cterm=nocombine
       hi Macro cterm=nocombine
@@ -626,6 +650,14 @@ if s:t_Co >= 256
     hi SneakLabel ctermfg=231 ctermbg=39 cterm=bold
     hi FlashLabel ctermfg=16 ctermbg=154 cterm=bold
     hi FlashBackdrop ctermfg=241 ctermbg=NONE cterm=NONE
+    hi csvCol1 ctermfg=28 ctermbg=NONE cterm=NONE
+    hi csvCol2 ctermfg=90 ctermbg=NONE cterm=NONE
+    hi csvCol3 ctermfg=237 ctermbg=NONE cterm=NONE
+    hi csvCol4 ctermfg=26 ctermbg=NONE cterm=NONE
+    hi csvCol5 ctermfg=94 ctermbg=NONE cterm=NONE
+    hi csvCol6 ctermfg=16 ctermbg=NONE cterm=NONE
+    hi csvCol7 ctermfg=124 ctermbg=NONE cterm=NONE
+    hi csvCol8 ctermfg=30 ctermbg=NONE cterm=NONE
     if !s:italics
       hi Constant cterm=nocombine
       hi Macro cterm=nocombine
