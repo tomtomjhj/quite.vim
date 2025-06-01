@@ -10,7 +10,7 @@ hi clear
 let g:colors_name = 'quite'
 
 let s:t_Co = has('gui_running') ? -1 : get(g:, 'quite_t_Co', get(g:, 't_Co', exists('&t_Co') ? +&t_Co : 0))
-let s:italics = (&t_ZH != '' && &t_ZH != '[7m') || has('gui_running') || has('nvim')
+let s:italics = has('gui_running') || has('nvim') || (&t_ZH != '' && &t_ZH != '[7m' && !has('win32'))
 
 hi! link String Literal
 hi! link Character Literal
@@ -79,6 +79,33 @@ if has('nvim-0.8')
   hi! link @tag.attribute Identifier
 endif
 if has('nvim-0.9')
+  hi! link @lsp.type.method Identifier
+  hi! link @lsp.type.typeParameter Identifier
+  hi! link @lsp.type.function Identifier
+  hi! link @lsp.type.macro NONE
+  hi! link @lsp.type.parameter.python NONE
+  hi! link @lsp.typemod.class.declaration Label
+  hi! link @lsp.typemod.enum.declaration Label
+  hi! link @lsp.typemod.event.declaration Label
+  hi! link @lsp.typemod.function.declaration Label
+  hi! link @lsp.typemod.interface.declaration Label
+  hi! link @lsp.typemod.method.declaration Label
+  hi! link @lsp.typemod.namespace.declaration Label
+  hi! link @lsp.typemod.struct.declaration Label
+  hi! link @lsp.typemod.type.declaration Label
+  hi! link @lsp.typemod.class.definition Label
+  hi! link @lsp.typemod.enum.definition Label
+  hi! link @lsp.typemod.event.definition Label
+  hi! link @lsp.typemod.function.definition Label
+  hi! link @lsp.typemod.interface.definition Label
+  hi! link @lsp.typemod.method.definition Label
+  hi! link @lsp.typemod.namespace.definition Label
+  hi! link @lsp.typemod.struct.definition Label
+  hi! link @lsp.typemod.type.definition Label
+  hi! link @lsp.mod.builtin.python Constant
+  hi! link @lsp.mod.deduced.cpp Constant
+  hi! link @lsp.type.label Identifier
+  hi! link @lsp.typemod.label.declaration Label
 endif
 hi! link debugBreakpoint ModeMsg
 hi! link debugPC CursorLine

@@ -166,6 +166,40 @@ lCursor              -> Cursor
 ; }}}
 ; :h lsp-semantic-highlight {{{
 #if has('nvim-0.9')
+  ; override default links that don't align with this theme
+  @lsp.type.method   -> Identifier
+  @lsp.type.typeParameter -> Identifier
+  @lsp.type.function -> Identifier
+
+  ; disable stuff that treesitter already does well
+  @lsp.type.macro    -> NONE ; c "bool" is macro; correct but dumb
+  @lsp.type.parameter.python -> NONE ; "self" doesn't get special token
+
+  ; Significant defintion
+  @lsp.typemod.class.declaration -> Label
+  @lsp.typemod.enum.declaration -> Label
+  @lsp.typemod.event.declaration -> Label
+  @lsp.typemod.function.declaration -> Label
+  @lsp.typemod.interface.declaration -> Label
+  @lsp.typemod.method.declaration -> Label
+  @lsp.typemod.namespace.declaration -> Label
+  @lsp.typemod.struct.declaration -> Label
+  @lsp.typemod.type.declaration -> Label
+  @lsp.typemod.class.definition -> Label
+  @lsp.typemod.enum.definition -> Label
+  @lsp.typemod.event.definition -> Label
+  @lsp.typemod.function.definition -> Label
+  @lsp.typemod.interface.definition -> Label
+  @lsp.typemod.method.definition -> Label
+  @lsp.typemod.namespace.definition -> Label
+  @lsp.typemod.struct.definition -> Label
+  @lsp.typemod.type.definition -> Label
+
+  ; non-standard stuff
+  @lsp.mod.builtin.python -> Constant ; "int"
+  @lsp.mod.deduced.cpp -> Constant ; "auto"
+  @lsp.type.label -> Identifier ; only highlight c/cpp label def
+  @lsp.typemod.label.declaration -> Label
 #endif
 ; }}}
 ; plugins and filetypes {{{
