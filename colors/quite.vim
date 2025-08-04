@@ -10,7 +10,7 @@ hi clear
 let g:colors_name = 'quite'
 
 let s:t_Co = has('gui_running') ? -1 : get(g:, 'quite_t_Co', get(g:, 't_Co', exists('&t_Co') ? +&t_Co : 0))
-let s:italics = has('gui_running') || has('nvim') || (&t_ZH != '' && &t_ZH != '[7m' && !has('win32'))
+let s:italics = (&t_ZH != '' && &t_ZH != '[7m') || has('gui_running') || has('nvim')
 
 hi! link String Literal
 hi! link Character Literal
@@ -119,6 +119,7 @@ hi! link diffLine PunctuationSpecial
 hi! link diffSubname Literal
 if has('nvim')
   hi! link CmpItemAbbrMatch Bold
+  hi! link CmpItemAbbrDeprecated DiagnosticDeprecated
   hi! link CmpItemKind NONE
 endif
 hi! link UndotreeBranch NONE

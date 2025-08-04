@@ -175,6 +175,16 @@ lCursor              -> Cursor
   @lsp.type.macro    -> NONE ; c "bool" is macro; correct but dumb
   @lsp.type.parameter.python -> NONE ; "self" doesn't get special token
 
+  ; @lsp.typemod.variable.readonly -> Constant
+  ; @lsp.typemod.variable.readonly.python -> NONE
+  ; @lsp.type.variable.python -> NONE
+  ; NOTE: basepyright highlights uses of @property without setter as variable.readonly
+  ; (https://github.com/DetachHead/basedpyright/issues/529).
+  ; I can't clear readonly highlight, because usual constants are readonly as well,
+  ; and clearing readonly would result in constant being highlighted as @lsp.type.variable,
+  ; which overrides treesitter @constant.
+  ; And I can't clear @lsp.type.variable because it fixes tree-sitter-cpp's most vexing parse problem.
+
   ; Significant defintion
   @lsp.typemod.class.declaration -> Label
   @lsp.typemod.enum.declaration -> Label
@@ -216,6 +226,7 @@ diffSubname          -> Literal
 ; nvim-cmp {{{
 #if has('nvim')
   CmpItemAbbrMatch   -> Bold
+  CmpItemAbbrDeprecated -> DiagnosticDeprecated
   CmpItemKind        -> NONE
 #endif
 ; }}}

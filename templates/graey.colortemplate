@@ -208,6 +208,7 @@ diffIndexLine        -> Comment
 ; nvim-cmp {{{
 #if has('nvim')
   CmpItemAbbrMatch   -> Bold
+  CmpItemAbbrDeprecated -> DiagnosticDeprecated
   CmpItemKind        -> NONE
 #endif
 ; }}}
